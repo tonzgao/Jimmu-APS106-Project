@@ -30,18 +30,18 @@ int main(void)
 	}
 
 	fprintf(log, "%d x %d", sizex, sizey)
-	fprint_grid() //should just do an anti read_grid()//
+	fprint_grid()
 	fprintf("START\nx, y, score")
 	int score = 0
 
 	while (possible() == 1) {
 		printf_grid()
-		printf("Current score: %d", score) // should be an anti read_grid() and should add numbers to sides of grid to indicate coordinates //
+		printf("Current score: %d", score)
 		printf("New coordinates: ")
 		scanf("%d %d", &x, &y)
 		score += collapse(x, y)
 		fprintf(log, "%d %d %d", x, y, score)
-	} 
+	}
 
 	printf("All done!/n Your final score is %d./n", score)
 	fprintf(log, "END\n\nFINAL SCORE: %d (Player)", score)
@@ -78,7 +78,7 @@ struct generate_grid(x, y)
 				default: append(grid[i], p); break // the previously assigned char has a higher chance of being made to prevent sucky games from being made //
 			}
 		}
-	} 
+	}
 	fprintf(log, "%d x %d/n %struct", x, y, grid)
 	return grid; // dont know if children functions inherit variables from parents, grid and some other variables may have to be global //
 }
@@ -94,19 +94,17 @@ struct read_grid(path)
 				append(grid, [ch]);
 			} else append_to_head(grid[i], ch); // is kind of messy but makes an elegant grid system
 		}
-	} 
+	}
 	fprintf(log, "%d x %d/n %struct", x, y, grid)
 	return grid;
 }
 
-void append_to_head(grid, ch)
+void fprintf_grid(void) // these two should be reversals of read_grid() //
 {}
-void fprintf_grid(void)
-{}
-void printf_grid(void) // todo //
+void printf_grid(void)
 {}
 
-void possible(void)  
+void possible(void)
 {
 	altgrid = grid
 	for e in grid:
@@ -137,7 +135,7 @@ void expand(x, y, mode) { // complicated function, should work not sure //
 		}
 		if (altgrid[x][y-1] == current) {
 			expand(x, y-1)
-		} 
+		}
 	}
 }
 
@@ -155,7 +153,7 @@ int collapse(x, y) {
 			remove(grid, e)
 	if (steps > 1) return steps*steps;
 	return 0;
-} 
+}
 
 void ai_play(void) // just a greedy algorithm //
 {
@@ -184,7 +182,7 @@ void ai_play(void) // just a greedy algorithm //
 			printf("Press any key to continue")
 			getchar()
 			fprintf(log, "%d %d %d", x, y, score)
-		} 
+		}
 
 		printf("All done!/n The final score is %d./n", score)
 		fprintf(log, "END\n\nFINAL SCORE: %d (AI)", score)
@@ -193,4 +191,5 @@ void ai_play(void) // just a greedy algorithm //
 		getchar()
 }
 
-// bunch of functions needed to handle lists too //
+void append_to_head(grid, ch) // bunch of other functions needed to handle lists too //
+{}
