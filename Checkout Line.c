@@ -19,14 +19,20 @@ int main(void)
 		fprintf("=========================================================================================\n")
 	}
 
-	printf("Intro");
+    play()
+    return 0;
+}
+
+void play(void)
+{
+    printf("Intro");
 	printf("Choose mode: 1 play generated, 2 play premade, 3 watch ai, other exit")
 	scanf("%d", &mode)
 	switch (mode) {
 		case 1: timestamp(); printf("Enter size"); scanf("%d%d", &sizex, &sizey); grid = generate_grid(sizex, sizey); break;
 		case 2: timestamp(); printf("Path pls"); scanf("%string", path); grid = read_grid(path); break;// both 1 and 2 should call possible at the end //
-		case 3: timestamp(); ai_play(); main();
-		default: return 0;
+		case 3: timestamp(); ai_play(); play();
+		default: exit(0);
 	}
 
 	fprintf(log, "%d x %d", sizex, sizey)
@@ -48,7 +54,7 @@ int main(void)
 
 	printf("press any key to play again")
 	getchar()
-	main()
+	play()
 }
 
 // FUNCTIONS USED //
@@ -155,15 +161,14 @@ int collapse(x, y) {
 	return 0;
 }
 
-void ai_play(void) // just a greedy algorithm //
+void ai_play(void) // just a standard greedy algorithm //
 {
 		fprintf(log, "%d x %d", sizex, sizey)
 		fprint_grid() //should just do an anti read_grid()//
 		fprintf("START\nx, y, score")
 		int score = 0
-
 		while (possible() == 1) {
-			printf_grid() // same thing as in main //
+			printf_grid() // same thing as in regular play //
 			//maybe commentary to illustrate some things at certain moments?
 			highest = 2
 			hx = 0
@@ -193,3 +198,19 @@ void ai_play(void) // just a greedy algorithm //
 
 void append_to_head(grid, ch) // bunch of other functions needed to handle lists too //
 {}
+
+
+//  COPYRIGHT LICENCE
+//  Copyright [2013] [Gary Cai, Anthony Gao, and Jimmy Tieu]
+//
+//   Licensed under the Apache License, Version 2.0 (the "License");
+//   you may not use this file except in compliance with the License.
+//   You may obtain a copy of the License at
+//
+//       http://www.apache.org/licenses/LICENSE-2.0
+//
+//   Unless required by applicable law or agreed to in writing, software
+//   distributed under the License is distributed on an "AS IS" BASIS,
+//   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//   See the License for the specific language governing permissions and
+//   limitations under the License.
