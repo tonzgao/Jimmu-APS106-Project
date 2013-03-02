@@ -17,7 +17,8 @@ int main(void)
 		fprintf("							 	num		 999826434		num/n")
 		fprintf("=========================================================================================\n")
 	}
-
+    printf("What is your name?");
+    scanf("%s", &player);
     play()
     return 0;
 }
@@ -51,7 +52,7 @@ int play(void)
 	}
 
 	printf("All done!/n Your final score is %d./n", score)
-	fprintf(log, "END\n\nFINAL SCORE: %d (Player)", score)
+	fprintf(log, "END\n\nFINAL SCORE: %d (%s)", score, player)
 
 	printf("press any key to play again")
 	getchar()
@@ -163,11 +164,11 @@ int collapse(x, y) {
 void ai_play(void) // just a standard greedy algorithm //
 {
 		fprintf(log, "%d x %d", sizex, sizey)
-		fprint(file, "%s", printf_grid(grid)) 
+		fprint(file, "%s", printf_grid(grid))
 		fprintf("START\nx, y, score")
 		int score = 0
 		while (possible() == 1) {
-			printf_grid() 
+			printf_grid()
 			printf("Current score: %d", score)
 			printf("Press any key to continue")
 			getchar()
