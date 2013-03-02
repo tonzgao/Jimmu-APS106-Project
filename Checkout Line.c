@@ -8,8 +8,7 @@
 
 int main(void)
 { // in pseudocode //
-	system(cls);
-	log = fopen(\logs\log.txt, 'w')
+	log = fopen(\logs\log.txt, 'a')
 	if (log == NULL) {
 		create log file 'w';
 		fprintf("=========================================================================================")
@@ -23,15 +22,17 @@ int main(void)
     return 0;
 }
 
-void play(void)
+int play(void)
 {
+	system(cls);
     printf("Intro");
-	printf("Choose mode: 1 play generated, 2 play premade, 3 watch ai, other exit")
+	printf("Choose mode: 1 play generated, 2 play premade, 3 watch ai play generated, 4 watch ai play premade, other exit")
 	scanf("%d", &mode)
 	switch (mode) {
 		case 1: timestamp(); printf("Enter size"); scanf("%d%d", &sizex, &sizey); grid = generate_grid(sizex, sizey); break;
-		case 2: timestamp(); printf("Path pls"); scanf("%string", path); grid = read_grid(path); break;// both 1 and 2 should call possible at the end //
-		case 3: timestamp(); ai_play(); play();
+		case 2: timestamp(); printf("Path pls"); scanf("%s", path); grid = read_grid(path); break;// both 1 and 2 should call possible at the end //
+		case 3: timestamp(); printf("Enter size"); scanf("%d%d", &sizex, &sizey); grid = generate_grid(sizex, sizey); ai_play(); play(); break;
+		case 4: timestamp(); printf("Path pls"); scanf("%s", path); grid = read_grid(path); ai_play(); play(); break;
 		default: exit(0);
 	}
 
@@ -61,14 +62,14 @@ void play(void)
 void timestamp(void)
 {
 	printf("----------------------------------------------------------------------------------------")
-	printf("	  NEW GAME: %string", time()) //from time.h?//
+	printf("	  NEW GAME: %s", time()) //from time.h?//
 	printf("----------------------------------------------------------------------------------------\n")
 }
 
 // grids are stored in nested arrays, bottom to top, left to right. //
 //[1, 2, 3; 4, 5, 6] in matlab becomes [[4, 1], [5, 2], [3, 6]]. This lets the expand and collapse functions work very well //
 
-struct generate_grid(x, y)
+dunno generate_grid(x, y)
 {
 	grid = [];
 	for (i = 0, i < x; i++) {
@@ -85,11 +86,11 @@ struct generate_grid(x, y)
 			}
 		}
 	}
-	fprintf(log, "%d x %d/n %struct", x, y, grid)
+	fprintf(log, "%d x %d/n %s", x, y, read(grid)
 	return grid; // dont know if children functions inherit variables from parents, grid and some other variables may have to be global //
 }
 
-struct read_grid(path)
+dunno read_grid(path)
 {
 	fscanf("%d %d", &x, &y)
 	grid = []
@@ -101,13 +102,11 @@ struct read_grid(path)
 			} else append_to_head(grid[i], ch); // is kind of messy but makes an elegant grid system
 		}
 	}
-	fprintf(log, "%d x %d/n %struct", x, y, grid)
+	fprintf(log, "%d x %d/n %s", x, y, print(grid)
 	return grid;
 }
 
-void fprintf_grid(void) // these two should be reversals of read_grid() //
-{}
-void printf_grid(void)
+void printf_grid(void) // convert array to a string. these two should be reversals of read_grid() //
 {}
 
 void possible(void)
@@ -118,7 +117,7 @@ void possible(void)
 			if (altgrid[e][ch] is not caps):
 				steps = 0
 				expand(e, ch, 1)
-				if (steps < 1) return 1;
+				if (steps < 1) {return 1};
 	return 0;
 }
 
@@ -164,28 +163,30 @@ int collapse(x, y) {
 void ai_play(void) // just a standard greedy algorithm //
 {
 		fprintf(log, "%d x %d", sizex, sizey)
-		fprint_grid() //should just do an anti read_grid()//
+		fprint(file, "%s", printf_grid(grid)) 
 		fprintf("START\nx, y, score")
 		int score = 0
 		while (possible() == 1) {
-			printf_grid() // same thing as in regular play //
+			printf_grid() 
+			printf("Current score: %d", score)
+			printf("Press any key to continue")
+			getchar()
 			//maybe commentary to illustrate some things at certain moments?
 			highest = 2
 			hx = 0
 			hy = 0
 			steps = 0
-			for e in grid:
+			for e in grid {// move this section in braces to a mode in collapse which removes the highest rank. makes altgrid not need to be global.
 				for ch in grid[e]:
-					expand(e, ch)
-					if steps > highest:
-						highest = steps
-					hx = e
-					hy = ch
-					steps = 0
+					if (altgrid[e][ch] is not caps):
+						expand(e, ch, 0)
+						if steps > highest:
+							highest = steps
+						hx = e
+						hy = ch
+						steps = 0
+			}
 			score += collapse(hx, hy)
-			printf("Current score: %d", score)
-			printf("Press any key to continue")
-			getchar()
 			fprintf(log, "%d %d %d", x, y, score)
 		}
 
@@ -197,6 +198,9 @@ void ai_play(void) // just a standard greedy algorithm //
 }
 
 void append_to_head(grid, ch) // bunch of other functions needed to handle lists too //
+{}
+
+int is_caps(ch)
 {}
 
 
