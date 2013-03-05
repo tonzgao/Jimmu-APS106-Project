@@ -5,21 +5,25 @@
 #include <time.h>
 
 //other libraries and variable declarations //
+char player[25] = {0};
+time_t btime;
 
 int main(void)
-{ // in pseudocode //
-	log = fopen(\logs\log.txt, 'a')
-	if (log == NULL) {
-		create log file 'w';
-		fprintf("=========================================================================================")
-		fprintf("										 TEAM JIMMU")
-		fprintf("							Zipeng Cai, Anthony Gao, Jimmy Tieu")
-		fprintf("							 	num		 999826434		num/n")
-		fprintf("=========================================================================================\n")
+{
+    FILE * log = fopen("log.txt", "a+");
+    char empty = "a"
+    fscanf(log, "%c", &empty);
+	if (empty != "/=") {
+		fprintf(log, "===============================================================================\n");
+		fprintf(log, "									TEAM JIMMU\n");
+		fprintf(log, "				Zipeng Cai, Anthony Gao, Richard Shangguan, Jimmy Tieu\n");
+		fprintf(log, "studentnums\n");
+		fprintf(log, "===============================================================================\n\n");
 	}
+	
     printf("What is your name?");
-    scanf("%s", &player);
-    play()
+    scanf("%25[0-9a-zA-Z ]s", &player);
+    play();
     return 0;
 }
 
@@ -62,9 +66,10 @@ int play(void)
 // FUNCTIONS USED //
 void timestamp(void)
 {
-	printf("----------------------------------------------------------------------------------------")
-	printf("	  NEW GAME: %s", time()) //from time.h?//
-	printf("----------------------------------------------------------------------------------------\n")
+    time (&btime);
+	fprintf(log, "-------------------------------------------------------------------------------\n");
+	fprintf(log, "	  NEW GAME: %s", ctime(&btime));
+	fprintf(log, "-------------------------------------------------------------------------------\n\n");
 }
 
 // grids are stored in nested arrays, bottom to top, left to right. //
@@ -76,7 +81,8 @@ dunno generate_grid(x, y)
 	for (i = 0, i < x; i++) {
 		append(grid, [])
 		for (j = 0; j < y; j++) {
-			int r = randint(0, 5);
+			//seedwithtime();
+			int r = rand(0, 5);
 			char p = "b"
 			switch (r) {
 				case 0: p = "b"; append(grid[i], p); break
@@ -154,7 +160,7 @@ int collapse(x, y) {
 			if ch is caps:
 				remove(altgrid[e][ch])
 	grid = altgrid
-	for e in grid:
+	for e in grid: // may need to fill empty spaces with zeros. //
 		if e == []:
 			remove(grid, e)
 	if (steps > 1) return steps*steps;

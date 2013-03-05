@@ -1,0 +1,19 @@
+immediate goals:
+account for array suckiness with zeros and write array management functions
+write print_grid
+accout for bad users: checking for right type, max size of grid, choosing invalid coordinates, etc
+test the log file writing
+resolve relationship between grid and altgrid
+
+later goals:
+convert to c from pseudocode
+test grid storage system
+test expand
+
+long term goals:
+general testing
+documentation
+
+stretch goals:
+make real ai
+prevent cheating from hackers
