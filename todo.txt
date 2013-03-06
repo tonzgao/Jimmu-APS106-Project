@@ -2,7 +2,6 @@ immediate goals:
 account for array suckiness with zeros and write array management functions
 write print_grid
 accout for bad users: checking for right type, max size of grid, choosing invalid coordinates, etc
-test the log file writing
 resolve relationship between grid and altgrid
 
 later goals:

@@ -8,30 +8,37 @@
 
 char player[25] = {0};
 time_t btime;
-char empty = 0;
+
+void timestamp(void)
+{
+	FILE * log;
+	log = fopen("Log/log.txt", "a");
+	time (&btime);
+	fprintf(log, "-------------------------------------------------------------------------------\n");
+	fprintf(log, "	  %s, NEW GAME: %s", player, ctime(&btime));
+	fprintf(log, "-------------------------------------------------------------------------------\n\n");
+	fclose(log);
+}
+
 
 int main (void)
 {
-    FILE * log = fopen("log.txt", "a+"); // for some reason if the file exists nothing is added... //
-    fscanf(log, "%c", &empty);
-	if (empty != "/=") {
+    FILE * log;
+    FILE * testfile = fopen("Log/log.txt", "r");
+	if (testfile == NULL) {
+	    log = fopen("Log/log.txt", "a");
 		fprintf(log, "===============================================================================\n");
 		fprintf(log, "									TEAM JIMMU\n");
 		fprintf(log, "				Zipeng Cai, Anthony Gao, Richard Shangguan, Jimmy Tieu\n");
 		fprintf(log, "studentnums\n");
 		fprintf(log, "===============================================================================\n\n");
 	}
+	fclose(testfile);
 
     printf("Please input your name: ");
     scanf("%25[0-9a-zA-Z ]s", &player);
-    printf("Your name is: %s", player);
+    timestamp();
 
-    time (&btime);
-	fprintf(log, "-------------------------------------------------------------------------------\n");
-	fprintf(log, "	  NEW GAME: %s", ctime(&btime));
-	fprintf(log, "-------------------------------------------------------------------------------\n\n");
-
-    fclose(log);
     return 0;
 }
 

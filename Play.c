@@ -4,30 +4,33 @@
 #include <stdlib.h>
 #include <time.h>
 
-//other libraries and variable declarations //
+//does not compile currently. Use test.c to test out functions //
 char player[25] = {0};
 time_t btime;
 
 int main(void)
+// Opens the log file and asks the Player's name //
 {
-    FILE * log = fopen("log.txt", "a+");
-    char empty = "a"
-    fscanf(log, "%c", &empty);
-	if (empty != "/=") {
+    FILE * log;
+    FILE * testfile = fopen("Log/log.txt", "r");
+	if (testfile == NULL) {
+	    log = fopen("Log/log.txt", "a");
 		fprintf(log, "===============================================================================\n");
 		fprintf(log, "									TEAM JIMMU\n");
 		fprintf(log, "				Zipeng Cai, Anthony Gao, Richard Shangguan, Jimmy Tieu\n");
 		fprintf(log, "studentnums\n");
 		fprintf(log, "===============================================================================\n\n");
 	}
-	
-    printf("What is your name?");
+	fclose(testfile);
+
+    printf("Please input your name: ");
     scanf("%25[0-9a-zA-Z ]s", &player);
     play();
     return 0;
 }
 
 int play(void)
+// Player chooses mode; Preparations for each mode begin; Player can play and machine logs //
 {
 	system(cls);
     printf("Intro");
@@ -63,19 +66,23 @@ int play(void)
 	play()
 }
 
-// FUNCTIONS USED //
 void timestamp(void)
+// Stamps the time for each game in the logs //
 {
-    time (&btime);
+	FILE * log;
+	log = fopen("Log/log.txt", "a");
+	time (&btime);
 	fprintf(log, "-------------------------------------------------------------------------------\n");
-	fprintf(log, "	  NEW GAME: %s", ctime(&btime));
+	fprintf(log, "	  %s, NEW GAME: %s", player, ctime(&btime));
 	fprintf(log, "-------------------------------------------------------------------------------\n\n");
+	fclose(log);
 }
 
-// grids are stored in nested arrays, bottom to top, left to right. //
-//[1, 2, 3; 4, 5, 6] in matlab becomes [[4, 1], [5, 2], [3, 6]]. This lets the expand and collapse functions work very well //
+
 
 dunno generate_grid(x, y)
+// grids are stored in nested arrays, bottom to top, left to right. //
+//[1, 2, 3; 4, 5, 6] in matlab becomes [[4, 1], [5, 2], [3, 6]]. This lets the expand and collapse functions work very well //
 {
 	grid = [];
 	for (i = 0, i < x; i++) {
@@ -113,10 +120,12 @@ dunno read_grid(path)
 	return grid;
 }
 
-void printf_grid(void) // convert array to a string. these two should be reversals of read_grid() //
+void print_grid(void) 
+// convert array to a string. Should be just a reversal of read_grid() //
 {}
 
 void possible(void)
+// Checks if moves are possible. Returns 0 if not, and 1 if yes. //
 {
 	altgrid = grid
 	for e in grid:
@@ -128,7 +137,8 @@ void possible(void)
 	return 0;
 }
 
-void expand(x, y, mode) { // complicated function, should work not sure //
+void expand(x, y, mode) { 
+// Complicated function, should work not sure. Basically puts to upper each coordinate that should be removed  //
 	char current = altgrid[x][y]
 	if (current is not caps) {
 		steps++
@@ -152,6 +162,7 @@ void expand(x, y, mode) { // complicated function, should work not sure //
 }
 
 int collapse(x, y) {
+// Removes all capital letters. Shuffles down coordinates that need to fall and removes empty columns. Only not yet //
 	steps = 0
 	altgrid = grid
 	expand(x, y, 2)
@@ -167,7 +178,8 @@ int collapse(x, y) {
 	return 0;
 }
 
-void ai_play(void) // just a standard greedy algorithm //
+void ai_play(void) 
+// just a standard greedy algorithm //
 {
 		fprintf(log, "%d x %d", sizex, sizey)
 		fprint(file, "%s", printf_grid(grid))
@@ -204,11 +216,10 @@ void ai_play(void) // just a standard greedy algorithm //
 		getchar()
 }
 
-void append_to_head(grid, ch) // bunch of other functions needed to handle lists too //
-{}
+// bunch of other functions needed to handle lists too //
 
-int is_caps(ch)
-{}
+
+
 
 
 //  COPYRIGHT LICENCE
