@@ -19,7 +19,7 @@ void colortest(int n)
 
     seed = time(NULL);
     srand(seed);
-    for(i = 0, j = 1; i < nd; i++, j++) {
+    for(i = 0, j = 1; i < n; i++, j++) {
         random = rand() %5;
         bad:
         switch(random) {
