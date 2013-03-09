@@ -2,12 +2,40 @@
 
 
 #include <stdio.h>
+#include <math.h>
 #include <windows.h>
 #include <stdlib.h>
 #include <time.h>
 
+
+
 char player[25] = {0};
 time_t btime;
+int n;
+
+void colortest(int n)
+{
+    int random, seed, i, j, prev;
+
+    seed = time(NULL);
+    srand(seed);
+    for(i = 0, j = 1; i < nd; i++, j++) {
+        random = rand() %5;
+        bad:
+        switch(random) {
+            case 0: SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_RED); printf("  "); prev = 0; break;
+            case 1: SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_GREEN); printf("  "); prev = 1;break;
+            case 2: SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_GREEN | BACKGROUND_RED); printf("  "); prev = 2; break;
+            case 3: SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_BLUE); printf("  "); prev = 3; break;
+            default: random = prev; goto bad; break;
+        }
+        if (j > sqrt(n) - 1) {
+            printf("\n");
+            j = 0;
+        }
+    }
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+}
 
 void timestamp(void)
 {
@@ -19,7 +47,6 @@ void timestamp(void)
 	fprintf(log, "-------------------------------------------------------------------------------\n\n");
 	fclose(log);
 }
-
 
 int main (void)
 {
@@ -38,6 +65,10 @@ int main (void)
     printf("Please input your name: ");
     scanf("%25[0-9a-zA-Z ]s", &player);
     timestamp();
+
+    printf("Square number pls (like 100): ");
+    scanf("%d", &n);
+    colortest(n);
 
     return 0;
 }
