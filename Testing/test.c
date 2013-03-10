@@ -24,7 +24,7 @@ void colortest(int n)
         bad:
         switch(random) {
             case 0: SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_RED); printf("  "); prev = 0; break;
-            case 1: SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_GREEN); printf("  "); prev = 1;break;
+            case 1: SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_GREEN); printf("  "); prev = 1; break;
             case 2: SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_GREEN | BACKGROUND_RED); printf("  "); prev = 2; break;
             case 3: SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_BLUE); printf("  "); prev = 3; break;
             default: random = prev; goto bad; break;

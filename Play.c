@@ -31,7 +31,7 @@ int main(void)
 }
 
 int play(void)
-// Player chooses mode; Preparations for each mode begin; Player can play and machine logs //
+// Player chooses mode; Preparations for each mode begin; Player can play and machine logs. Unfinished //
 {
 	system(cls);
     printf("Intro");
@@ -39,12 +39,14 @@ int play(void)
 	scanf("%d", &mode)
 	switch (mode) {
 		case 1: timestamp(); 
-				while (sizex > 30 || sizey > 30 || sizex < 2 || sizey < 2) {
-					printf("Enter size"); 
-					scanf("%d%d", &sizex, &sizey); 
-				}
+			    while (sizex > 39 || sizey > 39 || sizex < 2 || sizey < 2) {
+			        printf("Enter size of x: ");
+			        scanf("%d", &sizex);
+			        printf("Enter size of y: ");
+			        scanf("%d", &sizey);
+			    }
 				char grid[sizex][sizey];
-				grid = generate_grid(sizex, sizey); 
+				generate_grid(grid); 
 				break;
 		case 2: timestamp(); printf("Path pls"); scanf("%s", &path); grid = read_grid(path); break;// both 1 and 2 should call possible at the end //
 		case 3: timestamp(); printf("Enter size"); scanf("%d%d", &sizex, &sizey); grid = generate_grid(sizex, sizey); ai_play(); play(); break;
@@ -52,9 +54,9 @@ int play(void)
 		default: exit(0);
 	}
 
-	fprintf(log, "%d x %d", sizex, sizey)
-	print_grid()
-	fprintf("START\nx, y, score")
+	fprintf(log, "%d x %d", sizex, sizey);
+	print_grid(grid);
+	fprintf("\nSTART\nx, y, score");
 	int score = 0
 
 	while (possible() == 1) {
@@ -86,16 +88,20 @@ void timestamp(void)
 	fclose(log);
 }
 
-char generate_grid(int x, int y) // you can test it in the test.c file to see if it works. I made a few edits for clarity. Also, who is paula? 
+void generate_grid(char grid[sizex][sizey]) // you can test it in the test.c file to see if it works. I made a few edits for clarity. Also, who is paula?
 // Generates a grid which represents like this: [1, 2, 3; 4, 5, 6] has three columns and two rows; becomes [[4, 1], [5, 2], [3, 6]]. //
 {
     int i, j, random, seed;
-    char grid[x][y], p;
+    char p;
+
+    FILE * log;
+	log = fopen("Log/log.txt", "a");
+	fprintf(log, "%d x %d\n", sizex, sizey);
 
     seed = time(NULL);
     srand(seed);
-    for (i = 0; i < x; i++) {
-        for (j = 0; j < y; j++) {
+    for (j = sizey - 1; j > 0; j--) {
+        for (i = 0; i < sizex; i++) {
             random = rand() %5;
             switch(random) {
                 case 0: p = 'b'; break;
@@ -104,14 +110,16 @@ char generate_grid(int x, int y) // you can test it in the test.c file to see if
                 case 3: p = 'g'; break;
                 default: break;
             }
-            grid[i][j] = p; 
+            grid[i][j] = p;
+            fprintf(log, "%c ", p);
         }
+        fprintf(log, "\n");
     }
-    // no need to print the characters because we will call print_grid after initializing the game in play() anyways //
-    return grid;
+    fclose(log);
 }
 
 char read_grid(char path[])
+// Reads grid from log. unfinished //
 {
 	fscanf("%d %d", &x, &y)
 	grid = []
@@ -127,26 +135,29 @@ char read_grid(char path[])
 	return grid;
 }
 
-void print_grid(void)
-// convert array to a string. Should be just a reversal of read_grid() //
+void print_grid(char grid[sizex][sizey])
+// prints grid to terminal //
 {
-    for y: {
-        for x: {
+    int i, j;
+    char color;
+    for (j = sizey - 1; j > 0; j--) {
+        for (i = 0; i < sizex; i++) {
+            color = grid[i][j];
             switch (color) {
-                case 'b': SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_GREEN); printf(" "); break;
-                case 'r': SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_RED); printf(" "); break;
-                case 'y': SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_GREEN | BACKGROUND_RED); printf(" "); break;
-                case 'g': SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_GREEN); printf(" "); break;
-                default: SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN); printf(" ") break;
+                case 'b': SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_BLUE); printf("  "); break;
+                case 'r': SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_RED); printf("  "); break;
+                case 'y': SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_GREEN | BACKGROUND_RED); printf("  "); break;
+                case 'g': SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_GREEN); printf("  "); break;
+                default: SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN); printf("  "); break;
             }
-        printf("\n");
         }
+        printf("\n");
     }
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
 }
 
 void possible(void)
-// Checks if moves are possible. Returns 0 if not, and 1 if yes. //
+// Checks if moves are possible. Returns 0 if not, and 1 if yes. Unfinished//
 {
 	altgrid = grid
 	for e in grid:
@@ -159,7 +170,7 @@ void possible(void)
 }
 
 void expand(x, y, mode) {
-// Complicated function, should work not sure. Basically puts to upper each coordinate that should be removed  //
+// Complicated function, should work not sure. Basically puts to upper each coordinate that should be removed. unfinished  //
 	char current = altgrid[x][y]
 	if (current is not caps) {
 		steps++
@@ -183,7 +194,7 @@ void expand(x, y, mode) {
 }
 
 int collapse(x, y) {
-// Removes all capital letters. Shuffles down coordinates that need to fall and removes empty columns. Only not yet //
+// Removes all capital letters. Shuffles down coordinates that need to fall and removes empty columns. unfinished //
 	steps = 0
 	altgrid = grid
 	expand(x, y, 2)
@@ -200,7 +211,7 @@ int collapse(x, y) {
 }
 
 void ai_play(void)
-// just a standard greedy algorithm //
+// just a standard greedy algorithm. unfinished //
 {
 		fprintf(log, "%d x %d", sizex, sizey)
 		fprint(file, "%s", printf_grid(grid))
@@ -236,8 +247,6 @@ void ai_play(void)
 		printf("Okay, you try now. Press any key to play\n")
 		getchar()
 }
-
-// bunch of other functions needed to handle lists too //
 
 
 

@@ -1,12 +1,9 @@
 immediate goals:
-account for array suckiness with zeros and write array management functions
-write print_grid
+finish read_grid
 accout for bad users: checking for right type, max size of grid, choosing invalid coordinates, etc
 resolve relationship between grid and altgrid
 
 later goals:
-convert to c from pseudocode
-test grid storage system
 test expand
 
 long term goals:
