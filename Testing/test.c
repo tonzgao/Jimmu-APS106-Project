@@ -35,6 +35,7 @@ void colortest(int n)
         }
     }
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+    scanf("%d", &n);
 }
 
 void timestamp(void)
@@ -69,6 +70,7 @@ int main (void)
     printf("Square number pls (like 100): ");
     scanf("%d", &n);
     colortest(n);
+    printf("%d", n);
 
     return 0;
 }
