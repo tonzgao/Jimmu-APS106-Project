@@ -1,4 +1,4 @@
-// Zipeng Cai, Anthony Gao 999826434, Jimmy Tieu //
+// Zipeng Cai, Anthony Gao 999826434, Richard Shangguan, Jimmy Tieu //
 #include <stdio.h>
 #include <windows.h>
 #include <stdlib.h>
@@ -7,7 +7,7 @@
 //does not compile currently. Use test.c to test out functions //
 char player[25] = {0};
 time_t btime;
-int sizex = 0, sizey = 0;
+int sizex = 0, sizey = 0, warn;
 
 int main(void)
 // Opens the log file and asks the Player's name //
@@ -25,7 +25,7 @@ int main(void)
 	fclose(testfile);
 
     printf("Please input your name: ");
-    scanf("%25[0-9a-zA-Z ]s", &player);
+    scanf("%25s", &player);
     play();
     return 0;
 }
@@ -38,24 +38,40 @@ int play(void)
 	printf("Choose mode: 1 play generated, 2 play premade, 3 watch ai play generated, 4 watch ai play premade, other exit")
 	scanf("%d", &mode)
 	switch (mode) {
-		case 1: timestamp(); 
-			    while (sizex > 39 || sizey > 39 || sizex < 2 || sizey < 2) {
-			        printf("Enter size of x: ");
-			        scanf("%d", &sizex);
-			        printf("Enter size of y: ");
-			        scanf("%d", &sizey);
-			    }
-				char grid[sizex][sizey];
-				generate_grid(grid); 
-				break;
-		case 2: timestamp(); printf("Path pls"); scanf("%s", &path); grid = read_grid(path); break;// both 1 and 2 should call possible at the end //
+		case 1: {
+					timestamp(); 
+				    for (warn = 0; sizex > 39 || sizey > 39 || sizex < 2 || sizey < 2; warn++) {
+				        if (warn > 0) {
+				            printf("Sorry, both x and y have to be between 2 and 39\n\n");
+				        }
+				        printf("Enter size of x: ");
+				        scanf("%d", &sizex);
+				        printf("Enter size of y: ");
+				        scanf("%d", &sizey);
+				    }
+					char grid[sizex][sizey];
+					generate_grid(grid); 
+					break;
+				}
+		case 2: {
+					warn = -1;
+                	while (warn < 0) {
+	                    printf("Please input the grid path: ");
+	                    scanf("%25s", &path);
+                    	FILE * input = fopen(path, "r");
+                    	fscanf(input, "%d %d", &sizey, &sizex);
+                    	char grid[sizex][sizey];
+                    	fclose(input);
+                    	warn = read_grid(grid, path);
+                	}
+                	break; 
+            	}
 		case 3: timestamp(); printf("Enter size"); scanf("%d%d", &sizex, &sizey); grid = generate_grid(sizex, sizey); ai_play(); play(); break;
 		case 4: timestamp(); printf("Path pls"); scanf("%s", &path); grid = read_grid(path); ai_play(); play(); break;
 		default: exit(0);
 	}
 
-	fprintf(log, "%d x %d", sizex, sizey);
-	print_grid(grid);
+	print_grid(grid); // problem: does not work because the scope of grid is limited to the switch statement in case 1, and the while loop in case 2. //
 	fprintf("\nSTART\nx, y, score");
 	int score = 0
 
@@ -100,7 +116,7 @@ void generate_grid(char grid[sizex][sizey]) // you can test it in the test.c fil
 
     seed = time(NULL);
     srand(seed);
-    for (j = sizey - 1; j > 0; j--) {
+    for (j = sizey - 1; j >= 0; j--) {
         for (i = 0; i < sizex; i++) {
             random = rand() %5;
             switch(random) {
@@ -118,21 +134,35 @@ void generate_grid(char grid[sizex][sizey]) // you can test it in the test.c fil
     fclose(log);
 }
 
-char read_grid(char path[])
-// Reads grid from log. unfinished //
+int read_grid(char grid[sizex][sizey], char path[25])
 {
-	fscanf("%d %d", &x, &y)
-	grid = []
-	for (i = 0; i < y, i++) {
-		for (j = 0, j < x, j++) {
-			fscanf(path, %c, &ch);
-			if (i == 0) {
-				append(grid, [ch]);
-			} else append_to_head(grid[i], ch); // is kind of messy but makes an elegant grid system
-		}
-	}
-	fprintf(log, "%d x %d/n %s", x, y, print(grid)
-	return grid;
+    int i, j;
+    char color = 'b';
+    FILE * input = fopen(path, "r");
+	FILE * log = fopen("Log/log.txt", "a");
+
+    fscanf(input, "%d%d", &j, &i);
+    if (i != sizex || j != sizey) {
+        return -2;
+    }
+	fprintf(log, "%d x %d\n", sizex, sizey);
+
+    for (j = sizey - 1; j >= 0; j--) {
+        for (i = 0; i < sizex; i++) {
+            fscanf(input, "%c", &color);
+            if (color != 'b' && color != 'g' && color != 'r' && color != 'y' && color != '\n' && color != ' ') {
+                return -1;
+            }
+            if (color == '\n' || color == ' ') {
+                fprintf(log, "%c", color);
+                i--;
+            } else {
+                grid[i][j] = color;
+                fprintf(log, "%c ", color);
+            }
+        }
+    }
+    return 0;
 }
 
 void print_grid(char grid[sizex][sizey])
@@ -140,7 +170,7 @@ void print_grid(char grid[sizex][sizey])
 {
     int i, j;
     char color;
-    for (j = sizey - 1; j > 0; j--) {
+    for (j = sizey - 1; j >= 0; j--) {
         for (i = 0; i < sizex; i++) {
             color = grid[i][j];
             switch (color) {

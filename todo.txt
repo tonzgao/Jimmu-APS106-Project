@@ -9,7 +9,8 @@ test expand
 long term goals:
 general testing
 documentation
+dynamic memory for path and name
 
 stretch goals:
 make real ai
-prevent cheating from hackers
+prevent cheating
