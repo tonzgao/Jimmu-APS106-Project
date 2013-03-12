@@ -38,7 +38,7 @@ int play(void)
 	printf("Choose mode: 1 play generated, 2 play premade, 3 watch ai play generated, 4 watch ai play premade, other exit")
 	scanf("%d", &mode)
 	switch (mode) {
-		case 1: {
+		case 1: { // something else we could do is have seperate functions for play and ai and then if/else, rather than a switch. //
 					timestamp();
 				    for (warn = 0; sizex > 39 || sizey > 39 || sizex < 2 || sizey < 2; warn++) {
 				        if (warn > 0) {
@@ -92,6 +92,9 @@ int play(void)
 	play()
 }
 
+void human(sizex, sizey)
+{} //see line 41 //
+
 void timestamp(void)
 // Stamps the time for each game in the logs //
 {
@@ -104,11 +107,11 @@ void timestamp(void)
 	fclose(log);
 }
 
-void generate_grid(char grid[sizex][sizey]) // you can test it in the test.c file to see if it works. I made a few edits for clarity. Also, who is paula?
+void generate_grid(char grid[sizex][sizey])
 // Generates a grid which represents like this: [1, 2, 3; 4, 5, 6] has three columns and two rows; becomes [[4, 1], [5, 2], [3, 6]]. //
 {
     int i, j, random, seed;
-    char p;
+    char p = 'b';
 
     FILE * log;
 	log = fopen("Log/log.txt", "a");
@@ -118,7 +121,7 @@ void generate_grid(char grid[sizex][sizey]) // you can test it in the test.c fil
     srand(seed);
     for (j = sizey - 1; j >= 0; j--) {
         for (i = 0; i < sizex; i++) {
-            random = rand() %5;
+            random = rand() % (5 - (sizex*sizey)/1000);
             switch(random) {
                 case 0: p = 'b'; break;
                 case 1: p = 'r'; break;
@@ -140,17 +143,21 @@ int read_grid(char grid[sizex][sizey], char path[25])
     char color = 'b';
     FILE * input = fopen(path, "r");
 	FILE * log = fopen("Log/log.txt", "a");
+	fprintf(log, "%d x %d\n", sizex, sizey);
 
     fscanf(input, "%d%d", &j, &i);
     if (i != sizex || j != sizey) {
+        fclose(log);
+        fclose(input);
         return -2;
     }
-	fprintf(log, "%d x %d\n", sizex, sizey);
 
     for (j = sizey - 1; j >= 0; j--) {
         for (i = 0; i < sizex; i++) {
             fscanf(input, "%c", &color);
             if (color != 'b' && color != 'g' && color != 'r' && color != 'y' && color != '\n' && color != ' ') {
+                fclose(log);
+                fclose(input);
                 return -1;
             }
             if (color == '\n' || color == ' ') {
@@ -160,17 +167,22 @@ int read_grid(char grid[sizex][sizey], char path[25])
                 grid[i][j] = color;
                 fprintf(log, "%c ", color);
             }
+
         }
     }
+    fclose(log);
+    fclose(input);
     return 0;
 }
 
 void print_grid(char grid[sizex][sizey])
-// prints grid to terminal //
 {
     int i, j;
     char color;
-    for (j = sizey - 1; j >= 0; j--) {
+    printf(" Y \n");
+    for (j = sizey - 1; j > 0; j--) {
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+        printf("%2d ", j+1);
         for (i = 0; i < sizex; i++) {
             color = grid[i][j];
             switch (color) {
@@ -184,6 +196,14 @@ void print_grid(char grid[sizex][sizey])
         printf("\n");
     }
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+    printf(" ");
+    for (i = 0; i < sizex; i += 2) {
+        printf("%4d", i+1);
+    }
+    if (i % 2 == 0) {
+        printf(" ");
+    }
+    printf("  X");
 }
 
 void possible(void)
