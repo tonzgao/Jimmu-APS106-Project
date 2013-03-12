@@ -872,4 +872,1987 @@ b y y g y y r g g b y b r g g g g r b b
 b g g g g g r b y r b b r b r r y r y g 
 y r b b y y b b b b y r b y b y b y b g 
 b y b r b b y g r y r g y b y b r b r y 
-y r r r b g b y b y b b b b b r b y g g 
+y r r r b g b y b y b b b b b r b y g g 37 x 50
+b r g g b b y y g g g g g g b r y b b r g g g g g r r g r y g b y b b y r 
+g g y y g b b y y b y g y y g g g g b g g g g y g g b b g y g g y y y y r 
+r y y g g g b b g b b g b g y y y y b b y y r y g r g r y g g r y y y y y 
+y y y y r y g b b b y y y b g g y g r r b g b y b r r y b b b b y b r r r 
+g y y r r g b y g b b g g b g r r b g g y y g g g r r g b b b g g g g r g 
+g g g g g r b r b b b g g g g r r y b r y b y r g y y b b y r r r r r b r 
+g r b b b y b b y y y y y y g b y y y b y b g y r r g b b b b b y y g y b 
+r r g y y g b r r r b b b g y b g b g b y y g g g g r g g g b b y y y g y 
+r r b r y y y y y g y y y y y r y r b g b r r r r r g b g y b b b b y y g 
+g b b r b g y r r g g g b y b b b y r r g r r g b y g g r y g y g g r g b 
+b b b r r g g g g g g y b b g g r g g g b b b b y b g y b b b y b y y r r 
+b y y y y g g r b g y r r b y r b y r y b b b r g y b b g g g g g g y y r 
+b b y g g r r r r r g g r r g r r b g b b y y r y y b b y y y g g g r g g 
+g b y r y y g r r r r r y g g b b y y r r r b r r r r y b b y b b y g y r 
+r r b b b y g y y b y r r b r r r y r r y y b y y y r y b g y b g b y y r 
+y r y g g y y y g r b r y y y y y y y y r b g b b b g b r r g g b b g r r 
+y r r b b g b b b g y y b b b r r b y y g g b b b g g g y y b r g r r r b 
+g g r b r y r g r b b r b r r g g b b b g g g r r g r r b b r g b r g y y 
+y g y y y b y r r r g g y b b y b b b r y y r g g g g g r g g b b b r y b 
+g b g g r y b r r b g r r y b b y y y y g g y b g g b g g y b g y y r r g 
+g y y r r b b g g r g g b y y g g y y y r y r r r b b b b g r b g g y g b 
+r r b r r b r g b b b b b b r b b y y b r r r r g r g g y y r y r r r y y 
+b r r b b b y y y b r y b g r r y y y b r r b y y g g g g r r y b b r y y 
+y r g y b b g y g g b r y y y g y g r r y b g g g r b y g b b r r y y b g 
+r y y r g g g y y y r g y g y r g r g r r b b b b y r r r b b y r r g g r 
+y g g g g b g b g r r g y r g b b b g b r g g g g y y g g g g g b y y g g 
+r r r r r g y r r r b g r y y g r g y y r y y g r y b g b r r r r g g y g 
+y y b y b b b g g r y r b b b g r r r r g b b r r r r y r y r y y r r b r 
+y y g y y r g b g g r r r g y y y y b b y b b g b b b b b r b b g r r b g 
+g r b b y g r r r b r r b r b y y y y r r y b y b g g r r r g b b g b r y 
+g r y g b g g r y y y r r r r r r b b y b r r g y y r r r r y b b y y y y 
+g g r g r g g b g g r r g g y g b r y y g b r y r y g g g b b g g y r g g 
+r r g b b y r b r b b r b y g g y g g g g g g r r b r r r r g r r g g g g 
+g r r b b g g r g g y y y b y r g g r b y y b b b g y r g r y r b b b y b 
+r r r b y g y r b b y g b r r r y b b b b y y b r g g y y y y y r g g b g 
+y r b r y r y y y g b b y r y y b r b r y r y r r r y b y y y y g b y g y 
+g b g r r b b r y r b b y b b b g y y y g b r y b b y y b g r r y y r r g 
+g r y g b b y g g g g g b g r y r r g g y b y y y r g g y r r r r y r r g 
+y y y g g g g b g r r r b g g r r b y y b r g g y r r b y y y g y g b r b 
+g b g g g b r r g g b g b b r r b b g b b r b y y y r r y g b g g g y y b 
+g g b g y y y r r r g r g g g b y y g g y g r y g b g g r b g b b r b b r 
+r r r b b b b g g y r b b r g g g r g b g b y y b b g g g b b y y y y y y 
+y g g g g y y y y b y g b y b r b b r r b b g g y b b r r r r r b r r r g 
+r g g r r y y b y b y r r b b r r b b b y b g g r b y y b r g g y r g g y 
+y y g r b b y y g g r g y r g b r y y y y y y r r g g r r r b y y b b y y 
+y b r y y y y r g g b b g b y y b r g g r r b r b y g g b b b r r b y g g 
+g b b y b b b r r b b b b b r r r r r g g b b b r r b y b r b b r r y r g 
+b b y y b b g y r r r r r g y r g g r y b b y y r b y r g r r y y r r b b 
+y r b b b r r g y y r r y r y y b g r b b g r y r r r b y y g y y b g b g 
+g y b b b b b b y r g g r g r r r r y g g g g b y b y r b y y y y r y b r 
+37 x 45
+b y b r b b b b b g y y g g b b b r g b b b b y y y y y y r y y r r b b y 
+r b b b r r g b b b g g g r y y y y g g b b g g y b r b b g y r y r g y g 
+g y r r g y g y y r g g g r r r r b r y y r g g g b b g y r g y r r r r r 
+r b b r r y g g b g b b y g b g g g b r r g g g g r r g g r r y b b b g g 
+y g g r y y b b g y y y b b y r y y r r g g g r r b y y y y g r r r r b y 
+r g g g b b y b g b b b r b y g r r y r y b y g y g g g y g b r b y r r r 
+b b r y y r y y y b r b r r y y g b r y r y y b r r r r r g r y g y b r g 
+b g y y b g b y y b b g g g g r r y y g g y y y b b b g g b g b b b y b g 
+r b y y y g g b g g r r r r r r y y y y g r r y y y r r b b y r r r g y g 
+r g r b b b y g g b b b y b b g b r r y g y y g g g g g b r r g g b g g r 
+r r b y b g g b b b b r y r r y g y y r y r g y y y g g g b g y y y b b y 
+b b b y y y b g y y r r y g g g g b b y g b b y b b y b b b b r y y b b b 
+r b r b b r g g r r r r r b r r y y y y b g g g b y b g r g y r y r b g y 
+r g b b r y y g g y y g r g b b g r g g r y y r y r y b g b g b r b y y y 
+y r y r r r g g g g r g g g b b b b g g b r g g r y g y b g g y y r b b y 
+y b r g g b b r b y y g r r b r g r b b r y y b y y g g g g y y r r y g b 
+y b b y b b b y y g y g y r b b b g y y b b r g b r b y r y r r r b y y r 
+b b r r g r r r b y g g g r g b y g g r r y b g g y y y g g b b r r b r r 
+b g g g b g r r b g r r y y b g g b g y g y y b b b b r b r r b r g r g y 
+r b g b r g b y y y y y g b y r b b b r y g y r r b g y g g y y b b g g g 
+b r y g g g b b y b b b y b g r r b b b b g g r r b g b b g g b g y b b b 
+g g g y y y y r b r r y y b r b b r r y g r g g r y b b r g g g b b y y y 
+y r y b b b b b b g g b r g g r g b r r y y y y b b y y b b r r r r y g r 
+r b r y y y g y b y g b y r y y y y y g g b y r r y y r y y b b b y y y y 
+g b b y b r y g r r y r r g g r g y y y g g r r b r r r r r r r b b g b b 
+g r r g r g g r g g b g r r y r g b b y y g r y y b b b b b b b y r y b y 
+g g y y y y y y r b y y y y r g y y y y b g b b y y y b g y y r r b b b y 
+b y y b y r r r r r y y y g g r y y g y b y b y y g y b g g g g r g r g g 
+g b b y y y g g r r r b r r b b g b b b b b b r b g g g g g y y y b g b b 
+y g g y b g r r g r r b y y y y b g g b g y y y g g r y y r g g r r b g g 
+g y r r g y b b b b b b b b b y g g y y b y g g r y b b g g g g y r r r y 
+b b y g b b r y y b b b r r b r y g g r r y r b b y r g g g y r b r g b b 
+y y y y y y y y y b b r b g g g g r r r r b b b b y b g y b b g g r g y g 
+b y b b g g b r g y g r y y b b r b y b g y y b r g r r r r y y y r y r b 
+b b g y b b y y g r g b g g g r y y y y y g y r r r r y y y b y y r r b g 
+y b b r g g b r r r r y b b b b b g r r y r b y r b y r r g g g g r r b b 
+r g g g y r y r r r r g g g g y b g g g g y y y g y y b y b b b y r y y y 
+b g b y y g g g r b y y r y b b b g b y b b y g r b b g y b b b b b r b b 
+b y y y y b g y r b b y y y y r g r r r b y y b r r b y g b b b y g b r r 
+r b r r r r r r r r r b g g r r b g y b b g y b g g g y r g g y y y b g g 
+y g y g b g y b y y r y g g g g g g b g b b y b b b g y b r g b b y b g g 
+b y y r y y y g b r g r r g b y r r r y y g g g r r b y g g b g b g b y b 
+r y y b y y r g y y y r r b r b b b b b b g r y r y y y y g r r r r g b r 
+r b r r b b g b b g r r g b b y y r r b b y y y r b r y g g g y y r b b y 
+b y g b g r y g g b b b g b g r b g b b g g y r r g b b y r g g y g g g y 
+37 x 45
+y y g g b r r g b r g r r r y y y r r y b b r r b y b r r b b b y y r y y 
+b r b b b b r g g g r y g b b y r r r r b y g b g g g b b y y y y y g y g 
+y y y b b b r r g g y r g r y y y r y r r g y r y y y r r b b b b r b b g 
+r b b r b y b y b g g y y g r y y g g g g r b b y r b b y y b y y g g r r 
+r r r r y y b y r r r r y r y y y r y y y g b g y r g y y g g g r b y b g 
+g g g g r r r r r y b r r y b y g b b g y g b r r r r g g r r b r y y g b 
+g g b b r y y b b b b g g y y r r r r b g y y r g y r g r b g y y g g r g 
+b y y b g b g b b y b g y r g b y y y y r r g y y y r g g g b y r b r g r 
+y y b b b r y y r r b r r y g r r r b g y b g g b y g b r b y r r r g g y 
+b b b r y g g r r b r b b r r g y g b r y g b b y y y y y g b b r g g r b 
+b b y b b g g b b y y g r r r g g g y g y g b g g r r r r r y y b b b r g 
+g r b b y r g r b b b y g r r r r g b b b r g r g r y y b g y y g r r y b 
+y b g b r y y y g g g b r r g y b y g b g r y g y y y b b y y g g y b y b 
+r g g y g y y g r r g g b r b g g g b b r g y y b g b g r r y y r y y r g 
+r b b b r g g g r r r r r r y b r b b r r r r y y r r b y r r y y y y r g 
+g r b b y b y y b y r r r r y y r g g y y y y y g r r r g g g r r b y y b 
+y r b b y g b b r r g y r g r b r b y r y y g r r b y g y y r y g g g b b 
+g g y g b b r y y y y g g b b b g g g y r b b g g b y g y g r r r y y r r 
+y y b r g y r y y y y b y y g r y g r b y y g y r r r b b b b y b g y g y 
+g y y b b b b r r r r r b g r g b r r y r b y b b g r b y g r g g r g g r 
+g y y g g g y r r r y y r b b b b b r y y y y g r r g b r g g b b r g r r 
+r r b r g g y g b b y b y y y y y g b g b g r b b b g y b r r g r b r y y 
+r r g g g r r r r b b g r g b g b y y y r b y y y y y g b r r y g b b g b 
+b b r b y y b r r g g y g b r b g g g y y r r g g b y r r r b y y r r g r 
+g g r r b y r y b b r r r g y b g y y y y g g g y y y r r r r g g y y y b 
+b r g g b r r y r y r r r y g r b g g y y y g r r b b g y b y r b b y y g 
+y y b r r y g g r b y r g g g r y b r g g b g g r y y y b b g g b r b r g 
+r b b b g r g b y g g g g b g r r b r r r y y y r b b g r r b y r b y g b 
+b y y g r r r g g g y y y y y r r r g g g g r r r g g g r y b y g b y g y 
+b g r r r y r b g r r g b g y b r g y b r g r y r r g g g g g y y y r y y 
+y y y y g y y y y b g b b b y y r g r b r r g g r r g b y r r g g r g b r 
+b y b y r r y y b r y y b b y y y y g r r r b y r b y g g y y r r b g r r 
+b r g b y y y y r g y b b r b y y y y r y g g b b g y y g b b b b r r g r 
+r y r b b b b g y b y r r g r r g g b g r g r b g g r y b y b g g g b r r 
+b r b y b b r b y r r r y r y g r y r g g y b b b g b y y y r r b r r b b 
+g r r r r r r r y r y y y y y b g g r g g g r r g b y g b g r r r r g b r 
+y g y r y y b b y g g g g y r y g r r y r r r r r g g g g b y r b r r y b 
+b g g b y g r r b g g g g g g y y y y r b y y b b g r y b r y y b y r r b 
+b r y y r y y y y y r r g b b g y y g y y b b b g g y b b r r b b b b g r 
+y b g r g r r r y g b b g b b r g g b b g y y g g g g g g r y r b b b b g 
+r r b b r g r g g y r r g g y r r b y y y b b r b g g r r r r y r r r g b 
+b g b b b g b b g r g g r r r g b g r r r y y b r b g g b b b r r r y y b 
+b r g g y g g g g g g y y r g g g g r r y g b b r g r r r g r b b y y g g 
+r r r y y b b b y g r y y g r g g g r g y y g g g g r b r r r b b g y b b 
+b r b b r g y g b b r r b g g b b b r y b g y r r r y y b r g g r r y y g 
+37 x 45
+b b g y y y r b b y g g g g g g r g g g y g y b g y r r r g y g r g g g b 
+g g g g g b g y g g g r r g r y y b b r g g g r r b g y b b r r y y y y y 
+y y b r b b b y y y r g g b b r b g b b y g y y g r r r r g g g b g r r b 
+b y y g b y y r r y b y g r r g y y y g y y y b g y y g r y b b y y y y y 
+y b b b y g g g g g b r r r g g y g b g r y y y g r y b b r y y b b b b r 
+b g r b b y g y b b b g y y y r g g g r g b r g y r r y y r b y y y r g g 
+g b b r r b b g g g b r b b g b b y g g g g g b g g g r g g y y g b r y b 
+r g g y b y g g r b r b g y y b y y y y y g g g b r r g r g b r g g b y r 
+r r y r r r r y g b g b r y r r y y y y y r r r g g r g b b r b y b r y g 
+r r r r r g g r r g g y y b g g r r r r g g b b b b r b y g g g g g g g g 
+y y y y y y y g y y b y b b y g r y y g y r g y b g r g b y y r b g g b g 
+g g y b b r y r y b b b r y b y r r b r y y y y y y b r y b r r b b y r y 
+g g g g y b b b y b r g y y b g y b g b g b b g b b g b r r r r r y b r r 
+b g g b b b b g g y b g y y b y r y g r b b g g g g r r g g y g r r b y r 
+r y y b g r r r r r g b g g y y r y r g b g y g g r b b g g b b g b g g g 
+g g r y y y b g y r r y y r r r r y b y b b y g r r b b g y b g g y b b b 
+b r r r r r r y b b b g r r r r r g y y y b b g y b b g g g r g b g g g b 
+g r b g g y y b y g g y b b b g g y r y g b b b b b b b b y r r b g r b b 
+y b r g b b g b b b y g y y y g g g b r r b g r y r b r r y y y g b b b r 
+y y g y b b r g r y g g g y g g b b r g b y y y g r g g b g g y g r r b y 
+r b g b b y y y r b r r r b r r g y g g g y r y y y g b b b y r g g r b g 
+g b b r r y r r g b g y y r y r r r r r r r r r r r b y y y y y y r r b y 
+r g b b g g y b g r g y y g y g r g r y r r r y g b g r g r g r y b y r g 
+r r r y r r b y y y y y g b b y r b r y r g g g g g y y g g b y y b b b b 
+y g r r r b b r b y b r g g r r r r y g r y g g b r g g r g b r g g r r r 
+r r b b b b g b g b r r g b b y g g g g g g g g b g g g g r r g g g y y b 
+y g g y r r r y r y r r y r g r g y y y y b y y y y y y r r r g g g b b b 
+b y g b y g r g y r y b r g y y y b g g g r b r r y b y g b g g g b b b y 
+b y r r r r b y r r y r g r y y y y y y g g b b b g g r r y r y y r r y y 
+b g y y g b b b y g y y g y b g r r g y r r r r b b b y y y y y b r b g r 
+r y b b b g g y y g b r y y r b b b r b b y y r r g r r y y g g g g b b b 
+y g r b b y r r r y r y g g y y g g y y y y y r y y g g g g r r y y r b b 
+r r r y y b y b r b r g y g r r r g y g g g y y r r r r r g b g y g g y r 
+g y g y b y g g r r r g g r r b g r g g r g g r y y y r r r y y r y g b g 
+y g r b g g g g g g g g b r g r y y y r g b r r y r g b g b b b b g g g g 
+y g b b g g r r y g g r y y b b y r b y r y b b b b b g g g b b b y g y y 
+b b b g y b b b g g g y b g r y y y y b r r r r y b r b b g g b r r y b y 
+y y g r r g y b g g b g b b b r y r g g y g b b y b y y y y y r b g g y y 
+r r g y g b b b b b b b b g b r r b y y b g y r y b b g g y r r y y y g b 
+r y y y g r y g g g g g g y b g g r y r g b b g g b y y r g y y r y b b y 
+y r b y g b b g g g r r y g r b y b b g g r r b y g r r b g b g r r b r y 
+b b b b g y g g b g g y r b y b b r r g y y g y b r g g g g b b r g b b b 
+g g r b b g g g b r g y y y b r b b b b g g r g r y y y b b g y g b g b b 
+g g y b r r r r r g r r r r r r g y g r g y b g g g b b b b r g r b y g b 
+b b b y b g y g g y r y y y y g y g y g g r g y y b b r r r b b r y b g r 
+37 x 45
+b g b r g g g r y g g g b b g y r y y y g r r r r g g g g y r g b b b g r 
+y r y b b r y b g y b b g r r b b g y r b b r g y g y r g g b b y r g y r 
+r y r r r g g b g r r r b g y g y y r b y y b y r b g g g g y y y g b g y 
+b y b b y b b b g g g b g g r b g g g b r r g b y g r g g y y g r b b r r 
+y r y g r y y r y y b y y b y g y y g b r g b r b b r r r y y b y y y g b 
+b b y y y r r r b b r r y r g g r g b b b r r g r y y r r y y g b b b y b 
+b g b b b b b b y g b y r b y r b g y y y r r g y y y r r r r b b b g r r 
+r b r r g y b b r r b g g b y y g b r g g g y y y b y r r r y y y y g r r 
+r b b b b b b g g g r y b b g b g g r r r b y b r r y g y y g r g r r r y 
+r y r r r b g y g b r r r r r r b r r y y y g b b r b b r y g y b r r r r 
+r y b r b r r g r r r g r y r r b r g b b g y r y b b b r g g r b g b r r 
+y r r g y g y g g g r r g b r b b y y g g y r b y b b b r g g y g g y y r 
+b y g b y b y y g g g g y g y b b y b y y g y y y g g g b b r r r b b r g 
+g r r g b g r b g b b y r r r g g r b y b b b r y y y y r b g g y y g y r 
+g g b y y y r b b g r y g g g r b b b y b b b b r r r r r g g g g r g b b 
+y g r r y b r y b r g g g g b b y b b r b b y r r r g r r b b y b b b g g 
+g y r g b g y y y y b b g r y y y b r y y r y r b y y r g b y y y r r r r 
+b b r r r r b g r g g g g y g b g g b g y g y b g g y r r r r y y r g g y 
+y y r r r b b b y y b g g y g r r g y y y g g b b y r g y g g r r r r r b 
+b g r y r b g g g g g r y b g b r y b b r r r g y g g g b b b b b b g g b 
+y y g b b r r r r b b b r g y r b b g g g g r r r y g r g b b g r r g y g 
+b g y y y r r g g b b y g y y y y y b y g g g g b y y y r r r r g r r g b 
+b g g g g b b r g g g b g y y b y y b b y r b b y r r b b b b b r r r y y 
+b g r y b b g y y r y y g g r r g g g g r g b y b y r g y y r r g b b b r 
+g r b r g g r y r r y g g g b b g g g g r r b b b y y g b b r r y y g g y 
+y y b b b b b b b b b r b b r r y b b b r y y g b g g r g y y g y y y r r 
+r y y b b b g g b g b b r g r r g b r g g b y r y g r y y y r b g r r b r 
+g b g g r b r y r r y r y y b y b g g g g y b y y r r b r y r y r r r y y 
+g g b r y r b r b r y b g g b b y r g r r g g g r y g r y r g b b b g g g 
+g b b r r g r r y y b b b b g g b g y y y y g y g b b g y r b b y r r r g 
+r g g b g y b b r r r b g y y g g r r r b g r r r r r r r r r r r y y y b 
+b b y b b g g g b r r b g g g y b g g g b y r b g b r r b y r y r r g b r 
+r r b r r r g g b g y g r y y g g r g r r g y y y r r b y b b y g r g b b 
+y y y r r b b g b b y b r b y r r r r r y r y y g y g y b b r r b b r r b 
+b b g y y y b b y y y b g r y b g b y y y y r y y y r b r r y y g y g g r 
+y y y b b r r g y g b b r y y y y y g g r b g g g b b r r r r y y g g g b 
+g y b b b y r r y y b g r r b y r g r y y r b b y y r g y g g r r g r r y 
+y y r b g g g b g b b y r g g g g b r r b y r g g b y g r y b b r g g g r 
+r r b r g r g r r r b r r r r b b g r y g g r g g r b r y y g r r r r g g 
+y y b g b b r y g b b b y b b g b g g r g g g r g g b b r y b g y b g y r 
+b y g y b r y b r y r b y y y g g g r b r b r b b y y r r r b g b y b g b 
+g y y y r r y g r b b b b g g g b b y r r b b r b y b b r y r b g b r r r 
+y g g y y y y r g r g y y y r r r r g r g b b g y b b g g g b b b b b r y 
+y r r r g y g r b r r r r g b y y b b y r r g y y g g y g r r r r y y y b 
+y y y r g b y y b b g r g b g y r b r g b b y g b b r y y b b r r g g g y 
+37 x 45
+b g r g r r g b y y g y y g b r r r b g b g b g y b g g g y b g g g g y y 
+y g r y g y r b y y y g g y y y y g g b g b y r r y b r r r y y y r y y b 
+g g r y g g r g g y b r r g b r y b b g b b b b b y g r b b g g g r b b b 
+b g b b y g g g b b b b y y y y b b g y y b r r r y g r b y y g y b r r r 
+b b r g r g r g g r r g b y g b y b g g y g g r b g g g g r y r g g g y b 
+y y g g y b g r b r y r r y b r r b b r y y b g y y g b y y y r g g g y r 
+y r y y y y y y b g r y r r r r g r y y r r r r b y g g g b y b b b b r r 
+r g b b y g g y g g g r g b r g g g g b y r y y g r r y y y r y g y y g y 
+y g r r b b b b r r r r r y y b b b b g g y y y y y y y b r r r g r b g g 
+g g g g r r r r r r y g y y y r b r y g r b y g g b b g y b r g b b b r r 
+b b b b r r y g g g g r y g y y b r y r r b r g b g y y g g b b b r g g b 
+g y r r r r g g r r g b r y y g r g y b g y g r y b r b y y g g r r r b b 
+b b g r g b b r y y y g b b y y b r r r g g r b g r r r r g g r b b b r r 
+b b g g g b g r y y g g r y y g g g g g g r b y g b g g g r r r r g y y b 
+b g y g r r g r y r r r r b b b r g r r y y y r r g g b y y b y y b y b b 
+b y g y y r y g r b g g g r g g g b b g g g g b y g g y b b b b y y b b y 
+b b r r r r y b g g y b r g y g r y r r r r r g r b b b g g r r y g r r r 
+r g y y y r y y b r r g r y y r b r b r g g r r g y r y b g g g b b b r r 
+r y b y g g g r g y r y y r g g b g r y r g b b b g y g g g b b g b b b g 
+y g b y g r b g y y y b g g r r r r g b b b y b r r b y b b b y b g r r y 
+g b b b b y y y y b b r y y y y y y y y r r y b b b b b g b r r g r r r g 
+g g y y g g b b r y g g y g g g g b g y y y b b b b y g y g g g g g g y g 
+y y y r r r y y r r g r y y y y b b b y y b y y r r r r g b b y r y r g y 
+b b r r r g g g b r b b y b b r b b y y r r b y y y y g b y g g g g r y r 
+g g r y g g g g g r g y y r g b y y r b y b r b y b y y g y y b y g g y y 
+r g g b y y y r r y b g g g b b r y r g r b r r y b b b b b b r b y y r r 
+r r b g r r r r y y y r y y b g r y r g b b b b g g r r g g y b b g r g g 
+b b b y g g g g b r r r b b g g r r r r y g r b g b b g y y b y g g b r y 
+b b b b r r r r r r b r r y g y r r r r g g g g g b g y y g b b b g r r b 
+b y g g b g g y y y r b b y r r y b y b g r b y y g g y r b b b y g g g b 
+b g g g r r y b b g r g b g b b r r r r y b y b y y g y b g g g g r y y g 
+g g g g g g r y g g g b r r b b r y b g g r b y r b g r y y y r r g g r r 
+b g b y y r g g r r g y y y r b b g b r b r b y b b g b b b y y b r b b r 
+r y y g b b g r b b r r b g g y g r r r g y y b r b r b y g g g g r g b g 
+r r g g b r r r b y b g b g b r r g g g g r r b g y y y r y b b y y r b b 
+b b g g g g g y g g r r r r r y b y r r y b r r r b g b r y y r r y y b b 
+b b g r g g r b y g g r r r g y b b g g r g r r r g y y y b b g g g y g g 
+y y y y r r b b g g g g y y y g y r b r b b b b b b r r g g y g r g y b r 
+y b g r r y g b r b b r b b g r r r b b r r g y y g y y b r g r b g g g g 
+g b b g r g g g b r g y y b b b y y y g g r b b g y y g g r r r y r b y g 
+g g y y g g g b y y r r g y y y g y b g b r r b r b b g g r r r r r g y y 
+y y y g b y b y y b r b b r b g b r b b b r r r g b g g y y y y g b g g y 
+y y r g b y y b r r g g y b r y y g g g y y r g y y g g g b b r b b b b y 
+r r r r b g g y y b b b b b y y y r r y y g y y g g y y y y y y y y y r b 
+b y b b b r y y g y y r r r b g r b b b b b y y g b g g y r b g y b g g b 
+37 x 45
+g b y b g y b g y g b g b b y y g g r b g b y y g b r g g r y b g y y r r 
+g g y y r r g g r r r g g r y y r r b b b g y y b b y r b b r r y b r r r 
+r g g r g y y g g b g g r g r y g r r r b r r r g g b b y b b r b r r g b 
+b r g g g y y r b b b r y y y r r g g g g b r r y y r y r r y b y y g y g 
+y y y g b g r r r g y y y r y r y y g r r g g g r r r y b r y y b g y r r 
+y r y y g g g y y r b g g g g b y y r r y b g r r r r y y b g y y y y y b 
+g y r r r r g b b g g b y b b r r b g b g g y g g y g y y y y b g b g r y 
+r y g y g b g r r r y b r y r g b y y y y g r r y b y y y y g b b y r r b 
+b y b y r y y r y y b r g r r y r b y r b g y y r g y y b b b b g b b b g 
+g r y b r g r r y r g g y y b b g g b g b g r r g g y r r y b r g g g g y 
+y g r y r r g y y y b b r r y g b b y g y y b b r b g y y b b g b b y r r 
+g g y y b r r y y g r r b r b g g r y b b g g g b r r b g y r y y b r g b 
+b g y r y r b b b y y y b r b b g b r b r y y b b g b g y b r r b r r y g 
+y g y b r y r y r y g b b r r g b g g g r r y y y r b r y r y g r r b g b 
+y g b r g b b g g b b g g y r r g r r r r r r y r g r y b b g y r g r g g 
+y b b r r g g y r r y y y y b b r g g b b y b b r r r b b g r b b b b b y 
+r b y g g y g r b r g y b b b b g g g y g g r b y y y g g b r y r r r r y 
+g y y r b b r y b r r b y b r r r r b g g b b r r r b b y b r y y y b g y 
+b y y g r y g r r y r r r r r r b r y y b y y y y g g b g y g y y y b y g 
+g y g g y y g y y r b y y b g g y y r r g r y g y g g g g g g g g b b y b 
+r r y b b b b r r r r r y r g b b b b b g b b g b g r r b g b r y b y y b 
+g y y r y r b r g y r r g y y r b r g g r r g r y r b r b g b g b b g y g 
+r y b b b g y g y r b b g y y r g b y b b g g g b b b r b b y g y y y r r 
+g r r r g r y y y y y b g g g g g r y g g b b r r r y r y y y b r g g g g 
+g g r y r r r g b b g b b r r b b b g r b y g y y b y y y y g g r r y y r 
+y b r g g g g r b r y y b b g b g g g g g g g r b b b r r y g y y r r b r 
+g y y r y y y r y g g b g g g g g b b g g r r r g y r y b g g g g y y b y 
+r g y r g g g g g g b y b b g g b b b b b g b y r r g r b y g g g r g g g 
+g r g r r r r r g y b g g b g b r r b y r g g r y b y y y g r r r g g r r 
+y y b g g g g r b b y g g r b g r y g b r b y y y r r r r y b b g y y y r 
+b r r r g r r r b g r r r g b b y b g b g b g r y b g g y b b b r y y g y 
+b b r g g g y r b b r y b b y g r r y g r r r g b g y r r y g r b y b y y 
+g g b b b r b b g y y b b g y g r r g r r y y b b r b b b b r r r r r r r 
+b r b b b b b r y r r r r y b y y g y y b y g b g b b b y r r g g r g b b 
+b r r g b y b b b y g g g g g r b r r r r y y g y b r g b b y y b g b b g 
+b b b b g b b r r y b g r r y g g g r r r g r g g r g y r g g g r r g y r 
+b b y b b b b g b b g y y r g y g r r g g y y b y b g g g r y y r r r r r 
+y g r y y y g b y r r r b b b y r y y r r r r y g g g g g g b b b b b r r 
+y y y g g g b y y y y r r r y r g y y b b y g g g g g g y g g r b y g y b 
+r b y y y g r r g g b r r r y b r g r y g b r r r y y b r r y g y y y y y 
+y b b g g r r b r b b r r r r b b b g g b r r r g y g y y y y r y b y y b 
+b b g g r g b b g b r b b y y y y y y y y g r r r b g r r r r y b r b b b 
+r g b b b b r b y y b b b r g g b r b b b b b b b g y y b b g y r r g y b 
+b b y g r b b y r b b y g b b r r r y b r r r b r g y y b b r b r b g b y 
+r r r y g g y y y y y b g y y y r r r g b g b y r r b g g r g r r b y b r 
+37 x 45
+y y g r y y g g b b r b b b r g g r r g y y b b b y r r g y y y b b y g g 
+y r g r y r y r r y b b g b y y r y g y b g g g g b r r r r b b b y r g g 
+r r r g g b b b y y y b y y b g r g r g r b y b b r y r y r g g b g g g g 
+r r b b y y b b g r r y r r y y g y b y y g b b b b b b y r g r b y y y g 
+b b g b b r g r r r r y b g g y y y r y y b g g g g y g g y y y r g g b y 
+b b r y g r g y g g y y g g r b r g y y y r b r r y y y y y b b g y r g g 
+b b g g r r g g r r g y g y b g r g y y g g r b g g y y g g y r g r r r b 
+r g y r y b b b g g r r r g g r r g y b g y r b b b r r r b g g b y y g g 
+b g g r g g g r g r y r r r b b y b r r y y y y g g r y y r y y y y g y b 
+y r r g g g r r y r g b g g b r r y r r r b b r b b b y y g g b y y y r b 
+y b y g g b b y y b b b r r g b g b b b g y r y b r r b g r b g r y y g r 
+b r b b g y g g g g y r r y g g g y b r r g g b g g b b g y g g r r g b g 
+y y r r y r b y y y b b g r y y g g r b r b r y b r y y r r y r r r r b b 
+y y y r b b b r g b b g g r g y y g g r y g y y y r r r r r y r b r b g g 
+b y g b r y r r r r r r g b g g r r b g y y g g y r b b r r r r b g g b b 
+g b y r b r y g g g g b y y g y r r b b g b g y y b b b r g r r b g r b b 
+y y y g b b g b g r r y y r b g y b r y g g g b g b g r g g g y b b g g g 
+y y r r r y r r b r y y g b y r g g g y g r r r g g y r r r r r y y r b b 
+b y y y y r y b b b g y b b g r r y b r g g b b b b r y y y r r b b y y y 
+g r y y g y r r g g g r r r r b g b y r r r b y y y y y y r b g g y b y b 
+b g b g g r r b y g b b b b r g y r r y b b g b r b r b y r y y y r b b b 
+g g g b b g g r r b b y y y y b b y y y y y r y y g r y y y r r r r r r y 
+y y y r b g b y g g r g r r r b b r b b b g y y y b b y y g b r b g b b b 
+r y y r b b g g g y y y y g y g g y g g g y y b r g g b b b r r y b g g g 
+g g b r r g g r g g y y g g b y g y g g y g b r r r y y y y b b r r y y y 
+g g y b r r g b g r r r r r y y y b y b b b b r b y y y g b g y y y g g g 
+b r r g g b g r r r g g r y y g g g g r b g r g b b r b g r b b y b g g r 
+r g r b r b y g r r y r g r r r y y g g y b b r r r r y y y y b y b g y g 
+g g r r g g r y g g r b b r g y g y r r r r g g g g y y b b b b b y b g g 
+r r y g g g y b r r y y r y y y r y y y g b g y g b r y g g g y y g b g g 
+g y b g r g y g y g y b b b b b b b y y r y b y b y b g b b b g g g g g b 
+y y r r r y b r g g b y g y g g g b g g b g y g g g b g g g y y y y b b g 
+g y b g b g r b b r b r r b g g r r y y r b b y g g r y y r g r r r r y r 
+b b b r r y g y b r r b r y b y g b b y b b y b b b r g r b y g g g g y y 
+y b y g b b g g r g y r g b y g y y y r r r b y g r b g b y g b r g y y b 
+g b y r y b b y r r y y y y r y b g g g r r b g g g y b b b r r r r y g y 
+r r y b b g y r r g b g g g g r r r y g g g r y g g g y r b b y b y g y y 
+y y y g b b r g r y b g r r b r r g g b b r g r g b g g y g r r g y y b b 
+b b b b b y b b y y y b r y g y y y g r y y r y r y y r y y r r r g b r y 
+y r y y y y b r b b r y y b b y g g g g y y b g r y y y y r r r r g g b g 
+g g y y g g r b y r g g g b g g g g y g b b r y y y y g y y g r b b y g g 
+r g b b b b r b b b b r r y y y y y y r y g g r y y y y y r g g b b r g b 
+y y g b g b g b y r r g g g g g r r r r g g y y r y r y g g g y b b b g g 
+g g r r g b y b r y y y y b g g r r r r y b r g g g r y r r r g g b r b y 
+r g y y y b r r g g g b b b y b b r g b b y y y y r r g g g y r y y y g g 
+37 x 45
+b y y r r r r r r g r g r r r b y r r r r g g b b g b g y y y y r r r b g 
+r b r r r r r g r r r g b r r g g y r y b b b b y y r r r r y g b r g r g 
+b g r y y y y y y b g g r g g g y y g g y g g b b b y r b y b r y y g r b 
+g b y y b y y y r b g r r g y y b b r r y g y y y g g r r y r b b b b b r 
+y y y b r y y y r g r r g g b r g b g y r r r y g y g b b b g y y r g y g 
+g g g r y y y b r r y r g y y g r r b g y y b r b g b g g g y b b r g y y 
+b b g b y r r b b y g g r g b y r g g g b y b g g g r r b r r r y r y r y 
+r r g g r r g b r b r g g g r y b b b b b r r r r r g r b g g r g y y r r 
+r r r b b b g y b y r r b y b r r r r g g g b b b b g r b b y y r y b g g 
+y b g r r y g g g y y r r b b y r r y b y y g y g y b r g r r g r b b b r 
+g g g y y b b b b g g b g r y b y r r r b r r y g g y y b y g y g g g r y 
+r r r r b g g b g b y y r y b b r g y r g r b b y g g y g r y y b y r r y 
+g g g g b g g r y y y y r r g g g r r g b g g b r r g r b g g y g y y b g 
+g g r r y b b b g g g b r y b b r y b b g g g g r g y r r b b b b g r b b 
+y y r y b y b b b b y b b b y g g g r b b b g r r y b b g g g b b y r r g 
+g y g r y y y y g y r y y y b r r b r b r r g b g y r y y r r r b b g g g 
+r r g y y g r g r y b b r r g g y g g g y g y g r y b b r y y y y b g b r 
+r r y b g g y g r y g r b g g b g g b b r y y r b b g b r y y r g y y r y 
+y r r r y b g g g y g y r g y b r g y r y g b b b b g g r r r g g g g r r 
+b b r y y b g b g y y g g r r r r b y g r g y y y y g g r y y r g b y r b 
+y g g r r r y y y b b g b g g b g y g g y b g b b g g g r y r g b g g g b 
+y g r b r r r y b b r b y r b r r y g g y g b g y b g g r r b b b b y r r 
+y r b b g g y r g g r b b g g y y g b y y y y b y g b r y b b r r b b b b 
+r b g y b y y y y b r y y y y y b g g y r y b g g y b y y y r b g b y y b 
+r b g g r b b r r y r y g g g g r b y y y r b g y r g r g y y y y g y g g 
+y g b g g g b g y r y r y g g y b b b b g r r r r r b g g y y b b g g r r 
+y r r g g r r r r g g y b g g g y b r y r b b b b y g r y y y b b r r r b 
+y b r b g b y r y g b b b g g b b b r b r r r g r r g r r b r g r b b b g 
+b g r g b r b b g g g g y y g g b r r b y y y y g g r y r g g b r r b b y 
+y r y r g r r r y y b g r b y b g b b b b g g r r r b b y g b r g y y b r 
+g y r b b b g y y y y r r y r r y b b b b b r r y r g b y b r y b b g g y 
+y b g g g r r g r b g r y y y y r g g r r r g g r r g b r r y y b b g g g 
+g g y r r g g y b b r g y y r r y r y y y y y b b g g g g y r b b r r r r 
+r g g g b b b b g y r g r b g b b g b b b r g b g y r r g r g r g g b b b 
+g b b g y y y y y r g g g b g r y r r g g g y r g r g r b b g y b b b y g 
+b g r b b b y b b b b g b b b g g g g y r y y y b b r r y y y y g b g y b 
+y g b r r b y y y y y r y y b y r y y g r b b b b b y y g g y g y r r y y 
+b r b r r b g b b b b r b r b r b g g y g b g r y r r y y b r g b b y y g 
+g g g g y r g b b b y g r b g r g y y b y b y r g g r g g y g g r r r g g 
+g r g g b b b b b r r r r r r y y g g b y g g g b r b b b y y y b g y y g 
+b g b b y y g g y y y g b r b r y r g b b b b y r y r r r g g g g g b y g 
+b b b b y r r y r g r y y g y y y b y y y y y b y b b y y y g g g r r r r 
+g y g g g g g g g r y b b b b r r y g g r b b b g g y b y r r g y g b b y 
+b g g y b b r g b r r r r r g y y y y g g r r r r g g g g b r b b g g g g 
+r g b b g g g y y y y y b y g b b g r r g b g g y r r g g y y g b y y y g 
+37 x 45
+g r r r r y r b y b b y b b b b r b y b r r r y g r r g y y y g y g b r b 
+y b b r b y y g b y y b g y y b b b y y y r g g g r b g g g g r b b b r r 
+g r r b b g g g g r r r r g g r y b g y b r g r y b y b g r r b b r y b r 
+g r r y y g g g g y g y y y b g g b g b b r y g g g b b b b g b g r y g g 
+g g g g g r b b g b g g g g b y y b g g b g r y r r b g r r r g g r r g r 
+r b b r r r r r y y b y b b g y r y r y b r r r b g g g r b r b b b g r r 
+y b b g y r b b y b r r g g r y b b y b b g g b r r r g g r y y y g g g r 
+b g y r r r r r r g g g b g y g g r r g y y y g y g r g g g r b g r y r r 
+g r r b b b g g b g b r r b r r r b g b r b y r g g g g r b r b y r y y y 
+y y g b y g r r y y y r g g r r r r g g g y b b y g g r b b y r b b r g g 
+r r r b r g g y b b r b y g g g b b b y g b y b b b g y b b b r g g g b g 
+r y g r r y r r r g g y y b y y b g g y b g y y r y y g y r g r b b g y y 
+b b b y y g g g r r y g g g y r g g y b g g y r g b y b g g b b y g r g g 
+y y y r y y b b r r y r r g y b r y b b g r r r r b y g r g g g g g y b g 
+b b b b r r r r b g b g y b b r b r r r r b y y g g b b b b y y y g y g r 
+y b b b b r g b y g g b y r r r b g y y g g g r y y y r y y b r b b g y r 
+b r r b b r r r y b g r r b g r b b y y b b y y b y r r r b b b b b g b r 
+g b g g g y r r g b b y y y g y r b g b b b b g y g g g y y g y r r r r y 
+g b r b b y r y y r b b b r r r r y g y y r y y y y g y b r r b b r r r r 
+y g b b b r y b g b b y y r b b g r r y g b y y y y b g g g r y b g r b y 
+y y y b y b g g r y b b g g r r b y r b b b y y b b r r r r r y r y r r g 
+g b r r r y y b b b y g g b b y y y r r y g y b r g y y r y g y b y r b g 
+b g y g g g g b g y y y y r b r g r b b r b b b y y r r b r r y b g y y r 
+b g r y y g g b b b r g y g b r b b y y y r r r y r g g b y y y b b y r y 
+g r y y r r b g g r y r r y r b g g g y y g r b r r y r r r r g g r r r r 
+r r r g b b g g b r r b g r y b y b g g y g g b y y y g g g b g r g b y y 
+y g b y r b g r r y g r g r b b y r r y y b y g r b b b b g b r y y y g g 
+b g g r b g r r b b y g r b b g g g g y g b y y y y b y b b b y y r b r g 
+r y y g y g b r y y y b r b b b b b y r r b r g r r y r b r b g r r r y y 
+y y y r b g y r r b b b r r b b b g b y y r r y b y y b y b b b r r y r b 
+b g g y r r r g g g b r r y y y b b b g g g g g g g g g g r g b y b b r y 
+r y g g g b g b g b r r g r y g r g b b r b r g g y y r b g r r r r r r b 
+b y y y r r b b g g g g b g r g b g y b g g g y r y r b b y y r y r r y y 
+r g g g r r r r r r b g r g r y b g y g g r r b b b y b g g r b b g g b b 
+r g g g g g y y g g g r b b r y g y g b b b r y y g g g b r g g y r r b b 
+b b b b y b b b g g g g r y b b r g g r r r y y y r y g b b b b r r b b b 
+b b b b r b b b b y y y y y g y r r r r r y y b b g y r y g b g g g y r r 
+r g r g y g g y r b b r r r r y b b r r b b b b g y y y g g g g y y y y y 
+g g y y y r r y b y y y y b b b y y r b g y r r g g g g y r r g g g g y b 
+r r r g b b g b b r y b r r r g r y g y b r r r r b y g g g b g g g g y y 
+y y y g y b g y y y b b g g g g b r b b r r r r y y y r g g g g b b b b b 
+y y r r y y y g b y y y b b r y b g b r g g g r g g y g b g r r y b b y y 
+b g g b g b b y b b b b b b b b b b b b g y r r r g b g b b g b g b b b r 
+b y b g g y y y y y g g g g g r r g b r b y g y b g g r r g g g g r b r g 
+g y g b b r b r r g y y b r g g g b b g r g g g r y g g g y y r b b y g b 
+37 x 45
+r b g r b g r b r r r b r r b r g g g b r y g g y b b r r r b b y g b b y 
+g b r g g y b g r r g b y g g y y b b b y y b b r y y b b b r r r g r b b 
+b g y r y y b g y y g r r r r g g y y y g y g g g r r g g r r r g r y y y 
+y y r r g b b b b y g g g b b g r r r b g y r r y g g g b y r r y r g g y 
+g g b r b r g g r g r b g g g r y b g r r r y b r r r g y y y r g r b b b 
+g b b b b r g g g b b b r r b y g g y g y r g y b b g g b b y y y y y b b 
+y g g g b y g g g b b b r r r g b b b g g b g g g r r g b y g b y y r y y 
+y b g g g g g r r r r b g y b y b r b y y g r y r y y g b b g b g r r g b 
+g r r r g r r r r r g b b g g r b b b g g b g y g b g r b y y y b b y y g 
+y y g y y b b r g y r g g g y b y y g y b g r g g b g y r r g g r r r r b 
+g r r y r b g b b r g r g y g b b b r b b g b b g b b g r y y y r y y r y 
+y y y y b b b b b b b b r r y y b r b g b b y g r b g g y y r r b r y y y 
+y g r b b g g g b r y g y b r r r y b b y y y g y y y r y r g b b y y b b 
+r r r r b y y y y y y b y b b b y b y b y g r y g r r r r b g r y y b g r 
+y y b b r r b g g g g g b y r r y y y y r g g g b y b b b y r g y g g b b 
+r g r y y r r r b g y b g b g y y g g b g y g y b b g r r y r g g b g g y 
+y y b b b g g r b b b y y y r y y y b y r g r g r r b r r g g y b b r b r 
+y g b y r b y y g y g r b y y g y y r r y g y y y g g g y b r r r y y y g 
+g y b y y y b g y y y g y g b b b b r g g y y g b r r r r y r r r y g g g 
+y b b b b b r b y r y g r r r b r y y y y b y y y y y y b r r y y g b b g 
+b b b r y g g r b b b b b y b r b g y r r y y g g y b g y b b y y y b b y 
+b b y r g g g b y y b b g g y y b b y r r r b b y b r g y r b r r r r y g 
+r b b b b r r r r y y y y b b b b y r b b b b b b b b y r y y r g g b g g 
+g y y b r b b b b y y b b b r r r y y y y g g r g g g g y g b b b b b g r 
+b b g y b b r r r g y g r y y r r g y b g r r b y b r b r b r r y y b b y 
+b r g y b g r b r b b y y r r y b r r b r r b b g b b g b r r y y b b r r 
+r r g g y b g y b b g b b g y r y g g b b y y y y y b y r r b b r y y y b 
+b y y b r b g y g b b b y b r b r g y y y g y r r r r r r r y y b b b b b 
+r r y r g r r b b b y b b b b b r b r r r b y r r g r r g g b b b g r r b 
+r r r r y y b y b g b y b b b y r b r y y b r g r y y r r y b r y r y g g 
+g g g g r r b g y b b y g y b g g r y y g r y g y b y y b g b g b r r b b 
+b g g r y b g b g y b b y y y g y g g r r g b b r r y y g b b g r g g y y 
+y r y g g y g g b y y b b b r r r g y g r r g g r r b b y y g b b y g r y 
+y r r r r b r y y b b r r g g y y y y g r r r y b g b r r g y y b b g g y 
+b b b r g r r b b r r g r y y g b b r r b b g y y r r g y r r y r r r r y 
+b r b r y r b y y g r b b b r y b b b g g r r r g r y y r r g b b g y y g 
+g g r b y b b g b b g b y g g b b b y y r r y g r b g g r g g r y y g g r 
+y r b b g r y y b b y b g g r g b b y y y g g y b g y g r r r r r y g b g 
+b y y g b r r y r y g b b b b b y g g r r y y b r r b y y y y y y y y y g 
+b b g g y r b y y y b g b r r r r b b y b r r y y y b g y r r y b g y g b 
+r r b r r r g y y b r r g b b b r g y g b b g g r y b b g y g y r g b r g 
+g y b b g g b y y b g y y g y y r y y y b b b r g g g r y y g y b g g g g 
+g b y b r y b r r g r b g g b r r r r r b r b r r y y y y y y g g g b y g 
+y r y g y y y y r y r r r y b b r r y y r g b g g g g r r g b g b b b b b 
+b y b r r b b r r r r b g r b r g g y r b b b b b b y g r g g g g r y g y 
+37 x 45
+y b b g y r r y y r r r r y r r y b b g y y y b g y g r r y b r g r b y y 
+g g g g y y r y g y y r y r r g g g y b b y y y g g b r g g y g b y g g r 
+g g g r b b b b y b r r b b r y g g r r b b y b g b r b g y y b b g g r b 
+r y y r r r r r g g b r r g r y g g y y y b y r r r y b r r b g g g g g g 
+b y y y y r y y y g r r g y r b y b b y g g g y y y r b y r b g y y b b y 
+y r b r r g r r y r r g r r r r b r y b b b b b y y y y y y b g b b b g b 
+g r y y g b g g g b y g g g y b b g r b y g g r b b r y g r g y b b y y g 
+r r r b y g g g b b y r r b b b g y g b y b b r b y y g g y y y y g r r r 
+b g r r r y y y y g r r r r b b r r b b y y y y y y y b b b y b b b g g g 
+g g g b b b b b b r r y b b b b b b b r y y g g b b b g g g b b g g g y y 
+g g b g g r r b b y g y y r r b y g g b y y y b r r y g b y y y y y y y r 
+r y r b r r r y g g g g g b g y y y y b b b r r r b b g g g g b g y y g g 
+g g b y b b g b r g b g b r r b y b b r b g g y g g r y y g y g b g y r y 
+g b y r b b b y y y g b r b y y r r r r r b y y r g y b b y r g y b r r b 
+g y r r r r y b b y b y g r r r g r r y b g r y g g y b b b b g b y g g g 
+y b b r g r b g b b b r r b g g y b g y y y g g g g y b b r r b y g y g g 
+b y r y b b b y r r g g r y y y y b b b b y r r r r b r y g y g g g g r g 
+y y g g r y r y r g g g g b b b b y r y y g r b g g g g g g g r b y y y y 
+y b b b r g r b b b r r r g g g b b y r y b y y r b y b r y g y b b r b r 
+b r g r y r g y y g g r b b y y r y y g g r g b g y y g r r r r b g y g g 
+r b y r r b y r r b r b b g g r r r b b y r y g y r y y r b b b g g b r b 
+g r b r y r y r r r b g g y r g b y b b b b y g r g g g g r r y r r y y g 
+r b g g g g r b r r y y y b g y g g y y r y b b g b b y g y b g g g y y y 
+y y g y b r b b b r y y y r r g y r r r r r b g r r y b b b b y r y r r g 
+r b r g g g g g g y g r g g b y b y y y y y g y y b b r y r r b b b b g r 
+r g y g b b g g g g r g r r b b b y y g b g y b b g r g r r b b y r r g g 
+r r b y y r b g g g g g g r y b b g g y b y y g g y r y g r g b g b b r r 
+y y r b y r r r y y g y r r g y y y y r b r g g y y y b r y b r y g r b g 
+y y g r b b r y r r g b g b b b r g b b r r b r g g g r b b y y b g b g b 
+y b g y y y r r y r r b b y b b g g r r g g b y r b y r g g b g y r r b r 
+y y y r r y y y y y y r g g b b y g y r r r y y y y g y r g g r r r y r g 
+g b g g y r y r r r g r b g g r r g g r r r b b g b b b g g y g y g y y y 
+y b b b r b r r g g g g r g y y g g b y r r g y y b g r b b r r y y y b b 
+b g b y g g g r r r r y y y y y g b y g g b g r b b y y b r r y y y y y g 
+y g g b b b b b b y g g g y r r y r b b b b b y r y y r b g b b b y g g y 
+b g y g b y r g g y y y y y y g y g g g b r y r r b r r b g r r g r y b b 
+y r g g g g y r r g b b y b b g g b g g r r b r r r g g g b g g g g b b b 
+b y g r y y r g b y g y y b r y b r g g g r r r b r r y b b g g g g g r b 
+y r g y b b r g g g y y y r r b y y y y g y y g y y r g g g b b g g r b r 
+b r r b b b y y y y r g g g g g b b g y b g r y y r g g g b b b b b b r g 
+r r g b b b r g b b r r g b b b g g r g g g r y g b b b b b b r g b b g g 
+y g r r r b r r r y y g y y g r y g b b b g y y y y r r b b b b y r r r r 
+b y b r g g b b b b b r r g g g g y r r r g g g g g g g b r r r r r b g y 
+y y y b b b b b g y r r g y y g g r r r r b g y g r g b y g r b y b b b r 
+r g g b y g r b y b y r r r r y y r r r g g b b b r b y b r b b y b y y y 
+37 x 45
+y b b y b b b b y y y y r r g g y g r b b b b r g g b g g g b r b y y b b 
+y y b g g g r r g b y y b r r r y y y g g y r g r r b y r r r r r b r r y 
+g g g g r r b r r r y y y g g g g r b g g y b g g b g g r r y g g b y g y 
+g b r b b b r r r b r b b b b r r b y y b y b r y b b g r b b b b y r r b 
+r b b b y r y g r r r y y r r r r r y y b r r g g g g b g b r g y y r r r 
+g g r r r y y b b b r b r r b b r g b b b b b r y g g y g g g g g g r r g 
+y y g g y r r b b b b r y g g b g g r g g y r r r r g r b r r r y g g r y 
+r r g r y y r y y g b y g b b g r g g r b y r g r r r r r y y y g g r r r 
+r r y y y b g g r g r b b b r b r r y y g g g b r r y y y y y g y r g g g 
+b r r g g r g r b r r r r y y g g r r r y y y r r r b g b y y y b b y b r 
+b b g g r r r r b b b b y b y y y y y b r b b r r r r r r r b y y b b b y 
+y g g g g y g g r r r g y y r r r b r g r r y r g g y r y y g y r b g g g 
+g g b b b y r r r y r r y y r r r g r r r b b r r y b g g r r r r y y y y 
+y r b r y y y y g g g b y b g y g b y g g g b b r g y y b r b g r g g r r 
+g r r r y y y y b b g r y g y r r r r g y y b g y y y g r g g g r b b b b 
+g r g b g r b r g g g g g b r b b r g r g r g y g r r r b y y y b b g b b 
+g g g b b y b b b g g r y y r b b y y y b b g y r g r y b g g b b b b b y 
+y r g y g b b b g r y r r y r b y b g y b b y y r b b y y y y y y g g g r 
+g b b g r y b r r b b y r r r b g g b g g r r b y g b b r g r g g r g g r 
+r b r y b r g g g g b b r y y b b b r g g g g g b r r g g r y b y r r b r 
+g g g r g r g b b y b y y g g g g y b y y b g b r b b r b b y y b g g g y 
+y r r y y r r b y g g b y y y r g g g g b g r r r b g g b y y g y y y r b 
+g b b b b r y g g b b b y b y b b r y g g g r b b g r y g g g b r g b b b 
+y r y b b y y b y y y r r b b y g g g g r r b y y b g g r y y y b r y g b 
+b b b b g r g y b b g r r y y y g b r r r r r g g g g b g g g g g b y g b 
+y r r b r y r g b b b b y r r r r r b b b b y y y y r g g y g g y r r r r 
+y r g g b g y r r g r r b b b r r r g g y r b g g y r r b r r r g b b r y 
+b b b g g g r b b y b b r r r y y y y b b r b b b b g g y y y y y y r r r 
+r r y g g r r b y r r g y y y y y y r b r g b r b b g g b y y y y r r r r 
+y g b r g g g g r y y y r y g b y g g b y r b y b b y b b b g y r b b b y 
+g b b b r g y y y b b b g b y g g r r g g y r r y r r y r b y b r g g g b 
+b g g g b r g b r y r y r g b b r b r y y y y g y y r g g g y r b g r g g 
+r r g g y y b y y y g y y r r y b r r b g y g y b y g g g b r b r b g y r 
+g g g g g r r r r r r r r g g r g g g g g r y g g b b b r g r b y g r y r 
+y r r r r g b r y y y y b r r b r b r b b r g g g g b b g r y b r r b b y 
+g g b b g y y g y r b b r r g y r g y y y y b b b b y b y b g r r y y g r 
+r y g g y b y y b g r y y y r y y g b g g g b y g y y b y y r r r r r r r 
+b b b g r r g r y r r g g r b r r g g b b b b b g r r y r r b r y r y y b 
+r y g b b b y y y g g y g y y y r r r b b g g y y b r y b y b g b y r g y 
+g r y r g y g b g r r b y r g g g y y y y y r b r r r r b y b r r b r g r 
+y y b y r r r r g y y g y b b b r r r g y b y b b y b b g g g r r r b b y 
+y y g r b g g b r y y y y b b b b g r y b b b b b b b b r r r r y b b b b 
+y b y g y g g r b g r y y g g r g g r g g y g y g g g g g y r r g b y y y 
+y r r y g y r b b g r r r r r r y g g g y b r r g b b y y b g b b r b y y 
+r r y y y r b b b y y y y y y y y r y b r r r r r g y y y r y b b b r r g 
+37 x 2
+r b r r r b b g y y b b b y y r r r g g g g r y b r b b g b b g b b r b r 
+b y g y g g y b b b r r r r b b g y g g g y g g b r r r y y r y y g g b b 
+37 x 2
+g y r r r y r b b r r r r r g y g g r b b b y y y y y y b r r r g y b y b 
+r b b r y y y g y y y y y r r g g y b b b y y r g g y g r g r y b y g g r 
+37 x 2
+g y r b y b b b r y r b g g y b y y g g g y y y y r r b y r r y y y y y y 
+y r r r r r r r b b g r r g g b g y g g g b b b b r y g g g g g y y y r g 
+37 x 2
+y b r r r r g g r b y r g y y r r b r y y b g g y y y g g r r g g g r r r 
+y g g b b b b r r g g g g b g b b r r b g y g r b b g y r r r r r b b r b 
+37 x 2
+b y y y g g y g b r r g r g g b y g g r g g y y g r g r r g b r r y r b r 
+g g r r y y y r r r b r g y y y g g g g b b b r r b b b r r y r r b b y y 
+37 x 2
+b g y g b b r b b b g b g g b r y b r y y r r b g r y y r g r r r g y b y 
+y y b y r r y r r y b y y r y r r r r r r b g b r r g y y b y b r y y r y 
+37 x 2
+g g r y b r r g g y y b y g g g g g g b g b b r g y y y g r b b r r r r y 
+b g g b b b g r y r b b r g b r b y r g g g y r r b b r g g y y g r b y b 
+37 x 2
+y r r r g b b r g g r r r g b r y r b b b y y y g y r g g g b b r y r r r 
+r r y r r b g r y y y y g g b r r r r g y g g g g r y y r b y r y r b r b 
+37 x 2
+r r r y b b b g g b g g g y g y y b b b b y b b y y y g g y y b r r g b b 
+b b b g r r r r y g r g b b b b b b b g r g g g g b b r y b b r b r r r g 
+37 x 2
+r y g y b b y b y r r g g r g y g y y b b b g r r r r r r b b r y r y g r 
+r r r y y y b b b b r r g g g r b y r r b g g y b b b y r r r b b b b b b 
+37 x 2
+y y y y r r r b b b r y r g g g r y b b b y b y r y r r b g b b g r b y g 
+r b g b y y g g g g b y y b g g r y b b b r r b b b y r b b g b b y y b y 
+37 x 2
+y r b b y g g g b b b y y y y y y y r r y y b y b b b b y b g y b r r r y 
+y r y y y y g r r b y y b b g y r r b b r r r y y y b r b g g r g g r r r 
+37 x 2
+y r r r y y r r g b g r b b g b g g b r g r g g r b y y g g g g r y r r y 
+y g y b g b b b g y y g b r y b g g y r b b g b b g r b y y y b y g g y y 
+37 x 2
+b r r r b g g g r b r b b b b y y b b g g y y g g b b b b b b y y g b r r 
+b b y y y y r g b r g g g g r g b y g y y y y g y b b y y b y g b b g g y 
+37 x 2
+b b g g r b b b g y r g y r b b r r r b b r b b b r r y y b y g b b b b b 
+y g r r r r y y g r g b r y y y r r g y y y y g r r r y y r b g b g y y r 
+37 x 2
+g g r r r b r r r r r r r r y y b r g y g y b r y b b g r y b b y y y b r 
+y r y y b r y g b y r r g b g r r g r r r y y b g b g g y b b y b b b b y 
+37 x 2
+y y y g b b b g g y g y y b b r r b r r b b b r r r g g g r r r b g b b y 
+y b b b y b g g g g g y g b b r b r r y r y r r g r r y g g g y y y g g g 
+37 x 2
+b r b b b y b r y y y y y b r b g y r b b r r r g b b b r r g g y r r g r 
+r y y g g r y y g g b b b b g b r y y y b y g r b y r r g g y b g y b r r 
+37 x 2
+y y y b b b r g r r r y y r b r g g r r g g g g b b b b b r y r g g g b y 
+y r y y r b b b r b b y g b b y y b b y y b r r r b r b y r b b b g b b r 
+37 x 2
+y y y b r r y b r r r r y r g y y y b b g r r y y r r g g g y y b b g b y 
+g g r r g g g r y r r r g g g g g g y g g r b b b y y r r r r r y y y r g 
+37 x 2
+y y g g g y y y y b y r r b b g g y r r b g r b y y b b b b y y y r y y y 
+y g b b b b b g g g r b b y y g g y b b b b b g g r y b g g r y g g b y b 
+37 x 2
+r g r r b b r g b b b b y b y y r b b r g b g r y b b b y r r b g y y y b 
+b b g g b b g g y y y r r b b b b g g g b y y y r b g y r y b r r y b g g 
+37 x 2
+b g g b b b r g g y b b y y r y r r y b b b b r y b b r b y b r b b r r b 
+b r y y r r r r g b b g r g b b g b r g g b g b b b g g y y g r r g r y r 
+37 x 2
+y y y g g g b r b b b g r r r g g b g y r y y r g r r b g g y g y y y g g 
+g r y b g r y r r r r b b r g r r g g g b y b r b b r y y r y r y y y b b 
+37 x 2
+g b b b g y y g g g r b b b r r y b r r y r b b b b r b g b b r b r g g g 
+y g r y y r y y g y r r r b y b r r r g g g r y g b g g g g b r b g b y g 
+37 x 2
+y r b y y b g b g r y r y y b y r y y r r r r r g r r r g g y b b b b g r 
+y y y b b b y b y y y b b b r g r g g g r b g r r b r r g g r r y g g y g 
+37 x 2
+y r r g r b r y b y y y r r b r g g b y y g r r b g r g g g b r r g g g g 
+g g y y y b b y y r b g r y b b b y y g g g g b b g b b b g g b b y y r b 
+3 x 15
+r b b 
+b b r 
+r g y 
+b b b 
+r g g 
+g r y 
+b g b 
+b b b 
+b b y 
+g y b 
+r y r 
+b b r 
+g b r 
+y y g 
+r y b 
+14 x 15
+b y r b g r g r y y b r r r 
+y b y y r r g y b r g r r g 
+b y b b y y g g b b r r r b 
+y r y b r g r r g g g r g g 
+b b b g y y y y g r b y y r 
+r r r r y g b b r b r r r r 
+r r b y y r r r r r r g g b 
+b r b g y g g r b r y r b b 
+g r r r r g b b b r y r b b 
+y y y g g g b y y y g g r r 
+g y y b g g y y r g b y y b 
+y r b b r y b b b b b b y g 
+r y g y y y r g g b b b b g 
+y g g r r r g g y y y b b b 
+r r g b r y g y b r r g y y 
+8 x 15
+y y b r y g r r 
+y y b g g g g g 
+g g r r y g y r 
+y y g g g g y y 
+g b b g r g g y 
+y r y r y g g b 
+b g b g g g b b 
+b y y b r g g g 
+g g g r y y g g 
+g y y y y r g r 
+r g b y y b r r 
+r g g y r g y y 
+y g g y b b g g 
+g y g g g g g y 
+r r b r r r r b 
+8 x 15
+b y r r r r r b 
+b r b b b b g g 
+r b r b b b b r 
+b b b b g g g r 
+r y y b r y r b 
+r b y y g g y b 
+b g g y g g g g 
+g y y y g y y b 
+y r r b r r b y 
+g b b b g g y y 
+g g g g b g y y 
+g g y r b r y y 
+y y g b b r g y 
+y r g r g y r r 
+r y g y y y b b 
+37 x 2
+g r r g r g y y r r r b g y b b b y y y b g g r y y r r r b g g g g r y b 
+b b r y y g r y b b y r r r y r y y g g b r b b b b r r b b b r r b g y r 
+8 x 12
+b r r b b b r r 
+y b y y y b r y 
+y g g b b b b g 
+g y b g g r b b 
+g g g y y y y r 
+r b y g b r r y 
+r g g r g b b r 
+b y y r r r r r 
+r g g g g y g g 
+g y g g g b b b 
+y y y y y y y b 
+b b b g y y y r 
+37 x 2
+y b b r g r r r y y y r y g g r g g g y y b b g r r y r r r y r r r y r y 
+b b y g r y g b r r r g b r b b r r g b b y b y g y g b g r g y y y b r r 
+37 x 13
+y r g b b b r r r b g g y r r b b g r r r b b g g b g r g g b b b r r r r 
+b b y r r g b b b y g y r y g y b b r b y b y b r r r y r y y b r y y y g 
+y b r r r g g g y y g b g g g r g r y b g g r b r r g r r g g b b y y r r 
+y r r r y g y r y b r r r y y y y b y y y y r r r y g b y g y r g b g g b 
+r b b r r y y y b y y y b b r g g g y y y b r y g r y y g r b b y r g g g 
+b y b b b b b b r g y y r r g g g g r r r r r r y r g b b g y r g b b r b 
+r g r g y r b b r b r g y y b r y r g g y b g r b r y r r b g y y y y y y 
+g g g b g g r y y y b y g r b g y r g b b b g b r r r r r b b g g y y y y 
+r b r r y y r y r y r b y b b b b b y y y r r b r r g r r y b r r y g y b 
+r r r y r b r g g g g b y r r y y b y y y b g g g y y g g b g g r b b b g 
+g b y g b b b b b g r r b b b y b b y b b r g b b g y y g r g b b r y r r 
+b r r y r b y y b g y g y b b r b r r r g r y y g b r r r r r r r b g g g 
+g r b r g r g g y b g y g g r r r r g r g r r y b y y r g g b y y y r r r 
+37 x 12
+y g b b y y y y y r y b y g g b b b b b y b b b y y r r g g y g r y g g y 
+b g g b b y g g g g b r r r y y b g b b b g y y r r r r b b r y g r y g y 
+y y y y r r r g g r y b y y y r r g y g g r r r g b g r g b b g r g g g y 
+r g r r r r g b b g b b b g y r r g g b b y y r y b b r r g y r r g g r r 
+y y r y g b g y r r b b b g g y y b y y r b y y y g y b y g y g y b g r y 
+b r g r r r g y r y y y g g r y y b r r r y r b y y y y y y y g y r g y r 
+b g r g g y g g r b r r y y y y b g g g r y r r r b g r y g r b b g r b b 
+y g g y y y b b y r b g y r g b y y b y b y y g b g g b g g y y y y y b b 
+g y r g r g y r y y y y y b r g g g g g y r r b y y r r y y b b g g g y y 
+g y y g g b b r y r r r r r b r b g g g g b b b g g g r b g g b b g y g y 
+g g g g r r y y r y y b b r r g y g b r y g r y y g b b b y b b b y b y b 
+g r y b g b g r r r b b y b b g g b y g g g g r b y r b y r r y b b g g b 
+36 x 30
+g r g g b r g g r b g y b y y r y r r y g g r b g y b r b g b r r b b b 
+r r r g b r y g g b b b y b b r r y y y r g g g g r y y y r y y b r g g 
+g g g g g g b b y y b r r b r b y g g g g y y b y r r g y y r g b r g g 
+r b r b b b b g g g g g y y b y y b b g y r r b y g r b b b g g r r r r 
+y r g g r r r g y b b y b b b y y g g b b r b g g y y b y r y r y g r b 
+b r b y b y g g g g g g r b b b b g g g r g y g g r g y g g r r y r b g 
+b g g y r g g b b b r r r r r r r r r b y g y b g g b r g y y y g g b g 
+g g g g g g g b b g b g b y y y y y y y b y r r y y y r b y g g y y g g 
+g r r r y r y b b b g r b b b b r r b b r r g y r y b g y g g r b g b g 
+g g y y y y r r r g g b b b b r g g g b y y g y y g g r r r b r y g y r 
+y b g g r y b b b g b g b y g y r g g b r b b g r b b b b b y g g g g r 
+y b g g g r r y g b b b b g g g r r y y y y b g b r r r b r y y g b r g 
+y b r y y b b b b r r r y y g g b g g g g y g g g r r r y y b y r r r r 
+b r b y y b g y r r r r r r y r r r r r r r y b g y b b g r b g g y r g 
+g r b y b b b b y g g b g y r b y b b g g g y y y b r r r r b g r g g y 
+r y b y y b y y g g g g r y y g r y y g g r g y r r r g g y g b y y b g 
+r y y y y y b r g b b b r b g g y r r r r b r b y y y y r g g y r b b b 
+r r r r r r g b b r r r b b b b b r g b b r r r b g g y g r r r r g b y 
+y g r r b g b g b y r r r y g g b b y y b y g b r b r r r y y r g r y r 
+b b g g g g g g g g r b y g r g g b b r r g r r r y r g g r g b g g g g 
+g y b g r r g b b g g b y g g g y y g b b b b y y y b b b y y g g r g y 
+g y y g y r b g y y g y b g g b b r y y b r r r r g y r r b y g g g y r 
+r g b b y r y y y b y r r r r r g b b y r g r b g y y r b r b y b y g y 
+y y b r g b b g g y r r g g g g r r r r y y y y y g r b r y y y y y y g 
+y r g b b g r r g g r r b r r b y y b b r r y y g g g y r y r g y b r y 
+b b y y y g r b g r g y r r r g g g b y y b b b b g b g g b b b g r r y 
+y g r b b b g b b b b b b r r b b r g b y y y g g g b g b g g b r b g r 
+r b r r y b b b y y r g y r y g g b r b g b b y b r y g y y y b y y b r 
+r g g r r r y y y y r r y y y y r r r r r r r b g y b r y b b y g g r y 
+g r b g b g y y y y y r b r r g y y b b y y b r y y r b b b r b r r r g 
+35 x 12
+b r y b r y g r g g y r r b r g y y g g y y b r r r r g g b b r r r r 
+b r b b b y b g b b b b b r r r r g g g y r b g g y b b g r r y g y g 
+g r b g y y r r r g b y r y r y y r r r y g g y g y y y g g y g y b y 
+r r r r y y y y b b r r r r g r r r r b y y g g g g g r g g r b y y y 
+g y y y r y r r b g b g g g b r r y y y y b b g y r g b b b b b g g r 
+g r r y r r r b y y g y r g g y y r y y g g y r b g b b y b y g g r r 
+r b y y y y y g g g b r y y b r y b r y g g b b y r r r y r r y y g g 
+g b y b g r r y b b y r r r r g b b g g y b g y g b y y g b y r b y y 
+r r r b g g g r y y g g r r b g r r g r r r r g g r b g r g b b b r r 
+y y y r r r r b y y g r b b b g r r g y r r g g g y y r b b b b b b b 
+g g g b r g b b y g y y b g y y y g g y y y b g b b r r r r r b r r y 
+g g b b g b g r r r r r g r b r b r b y g y r y y b b b b y r y r b r 
+36 x 12
+r y y y r r g g y y y y y y y r r g g r g g g g y g g g g y b y y b b y 
+y y r r r g y g g r y y g b b g y r g b y r g y b g y y b b b r g y b y 
+r r b b r r r g b r y y g y g b r g g r g g r r r r g y b r r b r r r b 
+y b g g g g r r r b b y y y b b g r g g r y y b b b b b y y b b g b g g 
+g g g g g b r b y g g g b b b y r b b b b b b g g g b b y y y g g y b r 
+r y b y y y b b g y g r r b r y y y r g y r g y b g r y y y y r y r y r 
+r b g y g g g b b b r r r b g g g y y g r r r r g r b b b b b b b r g y 
+r g g r g r b g g g g r r r g r r b y g g g r y y b y y r r y y r g b b 
+g b r y y g r y r r y y r b b b b g g g g g g r r y b b b r r y r y g y 
+y y y y g r r r r r b g g b r y y r y g r g g b r y g y g r b g b b r y 
+r b g g g r y y r r r g r g g y y y r r y y r y y r g y y y y b g y y b 
+b b b b b b r r r y y y b b b r g y g g r r r r y y y y b r y g r r r y 
+36 x 12
+y r r r r r g b r r g b b y b g r r b r b g r g r y y g g b r y y y r y 
+y b r y r r g b y y b r b r y g g g g g y g g g y y g y r b b b g r r r 
+y g g y r b g g b g g b g g b r b b r b y r r g g y b g b g b y y g y y 
+r b b b g g r y b y y y g g r r y g r b b b b b g g y b b g b b y g g g 
+g y y b g g b b b y b y r r y r r y b g r b g b b r b b y y r y g g g b 
+g b r y y g g y g g y b r y g r y g g b b r r r r r r y b g y b g r r r 
+r r g r g r r r g g g r r b b b y r y g g r y g y b b b y y g y y b b b 
+b b b b g b r r r y r g g g g b g r b g y b r b b b b r g r b b g b r r 
+y r b r r r g g r r y y b y r r g b g g r g g b y y r g y y y r r y g y 
+y b g r y y y y y y r b g g b y r r r r r r r y y y b b b b y b b b b b 
+b b y y b r r g g b r y g g r b b b r r y r g g y b y y r b r b r r r b 
+y g b r g y y b b g b g g r r g r b g g b b b b y y b b g g r y y y r y 
+36 x 12
+b r y g y y b b r r g r r b b g r y r y y b g g r r r b b b r r b r g g 
+g g g g b b g g g g y r r r r y r y y r r b b r g g g r r g r r b r r b 
+b b b y y y y r y r g b g g r b r y b y y y y y y y y y b b y g g b r b 
+r g g g g y r y y y b g y b r r y y y y b b y g g b g r y r g g r y g g 
+y y y b r r b b g r y g g g g g r r r b b b r b g y r b b g b r y r b y 
+b b b g g g y b g r b b b r r r b b b b b r r b y r b g y y r y y y g b 
+r g b g y b b b r g g g g b b r r y y y r g b y r r r r g g y b g b r y 
+g r g g r r r y r g g y y y y y g b y r b b y y b y r r b y y g b y y y 
+y y y y b r b y g r y y y r r r b b y g b g b r r g g g g g r r y r y b 
+b b b b g b b b b g b y r r g g b y y b g b b r r g y b g g g r g r y r 
+r y y y r r r g g r r b b b r y y b b r r g r g b b g g g r g g g y g y 
+y r r y y y r b r r r r r r r b y y g b b b r g b b b b b y r y y y g g 
+35 x 12
+g g b b b b y r b g y y g y g g y y b r g y b g r r g r g y r g g y g 
+g g b b b r r g g y r b y y y r y r r g r r g g g r b b g r r y y y g 
+r r b y y y b y b b y b b r r g b b r b y b b r y r r b b b g b y y g 
+y y g g g g g b y b b g y y y g r r b b r g g y b b r r b y r r r r b 
+b b y r g r r r y r r y g g g g b b g g y y r b b r b b g y g g g y y 
+g g r r r g g r r r b r r r r r r r b b r b b b g r r r r r b r r y g 
+r b b b b r r g b r b y g b b b y y y y g g r r r r y y r r r g g g r 
+r r g b r r y g g g g r r b b b b b b y g y r r r b b b r b b y g g g 
+g r r r y b b b b b g r g g r g g r g y g g b y g r b g y g g r r r b 
+b b y r g r r g y r y y g r g g g r b r r r r r y y y b b r r r y g y 
+r r b g g r g g y b b g g g r r r b r g g r r b b b b r r b b y g y y 
+y b b b g y b r r r b b r r y b g g g b r g y y y y r b g r g g b g y 
+36 x 12
+b r r g y r b y r r r r y y r g r g b y b b b b b y b b y y y r r r r b 
+b b y y b b g g g b r r y y y r b g b g g g y y g g y y g r r g y y b r 
+r y r r r g r b b g b g r y r g g g b y y g g g r y b g r r r r g r r r 
+b y r y b y r r y y r g b b y b b b b r r r b r r b b r g y b g y r g g 
+b b r b b b r r b b b g b b b r b y y b r y y y y b y b g g b b y y y r 
+r b b r b y b b y r y y g r b y y b b r b r r b b b b b b b g g b b r r 
+y b b y g g r g b y y y g r r b g g r r b b b r r r b r r g b y y g b b 
+b b r g g b g g b r y r g b g b b b b g g r r r g b g b b b y g g g b b 
+b b b b r b b r y y g y y r b g g r r r r b y y y b b b y y r b y y y y 
+r b b b b r g y b g b b b y y y b g g y y b g g g g r g r b b b g g b b 
+b g g y y y y b b r g g y y b y b b r y r g g g y b r r r r y y y r g r 
+b y y y y g r g g y b b g g y r y g b g g r b g g r g g g b b b g b b y 
+36 x 12
+r r r b b y y g y r y y g g y y y y y y g g y y g g g r g g g y y g r r 
+r r r g b y g r b r g y y y b b b r r r g r y g g g g y y b r g y r r g 
+g g b b r y r g y r g g r b r g b r g y g y g g g g y r g y y y g r r b 
+r r y r r r g g b b b r y y y y b g g r r r r r r b r y g g b b y r y g 
+y y b b b b b g g g g g g g b b y y r r b r g b r b y b b r r g g y r r 
+r g y g y g r b b b g g g g r b b r r b b g b y y g g g y y g g y g y r 
+r r r g g y b y y g g b y b b r b g y r g g g g g g g b b b y b b y y g 
+g g g b y b b b r y b g r g y r r b b b y b r r g b y r g g y y y y r b 
+b b r r g g g g y r b r b b g r b g g g g g b b y y b g r b b b y r y y 
+b b b r r y g r b b b b y y g y r b y y b b g y y r b r b y b r r r y y 
+b b b b g g y r r y y y g r y y r b g y g r g y r g g r r y y r y y y r 
+r y g y b g b b b b r r b r y b y r b y y y g g b g g g b y g y r r r r 
+35 x 12
+b b r r g g g b b g b y y b b b r r r y y r b b y g r y r y y r y b g 
+g b y g g y g g g g r y y g y g g y r y r g y y y y y y y y r g g y r 
+r g y b b y y y y b g r g g b y y y b b g g r g y y b y y r g g y g g 
+r y r g g r b b b r r b y y g r r y y b r b y r r r r g y g y b b b g 
+r y r b g g g y g g b b b g b y y y b b y y g y r r r r b y y g g r r 
+y y g b g b y b b b g g y r g b g g b g r y y b g y y y y r r y g b y 
+r g g b b g g r r r r r g b r r r r b r r y g y y y y y r g y y g y g 
+g g r b y r b b r r r r r r g y y b b y g r r r r y r y y g g y y g g 
+b r y r r r r r g r g g b g y r g g g y r g b y b g b r r r r b b y r 
+g g b b r g g y g g b g b g y b b b b r r b r g g r r r y y r g r y r 
+r b y g g r r r r r g y g g g r g g r r y y y r r r b r r r r b r b g 
+g b b y y b g y g y g y y y g b y y y b g g r y r b b b b g y y b r r 
+36 x 12
+b g b b r b r g b y b r r y y g y g b r g g b b b y y y b y y y y g r r 
+r y b b b g g g b y g g y g r b g g r y y y y r y y g r g y b y r b y b 
+b r r y g g g y y y r r r r g b b g y g y r r y y b b b b b g r y b r b 
+g g g y b b y r b y y b b r b b r b r b b y b b r r r y r g g b b y r r 
+y y y g g r r r r b r r r g r y y g r g g y r r g g y b b g g g r r g y 
+y b b y y y y b g y y y r y r y r r r r r r r y y r r r r r y y r y r b 
+b b r b b b b b r g g g r g y g g g b y g g b y y y b b b y y g r b y r 
+b y r y r y y g b g g r r r g r r y y g y y y g b y g g b y g r y b b b 
+g g g b y y r r r r r r y y y r r y y g r b y g g y r y b y b r y r r g 
+g b g b b b r g b g g g g g g g r r b y r g b b b y r g y y b b r r g y 
+b g g r r b b y r r r y y b b y r g g r y g g b b b b b y r g r r g g r 
+r r b g g y y r b b g g g r b r b y y g r r g b r r r b b r b r b y y y 
+35 x 12
+r y b g y r r y y b g r y g g b b b g g b g g b b b g g g g y y y r y 
+y b y y y r y y g g y g b b r y g b y y y g b y g r r r b y g y y r b 
+b b g y b y r g y y y b b b g b g y y g y r r b r r r b y b y y b b y 
+b g g b y y g r r b b g y b b b b b b g g g y b y r r g r r r r r y y 
+y r y b g r r r g b g y r g g g y y b b y y y y g y r b y y y y r r r 
+r r b g y y g y b y y b y b b g r g g g y r b y y y b r r g g b b y g 
+g g g r r r r r g g y y y g g g g g g g r b b r g y y y b y y y r g g 
+r y y y r r r y y y y y y y y y r y y r r g y y y g y y y r r g g g r 
+y y r r r b r b b y g r y g b r b b b y r g g y g y b r r g b b b g r 
+b r b g b y b y r r y r g y y r y b y y y g y g g b g b y b r r g r r 
+r g b b y g r r b b b r r y g y r r r b y b r r r r g y y b r r y g r 
+g b y r r b g g y b b r y g g y y y r g b b y g r r y b b y y b g b g 
+35 x 12
+b b y b g g g b r g y y g b y r y y y y b y b r g b y b b r g b r y g 
+y r r b r y r g r y r r g r r r r b r g g g g y r r g r y b g g y b b 
+r r y g g g r r r g r r y r r r b g g r b b g y y y r g b b g b g r y 
+y r r g y g b b r g r b y g g r r r r b g g g g b r b g r r r y y r b 
+g g y y y g b r r y y y y y y y y y y r b r r y y g b b r r g b r b b 
+b b b b b b r g g g r r g r y y y y y y g r g y y y g r b g r g g y y 
+y y g y y g g r y r r r b g y y b b b y y y b b y y g g y y b r r y y 
+y g y g y r r y y b b g r r y y y y y y b b r r b r b y b r r b g r b 
+b b r g r r r g y r r b b r r y g b b b b b b g r b g r b y b b y g g 
+y y g y y r y g g r g b r b g b r r r r b r r b g r b g g g g g r b b 
+g y y b r g r g g y y g g y r y b y y y b r b y y y r g y g y y b y b 
+r b g r r r r b g y g g g g g g y y y y r r b b r b r r r y y r r r g 
+36 x 12
+r b b b b y b g g g g y y r r y b y b g y b b r y b r g g y y b b r r b 
+y r y g r r r r b y g b b y g g g g r r y y y g r g g g g b r r r r r g 
+r y y y b r g g r g r b g g g g r r y g g r y y y y g b r b b b y g r r 
+r b g r r r r r g g g r y y r r b y r r y r r r b r r b y g b y b g r g 
+b r r y r g b b y y r g g y r y b y b r b b b b g r g y r r g r g r b y 
+b b b y g r y b y y g g r r b b g y g r y g y y g g g g g g y y y y y g 
+y b y y y r y y r g g g y r r r b r b g r r b y y r b y y g g g r r g y 
+y y g b r g g y y b b g g g y b g b b g b y y r y y y y y y g g g y y y 
+y y b r g b b b b r g g b y g g g y y b b b g r r r r g g g b y r y r b 
+r b y g g b b r r b g b g g b b g g g b b y g b b b b b r r r r r b y y 
+b r b g g g g r y y r r g g b y b r r b r y g b b r r r b b r y b r r r 
+g b b g r y r r y r r g g y y g r b b b r g y y y y y r r r g g b y y y 
+36 x 45
+b b b b b b b r g b y y b b y y y r y r r b b b b b g g y b g g b r g r 
+b b g g b y y b b b g g y r b b b r y y y b y r r y y g g r r r y y y b 
+y b g g y y g y r r g g g b y r r b g b b y y r g g g y b y g g g b r g 
+g r y b g y r r g y r r r y y y g y r y g y r g g y r b b r g b b y b g 
+y y r r r g r r g g g r b b y b g b y y r b g r g b b b r r r y r g g g 
+y g g y y b b b b r g g g b y y g g g r y r g y y y g r g r g b y r g b 
+r y g b g y r r g g y g y y y r g r r r y r r g r g y y b y g r r r r b 
+g r y y y y y y y r r r r b b b b b b b b g g b r b b r b y b b b y y y 
+y g b r r r g b g g b y y r g g r r b g g b b y r y b b b y b g y y y g 
+g g y y y y r r r y y y y y y g y y b r g g y y y b y y b g y b r g b b 
+b y y y y g y y y y b r g y g b y b y g g g r r r r r y b b b r r b y y 
+y y y y y y y y b y r r y y g g g y y g g r r g g y g g y g b r g y y y 
+y b b g b b y y g r r g r g g y g y y g g g g g y g r g r g r b r r r g 
+g r r y r r r g b b r b y y y b g g y g b r y g g g g b r g g b y b y b 
+g y y b b r b b b b b b r r r y g b b y y r b b b r b y r y y y g g r b 
+b b g b y r r g y y g g r y g b b r r b r r g y b b y y b y y b y b r y 
+y g r b b r r r r g y r y r y y g g g g r r r r r y y y r r g b y g r r 
+b y g g g g g y b y g b y g b r g y y g y g g b r r r r y b g g b b y r 
+g g b b g g r y r r y y g g r r r g r r r r r g g r b b b g r y r r r y 
+y g y y r g y y g g g r r y y r y g r g b y g y y y g g g r b r g b b g 
+g g y r r y b r y r g y y r y r r b b g g y g b g r y y g g y r r b g g 
+b g b g g r y r g r r b b b r b r g g r r r g b b r r y b y y b b r b r 
+b b b y y r g r r b r r b b b y y b r r b y y y g y y b y b b y r y g g 
+b b b r g b r b b g r g b g y y y r g y g y y g g y g y b b g r r g g r 
+r b g y y r g y y y g g y y b b b b b b r r g b y r r y b y y g g g g g 
+b b g g r b r r y b b b b y y g g g g g r y r y r g y y y y g r r y y b 
+g g g y r r y y b b y b y y y g g g r g r g r b g y b g g y y g b b g r 
+b r r y b g b r r b b b b y b y b b b b b g r b r g g r r y y r b g r g 
+g b y b y b r r b y y r g y b g b b y g g g y b g g y b g r r g b y g g 
+r r b g b b b y y b g g g g r y y g g r g y r y y y g g r r r y b b b r 
+r b y g g r r g g y y y y y r r r r r g y y g y y g g g r r r r r r r y 
+b g g g g g g b b b b g g g g b b b r y y g y r y r g b g g g g y g g y 
+b b y y g g g r g y g g y y b b y b g g r r g y y r b g g g b b g b y g 
+g b b g y y y g y b y r y g y y y r b b r b b y y y y r b b b g b g y g 
+g b b b g r r b b b y r r y g g g y b b b b r b y b b y r r r r r g g g 
+b b y g y b b y y y y y r b g g g y y r b b b b y y y y g r b b g b b r 
+r r r r g y g b y y r r g y r g y y g r y g g g b b g r b g y b y g g g 
+r r r r y y g g y g b b g r y b b r g y y g r y y y b b y b b y y y r r 
+r y r r r b b b b b y y b y b b y y b b b g y g b y r r b r y y b r g g 
+r r b y y b r r r b g b g r b b r r g b g y b r r r g g g b r r r b y y 
+y r y b g r y b r r r b g y y r r g g g g g b b g y r y y y r g y r r y 
+y b r r r y r g y r r r g g g g g g g y r r b y b g r y g r r b b r r b 
+g g y y r r g r g r g y y y g y y y y b b g b y b g y y r r r b b y y y 
+g g y y b r r b b y y b g r y r y g r r r r r r y y r r y y y y g g b b 
+r y b r r b y r r g r r y y g r y y b r r g g g g y y g g y y g r g r r 
+2 x 2
+g g 
+r r 
+2 x 2
+r r 
+g g 
+3 x 3
+y g b 
+b r y 
+b g r 
+2 x 2
+r r 
+r b 
+5 x 5
+r g y r y 
+r r g r y 
+y b b r r 
+b g g y y 
+y b y g r 
+5 x 5
+g r r r y 
+g r r g b 
+r y g r y 
+b y g b y 
+b y b b b 
+10 x 10
+b b b b y y y y y y 
+g g r r r r r g g g 
+g r r b b b y y y y 
+y b b y y y b r r r 
+r r r r r r r r r r 
+r r r r y y b b b g 
+g g g y b b b b b b 
+b r r g b y y y y g 
+b b b b r r r r y y 
+y y y r r r g b y y 
+10 x 10
+b y b y r r r r r r 
+y y r r r y y y y g 
+g g g g y y r r r r 
+r r b b y r r r r r 
+r r g y y b b r r b 
+r y y g y y y g g b 
+b y b b b b b r r b 
+r b b b r r b b b b 
+b y y y y y y y y r 
+r g b b r y g g g y 
+36 x 45
+b b b b b b b b b b b b b g g g g g g g g g g g g g g g g g y y y y y y 
+y y y y y y y b b b b b r r r b b b b b g b b b b b b b b b b b b b b b 
+b r r r r r r r r r r b b b b y y y y y y y y y y y y b b b g g g y y y 
+r r y y y y y y y y y y y y y y r r r r r r r r r r r r r r r g g g b b 
+b y y y y y y b b b b b b b b y y b b b b b b b r r r r r r r r r r r g 
+b b b b b b b b b g g g y r r r r r r g g g y y b b b b b b b b y y y y 
+y y y g g g g b b b y y y y y y g g g g g g g g g g g g g g g g g g g g 
+g g g g y y y y y y y y y y y y y y y y y y y y y y y y b r r r r r r r 
+r r r r y y y y y y y y y g g g g g g g g g g g r r r r r r r r r r r r 
+r r r y y y b b b b b g g r r r r g g y r g g r r r g g g g g y y y y y 
+y y y y y g g g g g g g g b b b r y y y y y y y y y y y y y y y y y y y 
+y y y y y y y b b b y y y y y y y y y y r r g b b b b b b y y y y y y y 
+y y y y y y y y y y y y y r r r r r r r r r r r g g g g g g g g g r r r 
+r r r r r y y y y y y y y y y y g g g r r r r r r y y b b b b b b b b b 
+b b b b b b b b b b b b g g g g g g g g g g b b b b b b b b b y y y y y 
+y y y y y y r g g g g b b b b b b b b b b r r r r r r r g g g g r r r r 
+r r r b b b b b b b b b r r r r r r r r r r r r r r r r b b y b b b b g 
+g g g g g g g g g y y b b b b g g g g r b b y y y y y y r g g g g g g g 
+b b g g g g g g g g g g r r r r r g g g b b b b b b b b b b b b b b b b 
+r r g g r r r r r r r g b b g g g g y y y y g g g g g g g g g g g g g g 
+g y b b b b b b g g g g g b b b b b b r r y y y y y y y y y y y y y y y 
+y y y y y y b b g g g g g g g r r r r r r r r y y y y y y y y y y g y r 
+r r r r r r r y y y y y y y y y y y y y y g g g g g g g g g g g g b b b 
+r y y r r r r r r r r r r r r r r g g g g g g g r y y y g g g g g g g b 
+b b b b b g g g g g g g g r r r g g g g g g g g g g g r r r r r r r r r 
+r r r r y y y g g g y g g g g g g g g g g g g g g g g g g g g g g r r r 
+r r r r r r r r r b b b b b b b b b b b b b y y y r r r r r r r r y b b 
+b b r r r r b b r g y y y y y b b b b b b b b r g g b r r r b b b b b b 
+b y y y y y r r r b b b g g g g g g g g g g g g g g g g g g g g b b b b 
+b b b b r r r r r r r r r r r r r r r r g g g g g g b r r r r r r r r r 
+r r r r r r r r r r r r r r r r r r r r r g g g g g g g g g g b b b b r 
+r r r r r r r r r r r r r r r g g g g g r r r r r r r r r r r r r r r r 
+r r r r r r r g g g g g g g g g g g y y y y y y y y y y y y r r r r r r 
+y y r r r r r y y y g g g g y r r r r r r y y y r r r r g g g g g g g g 
+g g r r r r r r r r r r r b b b b b b b b b b b b b b b b b b b b b b b 
+b b b b b b b b g g g y y y y y y y y y g g g g y y y y y y y r r r r r 
+b g g g g g g g g g g g g g g r r r b b y r r r r r g y r r r r y y y y 
+y y g g g g g g g g g g g r r r r r r r r r r r r b b b b g g g g g g g 
+g g g g y y y y y r r r r r r r r r r r r r r r r r r r r r r r r b b b 
+b b b b b b b b b b r r r r r r r r r g y y y y y y y y y y y y y y y y 
+y y y y y b r r r r r y y y y y y y y y y y y y y y y y y y y y r y y y 
+y y y y y y y y y y y g g g g g g g g g g g g g g g g y y y y g g g g g 
+g g g g g g g g g g g g g g g g r r b b r r r r r r r g b y y y y y r r 
+r r r r r r r r r r r r r r y y y y y y y y y y y b b g g g g g g g g g 
+g b b b b y y g g g b b y y y y y y y y g g g b b b b b b b b b b b b b 
+36 x 45
+b g g g g y r r b g g g y y y y b y r r r r r y y y b b r y r b b r r b 
+b y y y y y y g g g b b b b b b b b b r r r g g g g y y y y y y y y y y 
+y y y g y y r r r r r r r b b y y g g r r y y g g r r r r r r r y y y y 
+g g b b b b r y y r r y y y y g r r g g b b b b b r r y y y y b b b b b 
+b b b y r y y g g g y y y y y b b b b b b r r g y y y y y g b b b b b b 
+b g g g g b b b y y y y b b b b y y y b r r y y g g r r r b b b b b g b 
+b b b r y g g g g g b b r r r y y y y y r b b g r r r r r r y g y y b r 
+r y r y b b b b r r r b b b b b g g g g g b g g b b r r r y r r r r b b 
+b g g g y r r g g g r r b b b r r r b b r b b y r b g r r r b b y b y g 
+g g g y y y y y b b b y b b b b b r r r r y y y y y r g b b b r r r r r 
+b b b b b y g r r r r r g y y y b y r b b b b r r r r r r y y y y g g g 
+g y y y y y b y y y y y y y y g y y y r r y y y y g g g g r y y y y b g 
+g g b y g g y b r b g g g y y y y g g r r r r r r r r b y g b b b r r r 
+r r r r g g b g g b g r r g g g g b b g y r b b g g g b b b b b b b b b 
+g g g b b b b r b g r r r r r r b g g y y y y b b y r b b y g g y y y y 
+r y y g g r b b b b y y r r r y y g b b b b b b r r b b b y y r r r r b 
+b b r b y y y r r r r g y y y y y y y b y y y b y y b b r r r b b b b g 
+r g g r r r r r b r g b r y b b b b y y g g y r b b g y y y y y r b y y 
+r g g y r r r y r b b b b r r r g g g r r r r r r y b b y r y b g y y b 
+b b b g g y y g g g g g r r r r g y y y b b b b b b b b b y b b b b y g 
+g g g g g g b y y y y y b b b b y y y r b b b b b y b r y y y r r r b b 
+b b b b b r y y y r r r g g g r r r r b b b b g b b b b r b g g g r b g 
+r y b r r g r y y y y r r r r g r r r b y y y b b b b r r r r b b r r r 
+y b b b b y y r r y r r r r r r b r g y b b b b b b b b b b b b b b b b 
+y y b b b b b r r r r r b b b y y y y r r b g g y y y y y y y y y g g g 
+g r y y r r r r r r r r r b b b b g g y y g r y y y b b b b b b g g b b 
+b b b b g g g g g y r r g g r r r r g g g g g g g r g g b b y g g g g g 
+g b r g b b b b g b b r r r r r r r g y y y r b b y b y y b b r r g g g 
+g g b b r y y y r y r r r r y y g y y y y y r r b y y r r r g g y y r b 
+b b r g g g g g r r r r r y y y y r r r r r r r y g b b y b y y y b g g 
+g g g g g g b b b b b b r r b g g y y g r b b b b r r y g g g g g b r g 
+g g g g b b b r r r r r b b b b b g g r r r r r r r b r r r b b b b b b 
+b g g g r r r y y y y y g g g g y y y g g b r r r r b b y r r r g g y y 
+y b g g g g g g g g r r g g g b b g g b b y r r r r b b r r r y y y g g 
+g g g g y b g g b b y r b b b b b g y y y y y b b g r r b b b b b r r r 
+y y y y r r g g b r r y y b b b b b g g g g r r y y y b b b b y y y y g 
+g b g g g g g g g g g g b g g g g g g g g r g g g b b b b b b b r r y y 
+r b b b b y g b b b b b b g r r y y g g r r r r r y b y y b b r r g b b 
+g g b g g b r r g r r r b r r r r g g g g g b b y y y y y y b g g b b g 
+g r r r g g g g g b b b b g g b b b b g r r b g y y r g g g g r y y y y 
+g g r r b y r r r g g g y y r y y y y y y y r g b g g g g g g g g g y y 
+y r b r y y y b y y y y g g g y b r b b b b g g g g y y y r r g g g g r 
+b b b b b r r y y y g g g g b b b y g g g g g g g y g r y y r r b y b b 
+g g g g g y r b g b b b b b b b y b b r r y y y b b b b g g g b b g b b 
+b r r r r r r y y y y b b b b b b y b b b g y y b b b b r r r r r g g g 
+12 x 29
+r b g y r y g y g r b r 
+r r b b g r r y b g y g 
+r r b b y y r r y r g g 
+y b g g g g b y b b y g 
+r g r y y r g y y y r y 
+b r r g g g r r b b y y 
+b b b g y y r r g r b g 
+r r g g r r y y b b y b 
+b b y g y r r g g b b y 
+g b r b r r r y r y y y 
+y y g y b g b y b g r g 
+r b g y b y r b g y g g 
+g b b r r r b b r y r r 
+y y b b r y y b r r b g 
+y y y r r g y y b r r r 
+g r y g r r b g y g b y 
+r y y y y g b g g r g y 
+y b g y r y r g r g g b 
+b g y b y r y r r y g r 
+b y b b r g r r g b r r 
+y g g r b y g b b y r b 
+r y y g r g b r y b g b 
+r g g b r b b b g r g r 
+b g g r y r b g y y g r 
+r b y y r y r r g y r r 
+g g b g b b y r b y y r 
+y y b r y g r g b y g b 
+y g g r g g b y b y y g 
+b g g g y y b y g r g y 
+36 x 36
+r g g g g y g r r b r r r r y r g b r r r y b b b b b g g g g g y y b b 
+y b b b r r r r y y y y b g g g g g g g g b g g g g g y y g r y y g g g 
+g g b y b b g g b g g g g g y y y r r b g g r b b b b y y y y r b g g g 
+b b b b b b b b b y y y y r r r b b g g g g g g y g y y y r r y y y y y 
+y r r r r y r r r b b r r r g g g g r r b b b b b y y r y b b r r r r r 
+r r y g r r b b b y b y y g g g b b b b b b y y g g g y y b b b b b b g 
+g b b b b b y b b g g r b b b b b g g g g y y y y y y y r r r y g y y y 
+r r r r b g g r y y y g r g g b b b b r r y y g y g b b b g r r b r r r 
+b g b b b b b r b b g g g y r r r y y y y y y b g y y g g b b y b b g r 
+r r r r r g r r r r r r g g g y y y b r r b b b y y b r r r r r y y y y 
+y g g g g r y y y y g g r r r b g g r r r b b b b b b b b b b r r r r r 
+r r b b b b r r r r r r r r r r b r r r r g g g g b b b b g g g r r b g 
+g g y b b b b b r b r r r r r r r r r r y y b b b g g g r b r r r r r r 
+g g g b y b b b r r y g g y y y r y g g r r r r g r g y y b y y y y b b 
+b b g g b g g r y y g g r g g b b y y y b y y y g b r r r b b g g g y g 
+g g g b r g g r r y b b g r r r b g g y y y g b b b b b b b b b y y b b 
+b r r r g g r b g g g g g g y g y y y r r g y y y y y y y y y y y y y y 
+y r r g g b b b r y r r g g g y y g r r y y r y y b r r g g g r b b r b 
+b b b b r y y g b b b b r r g g g y y y b b b g r r b g g g b b b b r r 
+r b b r b g b r b b r r r b b b b b b y y y y g b b b b g g g g g g b g 
+g g g g g g y b b b b b b b b r r r r r r b b b g g g y g g g r r r r g 
+g y y y r r r y g g g b r r b b b b r r r r b b b y g g r y y y g y y y 
+g r r r b r r r r r y y g r r b y r y g g g y r r g g y y g r b g r r r 
+y r r r g y g y g y r y b b b b b b g g g b y y y y y y r b b r r r b b 
+b b r g g r r r b b r r g b b y y y y y b y r r r r r y y g y y y y y r 
+r r r g r r r y y y r r b r r r r b b b b r b b b b r r b g r g g g b g 
+g y r y y y y g g g g g g g g g g g g g y y y y y y g g y y r r y g g r 
+b y g g y g g y y b y y g g g g g g g g b b g b b g r b r r y b b b g g 
+r r r r r y r r r r g g g g g g g y r y g g r r y y y y y y g g g b r b 
+b b g y y y y g g g y g g b b r b b b b b b b y y y y y y y b r r r b b 
+b b b b b b b g g g b b b y y b r r y y y r b b b b r y y g r b y y y y 
+y y g y y y r r r r g g b b b b r r r r y y y y y y y b b b b b b g g y 
+r r r r r r b y b b b y y r g y y r r r r r r r r r g y y y r y y y y b 
+b b b y y y y y y r y r r b r r y g b g y g g r r r b y y y g b b b b b 
+b b b y y r y y g g g g g b b b b b g g g g g y r b b b g r y r g g g r 
+b b b g b b b y r r r r r r r r r r r y g r r b b b b b y y y y r r r r 
+36 x 36
+b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b 8 x 8
+b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b 36 x 36
+b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b 36 x 23
+r b r b y b g g y g r y y b g b y y r b b r y y b r r b y r r g r g b y 
+g y r r r b y y r r g b b g r r r g r y g r b b y b g r b b g g r g g b 
+y r r g y g r g g g g r g y b y b y b r b r g y b b b b r r r b r g b y 
+b b r b y y r r y r y g g b r b y b b r r b b r y g y b g g b g b g y g 
+y b r b y g r r r g y b g r b g r g g r b b g r g g b r b b y y r r r g 
+b y g g r g b y b b r b y b b b b y b g r r y r g g g y y r g r b r r r 
+b b g y g r b g b r r g r b r r y b b y y r y y y b g g b b y r b y g g 
+g b r b r r b y g y y g r b b r g b g b g g g r y g b r g r g y r r b r 
+g g y r y b y y y b b y b r y b b b y y r y r r r y r y g b r g r r g y 
+g y g y r y b b r b y g r b g g y r g y r g g b b y g r b y y b r b g y 
+g r y g b y b r g b g g g b b g g y y g b r g r g y r r r y g g g r b r 
+g r r r r y y g y g b r g r y b b g r g y r y y r r y b y y b g y g y b 
+g b g y g g r b y y g g g y r b r g y y b g y y g r b b g y y r y r b r 
+r y r g y b b g r b g b r r r r g r r r y b r r b b b r r b g b b y y g 
+y y y b g b y y r r g r b b b b g b y r r b g g b g y y b r y g g y y b 
+b r g y y b b g y y g g g r r y b r b b g r y g y r y b g g r b b r g y 
+y g g y r r y g r b b b g r g b g y y b r b r y r r y g g g g g g b r b 
+y g r b r g b b r g b y g y r r r b r b y b b g y g y b r r y r g y g r 
+b b r y g g g g b r y r y b b y r b y b b r g g y b y y g r r g r r g r 
+b r g y r g y r r g g r y r r g y r r b b g r g g b g y b b y y b r r b 
+y b r r y g y r r g r b g g r b g b y g r g r r y b r b g g r b g b g b 
+g g r r g y y y g g g g r r y g b y g b y b r b y b g g r b b y y g b y 
+g g b r y y g b b r r y r r b b b y y y b y g b g y g b y g y g r b y g 
+5 x 5
+g b b g g 
+b b b y y 
+g g r b y 
+b g r b r 
+g g b g b 
+10 x 10
+y g r r b y g y g r 
+g g b g g b g g y y 
+g y g b b b b b b y 
+y g g y b g b y g g 
+r y r b y r r g r y 
+r g y g r b g y g b 
+g r g y y g y b b r 
+r r g g b g y b b r 
+b g g b b g y y y g 
+g g y y y b g y y y 
+10 x 10
+g r y b b y g b r b 
+y b b r g r r y y g 
+y y r r y r y b b b 
+y r y b b b y b y g 
+b b r b g y g y b r 
+y r b b y g y g g r 
+r y b g g g g r y b 
+y g y r r y b y y g 
+b r r g r g b g r g 
+y y g y r r r r r y 
+36 x 13
+b y g r y r g b r g g r b b r y r y r y r g y g b r g b y g g r r g r b 
+b r b r y y g r g b y r b y b r r g b g r b y y b r g r b g g y b g y g 
+b y r y g y g g r b b b b y b b r g y b g r g g b y y g b y y r r g y b 
+g y b g g r g r y y r r r g r b g y y g g g r g y g g y y b r g b g g r 
+b r g y g b b y r g g r g r b r g g b y g r r b g y g g y r y y y g g y 
+y y b g r b y y r r r r r r g r g y r y b b y b r r b b y g b b r b r b 
+r y b r g g y g r y g y r y y b r g b y b g r b g g r y y y g r b b b r 
+y y y g y y g y g g b y r y r y r y y y g b y g r y g y b g g y y b y y 
+y b g y g y g b r y b y y g y g b r b g b g b g g y b b y y b y g b b b 
+y r b y r g r b b y r r b b r y y g g b y y g g b y y r y g r y b b y r 
+r b b y g r b y r r b b y y g r b y b g y b b r g r y y r g r g r r y y 
+g g y b g r y r r y b g g g b b r g b b y y b y b r y r b b r g g y g r 
+b b r r g b y b r b y y r b b b g b y r g y b b g y b b b g b g g r b r 
+15 x 12
+g b r b b b y r y g g r b b y 
+b g g b g y y r r r r g y r y 
+y y y r b r y r r y r g r r y 
+g r r r b b y r b g y g b g r 
+b b r g b y y r g g b b r y r 
+r b y g b r y g b g g r y g r 
+b r b r y y b g g g b y g r r 
+b r g b b y r b b r r r b g y 
+y b y y y y y y b b b r r y y 
+y y g g r y r g g r g y b y y 
+y g y y r b y r g b r y g r r 
+b y g b r r b y r g g r y y g 
+37 x 14
+y g g r b g y r g r r y r b r b r g y y r y r r g b r r r r y g y y g y r 
+y r y g g y y b r g r r g y g r b r b r b g r y g y y r b r r b y y r b g 
+b r r y g r r g b r r b g r b y y r y b b y b b r r b b b y g y y g r y r 
+y r b r b y y r b r g r b b r g y g b b r b g b r b g r b b y g g r r b b 
+b r y y b g r y r y g y r b r g r b b y g g g r r y g b r g r y y r y r r 
+r r y r g b y b r b y g y g y b y y b y r b r b r b b y b y y b y r y b y 
+g y y g y y y y r g y g y y r b g y g b y b y g r r b r y r y y g y b r r 
+g y b g y g g r b g y y g y b y b g r b g y g y g y r r y y b b r y g b b 
+r r r b b b g r r b b y r b r y y b b b y b g g b g b b b b b g r r y b b 
+r y y b b r b b b y b b g r b b y g g r g g b y y b r y r y g y y y g y r 
+b b g y y b b b g b r g r g g b b r r y g r y g g b b g g r b g r r g y y 
+r r b r y b r b b b r g g b g r y g g r r b g r y y y b y b g r r r g g g 
+g y b b r y r g r y g y y y y r g y r b b b y r y y g g y b y g b y r r y 
+r r g y g b b g b b b r r y r y b g r r y r g r b r g r y g y y g b r b r 
+36 x 36
+
+y b b y b b b r b b r r b b b y b r b y b b y b g y g r r r b g b b y y 
+y b r y b r b b b y y y b b g b y r r b y b y r r b b r r y b b g b b b 
+b b r g b g r r b y y r r y b y r b y y g r r r g y y r b b y b y b r g 
+y g r r r y b y r y y b b b b r y y b b y b b b b b g b g r b b y b y r 
+r y b y b b b r y r b b b b y b g y g g y b b b b b y y r b b y b y r g 
+b y y b y y y y b g r b y b y b y r r b r y y r b b b b b b b b r y b b 
+b b b y y r r r y b b r g b r y b r y r r y r b y y b b b g g y y y g y 
+b b b b r y r y r y g b g r g b r y r b y b g y y y y r b y r b g r y b 
+g y g r r b r b y r y g r r r b y b b g g b y b b r r r y r b r y y g g 
+b b b b y b y g g g r g g y y r y b y r r b b r g b y b y r b r r b r g 
+r r b b g r g r r r b g b b b g y y b y y y r b r b b b b y b y y y g b 
+b b b g g b y y r b b b r r b b r r g b y b b y r b g b b b y y b r y b 
+b r y b r b b b r b b g b r g r y y y b b r b y r g y b g y g b g b r b 
+b b b r b b b y g y g g b r b b g b g y b y b b b g b r y b y r b b g b 
+y y y y g r y b b r b b r y y y r b b b r b r b b b b r b r y b r y y b 
+b y y r b g b b b b r b r y b b b r b r b b b r y b b b r b b y y b y r 
+b y b y b y y r b y y b b y g g g b b b y r b y b r b y y b b b r g y r 
+y g b r y b y g y b y b b b r r b g g y r y g r b r b b y b g y b y b b 
+b b b b r b b b b b g b b g y y b g b b y r y r b y y b r b g b y g b r 
+y g r g r b g y b y b b y b y r b b y y b y b r r r y y b y g b r b b g 
+b r r y b r b r r g b g y b y b r g b r b r r y r y g y b r b b y y y b 
+b b y b y b b b g r y b b y b b y y y r b r g y b y y r b b g b g b r b 
+b y r g b g y b r g r b r b b b y r b b y y y y y b b y g b g b y b r y 
+b b b g y r y b b r b y r y b y b y r b b y b y r b b b r y g b b r b y 
+r r y y r b b b y y r b r b r y b b y r r b b y y r y y b b b b b g b r 
+r b r b b b b b r b b r b b b b b y y r r y g b b b r y r r b b r y y y 
+y y b g b y b r y b g r r g g g g g b y r b b g y g y g y r b b g y b y 
+y r b r b r y b y g y b y y r y b b r b g g b r y b b g y g b y b r g y 
+y y y b r b g y b r r b g g b b y y y b y b y y r y y y g b r r g y b b 
+b g b b b b r b b b y y y r b b r b r g r g b b y b b g g b b y y r b g 
+b y b b b b y g y y b b b b b b b b b b y b b b b y b b y b b r g r b y 
+b y b b b y g g y y b y b b y g y y b y b b y y y b g g y y y r b g b r 
+r g b b y y r g g b b y b b b r y g b b r r g r y b b b y b y y b r r y 
+r r r b y b b b y g y b r b b y y r b b b y g g b y b y y g g b r y y b 
+g b r b g b b y y b y b y r b b b y b b b b b y b g y r r b b y r b y g 
+b y b b y g b g y b b r b g b y g b g y y y b g g y b y b y b g b b b b 36 x 36
+
+y b b y b b b r b b r r b b b y b r b y b b y b g y g r r r b g b b y y 
+y b r y b r b b b y y y b b g b y r r b y b y r r b b r r y b b g b b b 
+b b r g b g r r b y y r r y b y r b y y g r r r g y y r b b y b y b r g 
+y g r r r y b y r y y b b b b r y y b b y b b b b b g b g r b b y b y r 
+r y b y b b b r y r b b b b y b g y g g y b b b b b y y r b b y b y r g 
+b y y b y y y y b g r b y b y b y r r b r y y r b b b b b b b b r y b b 
+b b b y y r r r y b b r g b r y b r y r r y r b y y b b b g g y y y g y 
+b b b b r y r y r y g b g r g b r y r b y b g y y y y r b y r b g r y b 
+g y g r r b r b y r y g r r r b y b b g g b y b b r r r y r b r y y g g 
+b b b b y b y g g g r g g y y r y b y r r b b r g b y b y r b r r b r g 
+r r b b g r g r r r b g b b b g y y b y y y r b r b b b b y b y y y g b 
+b b b g g b y y r b b b r r b b r r g b y b b y r b g b b b y y b r y b 
+b r y b r b b b r b b g b r g r y y y b b r b y r g y b g y g b g b r b 
+b b b r b b b y g y g g b r b b g b g y b y b b b g b r y b y r b b g b 
+y y y y g r y b b r b b r y y y r b b b r b r b b b b r b r y b r y y b 
+b y y r b g b b b b r b r y b b b r b r b b b r y b b b r b b y y b y r 
+b y b y b y y r b y y b b y g g g b b b y r b y b r b y y b b b r g y r 
+y g b r y b y g y b y b b b r r b g g y r y g r b r b b y b g y b y b b 
+b b b b r b b b b b g b b g y y b g b b y r y r b y y b r b g b y g b r 
+y g r g r b g y b y b b y b y r b b y y b y b r r r y y b y g b r b b g 
+b r r y b r b r r g b g y b y b r g b r b r r y r y g y b r b b y y y b 
+b b y b y b b b g r y b b y b b y y y r b r g y b y y r b b g b g b r b 
+b y r g b g y b r g r b r b b b y r b b y y y y y b b y g b g b y b r y 
+b b b g y r y b b r b y r y b y b y r b b y b y r b b b r y g b b r b y 
+r r y y r b b b y y r b r b r y b b y r r b b y y r y y b b b b b g b r 
+r b r b b b b b r b b r b b b b b y y r r y g b b b r y r r b b r y y y 
+y y b g b y b r y b g r r g g g g g b y r b b g y g y g y r b b g y b y 
+y r b r b r y b y g y b y y r y b b r b g g b r y b b g y g b y b r g y 
+y y y b r b g y b r r b g g b b y y y b y b y y r y y y g b r r g y b b 
+b g b b b b r b b b y y y r b b r b r g r g b b y b b g g b b y y r b g 
+b y b b b b y g y y b b b b b b b b b b y b b b b y b b y b b r g r b y 
+b y b b b y g g y y b y b b y g y y b y b b y y y b g g y y y r b g b r 
+r g b b y y r g g b b y b b b r y g b b r r g r y b b b y b y y b r r y 
+r r r b y b b b y g y b r b b y y r b b b y g g b y b y y g g b r y y b 
+g b r b g b b y y b y b y r b b b y b b b b b y b g y r r b b y r b y g 
+b y b b y g b g y b b r b g b y g b g y y y b g g y b y b y b g b b b b 36 x 45
+y g r r g r b y g y b b y y b r g r r g b r b b b b b b b y b b b b g r 
+b y y r b b y y b y y r r r r y r g y y g r g g r r r r y y b y r r r r 
+g g b y y r y y r y g b b b r r b b r r g b r g b g g r r y b b r r y y 
+y r r r b y r b b b y y g y y g g b g y b r r g g b b y y y b y b b b b 
+g b r r r y b g g g r g g g g g y r r g r r r r r r y g b r b g g g r r 
+r g y b y y y y b r b y y r g b y b g g b y r b y b g y y b b b b b r r 
+y y b y b r g g b g g r r g b g r y r g r g r b b b y g g g b b b b g b 
+r b y b g b y b b y r r b g r g y r b y y b b g b y b b g g b g r y y y 
+y r r g y y b b g y r r r r b r b b b b g g g y y g y y b b b b y y g r 
+r y r g g g b b g g g y r r r b b b b y r b g r r r r r g y r y b b y g 
+b r y b b b y b y g b g g y y y y y r r y y y y r g g r r g r r b b b r 
+y g y y r g g y b g r y y r r y r y y y r r g g r y r r b r b b b y r r 
+r r y r g r b g r r r y b g g g y y y r r r b y g b r r g y y g r b b b 
+b r r g b y y b g r g y g r r r y g y y y y g y g b b r y b r r g r b b 
+b r r b r r r y y g g b b g y y r g r y r g y b b b g g b b g y y y g g 
+g r r g g r g b b r y r r b y g y y b b y g b r r r r r b g g b b r r y 
+g r g b y b y b y g g r b r r r r y r y y g r b b g g g g y r r r r b b 
+r r r r r g g g r y g g b y b b g g y g b y g g y g y y b y g g g g r r 
+r r r y b y y y y y y r y g b b b b r y y b r y y y b r y y y y b b r b 
+b r y y g r y g y b g g r g g r r g r r y b r g r r g y r y g g g b g r 
+y g g y b r r r b y r r g y y r r r y r g r r b b y g b g r r r b b b b 
+g g y g b g g g y y y g y y y y g g b r y r r r r b y b b g r g y g b g 
+g b b b g b b b b b r r b b b r r b b r r y r y g g g r g b b b b b b b 
+y b g y y y g b b g g r r b g g r r r r r g b g b b b b y g r b g g r g 
+b r b r g g b r y g g b r r g y b y y r r g g g y y g b b g y y y y b r 
+r y b y y r g r r y b b y y y r y y g g r b g g r y g y y g y r r r y r 
+b b b r y g g b b b b r y b b y y b b r r g y y r r r b y r y g b b r b 
+b b y r g g r r g r b b r g b y b y b g g g g g g b b b g r g b g g r g 
+y g y r b r y g g r g g g y g b r y b b r b g b g y y g r r y b g r r r 
+g g g b b b g y y y r g g r r b g g r r r g g g y y y b b b r b g g g y 
+b b b g r g g g g g g g g g b g y y r g r b r y r r y b g g g g g g g b 
+g g g g b r g r r r b r b y g b r g y y y y b r r r y r y y g g b r r r 
+r r r g g g b y b r r g g g y b b r g r r y b r g g b b b y b y r r r r 
+r r y y b r y r r b y b b y y y b b g b g r y y b y b b y y b y r r r r 
+b b b g g g r r y b y y b g r r y y y r g y y b b g g y r g g g g b g b 
+g y b b b b g b y b g y g g y y y r g y y g b y g g y b r g r y b b r g 
+b b r y y y y b b b y g b y g g b y y y y b g b r r r r r r y g g b b b 
+b b r r r r g b r r r g y b b y y b r y r b y y b r g g g y b b b g r y 
+r r r g r y y y g y b r r g y b r b r g b b g b b b b b y g g y y r b b 
+g y y y y y y y b g r y r g y g r b b b y b r r y b g g b y b r r g r r 
+r r r r r y g r b r r y y y y r g b b y y g g g g g g r r r y b g r b r 
+g r y y y r y y g g y y b r b b g y y g g g g y g r y y y y y y b b b y 
+g b y r g g b g y r r b b b b g g g b g b g r y y y b g g g g g g g b y 
+y b g b b y y y y g g r r y y b g b b r b b g b b y y y r y y b y g g g 
+g g g r g b r g b g b r r r r r g b r y b b r b b g r g b g y y r b g b 
+36 x 36
+r y g g r r y b b y b b b y y b b y y y y y b r r g r r y y y r r r g g 
+r y y y y g r b y g r g b b y g y r y b y r r r g g g g g g g r b b y y 
+b b r g g r r r r r g b y r g y b b b b r y b g g b r r y g g y b g g b 
+y y g b g g g g b g y y r r y g b b b r g b b y y r r r g r g g b b b r 
+r g y b r b b y b y y b b g y r g r y g g r b y r b r y r r g g b b g g 
+g b r g b r y g y r r y y g y b r y y g g g g g g y y r r y b g b y r r 
+g g r r r b y r g g b b r y y g g g y g y r r r g g b r r r r b g r r r 
+b b b y g g r b y y r r r r y g y y y g r r r y y r r r g r g r y y r g 
+y y r r r g b y y y y g b g b y y g g y g g y b g g y r r r g b r y b r 
+y b g b b r y r r r r r r y g g y r r y g r g y y b r r r b g g b y y y 
+y y r r y y g g y g r r b r b y r r r g g r y y y b g y r b r b r g y r 
+y r b b r g r y y y g g b g g g y y g b b b b g g b y b y b y b b b b y 
+b y g b g y r y y y b g g g g g y y b b r r b g y r g y y y r r y g g y 
+r g g g b b r r g g r b b b b b b b b r y r g g y y b r y b y g b y y b 
+g r r y b y y y g y r y y r r y y r y y g r r r y r r r y b r y g g r g 
+g g b b y r r y g g r y y b r g b r r r b g b g g g b b y g y b r r y g 
+r r r r r b b g r r r y b r y r r y y y b b r r g b r g g g y r y y b r 
+r g y y y b g g b b g g g b r g b b b b g g y y g g g b g r r r g g r g 
+b b b g b r y r b g g r y y r y y y r g g r y y b y y y y r g g g y y r 
+g g r g b b b g g g g g g r y y y r r r r r y y y r r y b g y g y y y b 
+b b r g g g g y y y y y y g g y b b r b b y y y r r g b b g b b b b y r 
+b g g b y b r b b b b g y y y r r y b g y y b b b b b b y b r r y b y b 
+b r r g g r r r b b g r r y r y y r b b b r r g r b g r g b b b y r b r 
+g g r g r r r b r g b g g g g g b b y g y b b y y r b r b g r b g g r y 
+r g b g r b r r g y g y y g g g g g b b y g b g r r y y y r r g b g g b 
+r b b y y b r y g b b r g y b b r r g g g b r g b b b y b b b r r r g g 
+r r r r r y g g g g g r y r g y y g g g g g b g g g y r b y g r r b g b 
+b b r g r b g y y y y b b g b y g y g y y y g y y r r r r g y g b y y y 
+b g g b b r r b g g g g g b g g y y y b g r b r b y y b b r y b b g g y 
+r r g b r y b g g b r y y y r b b g y r r r y y g r b g y y r b b b b g 
+y y y r r r y y y y g b r r g g g g y b b g g b b g r r b b b r g r r b 
+b b b r y r r r b b b g y r b y b g g y r y g g g g g b b b b y y g b b 
+y g g r y y g r r r r r r b b b g b g r g y r r r r r b y y y y g r r r 
+r y r g y y b b b r y b b g r r g g g g r y r b b y y g y g g g g r g b 
+b r g g y y g y r y g y y y r r b r b b g y y g r r r g y g g y y b r b 
+r b r r r b b y y y b b b y b r r g b b b r y r r y b b y b b g y g b g 
+36 x 36
+
+y b b y b b b r b b r r b b b y b r b y b b y b g y g r r r b g b b y y 
+y b r y b r b b b y y y b b g b y r r b y b y r r b b r r y b b g b b b 
+b b r g b g r r b y y r r y b y r b y y g r r r g y y r b b y b y b r g 
+y g r r r y b y r y y b b b b r y y b b y b b b b b g b g r b b y b y r 
+r y b y b b b r y r b b b b y b g y g g y b b b b b y y r b b y b y r g 
+b y y b y y y y b g r b y b y b y r r b r y y r b b b b b b b b r y b b 
+b b b y y r r r y b b r g b r y b r y r r y r b y y b b b g g y y y g y 
+b b b b r y r y r y g b g r g b r y r b y b g y y y y r b y r b g r y b 
+g y g r r b r b y r y g r r r b y b b g g b y b b r r r y r b r y y g g 
+b b b b y b y g g g r g g y y r y b y r r b b r g b y b y r b r r b r g 
+r r b b g r g r r r b g b b b g y y b y y y r b r b b b b y b y y y g b 
+b b b g g b y y r b b b r r b b r r g b y b b y r b g b b b y y b r y b 
+b r y b r b b b r b b g b r g r y y y b b r b y r g y b g y g b g b r b 
+b b b r b b b y g y g g b r b b g b g y b y b b b g b r y b y r b b g b 
+y y y y g r y b b r b b r y y y r b b b r b r b b b b r b r y b r y y b 
+b y y r b g b b b b r b r y b b b r b r b b b r y b b b r b b y y b y r 
+b y b y b y y r b y y b b y g g g b b b y r b y b r b y y b b b r g y r 
+y g b r y b y g y b y b b b r r b g g y r y g r b r b b y b g y b y b b 
+b b b b r b b b b b g b b g y y b g b b y r y r b y y b r b g b y g b r 
+y g r g r b g y b y b b y b y r b b y y b y b r r r y y b y g b r b b g 
+b r r y b r b r r g b g y b y b r g b r b r r y r y g y b r b b y y y b 
+b b y b y b b b g r y b b y b b y y y r b r g y b y y r b b g b g b r b 
+b y r g b g y b r g r b r b b b y r b b y y y y y b b y g b g b y b r y 
+b b b g y r y b b r b y r y b y b y r b b y b y r b b b r y g b b r b y 
+r r y y r b b b y y r b r b r y b b y r r b b y y r y y b b b b b g b r 
+r b r b b b b b r b b r b b b b b y y r r y g b b b r y r r b b r y y y 
+y y b g b y b r y b g r r g g g g g b y r b b g y g y g y r b b g y b y 
+y r b r b r y b y g y b y y r y b b r b g g b r y b b g y g b y b r g y 
+y y y b r b g y b r r b g g b b y y y b y b y y r y y y g b r r g y b b 
+b g b b b b r b b b y y y r b b r b r g r g b b y b b g g b b y y r b g 
+b y b b b b y g y y b b b b b b b b b b y b b b b y b b y b b r g r b y 
+b y b b b y g g y y b y b b y g y y b y b b y y y b g g y y y r b g b r 
+r g b b y y r g g b b y b b b r y g b b r r g r y b b b y b y y b r r y 
+r r r b y b b b y g y b r b b y y r b b b y g g b y b y y g g b r y y b 
+g b r b g b b y y b y b y r b b b y b b b b b y b g y r r b b y r b y g 
+b y b b y g b g y b b r b g b y g b g y y y b g g y b y b y b g b b b b 8 x 8
+b g y b b y g y 
+y y y y y g g g 
+g g g g g g r g 
+r g b r r y y y 
+b r b g y y r y 
+r g r r g g g g 
+b b b b r b g r 
+y b b r b b b g 
+8 x 8
+
+g b b y b b b b 
+r y y b b r b y 
+y r b r y b y r 
+y r b y b y b b 
+y b y b b y b g 
+b y y g y b b y 
+b b g g r b b g 
+b r r b g b b r 20 x 12
+
+y b b y b y b g b r r b b y y g b r b r 
+y r g b y r y r y b b b b g r b g b r r 
+b r b r b b b b g g b b y b g b y b r b 
+b b r b y r b b r y r b r y g b g g b b 
+y b b y b b b b r b y y b b r y b g b b 
+y b b y y b r y b y y b y b r b g b g r 
+b b g r b b r r g g b b g g r b b y y r 
+b y y g y y r g g b y b r g g g g r b b 
+b g g g g g r b y r b b r b r r y r y g 
+y r b b y y b b b b y r b y b y b y b g 
+b y b r b b y g r y r g y b y b r b r y 
+y r r r b g b y b y b b b b b r b y g g 20 x 12
+g b r r b r g r y b b g y y b g g r y y 
+r r b b r r r r g r g b b r y b g b b g 
+b b g r r g g g r r b y y y y r g g g b 
+b r r r g g b b y g r r g r r r g r g y 
+g g r g g r b b b b b b r r b b y y y y 
+g g y g y b y y y b y r y g g b r g g g 
+b g r b r r r r y y b b y b g r r g y y 
+y y g b g y y g r y y y y b b b r y b b 
+g y b y b b r r b b g g b g r y g b b b 
+g g g b b y y g b b g g g g b b g g r r 
+b g g g b b r b g b y y y b y g r r y r 
+b r r r y y b b y y y y g g y y y y g g 
+36 x 36
+
+y b b y b b b r b b r r b b b y b r b y b b y b g y g r r r b g b b y y 
+y b r y b r b b b y y y b b g b y r r b y b y r r b b r r y b b g b b b 
+b b r g b g r r b y y r r y b y r b y y g r r r g y y r b b y b y b r g 
+y g r r r y b y r y y b b b b r y y b b y b b b b b g b g r b b y b y r 
+r y b y b b b r y r b b b b y b g y g g y b b b b b y y r b b y b y r g 
+b y y b y y y y b g r b y b y b y r r b r y y r b b b b b b b b r y b b 
+b b b y y r r r y b b r g b r y b r y r r y r b y y b b b g g y y y g y 
+b b b b r y r y r y g b g r g b r y r b y b g y y y y r b y r b g r y b 
+g y g r r b r b y r y g r r r b y b b g g b y b b r r r y r b r y y g g 
+b b b b y b y g g g r g g y y r y b y r r b b r g b y b y r b r r b r g 
+r r b b g r g r r r b g b b b g y y b y y y r b r b b b b y b y y y g b 
+b b b g g b y y r b b b r r b b r r g b y b b y r b g b b b y y b r y b 
+b r y b r b b b r b b g b r g r y y y b b r b y r g y b g y g b g b r b 
+b b b r b b b y g y g g b r b b g b g y b y b b b g b r y b y r b b g b 
+y y y y g r y b b r b b r y y y r b b b r b r b b b b r b r y b r y y b 
+b y y r b g b b b b r b r y b b b r b r b b b r y b b b r b b y y b y r 
+b y b y b y y r b y y b b y g g g b b b y r b y b r b y y b b b r g y r 
+y g b r y b y g y b y b b b r r b g g y r y g r b r b b y b g y b y b b 
+b b b b r b b b b b g b b g y y b g b b y r y r b y y b r b g b y g b r 
+y g r g r b g y b y b b y b y r b b y y b y b r r r y y b y g b r b b g 
+b r r y b r b r r g b g y b y b r g b r b r r y r y g y b r b b y y y b 
+b b y b y b b b g r y b b y b b y y y r b r g y b y y r b b g b g b r b 
+b y r g b g y b r g r b r b b b y r b b y y y y y b b y g b g b y b r y 
+b b b g y r y b b r b y r y b y b y r b b y b y r b b b r y g b b r b y 
+r r y y r b b b y y r b r b r y b b y r r b b y y r y y b b b b b g b r 
+r b r b b b b b r b b r b b b b b y y r r y g b b b r y r r b b r y y y 
+y y b g b y b r y b g r r g g g g g b y r b b g y g y g y r b b g y b y 
+y r b r b r y b y g y b y y r y b b r b g g b r y b b g y g b y b r g y 
+y y y b r b g y b r r b g g b b y y y b y b y y r y y y g b r r g y b b 
+b g b b b b r b b b y y y r b b r b r g r g b b y b b g g b b y y r b g 
+b y b b b b y g y y b b b b b b b b b b y b b b b y b b y b b r g r b y 
+b y b b b y g g y y b y b b y g y y b y b b y y y b g g y y y r b g b r 
+r g b b y y r g g b b y b b b r y g b b r r g r y b b b y b y y b r r y 
+r r r b y b b b y g y b r b b y y r b b b y g g b y b y y g g b r y y b 
+g b r b g b b y y b y b y r b b b y b b b b b y b g y r r b b y r b y g 
+b y b b y g b g y b b r b g b y g b g y y y b g g y b y b y b g b b b b 36 x 36
+b g b g b b b r r g r r y g g g y y r r r y r r g b r g g b g b r r g g 
+g y b b b r b b r g r r r b b g b r g y b g r b g r b r g r b r g g y r 
+r g g y r b y g r b b y b y g r b y b b g b r r y g r g r g y b r r r g 
+g y b r r g r r y g r r y r g g g b r y r b b y r g b r b g y y y y y y 
+r b g y y g r b g r b r y r y y r g g r y r b g r y y b b g g g y g y g 
+g g g b g r r y b b g y y b b y r b y b r r y r r r r b b b y r r r g y 
+r r r r g g b y g b r g r r y y g r b r y b g r y b g g r b r y y y b g 
+b r r r b y b y g y b r b r r b g r r r r y y g g r r b r g r b y g y r 
+y y b r g y r g b r r r g g g y b y r g y y g b g b y b g g g b r r r b 
+b r g g y r r y y g r y b r r r g y b r g r y g g b b g b r g r y b g b 
+y y g r y b b y r y g g y r y b y g r b g y r y b r y g y y y g y g r g 
+b y y y y y r y y b g r g r g r g y y r b y y r b g y b g b r g g r b r 
+b g r r g y r b g b b b y g b g r y g b g b r g b y r g r y y r y g y y 
+y g y r y y r y b y r y y b r b b b y g g g b r y b r b b r g g g b r g 
+g y b y g r g b r b r b g g b y b y y y g g g g b y y r r b r g g r y y 
+r y b y g g r y g y r y b b y y b b y y b r y b r g b r r r g b y r y b 
+y b y b b b b b y g y r b y b r b y g b y r r r y r b r g b g r y g r g 
+g r r b b y r g b r g g r r r b r g b g r r g r g r r g y r b g b r b r 
+g y g g g y y r g g b y r b r g g y y b b g g b g r r b y r r r r y b y 
+y b r g r g b b g r b b b g b y g g r r r g g y y b b y y y r b b g g r 
+g y r g g r r g g b b y y b y y y b r b g g r r y y b r y g y g g g b g 
+b b b b b r b y r y b y r g r g y r b y b g y r b r r r y y g g g y y g 
+b g g b b y y g b b y g g y r b b b g g r b b y g g g r g b r g g y r b 
+r y b g b b b b r y r r g r b b y r b g b g r g r r y y r b y b g b g g 
+b r g y b y y g r g g r y g g b r r g y b r y y b g y g b b r g r y g b 
+y r y g r r y g y y y r g r g y r r g b g y r b b r g g y b b g b g g r 
+b g g r r y r y y b g y b b g b b y g b r g r y b r y b r r g r r y b y 
+b b r y r r r b b y b r g r b g b y b y y b r b y y b y r r b r g g b y 
+r b b y r b b r y r b r b g y r r r r y y y b y g b g g r g g y r r g r 
+r r y y y y b r y r r b r r g r g r y g b b b b y r g y y r b r r r y r 
+y y y r r b g g r g r b r b y y b g r b g b g y b b y y b b g y g b g g 
+g r y r y g r b r g b g y b r g b b y y y b r g b g g r b r b b b g r b 
+g y r r g b b r y b b b b y y r b g r y r y r r g y b b r y g y r g g g 
+y r y y y r y b b r y b g b y r b g r b b b y y y y y b g y r r g r y b 
+g y b g b r y g g g r r r b b b b g b b y b r y y b r r r b b b b g b r 
+g y y y g r b y g b b y g r r b y b b g y b y r r g b y g r g y r r y b 
+36 x 36
+r r b y b r b g y y g g y r g b b r r y r y b y r y y g g g g g r g g r 
+b b g b y y b r g b g b r g b r g r b b g b b r y r r y r b r y r r g g 
+b r r r y r b r r y y r r y b r g y g g b b b y b g b g g b r b b g y y 
+r g g y y y r y r b g b b y r g r y b y g r y y y b g g r g b r y g g g 
+y y b b r b y r b b b g b b r r y r y r y y b b r y y g y b b g y g b g 
+y y g r r r b r g r b r r r r y y r r g y g r b r b g b r b g g b r r y 
+b r g g b y b r b r y b g y b r b g g b y g g r r y b r y y r r r g g b 
+b y y r y y r g r r g b r y g b g g b y b b g g y b r y g b g b g y r r 
+b b g y b r y r b g y y y r y g b g r y y b b y g g b g r r r y g y g g 
+b y b r b y y g b g y r g g r g g r y g y r r r r b y y b r r r b y r y 
+y r y b r r g y r g g b r b b g y y y y b g r y y b r r r y r y y r y b 
+r g r g b g b g g r r b b r g y g r r y b b b r g r b g b r y y g b r b 
+y b g g g g r b g y r r b g y g r r r y y b g g g g g b r b y y r y b g 
+g y r r r y g b g b r g y y r b y y y r r g r r r b b g g r b r b b b r 
+b r r r y r r b g g y g g r g b b y y r b b b r r g r b y y y g r y b r 
+g r y b b y y b b r b y r g b b r g r g y g y b r g g g b y g r g r r r 
+r b r r y g b y g b y y y y g b b g b r b r b r r r y g y r r y r b r b 
+r g b b b y r g r b g y r g r g r b b r g y y r b b y y r g b g r b g b 
+g g b g b y b b y r b y y r b g g r y r r g r g r b y b r g r y g g g y 
+r g y y g y y y b b g g y g y r b r r b r r r y g g y y r y y b b b y g 
+b b r g g b r r y b g b y g y r r y g r r r g r r g y r g r y r b g g y 
+y r y r g g b y g b b y b b g b b r g r y y y y r r r g r g b r g r g b 
+g r r y g r b g g g y r b y g g y b y r r r b y r g y y b r g b b r g y 
+y r r b g y g g b b r b g r g b b b r b r g g g y b y g g b b r b r b r 
+r y y y y r g y y b b r y g g y r b g y r b r g b r g g b r g g b y g y 
+b y r g g y r y g r y b b y b r b r g y g r r r g b r b g g g g g y r r 
+y y g r y g g g b b b y r b b y b b b r r g g r r r r y g g r y y r r b 
+b b r r g g g b y r r r y r g b y r g g g g y r b r b b r y g y y r b b 
+y y g y b g r y g r y y r g b b r r b r r r g r r y y g y y r y r y y y 
+g g b b r g y b b b y y g r r g b y r b g r b g b y g r b y g g g b g r 
+r b y b r r y b r b r r g y y r g y b y y y y g y g g r b g b b y g y b 
+r y y r y r y r g y g b b r g b y r g y r r r b r b y r y r g y b y r g 
+g r y r g b y r b b g r r b r r g g r b g y y b g y b b r r b r b g r g 
+r b y b r r g r b g b b r y g y y r y r y r r r y r r g r r r y g y b r 
+b b g b b r r g y r b b y y r r g g g b r g g r y g b r g b y b r y b y 
+b y y y b r g g y r g y y g r g g y g g y y r y g r g y b y r b y g y r 
+36 x 36
+y g g y r g b y b r r y y y y y b g g r r y r b b b r y b g g y g r b g 
+b y b y r g b r y g y y r y b r y b r y g g r g g b r r b b b r b r b r 
+b y g b b g g y g y b g b g r g g r y y b r b r b y y b r g y r r r g r 
+y g y y r y y r y b b r y y g b b y r b r y y b g r b b b r g y y g y g 
+y g y r y g g y g r b r y y y b r y b r y y y r b r g y r y g g g b r y 
+y g r r r g r r b y r g r g r b y b y b y g b r g r y b b y y b g r y y 
+r g g r b y y g r b b g y g y b y g b g b g y b b b r g b b g r g y r g 
+b r g y b r r b g b r g b y y b b b g r r g y g g r g y y g g r y g y y 
+b b r r r g b b g b g b y y y y r g y b y b y r b g y r y r y y g g g b 
+b g y g r b r g g g y g r g b y y b b y g r r r y g b y y y g g g r g b 
+b g g r g g g b r b r r g r y r b g b b b b g r r y y b b b g b r r r y 
+y g r b r r g r r b g y g y b r y r g r g y g y r r g r b b b y b g r r 
+r g b g b r b r b b b y y r r r y b y r g b y b r g g y b y y y b r b r 
+g g g y g r b y r r g y b r g r y b b r g b g b b b r b g b r b g g y y 
+g b b r y r g y y g g y r y y r g b y y y g r r y b r r b b r g r y r g 
+g b r y b y r b y r g y y y y y g b y y r b b y y g y g r g y b y y b y 
+y y y g g r g y y g y y y y b g b b b r r b g b g y b b b b b y g r r g 
+r b g g g y g b r g b r y y g r b y b b g g y g r y r g r y y b b b y g 
+g b b y y g r y b g r r r y g y b b b y r g b g y g r y b r b r b b r g 
+y g g g y y b g y g y r b y y g g b b b g r g y b b y b g g g g r g g r 
+b r y y b y b g r b r g r b r b b g g y y b g y b r r y g y b g y b y y 
+y y y g g g b g r b b r b r r g b g g y g r g b b r y b g b r g y b g r 
+b y g r b b b y r r y y g y g b b g r r g g y y r r y r y g g r g g g g 
+y g r y r r r y y g r b y r b r r r y b y y r b b b y g g y g g y y g g 
+r r y y g y g y y b g b y y r y g g y b y g r g r b g g y b g b r y y b 
+b g r y b g g y y g b b b y y y b g g r r r b y b y b r b g b g g r y r 
+b b y g r b r y b b b b b r r y g b b b r g g y b y b y y b y r y g y b 
+y b g b b b b g b b y b y y y r r b g g g b y g r r r g r r g g y b g y 
+r b g b y r y b b y g r b b b b y g g r y b b b g y b y y g g b r b b r 
+b g r g g r r b r b y y r g y b g b y y y r r g g y y y b r g b y g b g 
+b g g y r b y g b g b b y y g g g g y b b b r b b g r g y b y y g g y g 
+r g g b y b b y r r b r y g g g b y y g b r r b g b g y b r b g g y y r 
+r y y b r y b y y y r y y b b r g b g y b b g r y y g y g b r g g b y g 
+r b g r b g b b g r g b y g b r y y g y y y g b g y y b r y r g g b y r 
+r g y r g r b y r g g b r y g r b b g y r g r y g y y r r y g b g y r r 
+y r y r g g b r r g r r b r g y y b b b b r r g b r r r y g b b b r r g 
+36 x 36
+g y y g g b g r y b y y r r b r y y b g y b g g b r y y g g y r r b g r 
+b b y b r r r b g r r r r r y y b r b r g b y g g r y y r y b r r b b g 
+r b r g g b b g b r g r r g y g y r g y b g r g g r b g r y g r y r y g 
+b g b g b r b y y g b b y b y r g b y g b b g r r y y b g r b b g r g r 
+b r g y g b r y y y r r b r r r b b r r b y b y b y g r b y b b y y y r 
+g y g g g y y r y r y b y b y r g b g b y y g g y y g y y g b y y y r b 
+b b g g y b r y g b y g y g y y r r b y r y r r r b b g y y g r y r y r 
+g y y r y b y g g b r b b y y y y r b y g y b y b r r r r b y r y b y r 
+b r b g r y b y b r y y r b r r g g g b g b g y b r g r g r g b r y r r 
+y r g g r y y b r r b r y y r r r r r y g r r r r r y r b g y g g r y b 
+r y b y g y y b g b y b y g g y b y b g r r b g r r r g g g r r g b y r 
+y g r b g g y g g y r y b g b r y b g g y g b y g y b y r b y r g y g y 
+y y r b b g g y y r r r b g r r b r r g y g b g b g y y y r y y g y g b 
+b r y r b y g r r b b r y b y b r b g g g b b g y b b g y r b g g r b r 
+y r y y g r y y r g y g b g y g g g g r b r g g b r b r g r g b r y y g 
+y r y y b y r r y b y g g b y r g y r b r y b y y g r g r y b y g r g g 
+r y y y g r r g b b g b g y r g b g y r b g b y r b y r r b g y b r g y 
+r b r g r g r r y y g b y b g g y g y b y r y r y y r g y y g r r r r y 
+g g b g y r g g y r b b g r r g g g y y g b r r g y y y y y b y y y b r 
+g g r g r g g b r b b r r b b b y b g y y g b y r r b r r g r b y r r r 
+g b y g r r g g g g y g g r g b b b y r r r b b r y g b g r g y g g b b 
+r g r r y r y y y b r b r r y g b g b y r b g r r r g b y r r b r y b y 
+y r g y r g y y g g r b y y b r y b g g r r r g g b b g r g g b y g r g 
+g r b r r r g g r y b g g g b r y b y r g g g r g b g r y b g r y y b g 
+r b r y y g b y r g g b r y b b r g r y y g y y b g g b g g g y b y r g 
+g y b b g y y b r g b y y g y r b b r g r b b g r g g g r r r g b y b r 
+y b g r g b g r r g y b r y b b b g g g b y y y b r g r r b r g y g b g 
+y b b r g g r r g r g b g r y b y r y g g b r g r y r b y r g r b g y b 
+b b b r g r g r y r y y r g r r b b y g b y y y g r g r y y g b g r r g 
+b g y r y g g r r b r y g b y y g b y g b b b r y g y g r g r r g y y r 
+g b r r g r b b r r b b y y g b y r y y b r y g r b b r g y r r b g r r 
+g r r b y y y r b y g b r b b g g r r r b y g r y b r b y r r y b b b y 
+r g g r y g b r b y b y b r y b r r b g b g r b b b g b y y r r y b g g 
+g y r r g r r r g b r y r g r g y g b g g y r g g b b g g y y b b y r r 
+g b b r g g y r b y r g b b b y y g r y b r r y r b r b b g y r b b g y 
+b r r y r y g r r g b r y r y g b y b g g g y g b y g r r g g b g y g r 
+35 x 30
+r b b g b g g g g y y b b r y b r y y g b y r b g r r y r r b b y g y 
+y g g y r y y y b b b b b g g g r g b r y g b y g r b b b y b r r g y 
+y b r r r y y b y y r r r g y r y b r y r r b y b g g y g g b g g b g 
+b y y g b y g r r y b y r r g b g y b r y g b y r y y r g r b r r r b 
+g b r g y y b y y y b g r b r y r r r r y y r b y r b r y g y g r r b 
+y y b y g g y r b g g y r g r y b b b b y b r b b b g r r r y y b y g 
+b b b r g r g g r g b r g y g g g b g g r g b g y b b g y b r b r r y 
+r r b b r y y g r y g r b r y y b b y r y r r y r y g b y g r r b r g 
+g g r y r y b g y r b b y g g g g b g b y g r r y y r y b r y g g b g 
+r y g y r b r g r y b g b b y y b r r g y b g b y g r b b r b y y r r 
+y y b r g y g b r g r g g g y g b y r r y y b g g y r b g b y y r y b 
+g y g r y g y r b g g y y b b y b b y b g g b y g g b y b b r b y r b 
+g y g y y g b r b r g y g r y y y r b g r r b y r g y g b y b r y r g 
+y b y b r r r r y g g b r b y y g r g b y y r y b g b b r r y r b b r 
+r y r r y r g y g r y r r b g b r g y b y g r g g r b r b y y y r y g 
+r y g y g r b r g y y y b r g r g r r g g g r r g b r r g g g b r y g 
+r r b g r y g b g b g b y g g y r r y r y g b r y g g y g y b g g b y 
+y r b r b y g g g r g g y y b y r g r y y b g r g r g y r r r r b y r 
+r b y r r b g g g b g b r b r r r g b y b y r b y y g g b g g g r r b 
+y r y b g y y g y r b b b r y y b y y b y y r b y y r r b g g g g g g 
+g b r y g r r g g r y r r r y r y b b b r g r g g b r r b g g r r r y 
+r y r r y y r r r r y r r y y y y r r b r y r r r y g r r r g y g r g 
+r r g y b y g y r g r r g y r b g y y r y r y y r g b r r g b r r g b 
+g b g g y g y y b y r b b y b y g b y g b g y y g b g y y r r r r y y 
+b b g b y g r g g y r r y b g b y r b b y r r r b g r b g y b r g y y 
+g b y g g r r b y b g g y g y y g b b r y r y r y r r g r g b y r r y 
+b g g y b g r b b y r y g b y g r y y y r g b y b y r b r b b y b r r 
+g g b b g y y r r r g r y b r y g r r b y y g r b r b y g b y y y y b 
+g r r g y b y b b y r y y y y g b b b y y b b g g g y y g g r r y r r 
+r r y b g r r y g r y y b r b b r r y r g y r g r g r r r y b y b r g 
+36 x 36
+
+y b b y b b b r b b r r b b b y b r b y b b y b g y g r r r b g b b y y 
+y b r y b r b b b y y y b b g b y r r b y b y r r b b r r y b b g b b b 
+b b r g b g r r b y y r r y b y r b y y g r r r g y y r b b y b y b r g 
+y g r r r y b y r y y b b b b r y y b b y b b b b b g b g r b b y b y r 
+r y b y b b b r y r b b b b y b g y g g y b b b b b y y r b b y b y r g 
+b y y b y y y y b g r b y b y b y r r b r y y r b b b b b b b b r y b b 
+b b b y y r r r y b b r g b r y b r y r r y r b y y b b b g g y y y g y 
+b b b b r y r y r y g b g r g b r y r b y b g y y y y r b y r b g r y b 
+g y g r r b r b y r y g r r r b y b b g g b y b b r r r y r b r y y g g 
+b b b b y b y g g g r g g y y r y b y r r b b r g b y b y r b r r b r g 
+r r b b g r g r r r b g b b b g y y b y y y r b r b b b b y b y y y g b 
+b b b g g b y y r b b b r r b b r r g b y b b y r b g b b b y y b r y b 
+b r y b r b b b r b b g b r g r y y y b b r b y r g y b g y g b g b r b 
+b b b r b b b y g y g g b r b b g b g y b y b b b g b r y b y r b b g b 
+y y y y g r y b b r b b r y y y r b b b r b r b b b b r b r y b r y y b 
+b y y r b g b b b b r b r y b b b r b r b b b r y b b b r b b y y b y r 
+b y b y b y y r b y y b b y g g g b b b y r b y b r b y y b b b r g y r 
+y g b r y b y g y b y b b b r r b g g y r y g r b r b b y b g y b y b b 
+b b b b r b b b b b g b b g y y b g b b y r y r b y y b r b g b y g b r 
+y g r g r b g y b y b b y b y r b b y y b y b r r r y y b y g b r b b g 
+b r r y b r b r r g b g y b y b r g b r b r r y r y g y b r b b y y y b 
+b b y b y b b b g r y b b y b b y y y r b r g y b y y r b b g b g b r b 
+b y r g b g y b r g r b r b b b y r b b y y y y y b b y g b g b y b r y 
+b b b g y r y b b r b y r y b y b y r b b y b y r b b b r y g b b r b y 
+r r y y r b b b y y r b r b r y b b y r r b b y y r y y b b b b b g b r 
+r b r b b b b b r b b r b b b b b y y r r y g b b b r y r r b b r y y y 
+y y b g b y b r y b g r r g g g g g b y r b b g y g y g y r b b g y b y 
+y r b r b r y b y g y b y y r y b b r b g g b r y b b g y g b y b r g y 
+y y y b r b g y b r r b g g b b y y y b y b y y r y y y g b r r g y b b 
+b g b b b b r b b b y y y r b b r b r g r g b b y b b g g b b y y r b g 
+b y b b b b y g y y b b b b b b b b b b y b b b b y b b y b b r g r b y 
+b y b b b y g g y y b y b b y g y y b y b b y y y b g g y y y r b g b r 
+r g b b y y r g g b b y b b b r y g b b r r g r y b b b y b y y b r r y 
+r r r b y b b b y g y b r b b y y r b b b y g g b y b y y g g b r y y b 
+g b r b g b b y y b y b y r b b b y b b b b b y b g y r r b b y r b y g 
+b y b b y g b g y b b r b g b y g b g y y y b g g y b y b y b g b b b b 36 x 36
+
+y b b y b b b r b b r r b b b y b r b y b b y b g y g r r r b g b b y y 
+y b r y b r b b b y y y b b g b y r r b y b y r r b b r r y b b g b b b 
+b b r g b g r r b y y r r y b y r b y y g r r r g y y r b b y b y b r g 
+y g r r r y b y r y y b b b b r y y b b y b b b b b g b g r b b y b y r 
+r y b y b b b r y r b b b b y b g y g g y b b b b b y y r b b y b y r g 
+b y y b y y y y b g r b y b y b y r r b r y y r b b b b b b b b r y b b 
+b b b y y r r r y b b r g b r y b r y r r y r b y y b b b g g y y y g y 
+b b b b r y r y r y g b g r g b r y r b y b g y y y y r b y r b g r y b 
+g y g r r b r b y r y g r r r b y b b g g b y b b r r r y r b r y y g g 
+b b b b y b y g g g r g g y y r y b y r r b b r g b y b y r b r r b r g 
+r r b b g r g r r r b g b b b g y y b y y y r b r b b b b y b y y y g b 
+b b b g g b y y r b b b r r b b r r g b y b b y r b g b b b y y b r y b 
+b r y b r b b b r b b g b r g r y y y b b r b y r g y b g y g b g b r b 
+b b b r b b b y g y g g b r b b g b g y b y b b b g b r y b y r b b g b 
+y y y y g r y b b r b b r y y y r b b b r b r b b b b r b r y b r y y b 
+b y y r b g b b b b r b r y b b b r b r b b b r y b b b r b b y y b y r 
+b y b y b y y r b y y b b y g g g b b b y r b y b r b y y b b b r g y r 
+y g b r y b y g y b y b b b r r b g g y r y g r b r b b y b g y b y b b 
+b b b b r b b b b b g b b g y y b g b b y r y r b y y b r b g b y g b r 
+y g r g r b g y b y b b y b y r b b y y b y b r r r y y b y g b r b b g 
+b r r y b r b r r g b g y b y b r g b r b r r y r y g y b r b b y y y b 
+b b y b y b b b g r y b b y b b y y y r b r g y b y y r b b g b g b r b 
+b y r g b g y b r g r b r b b b y r b b y y y y y b b y g b g b y b r y 
+b b b g y r y b b r b y r y b y b y r b b y b y r b b b r y g b b r b y 
+r r y y r b b b y y r b r b r y b b y r r b b y y r y y b b b b b g b r 
+r b r b b b b b r b b r b b b b b y y r r y g b b b r y r r b b r y y y 
+y y b g b y b r y b g r r g g g g g b y r b b g y g y g y r b b g y b y 
+y r b r b r y b y g y b y y r y b b r b g g b r y b b g y g b y b r g y 
+y y y b r b g y b r r b g g b b y y y b y b y y r y y y g b r r g y b b 
+b g b b b b r b b b y y y r b b r b r g r g b b y b b g g b b y y r b g 
+b y b b b b y g y y b b b b b b b b b b y b b b b y b b y b b r g r b y 
+b y b b b y g g y y b y b b y g y y b y b b y y y b g g y y y r b g b r 
+r g b b y y r g g b b y b b b r y g b b r r g r y b b b y b y y b r r y 
+r r r b y b b b y g y b r b b y y r b b b y g g b y b y y g g b r y y b 
+g b r b g b b y y b y b y r b b b y b b b b b y b g y r r b b y r b y g 
+b y b b y g b g y b b r b g b y g b g y y y b g g y b y b y b g b b b b 35 x 45
+y y g b y g b b y y b g y g b b g g r r r r g b g r b y y b g g r g r 
+b g g b b y r g y g b r r r b r r g g r y b r r y r b g b y r r y b y 
+y y y b r r y b y g y r y g b b r y y b y y r g g r r r r r b g y y g 
+y r g y r g y y b b y r g g r b g r r g g y y y r y g g y b y b g r b 
+g y g r g b y g b b g y y b g g y g y r y g b r y g b g y g g y r y b 
+b g r y y b g b y r r b r y y r b b r g r g y r g b y r g r g b b r g 
+y y y b b r b b g g b y b g b r g g r g b y y b r g g b b r r g g g b 
+g r y g g y b g y g g y y g g r y r b b y b g r r g y b g b y r b b r 
+g r g r g y y g g g b g r g b b g y r g r y g b r b g g r b b g y y g 
+r b y b r g y y y b g r y y r y y y g y y r g g r r r g b g y y r g y 
+y y b y r y y b b g r b r b r b r r y y g r b b g b g r b r g y r b b 
+g r b b g b g r r g g b r b r y y b y g y y r b g b b r y y g y r r g 
+r r y r r y b b r g g r r b y r b r y y r b g y g g b g g b y g r b y 
+y r r b y b b y r r g b y r g g r g b y b b g y y r b b y r y b r y b 
+y g b r b g b y b b r y g y b g y y r g g g g y g y b y g g g y g g r 
+g g b r g b b r b r g y r y g b b b b y b g g y g b g b y b g g b r g 
+r r r r b b b r r g r b b b r y b g b y b g b y y y g g g y g y g b g 
+b y y r g b g y r r r y b b b r g r r r b b r b y b g b r g b y b b y 
+b y g y y r b y g y y r g r r r g b y g r r y r y r y r r y r g r r y 
+r r b g y g y g b y b b g b y b b b g r g g y y g y r r g g y y y g g 
+r g g y y g y y g g y b g b g r y b b g y y g y b y g r r g b y g b g 
+y g b y b r r g g y g b y r y r b g y r r g y y g y g g b g r g g g r 
+b r g r r y y y g g b b y g g g b r r b r b y r r y b y g b b b y g g 
+g r g r g y b r y y r r r g g g b g g g g y g g g y g r b r y b g y y 
+r g b b g b g r r r b y g y g r b b y b g b r r g r r g g y y b y g b 
+b g y g r b r r g g g b r y b r b b r r b b g r y y y g r y r g g g b 
+g r r g g r g r g b b g y b y y g b g y g y b r y b g g r y r g g y b 
+r y r r y b y y r g b y g y r r y r b r r g y r g r b r r y b y r r g 
+g b g y b y y g g r r r r g b g y b y y y g r y r g y y y y y y r r b 
+b g y b y r y g g g r b b y b y r b y g b b y r r b g g y r b y r y y 
+r b r g r r g r r y r g r y y b b r g b b b r y r b r b g r y b b y y 
+r g b y r y y g b r y r b b r b g g b g y b b b g r g r r y g b g r g 
+g y b b r g g r b b g r r r y b r g b r g b r b r y b b b b g y y r b 
+g g b g y g g r r r b b r b r b b r g y b y r b r r y b g b b b g g g 
+b y y r r b r g g g y b y r y b y r y b y r g b r b b r b y g b b b y 
+y b g g y r r y b b g y g g y g y b r g r y r y g y r y g r r y g y y 
+y b g b r r g y y b y r r y r b b g g g g r b g b b b b g y g b g g b 
+g r g g b r g g g y y b g y r b r y r g y y g r y b b g r r y y g b g 
+g y b r y g b r y r r g b r g y g y g b b y r r r y b r g g y g r y y 
+b g y y g g g y r b b y b b b b b b y y y g g b b b b r r g b g r r g 
+r b y b b b r b b g y b g r y g b r g g y b r y g g y b g r r g b b r 
+r b y b r b g b r y r y g y b y g r g y b b g y r g y g r g g y y b b 
+b g g b b b r y b y b r g g y y g y y g g g y y g y y r y y y y b b b 
+y b b y y b g g y b r g r g y g r b g b g r y y y r y y r g g g r r y 
+g g y g r y g b y r b r g b y r r g b b y y g r y g y y b r y r b g r 
+30 x 33
+y r y y y r y g y y g r g r r r y r y r r r y g b b r r r r 
+r r b b g g y y b r y g g g b b r y g g g r r b b b b b b b 
+b r g r r r r g g g r g b y b r r g g y y g g b g y y b r r 
+r b b b b b b r r r r b g b r g b b r r r y b y g r r b b g 
+b b y b y b b b b y r b y g g g g y g y b g g r y b g y g g 
+g b b g g y g y g g g b y y y g r r g r r r y y b y y y y b 
+g r g y y b b b y b r r r r r b y y g b r r g r b b r r y y 
+g r r r y g y y b b r r r b y r y y y g g r b b g y b b r r 
+r r g r g r r y r g g b r y g g b b g b r r b y y y y b b g 
+b b g b g g b b r y g g y r y b y y g b y b b g b y y y g g 
+g r r g g y g g g b b r r y r g y y b r r b g b r r y y r y 
+y g g g y g y y y y y y g g g r b y y y g y b b b y b b g r 
+r y y y y y y g g b y y b y b y r b y y b b b g g y r y y y 
+g r r y r g y g y r y b r r r r g b y g b b b b b b g b y y 
+g b y g r r g y g g y g g g b b r r r r r r y y b b b y y y 
+y y g b y r r r y y b r b b r b r g b y r y r r b r r b b r 
+b g g y b r r r b g g r r r b b b g r r g g b g g g b g g r 
+r b y g r y b y g g y y y y r g g b y y g g r b y y y r y y 
+r g b y r b b r r y b b g g y y b y y y b b b r b g g g r r 
+r b b y b b r r r y y b b b y r b y g y r r g r g r g g b b 
+r r y b b b g y y r r g r y r y g g b b b b b g r b y y y b 
+b r g g y b r r b b r g g r y g g g b r y r y g y y y r g b 
+y r b b y y g g g g y y r y y b b b r r r r r g g r r r b r 
+b y y y y y r r y y r b g r b b y r r y y y y y g g y r g y 
+y r y b r r y r r r b b r y y y g b b b b r r b y y b b b y 
+b b b b b y y y r r y y y r b r b b g g r r b r r y b g b b 
+y y y y g y b g y g y b b b r r r y y r g b r r g g r r g b 
+b r y g b r b b g y y b b g r b g b b y y y y y g y g g g g 
+g g y y y r b b b b r r r g g g g g g y g r y r g b y y b b 
+y r y y g g b b r b r r y y b y g g g g g r y g b b y r y b 
+r b g b r g g y r y g b g g y r r b r r y r r r r r r b r y 
+y y y r b b b b y g b r b g g g y r y b b y y y b b y g b g 
+b y y y g g g b b g y y y r r r y y b y g g b y y y y y b b 
+36 x 45
+g b y g y b r b g r y y r g g b b y y r r y g r b r g y r r r g y r r r 
+g y b r g y g r g g r g r r g y y y g r y r b r g r y g r g g g r y b g 
+r g y g g b g b b b r g g b r g y b b g b r y r g y y r b b y y r g g y 
+y r b r g r g b r r b r g g r y g y r r r y r g g r b y y y y g b g g b 
+y g r b g g g r y r b g r y g r g b b r g b g g r b g y b r y y b g g r 
+g r b r g y r r r b r b b g g y g y g b r y g y g g b g y g r r y b y r 
+r y r y r r r r r b y g b r r y g g b r b y r g b y g r y y r g b y y b 
+y g r r r y r b y g g r y g g r b r r r r r y r g y r y r r r b y r g b 
+r r r r b b g r g g r g y b b y r y b r r r y r b g g y r g r y b r b y 
+y y g y y y b g g g y y y b y b y r b r b r y y y r r y g g g y y g r g 
+y b y b g g g r r g b b r r g y y y b g y b r r r y g y r y b r g y y b 
+r g b g r b g g b y b g y y b g r b b b b y y y y b b r g g g r y g g b 
+g y r y b y r y g y y b y g y b r b y y g b r b g g g b r b r g y r b r 
+b b g r r b r g r g g b y g r y b y y r y g r r g r g r b y g g b b g r 
+r g g b g g g g g g r r y g r g y r r b g y g y r b r y y g g y g b g y 
+b b y b g r r r r r y r g b g b y b g y y g b b b b r b y r r g g r b b 
+g b r b b g g b y r g g b y r r g b g y y g b g g r r r r y r g g b b g 
+g y r b g y r g b b g y g r y b r r g y r r b r r g r r y r b y b b b r 
+r y r r y g b y g r r r b r b y r g b g b r b y b b b b b b b g b r b b 
+b y b r y r b g r g y g g r y y y g g r y b b y y y y r y b b y g r g g 
+r g g b r g r r y g y b y r b b b y b r b g b b b y y r y r b b b y y r 
+y y r b y g r g b b r r r r r g y y b b r b g g g b r g y y r y b g y g 
+r g r b y g b r y r r b r g b r g b r y y b y y g b b g g g b g b g b g 
+r y g g y y r y r g y g y b y y b r r g b g b g r r g b y r b b b y b r 
+y r r b r r b r g g b r r y g g r b g b r r g y b g g g b y r r y r y r 
+y r b r y y r y b g b r r r g b r g b r r r b g b y r b r y y y g b r r 
+y b b b y b b g r b y b y b g r g r g r y g b y b r g g r r g y b r r b 
+y y b g r r y b g g y r y r g r y g y g y r g g g b y g g y b y r b y g 
+b y r g b b g y g b y g r r g g g y b b y r y y b y r r y y b r y r r g 
+g b b b y g g y g y g r r r r b y r g r g r b g y r b r b r r y y y g g 
+y r y b g b y y y r y b y g r r g g r y b b b r y g r r r y y y b y g g 
+y y b y y y g b g b b y b r b g y g g g g y b b r r g g g y g b b b r r 
+y b g b b y b b g y r y r g b r b y b y r y r b b y b g g g r g y b b b 
+y g y g b g b g g g r r b b b r g r b y g r g b y y r g r r r g b g b y 
+y y r y b g r b b y r g b y b r g g b y g y g g g b g y g b g y y r r y 
+g g b r b y r r y y r b r r b y g r r r y b b r g b b g g b y b r b y y 
+g b r g r b g r b y r r r r r y g r r b g g r r y r y b y r g r r g r r 
+r r y y b y r r y r r r r g y g g g b b g y g y r g g g g g r y b b y b 
+g y y y r y g b y g b r r y b g r g g y y r y b r b y b r r g g g r y y 
+g g r r y b r g y b b b r y r g g g r b y g y r y b r g b g b g g b y r 
+y y y r r g y r y r b g r r y y g g g y b y r g g r g y y y y b y y b g 
+b r r g r g y b g b y b g b g g y y r r g y r g b b r y r g y r g r r r 
+r r y y y g y b g g b g b b y g y y r y b y g g b r g y g b y r g y b g 
+r y b g g g r b b r r y r y g g y b b y y r r b b r b r y y b y y y y r 
+y b r b b b r r y b g r b g b b b r g r r b g g g r y y r y y r r y y b 

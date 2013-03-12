@@ -6,6 +6,37 @@
 
 int sizex = 0, sizey = 0;
 
+void print_grid(char grid[sizex][sizey])
+{
+    int i, j;
+    char color;
+    printf(" Y \n");
+    for (j = sizey - 1; j > 0; j--) {
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+        printf("%2d ", j+1);
+        for (i = 0; i < sizex; i++) {
+            color = grid[i][j];
+            switch (color) {
+                case 'b': SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_BLUE); printf("  "); break;
+                case 'r': SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_RED); printf("  "); break;
+                case 'y': SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_GREEN | BACKGROUND_RED); printf("  "); break;
+                case 'g': SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_GREEN); printf("  "); break;
+                default: SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN); printf("  "); break;
+            }
+        }
+        printf("\n");
+    }
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+    printf(" ");
+    for (i = 0; i < sizex; i += 2) {
+        printf("%4d", i+1);
+    }
+    if (i % 2 == 0) {
+        printf(" ");
+    }
+    printf("  X");
+}
+
 void generate_grid(char grid[sizex][sizey])
 // Generates a grid which represents like this: [1, 2, 3; 4, 5, 6] has three columns and two rows; becomes [[4, 1], [5, 2], [3, 6]]. //
 {
@@ -20,7 +51,7 @@ void generate_grid(char grid[sizex][sizey])
     srand(seed);
     for (j = sizey - 1; j >= 0; j--) {
         for (i = 0; i < sizex; i++) {
-            random = rand() %5;
+            random = rand() % (5 - (sizex*sizey)/1000);
             switch(random) {
                 case 0: p = 'b'; break;
                 case 1: p = 'r'; break;
@@ -45,8 +76,10 @@ int read_grid(char grid[sizex][sizey], char path[25])
 	fprintf(log, "%d x %d\n", sizex, sizey);
 
     fscanf(input, "%d%d", &j, &i);
-    printf("%d%d", i, j);
+    printf("%d %d\n", i, j);
     if (i != sizex || j != sizey) {
+        fclose(log);
+        fclose(input);
         return -2;
     }
 
@@ -54,6 +87,8 @@ int read_grid(char grid[sizex][sizey], char path[25])
         for (i = 0; i < sizex; i++) {
             fscanf(input, "%c", &color);
             if (color != 'b' && color != 'g' && color != 'r' && color != 'y' && color != '\n' && color != ' ') {
+                fclose(log);
+                fclose(input);
                 return -1;
             }
             if (color == '\n' || color == ' ') {
@@ -68,29 +103,11 @@ int read_grid(char grid[sizex][sizey], char path[25])
 
         }
     }
+    fclose(log);
+    fclose(input);
+
+    print_grid(grid);
     return 0;
-}
-
-
-void print_grid(char grid[sizex][sizey])
-// prints the current grid to terminal //
-{
-    int i, j;
-    char color;
-    for (j = sizey - 1; j >= 0; j--) {
-        for (i = 0; i < sizex; i++) {
-            color = grid[i][j];
-            switch (color) {
-                case 'b': SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_BLUE); printf("  "); break;
-                case 'r': SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_RED); printf("  "); break;
-                case 'y': SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_GREEN | BACKGROUND_RED); printf("  "); break;
-                case 'g': SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_GREEN); printf("  "); break;
-                default: SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN); printf("  "); break;
-            }
-        }
-        printf("\n");
-    }
-    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
 }
 
 int main (void)
@@ -101,9 +118,9 @@ int main (void)
     printf("Choose mode: 1 play generated, 2 play premade\n");
 	scanf("%d", &mode);
 	switch (mode) {
-        case 1: { for (warn = 0; sizex > 39 || sizey > 39 || sizex < 2 || sizey < 2; warn++) {
+        case 1: { for (warn = 0; sizex > 36 || sizey > 45 || sizex < 5 || sizey < 5; warn++) {
                     if (warn > 0) {
-                        printf("Sorry, both x and y have to be between 2 and 39\n\n");
+                        printf("Sorry, be reasonable please.\n\n");
                     }
                     printf("Enter size of x: ");
                     scanf("%d", &sizex);
