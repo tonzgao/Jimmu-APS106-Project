@@ -11,9 +11,12 @@
 *.so.*
 *.dylib
 
-#Other
+# Executables
+*.exe
+*.out
+*.app
+
+# Other
 *.ini
 *.dropbox
-*.suo
-*.cache
 Thumbs.db
