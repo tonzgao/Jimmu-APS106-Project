@@ -4,10 +4,10 @@
 #include <stdlib.h>
 #include <time.h>
 
-//does not compile currently. Use test.c to test out functions //
+// File does not compile currently. Use test.c to test out functions //
 char player[25] = {0};
 time_t btime;
-int sizex = 0, sizey = 0, warn;
+int sizex = -1, sizey = -1;
 
 int main(void)
 // Opens the log file and asks the Player's name //
@@ -25,103 +25,111 @@ int main(void)
 	fclose(testfile);
 
     printf("Please input your name: ");
-    scanf("%25s", &player);
-    play();
+    scanf("%[ -~]25s", &player);
+    start();
     return 0;
 }
 
-int play(void)
-// Player chooses mode; Preparations for each mode begin; Player can play and machine logs. Unfinished //
+void start(void)
+// Player chooses betwen playing or watching ai. After each game, the player return here //
 {
-	system(cls);
-    printf("Intro");
-	printf("Choose mode: 1 play generated, 2 play premade, 3 watch ai play generated, 4 watch ai play premade, other exit")
-	scanf("%d", &mode)
-	switch (mode) {
-		case 1: { // something else we could do is have seperate functions for play and ai and then if/else, rather than a switch. //
-					timestamp();
-				    for (warn = 0; sizex > 39 || sizey > 39 || sizex < 2 || sizey < 2; warn++) {
-				        if (warn > 0) {
-				            printf("Sorry, both x and y have to be between 2 and 39\n\n");
-				        }
-				        printf("Enter size of x: ");
-				        scanf("%d", &sizex);
-				        printf("Enter size of y: ");
-				        scanf("%d", &sizey);
-				    }
-					char grid[sizex][sizey];
-					generate_grid(grid);
-					break;
-				}
-		case 2: {
-					warn = -1;
-                	while (warn < 0) {
-	                    printf("Please input the grid path: ");
-	                    scanf("%25s", &path);
-                    	FILE * input = fopen(path, "r");
-                    	fscanf(input, "%d %d", &sizey, &sizex);
-                    	char grid[sizex][sizey];
-                    	fclose(input);
-                    	warn = read_grid(grid, path);
-                	}
-                	break;
-            	}
-		case 3: timestamp(); printf("Enter size"); scanf("%d%d", &sizex, &sizey); grid = generate_grid(sizex, sizey); ai_play(); play(); break;
-		case 4: timestamp(); printf("Path pls"); scanf("%s", &path); grid = read_grid(path); ai_play(); play(); break;
-		default: exit(0);
-	}
+    int mode = 2, warn;
+    printf("\n1 Computer Generated Grid\n2 Custom Grid\n0 EXIT\n\nPlease state what you want to play: ");
+    scanf("%d", &mode);
+    if (mode != 1 && mode != 2) {
+        exit(0);
+    }
 
-	print_grid(grid); // problem: does not work because the scope of grid is limited to the switch statement in case 1, and the while loop in case 2. //
-	fprintf("\nSTART\nx, y, score");
-	int score = 0
+    FILE * log = fopen("Log/log.txt", "a");
+    char path[25] = {0};
+    timestamp();
 
-	while (possible() == 1) {
-		printf_grid()
-		printf("Current score: %d", score)
-		printf("New coordinates: ")
-		scanf("%d %d", &x, &y)
-		score += collapse(x, y)
-		fprintf(log, "%d %d %d", x, y, score)
-	}
+    if (mode == 2) {
+        printf("\nPlease type the path to your grid: ");
+        scanf("%25s", &path);
+        FILE * input = fopen(path, "r");
+        fscanf(input, "%d%d", &sizey, &sizex);
+        fclose(input);
+    } else {
+        printf("\nPlease input the size of your grid.\n");
+        for (warn = 0; sizex > 36 || sizey > 45 || sizex < 7 || sizey < 7; warn++) {
+            if (warn > 0) {
+                printf("\nSorry, please be reasonable\n");
+            }
+            if (warn > 7) {
+                printf("\nI feel like there is a problem here.\n");
+                exit(0);
+            }
+            printf("\nEnter size of x: ");
+            scanf("%d", &sizex);
+            if (sizex == 0) {
+                int random, seed;
+                seed = time(NULL);
+                srand(seed);
+                sizex = (rand() % 20) + 8;
+            }
+            printf("Enter size of y: ");
+            scanf("%d", &sizey);
+            if (sizey == 0) {
+                int random, seed;
+                seed = time(NULL);
+                srand(seed);
+                sizey = (rand() % 25) + 8;
+            }
+        }
+    }
+    char grid[sizex][sizey];
 
-	printf("All done!/n Your final score is %d./n", score)
-	fprintf(log, "END\n\nFINAL SCORE: %d (%s)", score, player)
+    if (mode == 2) {
+        warn = read_grid(grid, path);
+        if (warn < 0) {
+            start();
+        }
+    } else {
+        generate_grid(grid);
+    }
+    printf("\n1 Play\n2 Watch\n\nNow please choose your mode: ");
+    scanf("%d", &mode);
+    printf("\nHere is your grid:\n\n");
+    print_grid(grid);
+    printf("\n");
 
-	printf("press any key to play again")
-	getchar()
-	play()
+    switch (mode) {
+        case 2: break;
+        default: play();
+    }
 }
-
-void human(sizex, sizey)
-{} //see line 41 //
 
 void timestamp(void)
 // Stamps the time for each game in the logs //
 {
+    if (!player) {
+        player[0] = 1;
+    }
 	FILE * log;
 	log = fopen("Log/log.txt", "a");
 	time (&btime);
-	fprintf(log, "-------------------------------------------------------------------------------\n");
+	fprintf(log, "\n-------------------------------------------------------------------------------\n");
 	fprintf(log, "	  %s, NEW GAME: %s", player, ctime(&btime));
 	fprintf(log, "-------------------------------------------------------------------------------\n\n");
 	fclose(log);
 }
 
 void generate_grid(char grid[sizex][sizey])
-// Generates a grid which represents like this: [1, 2, 3; 4, 5, 6] has three columns and two rows; becomes [[4, 1], [5, 2], [3, 6]]. //
+// Generates a grid randomly which represents like this: [1, 2, 3; 4, 5, 6] has three columns and two rows; becomes [[4, 1], [5, 2], [3, 6]]. //
 {
     int i, j, random, seed;
     char p = 'b';
 
     FILE * log;
-	log = fopen("Log/log.txt", "a");
-	fprintf(log, "%d x %d\n", sizex, sizey);
+    log = fopen("Log/log.txt", "a");
+    fprintf(log, "%d x %d\n", sizex, sizey);
 
     seed = time(NULL);
     srand(seed);
     for (j = sizey - 1; j >= 0; j--) {
         for (i = 0; i < sizex; i++) {
-            random = rand() % (5 - (sizex*sizey)/1000);
+            random = rand() % 5;
             switch(random) {
                 case 0: p = 'b'; break;
                 case 1: p = 'r'; break;
@@ -138,19 +146,21 @@ void generate_grid(char grid[sizex][sizey])
 }
 
 int read_grid(char grid[sizex][sizey], char path[25])
+// Generates a grid from file which represents like this: [1, 2, 3; 4, 5, 6] has three columns and two rows; becomes [[4, 1], [5, 2], [3, 6]]. //
 {
     int i, j;
     char color = 'b';
     FILE * input = fopen(path, "r");
-	FILE * log = fopen("Log/log.txt", "a");
-	fprintf(log, "%d x %d\n", sizex, sizey);
+    FILE * log = fopen("Log/log.txt", "a");
 
     fscanf(input, "%d%d", &j, &i);
-    if (i != sizex || j != sizey) {
+    if (i > 36 || j > 45 || i < 5 || j < 5) {
         fclose(log);
         fclose(input);
+        printf("Sorry, grid dimensions do not work.");
         return -2;
     }
+    fprintf(log, "%d x %d\n", sizex, sizey);
 
     for (j = sizey - 1; j >= 0; j--) {
         for (i = 0; i < sizex; i++) {
@@ -158,6 +168,7 @@ int read_grid(char grid[sizex][sizey], char path[25])
             if (color != 'b' && color != 'g' && color != 'r' && color != 'y' && color != '\n' && color != ' ') {
                 fclose(log);
                 fclose(input);
+                printf("Sorry, there is something wrong with your grid.");
                 return -1;
             }
             if (color == '\n' || color == ' ') {
@@ -170,12 +181,15 @@ int read_grid(char grid[sizex][sizey], char path[25])
 
         }
     }
+    fprintf(log, "\n");
     fclose(log);
     fclose(input);
+
     return 0;
 }
 
 void print_grid(char grid[sizex][sizey])
+// Prints the grid to the terminal in color //
 {
     int i, j;
     char color;
@@ -206,6 +220,8 @@ void print_grid(char grid[sizex][sizey])
     printf("  X");
 }
 
+
+// FUNCTIONS BELOW DO NOT WORK //
 void possible(void)
 // Checks if moves are possible. Returns 0 if not, and 1 if yes. Unfinished//
 {
@@ -260,42 +276,67 @@ int collapse(x, y) {
 	return 0;
 }
 
-void ai_play(void)
-// just a standard greedy algorithm. unfinished //
+void play(void)
+// Human playing mode //
 {
-		fprintf(log, "%d x %d", sizex, sizey)
-		fprint(file, "%s", printf_grid(grid))
-		fprintf("START\nx, y, score")
-		int score = 0
-		while (possible() == 1) {
-			printf_grid()
-			printf("Current score: %d", score)
-			printf("Press any key to continue")
-			getchar()
-			//maybe commentary to illustrate some things at certain moments?
-			highest = 2
-			hx = 0
-			hy = 0
-			steps = 0
-			for e in grid {// move this section in braces to a mode in collapse which removes the highest rank. makes altgrid not need to be global.
-				for ch in grid[e]:
-					if (altgrid[e][ch] is not caps):
-						expand(e, ch, 0)
-						if steps > highest:
-							highest = steps
-						hx = e
-						hy = ch
-						steps = 0
-			}
-			score += collapse(hx, hy)
-			fprintf(log, "%d %d %d", x, y, score)
-		}
 
-		printf("All done!/n The final score is %d./n", score)
-		fprintf(log, "END\n\nFINAL SCORE: %d (AI)", score)
+	fprintf("\nSTART\nx, y, score");
+	int score = 0
 
-		printf("Okay, you try now. Press any key to play\n")
+	while (possible() == 1) {
+		printf_grid()
+		printf("Current score: %d", score)
+		printf("New coordinates: ")
+		scanf("%d %d", &x, &y)
+		score += collapse(x, y)
+		fprintf(log, "%d %d %d", x, y, score)
+	}
+
+	printf("All done!/n Your final score is %d./n", score)
+	fprintf(log, "END\n\nFINAL SCORE: %d (%s)", score, player)
+
+	printf("press any key to play again")
+	getchar()
+	start()
+}
+
+void ai_play(void)
+// just a standard greedy algorithm. could be modified. unfinished //
+{
+	fprintf(log, "%d x %d", sizex, sizey)
+	fprint(file, "%s", printf_grid(grid))
+	fprintf("START\nx, y, score")
+	int score = 0
+	while (possible() == 1) {
+		printf_grid()
+		printf("Current score: %d", score)
+		printf("Press any key to continue")
 		getchar()
+		//maybe commentary to illustrate some things at certain moments?
+		highest = 2
+		hx = 0
+		hy = 0
+		steps = 0
+		for e in grid {// move this section in braces to a mode in collapse which removes the highest rank. makes altgrid not need to be global.
+			for ch in grid[e]:
+				if (altgrid[e][ch] is not caps):
+					expand(e, ch, 0)
+					if steps > highest:
+						highest = steps
+					hx = e
+					hy = ch
+					steps = 0
+		}
+		score += collapse(hx, hy)
+		fprintf(log, "%d %d %d", x, y, score)
+	}
+
+	printf("All done!/n The final score is %d./n", score)
+	fprintf(log, "END\n\nFINAL SCORE: %d (AI)", score)
+
+	printf("Okay, you try now. Press any key to play\n")
+	getchar()
+	start()
 }
 
 
