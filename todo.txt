@@ -1,16 +1,12 @@
 immediate goals:
-finish read_grid
 accout for bad users: checking for right type, max size of grid, choosing invalid coordinates, etc
 resolve relationship between grid and altgrid
-
-later goals:
 test expand
 
 long term goals:
-general testing
 documentation
-dynamic memory for path and name
+prevent cheating
 
 stretch goals:
 make real ai
-prevent cheating
+dynamic memory for path and playername
