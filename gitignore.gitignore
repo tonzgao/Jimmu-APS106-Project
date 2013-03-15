@@ -1,4 +1,5 @@
 # Object files
+**/*.o
 *.o
 
 # Libraries
@@ -12,7 +13,7 @@
 *.dylib
 
 # Executables
-*.exe
+**/*.exe
 *.out
 *.app
 
