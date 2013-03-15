@@ -1,5 +1,5 @@
 # Object files
-**/*.o
+Testing/*.o
 *.o
 
 # Libraries
@@ -13,7 +13,7 @@
 *.dylib
 
 # Executables
-**/*.exe
+Testing/*.exe
 *.out
 *.app
 
