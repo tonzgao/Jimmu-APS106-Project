@@ -5,7 +5,31 @@
 
 char player[25] = {0};
 time_t btime;
-int sizex = -31415, sizey = 0;
+int sizex = 0, sizey = 0, turnlimit = 999;
+
+//void expand(x, y, mode) {
+//// Current order of business //
+//	char current = altgrid[x][y]
+//	if (current is not caps) {
+//		steps++
+//		if (mode == 1) {
+//			if steps > 1; break
+//		}
+//		altgrid[x][y] = caps(altgrid[x][y])
+//		if (altgrid[x+1][y] == current) {
+//			expand(x+1, y)
+//		}
+//		if (altgrid[x-1][y] == current) {
+//			expand(x-1, y)
+//		}
+//		if (altgrid[x][y+1] == current) {
+//			expand(x, y+1)
+//		}
+//		if (altgrid[x][y-1] == current) {
+//			expand(x, y-1)
+//		}
+//	}
+//}
 
 void timestamp(void)
 // Stamps the time for each game in the logs //
@@ -17,7 +41,7 @@ void timestamp(void)
 	log = fopen("Log/log.txt", "a");
 	time (&btime);
 	fprintf(log, "\n-------------------------------------------------------------------------------\n");
-	fprintf(log, "	  %s, NEW GAME: %s", player, ctime(&btime));
+	fprintf(log, "	  NEW GAME: %s", ctime(&btime));
 	fprintf(log, "-------------------------------------------------------------------------------\n\n");
 	fclose(log);
 }
@@ -108,7 +132,7 @@ void print_grid(char grid[sizex][sizey])
     int i, j;
     char color;
     printf(" Y \n");
-    for (j = sizey - 1; j > 0; j--) {
+    for (j = sizey - 1; j >= 0; j--) {
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
         printf("%2d ", j+1);
         for (i = 0; i < sizex; i++) {
@@ -121,6 +145,7 @@ void print_grid(char grid[sizex][sizey])
                 default: SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN); printf("  "); break;
             }
         }
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
         printf("\n");
     }
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
@@ -134,9 +159,65 @@ void print_grid(char grid[sizex][sizey])
     printf("  X");
 }
 
-void play(void)
+int possible(char grid[sizex][sizey])
+{
+    return 1;
+}
+
+int collapse(char grid[sizex][sizey], int x, int y)
+{
+    return 10;
+}
+
+void play(char grid[sizex][sizey])
 // Human playing mode //
 {
+    FILE * log = fopen("Log/log.txt", "a");
+    fprintf(log, "\nSTART\nx, y, score");
+	int score = 0, gains = 0, turn = 1, x = 1, y = 1, warn = 0;
+
+    printf("\n");
+	print_grid(grid);
+
+	for (turn = 0; turn < turnlimit && possible(grid) == 1; turn++) {
+	    printf("\n\nTurn: %d, Current Score: %d", turn + 1, score);
+		printf("\n\nX Coordinate: ");
+		scanf("%d", &x);
+		printf("Y Coordinate: ");
+		scanf("%d", &y);
+		x--; y--;
+		// crashes if given chars as input //
+        if (x < sizex && x >= 0 && y < sizey && y >= 0) {
+            gains = collapse(grid[sizex][sizex], x, y);
+            if (gains > 0) {
+                score += gains;
+                printf("\n");
+                print_grid(grid);
+                warn = 0;
+            } else {
+                printf("\nSorry, you just wasted a turn.\n");
+                continue;
+            }
+        } else {
+            printf("\nSorry, invalid coordinates.");
+            warn++;
+            if (warn > 7) {
+                printf("\n\nI feel like something is wrong here.\n");
+                fprintf(log, "\nERROR OCCURED\n23");
+                fclose(log);
+                exit(-1);
+            }
+            continue;
+        }
+        fprintf(log, "\n%d, %d, %d", x, y, score);
+	}
+
+
+	fprintf(log, "\nEND\n\nFINAL SCORE: %d (%s)\n", score, player);
+    fclose(log);
+	printf("\nAll done! Your final score is %d. Press enter to play again\n", score);
+	getchar();
+	start();
     return;
 }
 
@@ -161,14 +242,31 @@ void start(void)
         fscanf(input, "%d%d", &sizey, &sizex);
         fclose(input);
     } else {
-        for (warn = 0; sizex > 36 || sizey > 45 || sizex < 5 || sizey < 5; warn++) { // should have an option to choose a random sized grid //
+        printf("\nPlease input the size of your grid.\n");
+        for (warn = 0; sizex > 36 || sizey > 45 || sizex < 7 || sizey < 7; warn++) {
             if (warn > 0) {
                 printf("\nSorry, please be reasonable\n");
             }
+            if (warn > 7) {
+                printf("\nI feel like there is a problem here.\n");
+                exit(-1); // giving a char for sizex or sizey causes infinite loop //
+            }
             printf("\nEnter size of x: ");
             scanf("%d", &sizex);
+            if (sizex == 0) {
+                int random, seed;
+                seed = time(NULL);
+                srand(seed);
+                sizex = (rand() % 20) + 8;
+            }
             printf("Enter size of y: ");
             scanf("%d", &sizey);
+            if (sizey == 0) {
+                int random, seed;
+                seed = time(NULL);
+                srand(seed);
+                sizey = (rand() % 25) + 8;
+            }
         }
     }
     char grid[sizex][sizey];
@@ -183,13 +281,15 @@ void start(void)
     }
     printf("\n1 Play\n2 Watch\n\nNow please choose your mode: ");
 	scanf("%d", &mode);
-	printf("\nHere is your grid:\n\n");
-    print_grid(grid);
-    printf("\n");
+	printf("\nEnter a turn limit (0 for no limit): ");
+	scanf("%d", &turnlimit);
+	if (turnlimit == 0) {
+        turnlimit = 999;
+	}
 
 	switch (mode) {
 		case 2: break;
-		default: play();
+		default: play(grid);
 	}
 }
 

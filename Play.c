@@ -58,7 +58,7 @@ void start(void)
             }
             if (warn > 7) {
                 printf("\nI feel like there is a problem here.\n");
-                exit(0);
+                exit(-1); // giving a char for sizex or sizey causes infinite loop //
             }
             printf("\nEnter size of x: ");
             scanf("%d", &sizex);
@@ -90,13 +90,15 @@ void start(void)
     }
     printf("\n1 Play\n2 Watch\n\nNow please choose your mode: ");
     scanf("%d", &mode);
-    printf("\nHere is your grid:\n\n");
-    print_grid(grid);
-    printf("\n");
+    printf("\nEnter a turn limit (0 for no limit): ");
+    scanf("%d", &turnlimit);
+    if (turnlimit == 0) {
+        turnlimit = 999;
+    }
 
     switch (mode) {
         case 2: break;
-        default: play();
+        default: play(grid);
     }
 }
 
@@ -106,13 +108,13 @@ void timestamp(void)
     if (!player) {
         player[0] = 1;
     }
-	FILE * log;
-	log = fopen("Log/log.txt", "a");
-	time (&btime);
-	fprintf(log, "\n-------------------------------------------------------------------------------\n");
-	fprintf(log, "	  %s, NEW GAME: %s", player, ctime(&btime));
-	fprintf(log, "-------------------------------------------------------------------------------\n\n");
-	fclose(log);
+    FILE * log;
+    log = fopen("Log/log.txt", "a");
+    time (&btime);
+    fprintf(log, "\n-------------------------------------------------------------------------------\n");
+    fprintf(log, "    NEW GAME: %s", ctime(&btime));
+    fprintf(log, "-------------------------------------------------------------------------------\n\n");
+    fclose(log);
 }
 
 void generate_grid(char grid[sizex][sizey])
@@ -194,7 +196,7 @@ void print_grid(char grid[sizex][sizey])
     int i, j;
     char color;
     printf(" Y \n");
-    for (j = sizey - 1; j > 0; j--) {
+    for (j = sizey - 1; j >= 0; j--) {
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
         printf("%2d ", j+1);
         for (i = 0; i < sizex; i++) {
@@ -207,6 +209,7 @@ void print_grid(char grid[sizex][sizey])
                 default: SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN); printf("  "); break;
             }
         }
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
         printf("\n");
     }
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
@@ -276,28 +279,56 @@ int collapse(x, y) {
 	return 0;
 }
 
-void play(void)
+void play(char grid[sizex][sizey])
 // Human playing mode //
 {
+    FILE * log = fopen("Log/log.txt", "a");
+    fprintf(log, "\nSTART\nx, y, score");
+    int score = 0, gains = 0, turn = 1, x = 1, y = 1, warn = 0;
 
-	fprintf("\nSTART\nx, y, score");
-	int score = 0
+    printf("\n");
+    print_grid(grid);
 
-	while (possible() == 1) {
-		printf_grid()
-		printf("Current score: %d", score)
-		printf("New coordinates: ")
-		scanf("%d %d", &x, &y)
-		score += collapse(x, y)
-		fprintf(log, "%d %d %d", x, y, score)
-	}
+    for (turn = 0; turn < turnlimit && possible(grid) == 1; turn++) {
+        printf("\n\nTurn: %d, Current Score: %d", turn + 1, score);
+        printf("\n\nX Coordinate: ");
+        scanf("%d", &x);
+        printf("Y Coordinate: ");
+        scanf("%d", &y);
+        x--; y--;
+        // crashes if given chars as input //
+        if (x < sizex && x >= 0 && y < sizey && y >= 0) {
+            gains = collapse(grid[sizex][sizex], x, y);
+            if (gains > 0) {
+                score += gains;
+                printf("\n");
+                print_grid(grid);
+                warn = 0;
+            } else {
+                printf("\nSorry, you just wasted a turn.\n");
+                continue;
+            }
+        } else {
+            printf("\nSorry, invalid coordinates.");
+            warn++;
+            if (warn > 7) {
+                printf("\n\nI feel like something is wrong here.\n");
+                fprintf(log, "\nERROR OCCURED\n23");
+                fclose(log);
+                exit(-1);
+            }
+            continue;
+        }
+        fprintf(log, "\n%d, %d, %d", x, y, score);
+    }
 
-	printf("All done!/n Your final score is %d./n", score)
-	fprintf(log, "END\n\nFINAL SCORE: %d (%s)", score, player)
 
-	printf("press any key to play again")
-	getchar()
-	start()
+    fprintf(log, "\nEND\n\nFINAL SCORE: %d (%s)\n", score, player);
+    fclose(log);
+    printf("\nAll done! Your final score is %d. Press enter to play again\n", score);
+    getchar();
+    start();
+    return;
 }
 
 void ai_play(void)
@@ -341,9 +372,6 @@ void ai_play(void)
 
 
 
-
-
-//  COPYRIGHT LICENCE
 //   The MIT License (MIT)
 //
 //Copyright (c) <2013> <Zipeng Cai, Anthony Gao, Richard Shangguan, Jimmy Tieu>
@@ -352,6 +380,5 @@ void ai_play(void)
 //
 //The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 //
-//THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-//
-//IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//The software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement.
+//In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.

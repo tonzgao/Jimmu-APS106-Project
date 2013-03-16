@@ -19,6 +19,5 @@
 *.ini
 *.dropbox
 Thumbs.db
-todo.txt
 
 # Modified from C.gitignore from https://github.com/github/gitignore
