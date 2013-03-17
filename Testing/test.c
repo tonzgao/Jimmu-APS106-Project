@@ -5,31 +5,60 @@
 
 char player[25] = {0};
 time_t btime;
-int sizex = 0, sizey = 0, turnlimit = 999;
+int sizex = 0, sizey = 0, turnlimit = 999, steps = 0;
 
-//void expand(x, y, mode) {
-//// Current order of business //
-//	char current = altgrid[x][y]
-//	if (current is not caps) {
-//		steps++
-//		if (mode == 1) {
-//			if steps > 1; break
-//		}
-//		altgrid[x][y] = caps(altgrid[x][y])
-//		if (altgrid[x+1][y] == current) {
-//			expand(x+1, y)
-//		}
-//		if (altgrid[x-1][y] == current) {
-//			expand(x-1, y)
-//		}
-//		if (altgrid[x][y+1] == current) {
-//			expand(x, y+1)
-//		}
-//		if (altgrid[x][y-1] == current) {
-//			expand(x, y-1)
-//		}
-//	}
-//}
+void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey]) {
+    int i, j;
+    for (i = 0; i < sizex; i++) {
+        for (j = 0; j < sizey; j++) {
+            recessive[i][j] = dominant[i][j];
+        }
+    }
+}
+
+char caps(char c) {
+    if (c > 97 && c < 122) {
+        c = c - 'a' + 'A';
+    }
+    return c;
+}
+
+int expand(char altgrid[sizex][sizey], int x, int y, int mode) {
+// Current order of business //
+	char current = altgrid[x][y];
+	if (current > 97 && current < 122) {
+		steps++;
+		if (mode == 1) {
+			if (steps > 1) {
+			    return 1;
+			}
+		}
+		if (mode != 1) {
+            altgrid[x][y] = caps(altgrid[x][y]);
+		}
+        if (x < sizex) {
+            if (altgrid[x+1][y] == current) {
+                expand(altgrid, x+1, y, mode);
+            }
+        }
+        if (x > 0) {
+            if (altgrid[x-1][y] == current) {
+                expand(altgrid, x-1, y, mode);
+            }
+        }
+		if (y < sizey) {
+            if (altgrid[x][y+1] == current) {
+                expand(altgrid, x, y+1, mode);
+            }
+		}
+        if (y > 0) {
+            if (altgrid[x][y-1] == current) {
+                expand(altgrid, x, y-1, mode);
+            }
+        }
+	}
+	return steps;
+}
 
 void timestamp(void)
 // Stamps the time for each game in the logs //
@@ -46,7 +75,7 @@ void timestamp(void)
 	fclose(log);
 }
 
-void generate_grid(char grid[sizex][sizey])
+void generate_grid(char grid[sizex][sizey], char altgrid[sizex][sizey])
 // Generates a grid randomly which represents like this: [1, 2, 3; 4, 5, 6] has three columns and two rows; becomes [[4, 1], [5, 2], [3, 6]]. //
 {
     int i, j, random, seed;
@@ -69,6 +98,7 @@ void generate_grid(char grid[sizex][sizey])
                 default: break;
             }
             grid[i][j] = p;
+            altgrid[i][j] = p;
             fprintf(log, "%c ", p);
         }
         fprintf(log, "\n");
@@ -76,7 +106,7 @@ void generate_grid(char grid[sizex][sizey])
     fclose(log);
 }
 
-int read_grid(char grid[sizex][sizey], char path[25])
+int read_grid(char grid[sizex][sizey], char altgrid[sizex][sizey], char path[25])
 // Generates a grid from file which represents like this: [1, 2, 3; 4, 5, 6] has three columns and two rows; becomes [[4, 1], [5, 2], [3, 6]]. //
 {
     int i, j;
@@ -114,6 +144,7 @@ int read_grid(char grid[sizex][sizey], char path[25])
                 i--;
             } else {
                 grid[i][j] = color;
+                altgrid[i][j] = color;
                 fprintf(log, "%c ", color);
             }
 
@@ -159,17 +190,70 @@ void print_grid(char grid[sizex][sizey])
     printf("  X");
 }
 
+
 int possible(char grid[sizex][sizey])
 {
-    return 1;
+    int i, j, pos = 0;
+
+    for (i=0; i < sizex; i++) {
+        for (j=0; j < sizey; j++) {
+            pos = expand(grid, i, j, 1);
+            if (pos > 0) {
+                return 1;
+            }
+        }
+    }
+    return 0;
 }
 
-int collapse(char grid[sizex][sizey], int x, int y)
+int collapse(char grid[sizex][sizey], char altgrid[sizex][sizey], int x, int y)
 {
-    return 10;
+    int i, j, removed = 0;
+
+    for (i = 0; i < sizex; i++) {
+        for (j = 0; j < sizey; j++) {
+            if (altgrid[i][j] == 'B' || altgrid[i][j] == 'G' || altgrid[i][j] == 'R' || altgrid[i][j] == 'Y') {
+                altgrid[i][j] == 0;
+                removed++;
+            }
+        }
+    }
+
+    zerosort(altgrid);
+    if (remove > 1) {
+        mate_grid(altgrid, grid);
+    } else {
+        mate_grid(grid, altgrid);
+    }
+    for (i = sizex; i > 0; i--) {
+        if (grid[i][0] == 0) {
+            sizex--;
+        }
+    }
+
+    return removed * removed;
 }
 
-void play(char grid[sizex][sizey])
+void zerosort(char grid[sizex][sizey])
+// unfinished //
+{
+    int i, j, state = 0, counter = 0;
+    for (i = 0; i < sizex; i++) {
+        for (j = 0; j < sizey; j++) {
+            if grid[i][j] == 0;
+            counter++;
+        }
+        if (counter == sizey) {
+            // shift columns over //
+        } else {
+            for (j = 0; j < sizey; j++) {
+                // shift letters down, 0s up //
+            }
+        }
+    }
+}
+
+void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
 // Human playing mode //
 {
     FILE * log = fopen("Log/log.txt", "a");
@@ -188,8 +272,10 @@ void play(char grid[sizex][sizey])
 		x--; y--;
 		// crashes if given chars as input //
         if (x < sizex && x >= 0 && y < sizey && y >= 0) {
-            gains = collapse(grid[sizex][sizex], x, y);
-            if (gains > 0) {
+            steps = 0;
+            expand(altgrid, x, y, 0);
+            gains = collapse(grid, altgrid, x, y);
+            if (gains > 1) {
                 score += gains;
                 printf("\n");
                 print_grid(grid);
@@ -200,10 +286,11 @@ void play(char grid[sizex][sizey])
             }
         } else {
             printf("\nSorry, invalid coordinates.");
+            turn--;
             warn++;
             if (warn > 7) {
                 printf("\n\nI feel like something is wrong here.\n");
-                fprintf(log, "\nERROR OCCURED\n23");
+                fprintf(log, "\nERROR OCCURED\n");
                 fclose(log);
                 exit(-1);
             }
@@ -243,14 +330,17 @@ void start(void)
         fclose(input);
     } else {
         printf("\nPlease input the size of your grid.\n");
-        for (warn = 0; sizex > 36 || sizey > 45 || sizex < 7 || sizey < 7; warn++) {
+        for (warn = 0; sizex > 36 || sizey > 45 || sizex < 1 || sizey < 1; warn++) {
             if (warn > 0) {
                 printf("\nSorry, please be reasonable\n");
             }
             if (warn > 7) {
                 printf("\nI feel like there is a problem here.\n");
+                fprintf(log, "\nERROR OCCURED\n");
+                fclose(log);
                 exit(-1); // giving a char for sizex or sizey causes infinite loop //
             }
+            sizex = 0;
             printf("\nEnter size of x: ");
             scanf("%d", &sizex);
             if (sizex == 0) {
@@ -259,6 +349,7 @@ void start(void)
                 srand(seed);
                 sizex = (rand() % 20) + 8;
             }
+            sizey = 0;
             printf("Enter size of y: ");
             scanf("%d", &sizey);
             if (sizey == 0) {
@@ -270,14 +361,15 @@ void start(void)
         }
     }
     char grid[sizex][sizey];
+    char altgrid[sizex][sizey];
 
     if (mode == 2) {
-        warn = read_grid(grid, path);
+        warn = read_grid(grid, altgrid, path);
         if (warn < 0) {
             start();
         }
     } else {
-        generate_grid(grid);
+        generate_grid(grid, altgrid);
     }
     printf("\n1 Play\n2 Watch\n\nNow please choose your mode: ");
 	scanf("%d", &mode);
@@ -287,9 +379,9 @@ void start(void)
         turnlimit = 999;
 	}
 
-	switch (mode) {
-		case 2: break;
-		default: play(grid);
+    switch (mode) {
+		case 2: printf("\n AI not implemented yet."); break;
+		default: play(grid, altgrid); break;
 	}
 }
 

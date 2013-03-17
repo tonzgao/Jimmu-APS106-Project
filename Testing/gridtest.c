@@ -134,7 +134,7 @@ void print_grid(char grid[sizex][sizey])
     printf("  X");
 }
 
-void play(void)
+void play(char grid[sizex][sizey])
 // Human playing mode //
 {
     return;
@@ -206,7 +206,7 @@ void start(void)
 
 	switch (mode) {
 		case 2: break;
-		default: play();
+		default: play(grid);
 	}
 }
 
