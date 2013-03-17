@@ -6,6 +6,7 @@
 char player[25] = {0};
 time_t btime;
 int sizex = 0, sizey = 0, turnlimit = 999, steps = 0;
+char color = 'b';
 
 void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey]) {
     int i, j;
@@ -26,7 +27,10 @@ char caps(char c) {
 int expand(char altgrid[sizex][sizey], int x, int y, int mode) {
 // Current order of business //
 	char current = altgrid[x][y];
-	if (current > 97 && current < 122) {
+	if (mode > 97 && mode < 122) {
+        color = mode;
+	}
+	if (current == color) {
 		steps++;
 		if (mode == 1) {
 			if (steps > 1) {
@@ -35,29 +39,95 @@ int expand(char altgrid[sizex][sizey], int x, int y, int mode) {
 		}
 		if (mode != 1) {
             altgrid[x][y] = caps(altgrid[x][y]);
-		}
-        if (x < sizex) {
-            if (altgrid[x+1][y] == current) {
-                expand(altgrid, x+1, y, mode);
+            if (x < sizex) {
+                if (altgrid[x+1][y] == current) {
+                    expand(altgrid, x+1, y, color);
+                }
             }
-        }
-        if (x > 0) {
-            if (altgrid[x-1][y] == current) {
-                expand(altgrid, x-1, y, mode);
+            if (x > 0) {
+                if (altgrid[x-1][y] == current) {
+                    expand(altgrid, x-1, y, color);
+                }
             }
-        }
-		if (y < sizey) {
-            if (altgrid[x][y+1] == current) {
-                expand(altgrid, x, y+1, mode);
+            if (y < sizey) {
+                if (altgrid[x][y+1] == current) {
+                    expand(altgrid, x, y+1, color);
+                }
             }
-		}
-        if (y > 0) {
-            if (altgrid[x][y-1] == current) {
-                expand(altgrid, x, y-1, mode);
+            if (y > 0) {
+                if (altgrid[x][y-1] == current) {
+                    expand(altgrid, x, y-1, color);
+                }
             }
         }
 	}
 	return steps;
+}
+
+int possible(char grid[sizex][sizey])
+
+//not working//
+{
+    int i, j, pos = 0;
+
+    for (i=0; i < sizex; i++) {
+        for (j=0; j < sizey; j++) {
+            color = grid[i][j];
+            pos = expand(grid, i, j, 1);
+            if (pos > 0) {
+                return 1;
+            }
+        }
+    }
+    return 0;
+}
+
+void collapse(char altgrid[sizex][sizey], char grid[sizex][sizey])
+
+//not working//
+{
+    int i, j, k, trouble, firstz, counter[36] = {0};
+
+    for (i = 0; i < sizex; i++) {
+        trouble = 0; firstz = -1;
+        for (j = 0; j < sizey; j++) {
+            if (altgrid[i][j] == 'B' || altgrid[i][j] == 'G' || altgrid[i][j] == 'R' || altgrid[i][j] == 'Y') {
+                altgrid[i][j] == '0';
+                counter[i]++;
+                if (firstz == -1) {
+                    firstz = j;
+                }
+            }
+        }
+        printf("%d", counter[i]);
+        if (counter[i] > 0) {
+            if (counter[i] >= sizey - 1) {
+                trouble++;
+            }
+            for (;counter[i] > 0; counter[i]--) {
+                for (k = firstz; k < sizey; k++) {
+                    altgrid[i][k] = altgrid[i][k+1];
+                }
+                altgrid[i][sizey-1] = '0';
+            }
+        }
+    }
+    printf("%d", trouble);
+    if (trouble != 0) {
+        for (;trouble > 0; trouble--) {
+            for (k = 0; k < sizex; k++) {
+                if (altgrid[k][0] == '0') {
+                    for (i = k; i < sizex - 1; i++) {
+                        for (j = 0; j < sizey; j++) {
+                            altgrid[i][j] = altgrid[i+1][j];
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    mate_grid(altgrid, grid);
 }
 
 void timestamp(void)
@@ -191,74 +261,12 @@ void print_grid(char grid[sizex][sizey])
 }
 
 
-int possible(char grid[sizex][sizey])
-{
-    int i, j, pos = 0;
-
-    for (i=0; i < sizex; i++) {
-        for (j=0; j < sizey; j++) {
-            pos = expand(grid, i, j, 1);
-            if (pos > 0) {
-                return 1;
-            }
-        }
-    }
-    return 0;
-}
-
-int collapse(char grid[sizex][sizey], char altgrid[sizex][sizey], int x, int y)
-{
-    int i, j, removed = 0;
-
-    for (i = 0; i < sizex; i++) {
-        for (j = 0; j < sizey; j++) {
-            if (altgrid[i][j] == 'B' || altgrid[i][j] == 'G' || altgrid[i][j] == 'R' || altgrid[i][j] == 'Y') {
-                altgrid[i][j] == 0;
-                removed++;
-            }
-        }
-    }
-
-    zerosort(altgrid);
-    if (remove > 1) {
-        mate_grid(altgrid, grid);
-    } else {
-        mate_grid(grid, altgrid);
-    }
-    for (i = sizex; i > 0; i--) {
-        if (grid[i][0] == 0) {
-            sizex--;
-        }
-    }
-
-    return removed * removed;
-}
-
-void zerosort(char grid[sizex][sizey])
-// unfinished //
-{
-    int i, j, state = 0, counter = 0;
-    for (i = 0; i < sizex; i++) {
-        for (j = 0; j < sizey; j++) {
-            if grid[i][j] == 0;
-            counter++;
-        }
-        if (counter == sizey) {
-            // shift columns over //
-        } else {
-            for (j = 0; j < sizey; j++) {
-                // shift letters down, 0s up //
-            }
-        }
-    }
-}
-
 void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
 // Human playing mode //
 {
     FILE * log = fopen("Log/log.txt", "a");
     fprintf(log, "\nSTART\nx, y, score");
-	int score = 0, gains = 0, turn = 1, x = 1, y = 1, warn = 0;
+	int score = 0, gains = 0, turn = 1, x = 1, y = 1, warn = 0, i = 0, count = 0;
 
     printf("\n");
 	print_grid(grid);
@@ -271,17 +279,23 @@ void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
 		scanf("%d", &y);
 		x--; y--;
 		// crashes if given chars as input //
-        if (x < sizex && x >= 0 && y < sizey && y >= 0) {
-            steps = 0;
-            expand(altgrid, x, y, 0);
-            gains = collapse(grid, altgrid, x, y);
-            if (gains > 1) {
-                score += gains;
+        if (x < sizex && x >= 0 && y < sizey && y >= 0 && grid[x][y] != 0) {
+            steps = 0; count = 0;
+            steps = expand(altgrid, x, y, grid[x][y]);
+            if (steps > 1) {
+                collapse(altgrid, grid);
+                score += steps*steps;
                 printf("\n");
+                for (i = 0; i < sizex; i++) {
+                    if (grid[i][0] == '0') {
+                        sizex--;
+                    }
+                }
                 print_grid(grid);
                 warn = 0;
             } else {
-                printf("\nSorry, you just wasted a turn.\n");
+                mate_grid(grid, altgrid);
+                printf("\n\nSorry, you just wasted a turn.");
                 continue;
             }
         } else {
@@ -302,7 +316,7 @@ void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
 
 	fprintf(log, "\nEND\n\nFINAL SCORE: %d (%s)\n", score, player);
     fclose(log);
-	printf("\nAll done! Your final score is %d. Press enter to play again\n", score);
+	printf("\n\nAll done! Your final score is %d. Press enter to play again\n", score);
 	getchar();
 	start();
     return;

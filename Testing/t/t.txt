@@ -1,0 +1,9 @@
+8 8
+bgrbgrbg
+grbgrbgr
+bgrbgrbg
+grbgrbgr
+rgrbgrbg
+grbgrbgr
+rrrrrrrr
+rrrrrrrr
