@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <time.h>
 
+//functions collapse, and play are buggy//
+// need to test these functions individually next time //
 char player[25] = {0};
 time_t btime;
 int sizex = 0, sizey = 0, turnlimit = 999, steps = 0;
@@ -24,39 +26,37 @@ char caps(char c) {
     return c;
 }
 
-int expand(char altgrid[sizex][sizey], int x, int y, int mode) {
-// Current order of business //
+int expand(char altgrid[sizex][sizey], int x, int y, int mode)
+{
 	char current = altgrid[x][y];
-	if (mode > 97 && mode < 122) {
-        color = mode;
+	if (current == '0') {
+        return -1;
 	}
-	if (current == color) {
+	if (current == mode || (mode == 1 && current == color)) {
 		steps++;
-		if (mode == 1) {
-			if (steps > 1) {
-			    return 1;
-			}
-		}
-		if (mode != 1) {
+		printf("steps%d", steps);
+		if (mode == 1 && steps > 1) {
+            return 2;
+		} else {
             altgrid[x][y] = caps(altgrid[x][y]);
             if (x < sizex) {
                 if (altgrid[x+1][y] == current) {
-                    expand(altgrid, x+1, y, color);
+                    expand(altgrid, x+1, y, mode);
                 }
             }
             if (x > 0) {
                 if (altgrid[x-1][y] == current) {
-                    expand(altgrid, x-1, y, color);
+                    expand(altgrid, x-1, y, mode);
                 }
             }
             if (y < sizey) {
                 if (altgrid[x][y+1] == current) {
-                    expand(altgrid, x, y+1, color);
+                    expand(altgrid, x, y+1, mode);
                 }
             }
             if (y > 0) {
                 if (altgrid[x][y-1] == current) {
-                    expand(altgrid, x, y-1, color);
+                    expand(altgrid, x, y-1, mode);
                 }
             }
         }
@@ -65,16 +65,16 @@ int expand(char altgrid[sizex][sizey], int x, int y, int mode) {
 }
 
 int possible(char grid[sizex][sizey])
-
-//not working//
+// returns 1 if valid moves exist, otherwise returns 0 //
 {
     int i, j, pos = 0;
 
     for (i=0; i < sizex; i++) {
         for (j=0; j < sizey; j++) {
             color = grid[i][j];
+            steps = 0;
             pos = expand(grid, i, j, 1);
-            if (pos > 0) {
+            if (pos > 1) {
                 return 1;
             }
         }
@@ -82,29 +82,30 @@ int possible(char grid[sizex][sizey])
     return 0;
 }
 
-void collapse(char altgrid[sizex][sizey], char grid[sizex][sizey])
+void collapse(char altgrid[sizex][sizey], char grid[sizex][sizey], int counter[36])
 
-//not working//
+// Removes the pieces that should be removed //
 {
-    int i, j, k, trouble, firstz, counter[36] = {0};
+    int i, j, k, trouble = 0, firstz, tempcount = 0;
 
-    for (i = 0; i < sizex; i++) {
-        trouble = 0; firstz = -1;
-        for (j = 0; j < sizey; j++) {
+    for (i = 0; i <= sizex; i++) {
+        firstz = -1;
+        for (j = 0; j <= sizey; j++) {
             if (altgrid[i][j] == 'B' || altgrid[i][j] == 'G' || altgrid[i][j] == 'R' || altgrid[i][j] == 'Y') {
                 altgrid[i][j] == '0';
                 counter[i]++;
+                tempcount++;
                 if (firstz == -1) {
                     firstz = j;
                 }
             }
         }
-        printf("%d", counter[i]);
         if (counter[i] > 0) {
-            if (counter[i] >= sizey - 1) {
-                trouble++;
+            printf("sizey%d", sizey);
+            if (counter[i] == sizey) {
+                trouble = trouble + 1;
             }
-            for (;counter[i] > 0; counter[i]--) {
+            for (; tempcount > 0; tempcount--) {
                 for (k = firstz; k < sizey; k++) {
                     altgrid[i][k] = altgrid[i][k+1];
                 }
@@ -112,20 +113,21 @@ void collapse(char altgrid[sizex][sizey], char grid[sizex][sizey])
             }
         }
     }
-    printf("%d", trouble);
-    if (trouble != 0) {
-        for (;trouble > 0; trouble--) {
-            for (k = 0; k < sizex; k++) {
-                if (altgrid[k][0] == '0') {
-                    for (i = k; i < sizex - 1; i++) {
-                        for (j = 0; j < sizey; j++) {
-                            altgrid[i][j] = altgrid[i+1][j];
-                        }
+    for (; trouble > 0; trouble--) {
+        for (k = 0; k < sizex - 1; k++) {
+            if (altgrid[k][0] == '0' && altgrid[k][1] == '0') {
+                for (i = k; i < sizex; i++) {
+                    for (j = 0; j < sizey; j++) {
+                        altgrid[i][j] = altgrid[i+1][j];
+                        altgrid[sizex][j] = '0';
+                        counter[i] = counter[i+1];
+                        counter[sizex] = 0;
                     }
                 }
             }
         }
     }
+
 
     mate_grid(altgrid, grid);
 }
@@ -153,7 +155,7 @@ void generate_grid(char grid[sizex][sizey], char altgrid[sizex][sizey])
 
     FILE * log;
     log = fopen("Log/log.txt", "a");
-    fprintf(log, "%d x %d\n", sizex, sizey);
+    fprintf(log, "%d x %d\n", sizex+1, sizey+1);
 
     seed = time(NULL);
     srand(seed);
@@ -180,7 +182,7 @@ int read_grid(char grid[sizex][sizey], char altgrid[sizex][sizey], char path[25]
 // Generates a grid from file which represents like this: [1, 2, 3; 4, 5, 6] has three columns and two rows; becomes [[4, 1], [5, 2], [3, 6]]. //
 {
     int i, j;
-    char color = 'b';
+    char p = 'b';
     FILE * input = fopen(path, "r");
     FILE * log = fopen("Log/log.txt", "a");
 
@@ -192,30 +194,30 @@ int read_grid(char grid[sizex][sizey], char altgrid[sizex][sizey], char path[25]
     }
 
     fscanf(input, "%d%d", &j, &i);
-    if (i > 36 || j > 45 || i < 5 || j < 5) {
+    if (i > 36 || j > 45 || i < 6 || j < 6) {
         fclose(log);
         fclose(input);
         printf("\nSorry, grid dimensions are unreasonable.\n");
         return -2;
     }
-    fprintf(log, "%d x %d\n", sizex, sizey);
+    fprintf(log, "%d x %d", sizex, sizey);
 
     for (j = sizey - 1; j >= 0; j--) {
         for (i = 0; i < sizex; i++) {
-            fscanf(input, "%c", &color);
-            if (color != 'b' && color != 'g' && color != 'r' && color != 'y' && color != '\n' && color != ' ') {
+            fscanf(input, "%c", &p);
+            if (p != 'b' && p != 'g' && p != 'r' && p != 'y' && p != '\n' && p != ' ' && p != '0') {
                 fclose(log);
                 fclose(input);
                 printf("\nSorry, there is something wrong with your grid.\n");
                 return -3;
             }
-            if (color == '\n' || color == ' ') {
-                fprintf(log, "%c", color);
+            if (p == '\n' || p == ' ') {
+                fprintf(log, "%c ", p);
                 i--;
             } else {
-                grid[i][j] = color;
-                altgrid[i][j] = color;
-                fprintf(log, "%c ", color);
+                grid[i][j] = p;
+                altgrid[i][j] = p;
+                fprintf(log, "%c ", p);
             }
 
         }
@@ -231,18 +233,19 @@ void print_grid(char grid[sizex][sizey])
 // Prints the grid to the terminal in color //
 {
     int i, j;
-    char color;
+    char p;
     printf(" Y \n");
     for (j = sizey - 1; j >= 0; j--) {
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
         printf("%2d ", j+1);
-        for (i = 0; i < sizex; i++) {
-            color = grid[i][j];
-            switch (color) {
+        for (i = 0; i <= sizex; i++) {
+            p = grid[i][j];
+            switch (p) {
                 case 'b': SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_BLUE); printf("  "); break;
                 case 'r': SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_RED); printf("  "); break;
                 case 'y': SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_GREEN | BACKGROUND_RED); printf("  "); break;
                 case 'g': SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), BACKGROUND_GREEN); printf("  "); break;
+                case '0': SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN); printf("  "); break;
                 default: SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN); printf("  "); break;
             }
         }
@@ -266,10 +269,11 @@ void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
 {
     FILE * log = fopen("Log/log.txt", "a");
     fprintf(log, "\nSTART\nx, y, score");
-	int score = 0, gains = 0, turn = 1, x = 1, y = 1, warn = 0, i = 0, count = 0;
+	int score = 0, gains = 0, turn = 1, x = 1, y = 1, warn = 0, i = 0;
 
     printf("\n");
 	print_grid(grid);
+	int counter[36] = {0};
 
 	for (turn = 0; turn < turnlimit && possible(grid) == 1; turn++) {
 	    printf("\n\nTurn: %d, Current Score: %d", turn + 1, score);
@@ -279,18 +283,13 @@ void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
 		scanf("%d", &y);
 		x--; y--;
 		// crashes if given chars as input //
-        if (x < sizex && x >= 0 && y < sizey && y >= 0 && grid[x][y] != 0) {
-            steps = 0; count = 0;
+        if (x <= sizex && x >= 0 && y < sizey && y >= 0 && grid[x][y] != '0') {
+            steps = 0;
             steps = expand(altgrid, x, y, grid[x][y]);
             if (steps > 1) {
-                collapse(altgrid, grid);
+                collapse(altgrid, grid, counter);
                 score += steps*steps;
                 printf("\n");
-                for (i = 0; i < sizex; i++) {
-                    if (grid[i][0] == '0') {
-                        sizex--;
-                    }
-                }
                 print_grid(grid);
                 warn = 0;
             } else {
@@ -310,14 +309,13 @@ void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
             }
             continue;
         }
-        fprintf(log, "\n%d, %d, %d", x, y, score);
+        fprintf(log, "\n%d, %d, %d", x+1, y+1, score);
 	}
 
 
 	fprintf(log, "\nEND\n\nFINAL SCORE: %d (%s)\n", score, player);
     fclose(log);
-	printf("\n\nAll done! Your final score is %d. Press enter to play again\n", score);
-	getchar();
+	printf("\n\nAll done! Your final score is %d.\n", score);
 	start();
     return;
 }
@@ -344,7 +342,8 @@ void start(void)
         fclose(input);
     } else {
         printf("\nPlease input the size of your grid.\n");
-        for (warn = 0; sizex > 36 || sizey > 45 || sizex < 1 || sizey < 1; warn++) {
+        sizex = 0; sizey = 0;
+        for (warn = 0; sizex > 36 || sizey > 45 || sizex < 6 || sizey < 6; warn++) {
             if (warn > 0) {
                 printf("\nSorry, please be reasonable\n");
             }
