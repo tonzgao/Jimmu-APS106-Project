@@ -88,6 +88,7 @@ void collapse(char altgrid[sizex][sizey], char grid[sizex][sizey], int counter[3
 {
     int i, j, k, trouble = 0, firstz = -1, g = 0;
 
+    printf("\n%c", altgrid[0][0]);
     for (i = 0; i < sizex; i++) {
         firstz = -1;
         for (j = 0; j < sizey; j++) {
@@ -103,13 +104,9 @@ void collapse(char altgrid[sizex][sizey], char grid[sizex][sizey], int counter[3
             if (counter[i] >= sizey - 1) {
                 trouble++;
             }
-            for (g = 1; counter[i] > 0; counter[i]--, g++) {
-                for (k = firstz; k < sizey-1; k++) {
-                    if (altgrid[i][k] != '0' && altgrid[i][k+1] == '0 '&& (k) <= (sizey - g)) {
-                        continue;
-                    }
+            for (;counter[i] > 0; counter[i]--) {
+                for (k = firstz; k < sizey; k++) {
                     altgrid[i][k] = altgrid[i][k+1];
-                    altgrid[i][k+1] = '0';
                 }
                 altgrid[i][sizey-1] = '0';
             }
