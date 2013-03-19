@@ -8417,3 +8417,767 @@ g b g y r y y g y y r r g
 b b y y r b y y b b g r g 
 y g g y y r g b b g g g y 
 y y g r y y g g y r g b b 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 14:47:24 2013
+-------------------------------------------------------------------------------
+
+14 x 14
+r b r g y y y y y y b b y 
+r r r y g r g b b b r r b 
+y g r b b b r y g y r r g 
+g r r r b r g g y y b b b 
+y g g g y b b y r g g r y 
+y r y y y y y y r b b r b 
+r g g r b b r y y r b g b 
+g g g b b b g r r b b y b 
+b g b y r y y r r g r g y 
+b g y y y g g r g g b g g 
+g r b y y y y b b b r y r 
+y y y r r r r r r r b b b 
+g g g g g b y b r y r r r 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 14:54:10 2013
+-------------------------------------------------------------------------------
+
+14 x 14
+y y r r b r y r g r y y r 
+r y y r b b r r r y y y y 
+b b y g y r r r b y y y g 
+b g b b g g b g y b g g g 
+g r y b y y y g b b b b r 
+r b r b y y y y g b r r b 
+b r g g g g g r b b y r r 
+r b g y g g r g g g y r b 
+b b r b g y b b b y y y r 
+b y y g g y y g y g y g g 
+y b b r r b b b b g g b y 
+r y y r r y r b r r y y y 
+y r b b r r b r y y y r g 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 14:55:52 2013
+-------------------------------------------------------------------------------
+
+8 x 8
+ 
+ r r r r r r r r 
+ g b g b y g b g 
+ b g b g y b g b 
+ g b g b y g b g 
+ b g b g y b g b 
+ g b g b y g b g 
+ b g b g y b g b 
+ g b g b y g b g 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 14:57:35 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+g y y b r r b r g g y y b 
+r r r b r g g g g g y y y 
+g b b b g r r g y r g g b 
+b b r r r r b b y y g y r 
+y y y y g y g y y y y y y 
+g r g g y y b g y y r y y 
+b g r b g g g g g b b y y 
+y y g b r y g g y r b y b 
+y r r r y y b r r g g b r 
+r g b r y y g g g b g g g 
+y b y b b y r g b r r b g 
+g b b r r y r g y y r g g 
+g g b r r b b b y y g g y 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 14:58:33 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+r g g r r b y b b r b g g 
+g g g g b r y r r r g b y 
+r b r r g b b b b y b y g 
+b r b b b b b b r b y g g 
+g b b y b b b r b y r g g 
+y r r r r g y g g g b g g 
+y y y b b b y y r y y y y 
+g r g g g r g r g r r b g 
+g b b y r g y r r y g b b 
+b b g r b g g y y y g y r 
+g b y g r b b y b b b y r 
+g r b b y r b y y b r b r 
+r b r y r b b y b b b b r 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 14:59:09 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+b b b g r b r y b y r r g 
+g g g r b r y g y y y y y 
+y r r r b g g g g g r r y 
+y g b b b r b b y y y g y 
+y y b b b b b y g b r g b 
+g b b g g g g g r r b b b 
+b y b b r r r b b b y r r 
+g b b b b r r r g g y g r 
+y r b g g g g b g r r b y 
+y r g r b b g g b b y y g 
+g b b b r b g b y g y y r 
+b r r r g g r b b y y y g 
+r g g y y y r y y y y y y 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:02:05 2013
+-------------------------------------------------------------------------------
+
+8 x 8
+ 
+ r r r r r r r r 
+ g b g b y g b g 
+ b g b g y b g b 
+ g b g b y g b g 
+ b g b g y b g b 
+ g b g b y g b g 
+ b g b g y b g b 
+ g b g b y g b g 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:04:32 2013
+-------------------------------------------------------------------------------
+
+12 x 12
+b r b y y g y y y r b b 
+y g g g r r y y g y y y 
+g b r r y y b r g r r r 
+r r g b b r r r g r g y 
+g b g g y y b b r b b g 
+y r g b g g b r b r g r 
+r b b r g y y y r b y r 
+b b y y y y y y b b y r 
+g g y r r b g y r g g g 
+g r y g b y y b r r g y 
+b b b g g g b b b y y g 
+r r b b g r g g r r b r 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:04:57 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+b g b g r r g r b y g b r 
+g g g y g r r r b y y r g 
+y r r r b y r r b r b b r 
+r r y r g b r r g g g y y 
+r b y r g g y r g r y y g 
+b b b b g r g r g b b r g 
+y r r b b g y y y y g b b 
+b b b g y y g r b g r g r 
+y y y b g b r g g g r r r 
+b b b g b r g y y y y r y 
+y r g g b y y y b g r y b 
+g g g g r g y y g g y r r 
+r g y r y g r b b g y y y 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:09:35 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+y y y y y r r g g r g b b 
+y y r r y r y b b g b r y 
+r y r g b b b g g y y g r 
+y y y r y y y g b g g b g 
+b b b b b g g r r b g g r 
+g b b g g y b y b b r g g 
+g g y r r r y y r r b r r 
+y b b b r y y y r b b r g 
+y b y y y b g r b g g b y 
+b b y y r r g b r r b y y 
+r r y y g y y y y y b y b 
+b g g b y y g g y g g g y 
+g r b y y g b b b b b r r 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:11:06 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+b y r y g r y b b y y g g 
+g y g r r r r b r r y r g 
+y r y r y r y b b g y y y 
+y y g y g g g y y g g r b 
+b g r b b g g r y g g b g 
+b b r b r b y r g r y y b 
+b b r b g r r r r b b b g 
+g g g g g r b r y y y y b 
+y r y r r y y g y y y y r 
+r g r b b g y b g r r r b 
+g b b y y r y r r b r y y 
+y y b g b b r g g r r r y 
+r y b y b g b b r r r r b 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:11:36 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+b r r b b y y b b r y r y 
+g g b b g r y b b y y y g 
+y y b b b g r b b g g g y 
+y y r g b b y g g r r y b 
+r y y g y r r g g r r g r 
+y r r g g b g g b b g b b 
+y g b b r r b g y g r g y 
+r y y g b b y g g g y y b 
+y y y y r y b b r r y b r 
+r b b r b b b b b r b y y 
+y g y y y b r b b g b b g 
+b b y y g g r y r r y y r 
+r y y y b g r g g r b b b 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:12:43 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+r r y r y y g y r r b r y 
+r r y y r g b b y g b g g 
+y g g y y y y b r y r g b 
+g g g y b g y y g r y y y 
+b r r r r r r b b b b b b 
+y g y r b b b r g r r g b 
+b b y y b g g g g g r r r 
+b b y b r y g g r y g y y 
+g r g y b b y g b b b y r 
+r y y y y g r b b r r g g 
+g r g b b y b g y g r g g 
+g r r r y g y b g y y b r 
+r y y y g b y b g g g b b 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:14:37 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+g r r y b r r y y b y y g 
+g b b r r y y g y y y y g 
+g y b y y r b r r r r b y 
+y g g g r r b g r r g y g 
+g r y b b y y y g r g g g 
+g r y y g b g y g g r y r 
+r b r g g r g y g r y r r 
+r r r r r y r r g g b b b 
+b b y b r y b g g g g r b 
+y r r y r y r r r r g r g 
+y b b g g g g b y g r r b 
+y y r r b g b b g b g y y 
+y y y y y y y g g g g g r 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:15:02 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+b y y b r b b r y g g g g 
+b g g g g g g g b r r b g 
+b g b b b y b b b b g y r 
+y g y g r b g r r r g r y 
+g b b g y g g r r r b g g 
+r g y b y r r g g r r y y 
+y b r b b b b g g r r b y 
+y y b b r r r y r b g y y 
+b b b b y y y r g b b b r 
+y y g g b b b y b b b g g 
+g r b y y r r g g g g y r 
+g b g g g b y y y g r g r 
+g b r b g g y r r g g r r 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:18:53 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+b r r r g b b b b b r b r 
+r r r g b r b b b b b r g 
+g g r g g g y y y b b g y 
+y r y y y g g r b b b b g 
+b r y g r g y r r b y g r 
+r b g g g g r r r g g r g 
+b g b y y b b y b b y y b 
+g b r r b b g g g g g r r 
+g g b b b r g y y b b b g 
+g y y b y b b b g r y g y 
+y g g y r g g g r r r r r 
+b g r g g g b g r b b r y 
+b g r b b g r b y g g g g 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:22:51 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+g y r r r r y g g g b b b 
+b b b b b g y r b r b g g 
+b r y g y y y g y y y g b 
+r g r r r r y y g g r r b 
+y y b y g y y y g y b r b 
+r y g g r b r y y r r b g 
+g y r b r y b g g b b r r 
+y y r b b y y y y y g y y 
+b g g b b g y y r y b g r 
+b b b g b r r r g r b b b 
+g y r r r r y y y b b b y 
+r r g r y y b r g r r r g 
+g y y y y g g b b y b b r 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:24:26 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+r g y y b r b g y g r g y 
+g r r g g y g b y y r b g 
+b y b b b g g g g b r r r 
+g g y r r g b r r b y y b 
+b r b r y r g y y r r y b 
+r g g r y r r g g g y r g 
+b g g r r g b r y y r r r 
+r y b g g r b y r r r r b 
+y b b b y y y b b g g y y 
+y b r g r g g g g b y y y 
+y y g y b r r y y r g b r 
+r r r g g r b g b b b r g 
+y b g y b b b b y g g y y 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:25:45 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+r r y y y y b y r r y g b 
+y y y b b r b b g g g y y 
+y y y b g g b r r b b b b 
+b r r b b g g g g y y r g 
+g g g g g b g g r g g g y 
+b r b r b g b g b b b g y 
+y g y y y r r b b b g g r 
+b r r g b y g y y b r b b 
+g b y y b b b r r g y y r 
+b g b g y g g g y y y b r 
+r r g b g y g r r y y y b 
+r y y y y y r b r b r r g 
+g g g g g y g y y b b b b 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:27:11 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+y b b g g g g b b g y r b 
+y g g g g g b y b b y g g 
+r r r r r r g g b g b b g 
+g b b b y r b b b y b b r 
+b r y g g y y y y r r b g 
+b b g g b g y g g g g b y 
+r g r r r r r g y g r g b 
+y y r g b b g g g r r g g 
+b g b r r g g b r g r b b 
+r g y b y r b y y y b r r 
+y r b g g y r b r g g g g 
+g b g g r y g g r r b y y 
+r r y b r g g g g b b r y 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:31:16 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+y y g b b y b b y b g b b 
+b b b g b y r g y b g b b 
+g g r r r b b b b b b b b 
+b y y r r y y y b b b b b 
+g r b g r g g r r r y g g 
+r b y b g g b r b y y g g 
+g r y y y r r r b g b y r 
+y b b r b b b r y b y y b 
+b r r r r r g g r r b g y 
+r r g y y b b y b r b y g 
+r b b b b r r y b g y r r 
+g g r g b b g b b r r r y 
+b g g g b b r g y r r r r 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:34:21 2013
+-------------------------------------------------------------------------------
+
+12 x 12
+b g y r b r g g b b b b 
+b y y b b g g r y g b g 
+g b g r r y r y b b r r 
+y b b r r y y g g y b g 
+r g g g y r r b y r r b 
+b b b g r r y b g g g y 
+y g y b g y g r r r r r 
+y y g g g g b b r r b g 
+y b b r r b y g r r y r 
+b b b r r g b b b y y r 
+g g b r y y b y y y y r 
+y b b r b r b b r r y y 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:36:07 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+y r b y y b g b y y b y r 
+r g g b g g g y y r r b r 
+g b r b g r y b g y y r b 
+r r r g b y y y b b g b r 
+y y b g g b b b y y b b g 
+g b b r y y b g g g y g y 
+r b b b b g y y g r r r r 
+g b g g r r y r y g g g b 
+g y y b b y g r r b r b b 
+y r b r y r r y r g g g y 
+b b b b b b r b y y y y b 
+b b b r r r r r g g b g b 
+b r g y b y r g g r r y b 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:36:35 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+y y y b b y b b g g g b r 
+r r y y r g g r r r y g r 
+r g g g r b r b b y g b b 
+r r r r y r b b y y y r r 
+g r r r r r y r b y g g r 
+y g r r r y y r r y g g g 
+r r r r g y b b g b b b g 
+g y g g y y y g g g b b b 
+y b y g y y g y y b y b b 
+y g g y r r b r g y y y r 
+r y g r b g b b r y y r r 
+r r r r y y y g r b r g g 
+g g r y r b y g b b y r y 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:39:11 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+g g y y y g g g b b b y y 
+y y b y b y y g r r b y r 
+r b b y r b g b b b b b b 
+y y r g b b b y g g r b b 
+b y r g y g r g b b b b y 
+y y g g r r b y b b g r b 
+g g y y b y y g g r g y y 
+b b b r y b b b g y b y y 
+g g b b b b r b b g r b y 
+r r r r y y y y y b y g g 
+g g b y y y r g g y y r y 
+y y r g g g b b r y b r b 
+g g g r g r r g g r b b b 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:41:01 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+y r r g g g g g b b y y r 
+b y g y y y g g g b y y r 
+r g b b b b r g g r b b g 
+b b r b r g y r g b g g g 
+g r g g g g y b y r r r g 
+b g b b b g y r b g r g g 
+r r b b r y y y b g r r r 
+r r r y b b y g b b y b y 
+b b b b r r r r r r r b b 
+g r r g g r g r r y y g g 
+g b y b b g g y y y g b r 
+r r r b b g g r r b r r r 
+r r b r g g g b r r r b b 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:42:02 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+b y g g r b g r g r y g r 
+r b b b y y r b b b b y y 
+r y y y b y y r b r g y g 
+b y y g r g g b b b b y g 
+y y r b b g y r r b b r g 
+g r y y b b b b b r g g g 
+g g g g g r r r b b b r r 
+r r b b r r r g g g y g y 
+b b b r r y r y b y y y y 
+y y b r b r b g y b b b g 
+g g b b g b b y r y g g g 
+g g g b g g g b y b b y y 
+y y y b b b g r b y y y y 
+
+START
+x, y, score
+13, 1, 36
+9, 7, 180
+4, 1, 324
+13, 6, 349
+1, 2, 493
+END
+
+FINAL SCORE: 493 (fdas)
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:44:44 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+b b r g g b y b y y y b g 
+g b y g r r y b b y g g b 
+b b y b g g g g g b r r r 
+r g r b g r r g g g r b r 
+y g b r g y y g g b g y y 
+g g b b b y y g r g g g r 
+r y b b y y y y g g g g g 
+g b b y g g g b r r y y b 
+b r r r y g b y b b b y y 
+r y y g b b g y y r g y y 
+g g g r b g r b b y b g y 
+r b r r r b b b b r r r r 
+y y g g y b r g g g b y r 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:49:48 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+b b r y y b g y b b r b g 
+r y g r r y y r r y b y y 
+g y y g y y g g g g y r b 
+y r r r b g y r r r b r r 
+b b g y y g y r r y y r r 
+y y g r y y y r r y g y r 
+g r g r r g r y y y y g y 
+y g b g y g y r r r g r g 
+r r y y b b b b y y y y y 
+y r g r g g g b r r b b b 
+g r b b r r b b b b b g r 
+b r b b y b g r r b b b g 
+r r g b b b b g b y g r g 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:53:12 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+g b y g g r g y y b b r g 
+r y b r r y y r r g r r y 
+g b b b b b b b b y b r r 
+r y g y r g g r g y y y g 
+y y y y g b r r b r r g g 
+y y b b y y y g y y g r r 
+y r b b b g b g g g r b b 
+y y y r r y r r y b y b g 
+g g b b g g r r r g y r b 
+b r y y y b b r y y r y g 
+g g y y g g b b b g r y y 
+r b b r y r g g g g b r b 
+r b r r r y r b b g g r b 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:54:31 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+r r b r b r r g g g g g r 
+r r g y y y b b b b g r b 
+y y y g r b b g b g y g b 
+r r y r b y r r b b r y y 
+r g r y b b y y y y r r r 
+g r r g g g g b b b r g r 
+g g b b g b y g g y g g g 
+g r b b g g b r r g g g y 
+b b b b b y r g b b r y b 
+b b b b b b y g r g g r g 
+b r r y y b b b y y y y y 
+y g g g g g g b y y y b b 
+b g r y g y y b b b r g r 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 15:57:22 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+b b b b g g g g y y b b b 
+b b r r y b b r y b r r g 
+r r b r y g b b b b y r b 
+y g g g g g y b b b b r g 
+b b y y y b b b b b b g b 
+r b r b y y r g r b g y r 
+r r r b y y b y b y y y y 
+b r y y b b y g g r r y y 
+y r y b r g g b b r g g b 
+y r g y r r r b r g g b b 
+b b b b g g g y y y b b b 
+g r r r r g b b b y b g g 
+g g g r r b b b g y g b b 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 16:00:14 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+r g b r g r g g g g g r r 
+y y b b b y y g b g r y y 
+b y g r y b g r r y g g g 
+r b b b b y g r y y y g y 
+g r y r r y y y r b b r y 
+y y y r r y r b g g g y b 
+y b b b r b b b r r r g b 
+b g y y r r y y y y b b b 
+r b b g g r g y g r r r b 
+r r r y y g r r g g r y g 
+r b b r b r r b b b y y r 
+b r r g r g g b y g g r y 
+g b r b b b g b b g g b g 
+
+START
+x, y, score
+5, 6, 64
+1, 5, 89
+9, 5, 98
+13, 5, 134
+9, 1, 170
+END
+
+FINAL SCORE: 170 (fads)
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 16:06:04 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+y r r b b y y b r r r r g 
+r r y b y y y y r b b b y 
+r b y b y r r r y r r r r 
+g y y y r g b g g g g g g 
+g g b y b b r r g y y b g 
+r b b b b g g y b r b y r 
+r y y y r r b y y y g g r 
+r g r g g y g b r y y y y 
+y r r g y b b g g b g g r 
+r r r b b g b y r y y y r 
+y r r y y g y y g g r b b 
+b b b g g g y b b r g y r 
+g g g b g y b b g y r r g 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 16:12:00 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+r y g y g g y r r r r b b 
+b b b g y b b b b y y y y 
+g b b r r g b r r y y r y 
+b y b y b b g r b g b r r 
+g g b b g y y y g r r g g 
+g b b r b y g g g y r g g 
+g r r g g g b g y y y g r 
+g g b b y r g g y g g g r 
+r r r y r b r r r b y b g 
+b b r g b b y y y y y r b 
+b g g b g g b b b r r r r 
+r r y y b g b r b r y y b 
+b y r r r b y b b g y y b 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 16:14:14 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+b r g g b r r y r b b y b 
+g g r r y b g r y g g g r 
+y r r y y y y r r r y b r 
+y y y r b g r r b r b g r 
+y y y y b b g g r r y y g 
+y g b b b g g g b y r y y 
+y b g r r r g g g y b b y 
+b r y y b b b g r g y r b 
+r y b b y y y g g g b r b 
+y b r y y y g g g g y b g 
+r g r b y g g g g y r g g 
+y b b r b b b b r b r b b 
+r g b b b b b y g b r y y 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 16:17:00 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+r b y g g g b b g g y y g 
+y y b g b y r r r r g b r 
+y g g g r g g y y y r r g 
+g y g y y y y y b y r b b 
+g g y r r b b b b y y g y 
+y y g g g b b b y y g y b 
+b r r y y r r y y r r r y 
+b y b b y b g y y y y y y 
+g g y r y y y y r b b b g 
+r g r g g g r r y y g b g 
+g b b g g y g b b r y y y 
+g g g r y r b b g b b b g 
+g y y r y y g r r b g r y 
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 16:17:28 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+y b b r b g g b r g g y y 
+y y b g g r r b g y y y r 
+y b y b g y y r y y r y y 
+y y r g r g b b b r y r b 
+b b r r r g g b b g g r b 
+r r g b r r r r g y y y r 
+g g g b y y r y y y r y b 
+y r y r r y y y g g r y r 
+g r b g r r r r r b r g g 
+g r r r b b y g r r g b b 
+g b r b r r b b r r r b b 
+b g g g y y y g g b g r y 
+r b y b b r r b g g b r g 
+
+START
+x, y, score
+5, 5, 144
+13, 13, 180
+5, 2, 189
+9, 1, 214
+13, 3, 230
+END
+
+FINAL SCORE: 230 (fds)
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Tue Mar 19 16:18:43 2013
+-------------------------------------------------------------------------------
+
+13 x 13
+b b b r r r g g y g g r r 
+r y y y y g b b y r r b r 
+r b y y y y y r y y b g g 
+y y y g y y g g b b g g y 
+r r g b b b y g g g b r y 
+b b b g b g y y r y y r r 
+g y y r r r b r g y r r b 
+b b b b b y b g y y y y b 
+b g g g y g r g y y r b b 
+b b b b r g b b b r r b g 
+g g g y y y r r b g g b b 
+g y y y y g b b r r b g g 
+g r g r r b r r r g g b b 
