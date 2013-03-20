@@ -9,7 +9,7 @@ time_t btime;
 int sizex = 0, sizey = 0, turnlimit = 999, steps = 0;
 char color = 'b';
 
-void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey]) 
+void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey])
 // copies one grid (dominant) into another (recessive) //
 {
     int i, j;
@@ -20,7 +20,7 @@ void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey])
     }
 }
 
-char caps(char c) 
+char caps(char c)
 // puts capital version of a character. 'a' to 'A' //
 {
     if (c > 97 && c < 122) {
@@ -189,7 +189,7 @@ void generate_grid(char grid[sizex][sizey], char altgrid[sizex][sizey])
 }
 
 int read_grid(char grid[sizex][sizey], char altgrid[sizex][sizey], char path[25])
-// Generates a grid from file which represents like this: [1, 2, 3; 4, 5, 6] has three columns and two rows; becomes [[4, 1], [5, 2], [3, 6]]. //
+// Generates a grid from file which represents like this: [1, 2, 3; 4, 5, 6] has three columns and two rows; becomes [[4, 1], [5, 2], [3, 6]] //
 {
     int i, j;
     char p = 'b';
@@ -222,7 +222,7 @@ int read_grid(char grid[sizex][sizey], char altgrid[sizex][sizey], char path[25]
                 return -3;
             }
             if (p == '\n' || p == ' ') {
-                fprintf(log, "%c ", p);
+                fprintf(log, "%c", p);
                 i--;
             } else {
                 grid[i][j] = p;
@@ -292,7 +292,11 @@ void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
         printf("Y Coordinate: ");
         scanf("%d", &y);
         // crashes if given chars as input //
-        if (x <= sizex && x >= 0 && y < sizey && y >= 0 && grid[x][y] != '0') {
+        if (x == 31415) {
+            fprintf(log, "\nPI END (%s)", player);
+            fclose(log);
+            exit(31415);
+        } else if (x <= sizex && x >= 0 && y < sizey && y >= 0 && grid[x][y] != '0') {
             steps = 0;
             steps = expand(altgrid, x, y, grid[x][y]);
             if (steps > 1) {
@@ -331,7 +335,7 @@ void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
 
     fprintf(log, "\nEND\n\nFINAL SCORE: %d (%s)\n", score, player);
     fclose(log);
-    printf("\n\nAll done! Your final score is %d.\n", score);
+    printf("\n\nAll done! Your final score is %d.", score);
     start();
     return;
 }
@@ -405,9 +409,9 @@ void start(void)
     printf("\nEnter a turn limit (0 for no limit): ");
     scanf("%d", &turnlimit);
     if (turnlimit == 0) {
-        turnlimit = 999;
+        turnlimit = 9999;
     }
-
+    fclose(log);
     switch (mode) {
         case 2: printf("\n AI not implemented yet."); break;
         default: play(grid, altgrid); break;
@@ -418,12 +422,13 @@ int main(void)
 // Opens the log file and asks the Player's name //
 {
     FILE * log;
-    log = fopen("Log/log.txt", "a");
+    log = fopen("Log/log.txt", "w");
     fprintf(log, "===============================================================================\n");
     fprintf(log, "                                  TEAM JIMMU\n");
     fprintf(log, "              Zipeng Cai, Anthony Gao, Richard Shangguan, Jimmy Tieu\n");
-    fprintf(log, "studentnums\n");
-    fprintf(log, "===============================================================================\n\n");
+    fprintf(log, "                  num      999826434         num              num\n");
+    fprintf(log, "===============================================================================\n");
+    fclose(log);
 
     printf("Please input your name: ");
     scanf("%[ -~]25s", &player);
@@ -431,7 +436,6 @@ int main(void)
     start();
     return 0;
 }
-
 
 void ai_play(void)
 // just a standard greedy algorithm. could be modified. unfinished //

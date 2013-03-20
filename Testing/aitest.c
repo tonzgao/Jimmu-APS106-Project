@@ -12,48 +12,19 @@ int main (void)
     printf("%d%d", score1, score2)
 }
 
-int h(x)
+//int h(x)
+//{
+//    return 1;
+//}
 
-void ai_play2() {
-    score2 = score1 + score*h(x)
-}
+//void ai_play2()
+//{
+//    score2 = score1 + score*h(x)
+//}
 
-void ai_play1()
-// just a standard greedy algorithm. unfinished //
+void ai_play(void)
+// just a standard greedy algorithm. could be modified. unfinished //
 {
-	int warn;
-	FILE * log = fopen("Log/log.txt");
-
-	timestamp();
-
-	int sizex = 0, sizey = 0;
-    for (warn = 0; sizex > 36 || sizey > 45 || sizex < 5 || sizey < 5; warn++) {
-        if (warn > 0) {
-            printf("Sorry, please be reasonable\n\n");
-        }
-        printf("Enter size of x: ");
-        scanf("%d", &sizex);
-        printf("Enter size of y: ");
-        scanf("%d", &sizey);
-    }
-	char grid[sizex][sizey];
-
-	if (mode == 1) {
-		printf("Please type the path to your grid: ")
-        scanf("%25s", &path);
-        FILE * input = fopen(path, "r");
-        warn = read_grid(grid, path);
-        fclose(input);
-        if (warn < 0) {
-			printf("Sorry, your path did not work. Please press 1 to try again, or 0 to generate a grid: ")
-			scanf("%d", &mode);
-			play(mode);
-			exit(-1);
-		}
-	}
-
-	generate_grid(sizex, sizey);
-
 	fprintf(log, "%d x %d", sizex, sizey)
 	fprint(file, "%s", printf_grid(grid))
 	fprintf("START\nx, y, score")

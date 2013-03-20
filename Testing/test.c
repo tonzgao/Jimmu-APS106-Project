@@ -3,14 +3,15 @@
 #include <stdlib.h>
 #include <time.h>
 
-//functions collapse, and play are buggy//
-// need to test these functions individually next time //
+// Zipeng Cai, Anthony Gao 999826434, Richard Shangguan, Jimmy Tieu //
 char player[25];
 time_t btime;
 int sizex = 0, sizey = 0, turnlimit = 999, steps = 0;
 char color = 'b';
 
-void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey]) {
+void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey])
+// copies one grid (dominant) into another (recessive) //
+{
     int i, j;
     for (i = 0; i < sizex; i++) {
         for (j = 0; j < sizey; j++) {
@@ -19,7 +20,9 @@ void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey]) {
     }
 }
 
-char caps(char c) {
+char caps(char c)
+// puts capital version of a character. 'a' to 'A' //
+{
     if (c > 97 && c < 122) {
         c = c - 'a' + 'A';
     }
@@ -27,17 +30,18 @@ char caps(char c) {
 }
 
 int expand(char altgrid[sizex][sizey], int x, int y, int mode)
+// starting at a given coordinate, marks all surrounding coordinates of the same color //
 {
-	char current = altgrid[x][y];
-	if (current == '0') {
+    char current = altgrid[x][y];
+    if (current == '0') {
         return -1;
-	}
-	if (current == mode || (mode == 1 && current == color)) {
-	    altgrid[x][y] = caps(altgrid[x][y]);
-		steps++;
-		if (mode == 1 && steps > 1) {
+    }
+    if (current == mode || (mode == 1 && current == color)) {
+        altgrid[x][y] = caps(altgrid[x][y]);
+        steps++;
+        if (mode == 1 && steps > 1) {
             return 2;
-		} else {
+        } else {
             altgrid[x][y] = caps(altgrid[x][y]);
             if (x < sizex - 1) {
                 if (altgrid[x+1][y] == current) {
@@ -60,8 +64,8 @@ int expand(char altgrid[sizex][sizey], int x, int y, int mode)
                 }
             }
         }
-	}
-	return steps;
+    }
+    return steps;
 }
 
 int possible(char grid[sizex][sizey], char altgrid[sizex][sizey])
@@ -85,8 +89,7 @@ int possible(char grid[sizex][sizey], char altgrid[sizex][sizey])
 }
 
 void collapse(char altgrid[sizex][sizey], char grid[sizex][sizey], int counter[36])
-
-// Removes the pieces that should be removed. Terribly ugly function, but it works! //
+// Removes the pieces that should be removed and shuffles things down and over. Terribly ugly function, but it works! //
 {
     int i, j, k, trouble = 0, firstz = -1, g = 0, tempcount = 0;
 
@@ -140,18 +143,18 @@ void collapse(char altgrid[sizex][sizey], char grid[sizex][sizey], int counter[3
 }
 
 void timestamp(void)
-// Stamps the time for each game in the logs //
+// Stamps the time for a game in the logs //
 {
     if (!player) {
         player[0] = 1;
     }
-	FILE * log;
-	log = fopen("Log/log.txt", "a");
-	time (&btime);
-	fprintf(log, "\n-------------------------------------------------------------------------------\n");
-	fprintf(log, "	  NEW GAME: %s", ctime(&btime));
-	fprintf(log, "-------------------------------------------------------------------------------\n\n");
-	fclose(log);
+    FILE * log;
+    log = fopen("Log/log.txt", "a");
+    time (&btime);
+    fprintf(log, "\n-------------------------------------------------------------------------------\n");
+    fprintf(log, "	  NEW GAME: %s", ctime(&btime));
+    fprintf(log, "-------------------------------------------------------------------------------\n\n");
+    fclose(log);
 }
 
 void generate_grid(char grid[sizex][sizey], char altgrid[sizex][sizey])
@@ -186,7 +189,7 @@ void generate_grid(char grid[sizex][sizey], char altgrid[sizex][sizey])
 }
 
 int read_grid(char grid[sizex][sizey], char altgrid[sizex][sizey], char path[25])
-// Generates a grid from file which represents like this: [1, 2, 3; 4, 5, 6] has three columns and two rows; becomes [[4, 1], [5, 2], [3, 6]]. //
+// Generates a grid from file which represents like this: [1, 2, 3; 4, 5, 6] has three columns and two rows; becomes [[4, 1], [5, 2], [3, 6]] //
 {
     int i, j;
     char p = 'b';
@@ -219,7 +222,7 @@ int read_grid(char grid[sizex][sizey], char altgrid[sizex][sizey], char path[25]
                 return -3;
             }
             if (p == '\n' || p == ' ') {
-                fprintf(log, "%c ", p);
+                fprintf(log, "%c", p);
                 i--;
             } else {
                 grid[i][j] = p;
@@ -276,20 +279,24 @@ void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
 {
     FILE * log = fopen("Log/log.txt", "a");
     fprintf(log, "\nSTART\nx, y, score");
-	int score = 0, gains = 0, turn = 1, x = 1, y = 1, warn = 0, i = 0;
+    int score = 0, gains = 0, turn = 1, x = 1, y = 1, warn = 0, i = 0;
 
     printf("\n");
-	print_grid(grid);
-	int counter[37] = {0};
+    print_grid(grid);
+    int counter[37] = {0};
 
-	for (turn = 0; turn < turnlimit && possible(grid, altgrid) == 1; turn++) {
-	    printf("\n\nTurn: %d, Current Score: %d", turn + 1, score);
-		printf("\n\nX Coordinate: ");
-		scanf("%d", &x);
-		printf("Y Coordinate: ");
-		scanf("%d", &y);
-		// crashes if given chars as input //
-        if (x <= sizex && x >= 0 && y < sizey && y >= 0 && grid[x][y] != '0') {
+    for (turn = 0; turn < turnlimit && possible(grid, altgrid) == 1; turn++) {
+        printf("\n\nTurn: %d, Current Score: %d", turn + 1, score);
+        printf("\n\nX Coordinate: ");
+        scanf("%d", &x);
+        printf("Y Coordinate: ");
+        scanf("%d", &y);
+        // crashes if given chars as input //
+        if (x == 31415) {
+            fprintf(log, "\nPI END (%s)", player);
+            fclose(log);
+            exit(31415);
+        } else if (x <= sizex && x >= 0 && y < sizey && y >= 0 && grid[x][y] != '0') {
             steps = 0;
             steps = expand(altgrid, x, y, grid[x][y]);
             if (steps > 1) {
@@ -323,25 +330,25 @@ void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
             continue;
         }
         fprintf(log, "\n%d, %d, %d", x+1, y+1, score);
-	}
+    }
 
 
-	fprintf(log, "\nEND\n\nFINAL SCORE: %d (%s)\n", score, player);
+    fprintf(log, "\nEND\n\nFINAL SCORE: %d (%s)\n", score, player);
     fclose(log);
-	printf("\n\nAll done! Your final score is %d.\n", score);
-	start();
+    printf("\n\nAll done! Your final score is %d.", score);
+    start();
     return;
 }
 
 void start(void)
 // Player chooses betwen playing or watching ai. After each game, the player return here //
 {
-	int mode = 2, warn;
-	printf("\n1 Computer Generated Grid\n2 Custom Grid\n0 EXIT\n\nPlease state what you want to play: ");
-	scanf("%d", &mode);
-	if (mode != 1 && mode != 2) {
+    int mode = 2, warn;
+    printf("\n1 Computer Generated Grid\n2 Custom Grid\n0 EXIT\n\nPlease state what you want to play: ");
+    scanf("%d", &mode);
+    if (mode != 1 && mode != 2) {
         exit(0);
-	}
+    }
 
     FILE * log = fopen("Log/log.txt", "a");
     char path[25] = {0};
@@ -398,33 +405,30 @@ void start(void)
         generate_grid(grid, altgrid);
     }
     printf("\n1 Play\n2 Watch\n\nNow please choose your mode: ");
-	scanf("%d", &mode);
-	printf("\nEnter a turn limit (0 for no limit): ");
-	scanf("%d", &turnlimit);
-	if (turnlimit == 0) {
-        turnlimit = 999;
-	}
-
+    scanf("%d", &mode);
+    printf("\nEnter a turn limit (0 for no limit): ");
+    scanf("%d", &turnlimit);
+    if (turnlimit == 0) {
+        turnlimit = 9999;
+    }
+    fclose(log);
     switch (mode) {
-		case 2: printf("\n AI not implemented yet."); break;
-		default: play(grid, altgrid); break;
-	}
+        case 2: printf("\n AI not implemented yet."); break;
+        default: play(grid, altgrid); break;
+    }
 }
 
 int main(void)
 // Opens the log file and asks the Player's name //
 {
     FILE * log;
-    FILE * testfile = fopen("Log/log.txt", "r");
-	if (testfile == NULL) {
-	    log = fopen("Log/log.txt", "a");
-		fprintf(log, "===============================================================================\n");
-		fprintf(log, "									TEAM JIMMU\n");
-		fprintf(log, "				Zipeng Cai, Anthony Gao, Richard Shangguan, Jimmy Tieu\n");
-		fprintf(log, "studentnums\n");
-		fprintf(log, "===============================================================================\n\n");
-	}
-	fclose(testfile);
+    log = fopen("Log/log.txt", "w");
+    fprintf(log, "===============================================================================\n");
+    fprintf(log, "									TEAM JIMMU\n");
+    fprintf(log, "				Zipeng Cai, Anthony Gao, Richard Shangguan, Jimmy Tieu\n");
+    fprintf(log, "					num		 999826434		   num				num\n");
+    fprintf(log, "===============================================================================\n");
+    fclose(log);
 
     printf("Please input your name: ");
     scanf("%[ -~]25s", &player);
