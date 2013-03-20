@@ -33,13 +33,13 @@ int expand(char altgrid[sizex][sizey], int x, int y, int mode)
         return -1;
 	}
 	if (current == mode || (mode == 1 && current == color)) {
+	    altgrid[x][y] = caps(altgrid[x][y]);
 		steps++;
-		printf("steps%d", steps);
 		if (mode == 1 && steps > 1) {
             return 2;
 		} else {
             altgrid[x][y] = caps(altgrid[x][y]);
-            if (x < sizex) {
+            if (x < sizex - 1) {
                 if (altgrid[x+1][y] == current) {
                     expand(altgrid, x+1, y, mode);
                 }
@@ -49,7 +49,7 @@ int expand(char altgrid[sizex][sizey], int x, int y, int mode)
                     expand(altgrid, x-1, y, mode);
                 }
             }
-            if (y < sizey) {
+            if (y < sizey - 1) {
                 if (altgrid[x][y+1] == current) {
                     expand(altgrid, x, y+1, mode);
                 }
@@ -64,21 +64,23 @@ int expand(char altgrid[sizex][sizey], int x, int y, int mode)
 	return steps;
 }
 
-int possible(char grid[sizex][sizey])
+int possible(char grid[sizex][sizey], char altgrid[sizex][sizey])
 // returns 1 if valid moves exist, otherwise returns 0 //
 {
     int i, j, pos = 0;
 
     for (i=0; i < sizex; i++) {
         for (j=0; j < sizey; j++) {
-            color = grid[i][j];
+            color = altgrid[i][j];
             steps = 0;
-            pos = expand(grid, i, j, 1);
+            pos = expand(altgrid, i, j, 1);
             if (pos > 1) {
+                mate_grid(grid, altgrid);
                 return 1;
             }
         }
     }
+    mate_grid(grid, altgrid);
     return 0;
 }
 
@@ -88,12 +90,10 @@ void collapse(char altgrid[sizex][sizey], char grid[sizex][sizey], int counter[3
 {
     int i, j, k, trouble = 0, firstz = -1, g = 0;
 
-    printf("\n%c", altgrid[0][0]);
     for (i = 0; i < sizex; i++) {
-        firstz = -1;
+        firstz = -1; g = 0;
         for (j = 0; j < sizey; j++) {
             if (altgrid[i][j] == 'B' || altgrid[i][j] == 'G' || altgrid[i][j] == 'R' || altgrid[i][j] == 'Y') {
-                altgrid[i][j] == '0';
                 counter[i]++;
                 if (firstz == -1) {
                     firstz = j;
@@ -104,8 +104,16 @@ void collapse(char altgrid[sizex][sizey], char grid[sizex][sizey], int counter[3
             if (counter[i] >= sizey - 1) {
                 trouble++;
             }
-            for (;counter[i] > 0; counter[i]--) {
+            for (g += counter[i] ;counter[i] > 0; counter[i]--) {
+                for (j = 0; j < firstz; j++) {
+                    if (altgrid[i][j] < 97) {
+                        firstz = j;
+                    }
+                }
                 for (k = firstz; k < sizey; k++) {
+                    if (altgrid[i][k] > 97 && altgrid[i][k+1] < 97 && k < (sizey - g)) {
+                        continue;
+                    }
                     altgrid[i][k] = altgrid[i][k+1];
                 }
                 altgrid[i][sizey-1] = '0';
@@ -126,7 +134,6 @@ void collapse(char altgrid[sizex][sizey], char grid[sizex][sizey], int counter[3
             }
         }
     }
-
 
     mate_grid(altgrid, grid);
 }
@@ -272,9 +279,9 @@ void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
 
     printf("\n");
 	print_grid(grid);
-	int counter[36] = {0};
+	int counter[37] = {0};
 
-	for (turn = 0; turn < turnlimit && possible(grid) == 1; turn++) {
+	for (turn = 0; turn < turnlimit && possible(grid, altgrid) == 1; turn++) {
 	    printf("\n\nTurn: %d, Current Score: %d", turn + 1, score);
 		printf("\n\nX Coordinate: ");
 		scanf("%d", &x);
