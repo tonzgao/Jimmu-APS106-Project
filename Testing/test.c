@@ -86,15 +86,16 @@ int possible(char grid[sizex][sizey], char altgrid[sizex][sizey])
 
 void collapse(char altgrid[sizex][sizey], char grid[sizex][sizey], int counter[36])
 
-// Removes the pieces that should be removed //
+// Removes the pieces that should be removed. Terribly ugly function, but it works! //
 {
-    int i, j, k, trouble = 0, firstz = -1, g = 0;
+    int i, j, k, trouble = 0, firstz = -1, g = 0, tempcount = 0;
 
     for (i = 0; i < sizex; i++) {
-        firstz = -1; g = 0;
+        firstz = -1; g = 0; tempcount = 0;
         for (j = 0; j < sizey; j++) {
             if (altgrid[i][j] == 'B' || altgrid[i][j] == 'G' || altgrid[i][j] == 'R' || altgrid[i][j] == 'Y') {
                 counter[i]++;
+                tempcount++;
                 if (firstz == -1) {
                     firstz = j;
                 }
@@ -104,7 +105,7 @@ void collapse(char altgrid[sizex][sizey], char grid[sizex][sizey], int counter[3
             if (counter[i] >= sizey - 1) {
                 trouble++;
             }
-            for (g += counter[i] ;counter[i] > 0; counter[i]--) {
+            for (g = counter[i]; tempcount > 0; tempcount--) {
                 for (j = 0; j < firstz; j++) {
                     if (altgrid[i][j] < 97) {
                         firstz = j;
@@ -300,6 +301,13 @@ void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
             } else {
                 mate_grid(grid, altgrid);
                 printf("\n\nSorry, you just wasted a turn.");
+                warn++;
+                if (warn > 7) {
+                    printf("\n\nI feel like something is wrong here.\n");
+                    fprintf(log, "\nERROR OCCURED\n");
+                    fclose(log);
+                    exit(-1);
+                }
                 continue;
             }
         } else {
