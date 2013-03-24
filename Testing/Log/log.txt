@@ -5,28 +5,82 @@
 ===============================================================================
 
 -------------------------------------------------------------------------------
-	  NEW GAME: Fri Mar 22 20:06:14 2013
+	  NEW GAME: Sun Mar 24 18:18:56 2013
 -------------------------------------------------------------------------------
 
 12 x 12
-b b g b y r r r b b b y 
-r r r r g g r y b r y g 
-b b b r g g g y b b y y 
-b g b b b b b b r b r g 
-r r r g b b g y r y y b 
-b g r b b y y y g g g b 
-g g b y r r g r g y g g 
-g r y g g b y g b b g g 
-y y b y y g g r g g y b 
-b r y y g g r b g g g r 
-b r r b y y y b g r r r 
-r g g r r y y r b b r r 
+b r y r b b y g y y y y 
+b r g y y r r b g y g b 
+r g r r r y b b b g r g 
+b g b b r r b y b b g b 
+y g g g r b b g r r g g 
+g y g y r r b y b y g r 
+r r g y r y y y g r r b 
+y y g r g g r b g r y y 
+b b y b b b b g g g r r 
+r r g r r b b r r r r y 
+y b y y y y g g g y g r 
+y r r r r g y g y y b g 
 
 START
 x, y, score
-12, 1, 36
-7, 1, 61
-9, 3, 161
-GAME CONCEEDED
+13, 13, 100
+13, 13, 221
+13, 13, 302
+13, 13, 402
+13, 13, 438
+13, 13, 487
+13, 13, 587
+13, 13, 612
+13, 13, 637
+13, 13, 686
+13, 13, 702
+13, 13, 718
+13, 13, 727
+13, 13, 736
+13, 13, 745
+13, 13, 749
+13, 13, 758
+13, 13, 767
+13, 13, 771
+13, 13, 775
+13, 13, 784
+13, 13, 788
+13, 13, 792
+END
 
-FINAL SCORE: 161 (dsa)
+FINAL SCORE: 792 (AI)
+
+-------------------------------------------------------------------------------
+	  NEW GAME: Sun Mar 24 18:19:45 2013
+-------------------------------------------------------------------------------
+
+8 x 8
+g b b y b b b b 
+r y y b b r b y 
+y r b r y b y r 
+y r b y b y b b 
+y b y b b y b g 
+b y y g y b b y 
+b b g g r b b g 
+b r r b g b b r 
+
+START
+x, y, score
+9, 9, 81
+9, 9, 97
+9, 9, 113
+9, 9, 129
+9, 9, 165
+9, 9, 214
+9, 9, 223
+9, 9, 232
+9, 9, 241
+9, 9, 245
+9, 9, 249
+9, 9, 253
+9, 9, 257
+9, 9, 261
+END
+
+FINAL SCORE: 261 (AI)

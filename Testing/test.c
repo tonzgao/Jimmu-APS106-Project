@@ -345,28 +345,37 @@ void ai_play(char grid[sizex][sizey], char altgrid[sizex][sizey])
 {
     FILE * log = fopen("Log/log.txt", "a");
     fprintf(log, "\nSTART\nx, y, score");
-    char hidden_grid[sizex][sizey];
-    int score = 0, e, turn = 1, x = 1, y = 1, hx, hy, i = 0, j = 0;
+    char e = 'a', hidden_grid[sizex][sizey];
+    int score = 0, turn = 1, x = 1, y = 1, hx = 0, hy = 0, shiny = 0, best = 1;
 
     printf("\n");
     print_grid(grid);
     int counter[37] = {0};
+    mate_grid(grid, hidden_grid);
 
     for (turn = 0; turn < turnlimit && possible(grid, altgrid) == 1; turn++) {
-        printf("\n\nTurn: %d, Current Score: %d\n Press enter for the next turn.\n", turn + 1, score);
+        printf("\n\nTurn: %d, Current Score: %d\nPress enter for the next turn.\n", turn + 1, score);
         e = getchar();
-        if (e == '31415') {
+        if (e == '0') {
             fprintf(log, "\nGAME CANCELLED\n\nFINAL SCORE: %d (AI)\n", score);
             fclose(log);
             exit(31415);
         }
-        mate_grid(grid, hidden_grid);
-        for (i= 0) {
-            for (j = 0) {
-                //choose coordinate with hidden_grid. expanding each spot, not uncapsing after each to speed process.//
-                // assign best to hx, hy //
+        for (x = 0; x < sizex; x++) {
+            for (y = 0; y < sizey; y++) {
+                if (hidden_grid[x][y] > 97) {
+                    steps = 0;
+                    shiny = expand(hidden_grid, x, y, grid[x][y]);
+                    printf("%c%d ", hidden_grid[x][y], shiny);
+                    if (shiny > 1 && shiny > best) {
+                        best = shiny;
+                        hx = x;
+                        hy = y;
+                    }
+                }
             }
         }
+        printf("%d %d%c%d", hx, hy, grid[hx][hy], best);
         if (hx <= sizex && hx >= 0 && hy < sizey && hy >= 0 && grid[hx][hy] != '0') {
             steps = 0;
             steps = expand(altgrid, hx, hy, grid[hx][hy]);
@@ -375,15 +384,17 @@ void ai_play(char grid[sizex][sizey], char altgrid[sizex][sizey])
                 score += steps*steps;
                 printf("\n");
                 print_grid(grid);
-                warn = 0;
+                mate_grid(grid, altgrid);
+                mate_grid(grid, hidden_grid);
+                hx = 0; hy = 0; best = 0;
             } else {
-                printf("\n\nI feel like something is wrong here.\n");
+                printf("\n\nI feel like something is wrong here1.\n");
                 fprintf(log, "\nERROR OCCURED\n");
                 fclose(log);
                 exit(-1);
             }
         } else {
-            printf("\n\nI feel like something is wrong here.\n");
+            printf("\n\nI feel like something is wrong here2.\n");
             fprintf(log, "\nERROR OCCURED\n");
             fclose(log);
             exit(-1);
@@ -472,7 +483,7 @@ void start(void)
     fclose(log);
     switch (mode) {
         case 2: ai_play(grid, altgrid); break;
-        case default: play(grid, altgrid); break;
+        default: play(grid, altgrid); break;
     }
 }
 
