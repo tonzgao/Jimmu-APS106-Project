@@ -437,44 +437,74 @@ int main(void)
     return 0;
 }
 
-//void ai_play(void)
-//// just a standard greedy algorithm. could be modified. unfinished //
-//{
-//	fprintf(log, "%d x %d", sizex, sizey)
-//	fprint(file, "%s", printf_grid(grid))
-//	fprintf("START\nx, y, score")
-//	int score = 0
-//	while (possible() == 1) {
-//		printf_grid()
-//		printf("Current score: %d", score)
-//		printf("Press any key to continue")
-//		getchar()
-//		//maybe commentary to illustrate some things at certain moments?
-//		highest = 2
-//		hx = 0
-//		hy = 0
-//		steps = 0
-//		for e in grid {// move this section in braces to a mode in collapse which removes the highest rank. makes altgrid not need to be global.
-//			for ch in grid[e]:
-//				if (altgrid[e][ch] is not caps):
-//					expand(e, ch, 0)
-//					if steps > highest:
-//						highest = steps
-//					hx = e
-//					hy = ch
-//					steps = 0
-//		}
-//		score += collapse(hx, hy)
-//		fprintf(log, "%d %d %d", x, y, score)
-//	}
-//
-//	printf("All done!/n The final score is %d./n", score)
-//	fprintf(log, "END\n\nFINAL SCORE: %d (AI)", score)
-//
-//	printf("Okay, you try now. Press any key to play\n")
-//	getchar()
-//	start()
-//}
+void ai_play(char grid[sizex][sizey], char altgrid[sizex][sizey])
+// ai play mode //
+{
+    FILE * log = fopen("Log/log.txt", "a");
+    fprintf(log, "\nSTART\nx, y, score");
+    char e = 'a', hidden_grid[sizex][sizey];
+    int score = 0, turn = 1, x = 1, y = 1, hx = 0, hy = 0, shiny = 0, best = 1;
+
+    printf("\n");
+    print_grid(grid);
+    int counter[37] = {0};
+    mate_grid(grid, hidden_grid);
+
+    for (turn = 0; turn < turnlimit && possible(grid, altgrid) == 1; turn++) {
+        printf("\n\nTurn: %d, Current Score: %d\nPress enter for the next turn.\n", turn + 1, score);
+        e = getchar();
+        if (e == '0') {
+            fprintf(log, "\nGAME CANCELLED\n\nFINAL SCORE: %d (AI)\n", score);
+            fclose(log);
+            exit(31415);
+        }
+        for (x = 0; x < sizex; x++) {
+            for (y = 0; y < sizey; y++) {
+                if (hidden_grid[x][y] > 97) {
+                    steps = 0;
+                    shiny = expand(hidden_grid, x, y, grid[x][y]);
+                    if (shiny > 1 && shiny > best) {
+                        best = shiny;
+                        hx = x;
+                        hy = y;
+                    }
+                }
+            }
+        }
+        if (hx <= sizex && hx >= 0 && hy < sizey && hy >= 0 && grid[hx][hy] != '0') {
+            steps = 0;
+            steps = expand(altgrid, hx, hy, grid[hx][hy]);
+            if (steps > 1) {
+                collapse(altgrid, grid, counter);
+                score += steps*steps;
+                printf("\n");
+                print_grid(grid);
+                mate_grid(grid, altgrid);
+                mate_grid(grid, hidden_grid);
+                fprintf(log, "\n%d, %d, %d", hx+1, hy+1, score);
+                hx = 0; hy = 0; best = 0;
+            } else {
+                printf("\n\nI feel like something is wrong here1.\n");
+                fprintf(log, "\nERROR OCCURED\n");
+                fclose(log);
+                exit(-1);
+            }
+        } else {
+            printf("\n\nI feel like something is wrong here2.\n");
+            fprintf(log, "\nERROR OCCURED\n");
+            fclose(log);
+            exit(-1);
+        }
+    }
+
+    fprintf(log, "\nEND\n\nFINAL SCORE: %d (AI)\n", score);
+    fclose(log);
+    printf("\n\nAll done! The final score is %d.", score);
+    start();
+    return;
+}
+
+
 
 
 

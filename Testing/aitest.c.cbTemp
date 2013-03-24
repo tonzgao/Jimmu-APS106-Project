@@ -17,7 +17,7 @@ char color = 'b';
 //}
 //int position_factor(sizex, sizey, x, y)
 //{
-//  increases the shininess of the coordinates slightly if the x is in the middle and the y is low.
+//    increases the shininess of the coordinates slightly if the x is in the middle and the y is low.
 //}
 
 void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey])

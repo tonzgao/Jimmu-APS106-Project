@@ -386,6 +386,7 @@ void ai_play(char grid[sizex][sizey], char altgrid[sizex][sizey])
                 print_grid(grid);
                 mate_grid(grid, altgrid);
                 mate_grid(grid, hidden_grid);
+                fprintf(log, "\n%d, %d, %d", hx+1, hy+1, score);
                 hx = 0; hy = 0; best = 0;
             } else {
                 printf("\n\nI feel like something is wrong here1.\n");
@@ -399,7 +400,6 @@ void ai_play(char grid[sizex][sizey], char altgrid[sizex][sizey])
             fclose(log);
             exit(-1);
         }
-        fprintf(log, "\n%d, %d, %d", x+1, y+1, score);
     }
 
     fprintf(log, "\nEND\n\nFINAL SCORE: %d (AI)\n", score);
