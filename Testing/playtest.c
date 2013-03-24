@@ -1,13 +1,15 @@
-#include <stdio.h>
+na#include <stdio.h>
 #include <windows.h>
 #include <stdlib.h>
 #include <time.h>
+#include <ctype.h> //Just to do the upper case function
 
 time_t btime;
 int sizex = 0, sizey = 0, steps = 0;
 char color = 'b';
 
-void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey]) {
+void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey]) //MAkes a copy of the grid
+{
     int i, j;
     for (i = 0; i < sizex; i++) {
         for (j = 0; j < sizey; j++) {
@@ -16,32 +18,40 @@ void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey]) {
     }
 }
 
-char caps(char c) {
+char caps(char c)
+{
     if (c > 97 && c < 122) {
-        c = c - 'a' + 'A';
-    }
+        c=toupper(c);
+}
     return c;
 }
 
 int expand(char altgrid[sizex][sizey], int x, int y, int mode)
 {
 	char current = altgrid[x][y];
-	if (current == '0') {
+	if (current == '0')
+    {
         return -1;
 	}
 	if (current == mode || (mode == 1 && current == color)) {
 	    altgrid[x][y] = caps(altgrid[x][y]);
-		steps++;
-		if (mode == 1 && steps > 1) {
+		steps++; //is this outside of scope?
+		if (mode == 1 && steps > 1)
+        {
             return 2;
-		} else {
+		}
+    else
+        {
             altgrid[x][y] = caps(altgrid[x][y]);
-            if (x < sizex - 1) {
-                if (altgrid[x+1][y] == current) {
-                    expand(altgrid, x+1, y, mode);
+            if (x < sizex - 1)
+            {
+                if (altgrid[x+1][y] == current)
+                {
+                    expand(altgrid, x+1, y, mode); //recursion?
                 }
             }
-            if (x > 0) {
+        if (x > 0)
+            {
                 if (altgrid[x-1][y] == current) {
                     expand(altgrid, x-1, y, mode);
                 }
@@ -62,7 +72,7 @@ int expand(char altgrid[sizex][sizey], int x, int y, int mode)
 }
 
 int possible(char grid[sizex][sizey], char altgrid[sizex][sizey])
-// returns 1 if valid moves exist, otherwise returns 0 //
+// returns 1 if valid moves exist, otherwise returns 0
 {
     int i, j, pos = 0;
 
@@ -89,31 +99,40 @@ void collapse(char altgrid[sizex][sizey], char grid[sizex][sizey], int counter[3
 
     for (i = 0; i < sizex; i++) {
         firstz = -1; g = 0; tempcount = 0;
-        for (j = 0; j < sizey; j++) {
-            if (altgrid[i][j] == 'B' || altgrid[i][j] == 'G' || altgrid[i][j] == 'R' || altgrid[i][j] == 'Y') {
-                counter[i]++;
+        for (j = 0; j < sizey; j++)
+        {
+            if (altgrid[i][j] == 'B' || altgrid[i][j] == 'G' || altgrid[i][j] == 'R' || altgrid[i][j] == 'Y')
+                {
+                counter[i]++; //maybe just do altgrid[i][j]<91&&altgrid[i][j]>64? for the first if statement
                 tempcount++;
-                if (firstz == -1) {
+                if (firstz == -1)
+                    {
                     firstz = j;
+                    }
                 }
-            }
         }
         if (counter[i] > 0) {
-            if (counter[i] >= sizey - 1) {
-                trouble++;
-            }
-            for (g = counter[i]; tempcount > 0; tempcount--) {
-                for (j = 0; j < firstz; j++) {
-                    if (altgrid[i][j] < 97) {
-                        firstz = j;
-                    }
+            if (counter[i] >= sizey - 1)
+                {
+                    trouble++;
                 }
-                for (k = firstz; k < sizey; k++) {
-                    if (altgrid[i][k] > 97 && altgrid[i][k+1] < 97 && k < (sizey - g)) {
+            for (g = counter[i]; tempcount > 0; tempcount--)
+            {
+                for (j = 0; j < firstz; j++)
+                    {
+                    if (altgrid[i][j] < 97)
+                        {
+                            firstz = j;
+                        }
+                    }
+                for (k = firstz; k < sizey; k++)
+                    {
+                    if (altgrid[i][k] > 97 && altgrid[i][k+1] < 97 && k < (sizey - g))
+                        {
                         continue;
-                    }
+                        }
                     altgrid[i][k] = altgrid[i][k+1];
-                }
+                    }
                 altgrid[i][sizey-1] = '0';
             }
         }

@@ -292,8 +292,8 @@ void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
         printf("Y Coordinate: ");
         scanf("%d", &y);
         // crashes if given chars as input //
-        if (x == 31415) {
-            fprintf(log, "\nPI END (%s)", player);
+        if (x == 31415 && y == 31415) {
+            fprintf(log, "\nTAU (%s)", player);
             fclose(log);
             exit(31415);
         } else if (x <= sizex && x >= 0 && y < sizey && y >= 0 && grid[x][y] != '0') {
@@ -437,44 +437,44 @@ int main(void)
     return 0;
 }
 
-void ai_play(void)
-// just a standard greedy algorithm. could be modified. unfinished //
-{
-	fprintf(log, "%d x %d", sizex, sizey)
-	fprint(file, "%s", printf_grid(grid))
-	fprintf("START\nx, y, score")
-	int score = 0
-	while (possible() == 1) {
-		printf_grid()
-		printf("Current score: %d", score)
-		printf("Press any key to continue")
-		getchar()
-		//maybe commentary to illustrate some things at certain moments?
-		highest = 2
-		hx = 0
-		hy = 0
-		steps = 0
-		for e in grid {// move this section in braces to a mode in collapse which removes the highest rank. makes altgrid not need to be global.
-			for ch in grid[e]:
-				if (altgrid[e][ch] is not caps):
-					expand(e, ch, 0)
-					if steps > highest:
-						highest = steps
-					hx = e
-					hy = ch
-					steps = 0
-		}
-		score += collapse(hx, hy)
-		fprintf(log, "%d %d %d", x, y, score)
-	}
-
-	printf("All done!/n The final score is %d./n", score)
-	fprintf(log, "END\n\nFINAL SCORE: %d (AI)", score)
-
-	printf("Okay, you try now. Press any key to play\n")
-	getchar()
-	start()
-}
+//void ai_play(void)
+//// just a standard greedy algorithm. could be modified. unfinished //
+//{
+//	fprintf(log, "%d x %d", sizex, sizey)
+//	fprint(file, "%s", printf_grid(grid))
+//	fprintf("START\nx, y, score")
+//	int score = 0
+//	while (possible() == 1) {
+//		printf_grid()
+//		printf("Current score: %d", score)
+//		printf("Press any key to continue")
+//		getchar()
+//		//maybe commentary to illustrate some things at certain moments?
+//		highest = 2
+//		hx = 0
+//		hy = 0
+//		steps = 0
+//		for e in grid {// move this section in braces to a mode in collapse which removes the highest rank. makes altgrid not need to be global.
+//			for ch in grid[e]:
+//				if (altgrid[e][ch] is not caps):
+//					expand(e, ch, 0)
+//					if steps > highest:
+//						highest = steps
+//					hx = e
+//					hy = ch
+//					steps = 0
+//		}
+//		score += collapse(hx, hy)
+//		fprintf(log, "%d %d %d", x, y, score)
+//	}
+//
+//	printf("All done!/n The final score is %d./n", score)
+//	fprintf(log, "END\n\nFINAL SCORE: %d (AI)", score)
+//
+//	printf("Okay, you try now. Press any key to play\n")
+//	getchar()
+//	start()
+//}
 
 
 

@@ -1,12 +1,9 @@
 immediate goals:
 accout for bad users: checking for right type, max size of grid, choosing invalid coordinates, etc
-resolve relationship between grid and altgrid
-test expand
+better concede
+ensure player name reliability
+ai
 
 long term goals:
 documentation
 prevent cheating
-
-stretch goals:
-make real ai
-dynamic memory for path and playername
