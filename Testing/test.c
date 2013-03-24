@@ -340,29 +340,36 @@ void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
     return;
 }
 
-void (char grid[sizex][sizey], char altgrid[sizex][sizey])
+void ai_play(char grid[sizex][sizey], char altgrid[sizex][sizey])
 // ai play mode //
 {
     FILE * log = fopen("Log/log.txt", "a");
     fprintf(log, "\nSTART\nx, y, score");
     char hidden_grid[sizex][sizey];
-    int score = 0, gains = 0, turn = 1, x = 1, y = 1, i = 0, j = 0;
+    int score = 0, e, turn = 1, x = 1, y = 1, hx, hy, i = 0, j = 0;
 
     printf("\n");
     print_grid(grid);
     int counter[37] = {0};
 
     for (turn = 0; turn < turnlimit && possible(grid, altgrid) == 1; turn++) {
-        printf("\n\nTurn: %d, Current Score: %d", turn + 1, score);
+        printf("\n\nTurn: %d, Current Score: %d\n Press enter for the next turn.\n", turn + 1, score);
+        e = getchar();
+        if (e == '31415') {
+            fprintf(log, "\nGAME CANCELLED\n\nFINAL SCORE: %d (AI)\n", score);
+            fclose(log);
+            exit(31415);
+        }
         mate_grid(grid, hidden_grid);
         for (i= 0) {
             for (j = 0) {
                 //choose coordinate with hidden_grid. expanding each spot, not uncapsing after each to speed process.//
+                // assign best to hx, hy //
             }
         }
-        if (x <= sizex && x >= 0 && y < sizey && y >= 0 && grid[x][y] != '0') {
+        if (hx <= sizex && hx >= 0 && hy < sizey && hy >= 0 && grid[hx][hy] != '0') {
             steps = 0;
-            steps = expand(altgrid, x, y, grid[x][y]);
+            steps = expand(altgrid, hx, hy, grid[hx][hy]);
             if (steps > 1) {
                 collapse(altgrid, grid, counter);
                 score += steps*steps;
