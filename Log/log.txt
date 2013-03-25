@@ -1,0 +1,30 @@
+===============================================================================
+                                  TEAM JIMMU
+              Zipeng Cai, Anthony Gao, Richard Shangguan, Jimmy Tieu
+                  num      999826434         num              num
+===============================================================================
+
+-------------------------------------------------------------------------------
+    NEW GAME: Mon Mar 25 18:56:08 2013
+-------------------------------------------------------------------------------
+
+12 x 12
+g b y g g g b r b g y y 
+y g b g b g b b b r r r 
+b r g r b y y y g b r b 
+b y g r r r r r r y b y 
+y b g g g r r r b b g y 
+y y b g g b b r y y g r 
+g g r y y y g g g g b y 
+r y r b y b b b r r g r 
+g b g b y b y b b r b b 
+g y g r r y y r y y y b 
+b g y b y y g y b b g y 
+b g g y r g g g y y g g 
+
+START
+x, y, score
+2, 2, 9
+2, 2, 18
+2, 2, 34
+ERROR OCCURED

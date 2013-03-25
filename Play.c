@@ -10,7 +10,7 @@ int sizex = 0, sizey = 0, turnlimit = 999, steps = 0;
 char color = 'b';
 
 void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey])
-// copies one grid (dominant) into another (recessive) //
+// copies the elements of one grid (dominant) into another (recessive) //
 {
     int i, j;
     for (i = 0; i < sizex; i++) {
@@ -21,7 +21,7 @@ void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey])
 }
 
 char caps(char c)
-// puts capital version of a character. 'a' to 'A' //
+// returns capital version of a character. 'a' to 'A' //
 {
     if (c > 97 && c < 122) {
         c = c - 'a' + 'A';
@@ -34,15 +34,19 @@ int expand(char altgrid[sizex][sizey], int x, int y, int mode)
 {
     char current = altgrid[x][y];
     if (current == '0') {
+        // if the coordinates given are empty, then expand returns -1 to indicate failure //
         return -1;
     }
     if (current == mode || (mode == 1 && current == color)) {
+        // this is really dumb, but i did not want expand to have 5 inputs because its supposed to be elegant. so what happens is the color it is trying to expand is assigned to variable mode, unless it is being called from possible(). In that case, color (a global variable) is assigned beforehand in possible and mode is assigned 1. ??
         altgrid[x][y] = caps(altgrid[x][y]);
         steps++;
         if (mode == 1 && steps > 1) {
             return 2;
+            // if called from function possible() and possible, it returns 2 //
         } else {
             altgrid[x][y] = caps(altgrid[x][y]);
+            // checks the surrounding coordinates the same way. btw, steps is a global variable. //
             if (x < sizex - 1) {
                 if (altgrid[x+1][y] == current) {
                     expand(altgrid, x+1, y, mode);
@@ -75,6 +79,7 @@ int possible(char grid[sizex][sizey], char altgrid[sizex][sizey])
 
     for (i=0; i < sizex; i++) {
         for (j=0; j < sizey; j++) {
+            // checks each element in the grid for possibleness until one is found //
             color = altgrid[i][j];
             steps = 0;
             pos = expand(altgrid, i, j, 1);
@@ -84,6 +89,7 @@ int possible(char grid[sizex][sizey], char altgrid[sizex][sizey])
             }
         }
     }
+    // afterwards removes the uppercase letters from altgrid for reuse //
     mate_grid(grid, altgrid);
     return 0;
 }
@@ -96,19 +102,24 @@ void collapse(char altgrid[sizex][sizey], char grid[sizex][sizey], int counter[3
     for (i = 0; i < sizex; i++) {
         firstz = -1; g = 0; tempcount = 0;
         for (j = 0; j < sizey; j++) {
+            // removes uppercase letters made by expand //
             if (altgrid[i][j] == 'B' || altgrid[i][j] == 'G' || altgrid[i][j] == 'R' || altgrid[i][j] == 'Y') {
                 counter[i]++;
+                // increases the size of the darkness' claimed land //
                 tempcount++;
                 if (firstz == -1) {
+                    // time saver when dropping elements down //
                     firstz = j;
                 }
             }
         }
         if (counter[i] > 0) {
             if (counter[i] >= sizey - 1) {
+                // if an empty column exists //
                 trouble++;
             }
             for (g = counter[i]; tempcount > 0; tempcount--) {
+                // makes each element the one above it up to where the darkness claimed. for the amount claimed, it is made 0 //
                 for (j = 0; j < firstz; j++) {
                     if (altgrid[i][j] < 97) {
                         firstz = j;
@@ -125,6 +136,7 @@ void collapse(char altgrid[sizex][sizey], char grid[sizex][sizey], int counter[3
         }
     }
     for (; trouble > 0; trouble--) {
+        // shunts empty columns away //
         for (k = 0; k < sizex - 1; k++) {
             if (altgrid[k][0] == '0' && altgrid[k][1] == '0') {
                 for (i = k; i < sizex; i++) {
@@ -138,7 +150,7 @@ void collapse(char altgrid[sizex][sizey], char grid[sizex][sizey], int counter[3
             }
         }
     }
-
+    // makes the grid the altgrid. That is, after the caps are removed and others dropped down from altgrid, the changes are moved to the displayed grid //
     mate_grid(altgrid, grid);
 }
 
@@ -146,7 +158,8 @@ void timestamp(void)
 // Stamps the time for a game in the logs //
 {
     if (!player) {
-        player[0] = 1;
+        player[24] = '\0';
+        // not sure if this does anything, but just in case //
     }
     FILE * log;
     log = fopen("Log/log.txt", "a");
@@ -177,7 +190,7 @@ void generate_grid(char grid[sizex][sizey], char altgrid[sizex][sizey])
                 case 1: p = 'r'; break;
                 case 2: p = 'y'; break;
                 case 3: p = 'g'; break;
-                default: break;
+                default: break; // this makes p the one it was previously. this is so games are not super boring //
             }
             grid[i][j] = p;
             altgrid[i][j] = p;
@@ -284,19 +297,23 @@ void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
     printf("\n");
     print_grid(grid);
     int counter[37] = {0};
+    // counter is used in collapse to keep track of how many the darkness claimed //
 
     for (turn = 0; turn < turnlimit && possible(grid, altgrid) == 1; turn++) {
+        // keeps playing if in turnlimit and the grid is possible //
         printf("\n\nTurn: %d, Current Score: %d", turn + 1, score);
         printf("\n\nX Coordinate: ");
         scanf("%d", &x);
         printf("Y Coordinate: ");
         scanf("%d", &y);
-        // crashes if given chars as input //
+        // crashes if given chars as input. not sure if we need to be able to take in A-Z as 11 - 36. if so, need fix //
         if (x == 31415 && y == 31415) {
-            fprintf(log, "\nTAU (%s)", player);
+            // hidden feature. closes game if player inputs 31415 for x and y //
+            fprintf(log, "\nGAME CONCEEDED (%s)", player);
             fclose(log);
             exit(31415);
         } else if (x <= sizex && x >= 0 && y < sizey && y >= 0 && grid[x][y] != '0') {
+            // expands grid //
             steps = 0;
             steps = expand(altgrid, x, y, grid[x][y]);
             if (steps > 1) {
@@ -332,7 +349,6 @@ void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
         fprintf(log, "\n%d, %d, %d", x+1, y+1, score);
     }
 
-
     fprintf(log, "\nEND\n\nFINAL SCORE: %d (%s)\n", score, player);
     fclose(log);
     printf("\n\nAll done! Your final score is %d.", score);
@@ -340,105 +356,8 @@ void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
     return;
 }
 
-void start(void)
-// Player chooses betwen playing or watching ai. After each game, the player return here //
-{
-    int mode = 2, warn;
-    printf("\n1 Computer Generated Grid\n2 Custom Grid\n0 EXIT\n\nPlease state what you want to play: ");
-    scanf("%d", &mode);
-    if (mode != 1 && mode != 2) {
-        exit(0);
-    }
-
-    FILE * log = fopen("Log/log.txt", "a");
-    char path[25] = {0};
-    timestamp();
-
-    if (mode == 2) {
-        printf("\nPlease type the path to your grid: ");
-        scanf("%25s", &path);
-        FILE * input = fopen(path, "r");
-        fscanf(input, "%d%d", &sizey, &sizex);
-        fclose(input);
-    } else {
-        printf("\nPlease input the size of your grid.\n");
-        sizex = 0; sizey = 0;
-        for (warn = 0; sizex > 36 || sizey > 45 || sizex < 6 || sizey < 6; warn++) {
-            if (warn > 0) {
-                printf("\nSorry, please be reasonable\n");
-            }
-            if (warn > 7) {
-                printf("\nI feel like there is a problem here.\n");
-                fprintf(log, "\nERROR OCCURED\n");
-                fclose(log);
-                exit(-1); // giving a char for sizex or sizey causes infinite loop //
-            }
-            sizex = 0;
-            printf("\nEnter size of x: ");
-            scanf("%d", &sizex);
-            if (sizex == 0) {
-                int random, seed;
-                seed = time(NULL);
-                srand(seed);
-                sizex = (rand() % 20) + 8;
-            }
-            sizey = 0;
-            printf("Enter size of y: ");
-            scanf("%d", &sizey);
-            if (sizey == 0) {
-                int random, seed;
-                seed = time(NULL);
-                srand(seed);
-                sizey = (rand() % 25) + 8;
-            }
-        }
-    }
-    char grid[sizex][sizey];
-    char altgrid[sizex][sizey];
-
-    if (mode == 2) {
-        warn = read_grid(grid, altgrid, path);
-        if (warn < 0) {
-            start();
-        }
-    } else {
-        generate_grid(grid, altgrid);
-    }
-    printf("\n1 Play\n2 Watch\n\nNow please choose your mode: ");
-    scanf("%d", &mode);
-    printf("\nEnter a turn limit (0 for no limit): ");
-    scanf("%d", &turnlimit);
-    if (turnlimit == 0) {
-        turnlimit = 9999;
-    }
-    fclose(log);
-    switch (mode) {
-        case 2: printf("\n AI not implemented yet."); break;
-        default: play(grid, altgrid); break;
-    }
-}
-
-int main(void)
-// Opens the log file and asks the Player's name //
-{
-    FILE * log;
-    log = fopen("Log/log.txt", "w");
-    fprintf(log, "===============================================================================\n");
-    fprintf(log, "                                  TEAM JIMMU\n");
-    fprintf(log, "              Zipeng Cai, Anthony Gao, Richard Shangguan, Jimmy Tieu\n");
-    fprintf(log, "                  num      999826434         num              num\n");
-    fprintf(log, "===============================================================================\n");
-    fclose(log);
-
-    printf("Please input your name: ");
-    scanf("%[ -~]25s", &player);
-    printf("\nWelcome to game! Below are all of our exciting options:\n");
-    start();
-    return 0;
-}
-
 void ai_play(char grid[sizex][sizey], char altgrid[sizex][sizey])
-// ai play mode //
+// ai play mode. currently not very good, please make better //
 {
     FILE * log = fopen("Log/log.txt", "a");
     fprintf(log, "\nSTART\nx, y, score");
@@ -504,7 +423,109 @@ void ai_play(char grid[sizex][sizey], char altgrid[sizex][sizey])
     return;
 }
 
+void start(void)
+// Player chooses betwen playing or watching ai. After each game, the player return here //
+{
+    int mode = 2, warn;
+    printf("\n1 Computer Generated Grid\n2 Custom Grid\n0 EXIT\n\nPlease state what you want to play: ");
+    // generated or read grid //
+    scanf("%d", &mode);
+    if (mode != 1 && mode != 2) {
+        exit(0);
+    }
 
+    FILE * log = fopen("Log/log.txt", "a");
+    char path[25] = {0};
+    timestamp();
+
+    if (mode == 2) {
+        // read grid. asks for path //
+        printf("\nPlease type the path to your grid: ");
+        scanf("%25s", &path);
+        FILE * input = fopen(path, "r");
+        fscanf(input, "%d%d", &sizey, &sizex);
+        fclose(input);
+    } else {
+        // generate. asks for size //
+        printf("\nPlease input the size of your grid.\n");
+        sizex = 0; sizey = 0;
+        for (warn = 0; sizex > 36 || sizey > 45 || sizex < 6 || sizey < 6; warn++) {
+            if (warn > 0) {
+                printf("\nSorry, please be reasonable\n");
+                // too large or too small //
+            }
+            if (warn > 7) {
+                // if crashes occur for whatever reason //
+                printf("\nI feel like there is a problem here.\n");
+                fprintf(log, "\nERROR OCCURED\n");
+                fclose(log);
+                exit(-1); // giving a char for sizex or sizey causes infinite loop //
+            }
+            sizex = 0;
+            printf("\nEnter size of x: ");
+            scanf("%d", &sizex);
+            if (sizex == 0) {
+                // hidden feature. if size is 0, it is randomly generated in the small-medium range //
+                int random, seed;
+                seed = time(NULL);
+                srand(seed);
+                sizex = (rand() % 20) + 8;
+            }
+            sizey = 0;
+            printf("Enter size of y: ");
+            scanf("%d", &sizey);
+            if (sizey == 0) {
+                int random, seed;
+                seed = time(NULL);
+                srand(seed);
+                sizey = (rand() % 25) + 8;
+            }
+        }
+    }
+    // declares grids //
+    char grid[sizex][sizey];
+    char altgrid[sizex][sizey];
+    // makes grids //
+    if (mode == 2) {
+        warn = read_grid(grid, altgrid, path);
+        if (warn < 0) {
+            start();
+        }
+    } else {
+        generate_grid(grid, altgrid);
+    }
+    printf("\n1 Play\n2 Watch\n\nNow please choose your mode: ");
+    scanf("%d", &mode);
+    printf("\nEnter a turn limit (0 for no limit): ");
+    scanf("%d", &turnlimit);
+    if (turnlimit == 0) {
+        turnlimit = 9999;
+    }
+    fclose(log);
+    switch (mode) {
+        case 2: ai_play(grid, altgrid); break;
+        default: play(grid, altgrid); break;
+    }
+}
+
+int main(void)
+// Opens the log file and asks the Player's name //
+{
+    FILE * log;
+    log = fopen("Log/log.txt", "w");
+    fprintf(log, "===============================================================================\n");
+    fprintf(log, "                                  TEAM JIMMU\n");
+    fprintf(log, "              Zipeng Cai, Anthony Gao, Richard Shangguan, Jimmy Tieu\n");
+    fprintf(log, "                  num      999826434         num              num\n"); // please put your student numbers in //
+    fprintf(log, "===============================================================================\n");
+    fclose(log);
+
+    printf("Please input your name: ");
+    scanf("%[ -~]25s", &player);
+    printf("\nWelcome to game! Below are all of our exciting options:\n");
+    start();
+    return 0;
+}
 
 
 
