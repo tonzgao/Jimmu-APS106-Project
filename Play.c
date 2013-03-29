@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-// Zipeng Cai, Anthony Gao 999826434, Richard Shangguan, Jimmy Tieu //
+// Zipeng Cai, Anthony Gao 999826434, Richard Shangguan, Jimmy Tieu 998690135//
 char player[25];
 time_t btime;
 int sizex = 0, sizey = 0, turnlimit = 999, steps = 0;
