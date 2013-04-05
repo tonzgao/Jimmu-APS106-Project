@@ -10,6 +10,23 @@ int sizex = 0, sizey = 0, steps = 0;
 char color = 'b';
 char dumb_grid[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E','F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 
+int return_int(char c)
+{
+    int i;
+    if (c >= '0' && c <= '9') {
+        i = (int)c - 48;
+    } else if (c >= 'A' && c <= 'Z') {
+        i = (int)c - 55;
+    } else if (c >= 'a' && c <= 'z') {
+        i = (int)c - 87;
+    } else if (c == '!') {
+        i = 31415;
+    } else {
+        i = -1;
+    }
+    return i;
+}
+
 void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey])
 // copies the elements of one grid (dominant) into another (recessive) //
 {
@@ -163,7 +180,7 @@ void timestamp(void)
         // not sure if this does anything, but just in case //
     }
     FILE * log;
-    log = fopen("Log/log.txt", "a");
+    log = fopen("log.txt", "a");
     time (&btime);
     fprintf(log, "\n-------------------------------------------------------------------------------\n");
     fprintf(log, "    NEW GAME: %s", ctime(&btime));
@@ -178,7 +195,7 @@ void generate_grid(char grid[sizex][sizey], char altgrid[sizex][sizey])
     char p = 'b';
 
     FILE * log;
-    log = fopen("Log/log.txt", "a");
+    log = fopen("log.txt", "a");
     fprintf(log, "%d x %d\n", sizex, sizey);
 
     seed = time(NULL);
@@ -208,7 +225,7 @@ int read_grid(char grid[sizex][sizey], char altgrid[sizex][sizey], char path[25]
     int i, j;
     char p = 'b';
     FILE * input = fopen(path, "r");
-    FILE * log = fopen("Log/log.txt", "a");
+    FILE * log = fopen("log.txt", "a");
 
     if (input == NULL) {
         fclose(log);
@@ -258,7 +275,7 @@ void print_grid(char grid[sizex][sizey])
 {
     int i, j;
     char p;
-    printf(" Y \n");
+    printf(" y \n");
     for (j = sizey - 1; j >= 0; j--) {
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
         printf("%2c ", dumb_grid[j]);
@@ -278,37 +295,47 @@ void print_grid(char grid[sizex][sizey])
     }
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
     printf(" ");
-    for (i = 0; i < sizex; i += 2) {
-        printf("%4c", dumb_grid[i]);
+    for (i = 0; i < sizex; i++) {
+        if (i == 0) {
+            printf("%4c", dumb_grid[i]);
+        } else {
+            printf("%2c", dumb_grid[i]);
+        }
     }
-    if (i % 2 == 0) {
-        printf(" ");
-    }
-    printf("  X");
+    printf("   x");
 }
 
 
 void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
 // Human playing mode //
 {
-    FILE * log = fopen("Log/log.txt", "a");
+    FILE * log = fopen("log.txt", "a");
     fprintf(log, "\nSTART\nx, y, score");
     int score = 0, gains = 0, turn = 1, x = 1, y = 1, warn = 0, i = 0;
+    char cx[6], cy[6];
 
     printf("\n");
     print_grid(grid);
     int counter[37] = {0};
     // counter is used in collapse to keep track of how many the darkness claimed //
-
+    getchar();
     for (turn = 0; possible(grid, altgrid) == 1; turn++) {
         // keeps playing if the grid is possible //
         printf("\n\nTurn: %d, Current Score: %d", turn + 1, score);
         printf("\n\nX Coordinate: ");
-        scanf("%d", &x);
+        fgets(cx, 5, stdin);
         printf("Y Coordinate: ");
-        scanf("%d", &y);
+        fgets(cy, 5, stdin);
+        x = return_int(cx[0]);
+        y = return_int(cy[0]);
+        if (cx[2] != '\0' || cy[2] != '\0') {
+            printf("Please remember to use one digit coordinates from 0 to Z.\n");
+            for (i = 0; i < 6; i++) {
+                cx[i] = '\0'; cy[i] = '\0';
+            }
+        }
         if (x == 31415 && y == 31415) {
-            // hidden feature. closes game if player inputs 31415 for x and y //
+            // hidden feature. closes game if player inputs ! for x and y //
             fprintf(log, "\nGAME CONCEEDED (%s)", player);
             fclose(log);
             exit(31415);
@@ -324,7 +351,7 @@ void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
                 warn = 0;
             } else {
                 mate_grid(grid, altgrid);
-                printf("\n\nSorry, you just wasted a turn.");
+                printf("\nSorry, you just wasted a turn.");
                 warn++;
                 if (warn > 7) {
                     printf("\n\nI feel like something is wrong here.\n");
@@ -359,7 +386,7 @@ void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
 void ai_play(char grid[sizex][sizey], char altgrid[sizex][sizey])
 // ai play mode. currently not very good, please make better //
 {
-    FILE * log = fopen("Log/log.txt", "a");
+    FILE * log = fopen("log.txt", "a");
     fprintf(log, "\nSTART\nx, y, score");
     char e = 'a', hidden_grid[sizex][sizey];
     int score = 0, x = 1, y = 1, turn, hx = 0, hy = 0, shiny = 0, best = 1;
@@ -373,7 +400,7 @@ void ai_play(char grid[sizex][sizey], char altgrid[sizex][sizey])
     for (turn = 0; possible(grid, altgrid) == 1;turn++) {
         printf("\n\nTurn: %d, Current Score: %d\nPress enter for the next turn.\n", turn + 1, score);
         e = getchar();
-        if (e == '0') {
+        if (e == '!') {
             fprintf(log, "\nGAME CANCELLED\n\nFINAL SCORE: %d (AI)\n", score);
             fclose(log);
             exit(31415);
@@ -435,7 +462,7 @@ void start(void)
         exit(0);
     }
 
-    FILE * log = fopen("Log/log.txt", "a");
+    FILE * log = fopen("log.txt", "a");
     char path[25] = {0};
     timestamp();
 
@@ -450,7 +477,7 @@ void start(void)
         // generate. asks for size //
         printf("\nPlease input the size of your grid.\n");
         sizex = 0; sizey = 0;
-        for (warn = 0; sizex > 36 || sizey > 45 || sizex < 6 || sizey < 6; warn++) {
+        for (warn = 0; sizex > 36 || sizey > 36 || sizex < 6 || sizey < 6; warn++) {
             if (warn > 0) {
                 printf("\nSorry, please be reasonable\n");
                 // too large or too small //
@@ -509,7 +536,7 @@ int main(void)
 // Opens the log file and asks the Player's name //
 {
     FILE * log;
-    log = fopen("Log/log.txt", "w");
+    log = fopen("log.txt", "w");
     fprintf(log, "===============================================================================\n");
     fprintf(log, "                                  TEAM JIMMU\n");
     fprintf(log, "              Zipeng Cai, Anthony Gao, Richard Shangguan, Jimmy Tieu\n");
