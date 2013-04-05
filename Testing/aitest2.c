@@ -9,21 +9,14 @@
 // Zipeng Cai, Anthony Gao 999826434, Richard Shangguan, Jimmy Tieu //
 time_t btime;
 int sizex = 0, sizey = 0, turnlimit = 999, steps = 0;
-char color = 'b';
+char color = 'b',ShineColour='b';
 
-//int color_factor(char grid[sizex][sizey], int x, int y,double *Fact_red, double *Fact_blue, double *Fact_green, double *Fact_yellow)
+//
 //{
-    int lered=0, leblue=0, legreen=0,leyellow=0;
 
-    colour_counter(grid[sizex][sizey],&lered,&legreen,&leyellow,&leblue);
-    if(lered!=0)
-    *Fact_red=1/(double)lered;
-    if(leblue!=0)
-    *Fact_blue=1/(double)leblue;
-    if(legreen!=0)
-    *Fact_green=1/(double)legreen;
-    if(leyellow!=0)
-    *Fact_yellow=1/(double)leyellow;
+
+
+
 //  increases the shininess of certain positions a lot if the color is rare. //
 //}
 //int position_factor(sizex, sizey, x, y)
@@ -31,31 +24,39 @@ char color = 'b';
 //  increases the shininess of the coordinates slightly if the x is in the middle and the y is low.
 //}
 
-// void colour_counter(const char altgrid[][],sizex,sizey,int *NUM_red,int *NUM_green,int *NUM_yellow,int *NUM_blue)
-    //counts number of each colour on grid to compare for rares
+double color_factor(char altgrid[sizex][sizey])
     {
         int i,j;
+        double facred=0., facblue=0., facgreen=0.,facyellow=0.;
 
 
         for(j=0;j<sizey;j++)
             {
                 for(i=0;i<sizex;i++)
                 {
-                        if(altgrid[i][j]=='r')
-                            {*NUM_red++;}
-                        else if (altgrid[][]=='g')
-                            {*NUM_green++;}
-                        else if(altgrid[i][j]=='y')
-                            {*NUM_yellow++;}
-                        else if(altgrid[i][j]=='b')
-                            {*NUM_blue++;}
+                        if(grid[i][j]=='r')
+                            {facred++;}
+                        else if (grid[i][j]=='g')
+                            {facgreen++;}
+                        else if(grid[i][j]=='y')
+                            {facyellow++;}
+                        else if(grid[i][j]=='b')
+                            {facblue++;}
                         else
                             continue;
                 }
             }
-
-
-    }
+            if(facred>1&&ShineColour=='r')
+                {facred=1/facred; return facred;}
+            if(facblue>1&&ShineColour=='b')
+                {facblue=1/facblue; return facblue;}
+            if(facgreen>1&&ShineColour=='g')
+                {facgreen=1/facgreen;
+                return facgreen;
+                }
+            if(facyellow>1&&ShineColour=='y')
+                {facyellow=1/facyellow; return facyellow;}
+            }
 
 void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey])
 // copies one grid (dominant) into another (recessive) //
@@ -84,13 +85,15 @@ int expand(char altgrid[sizex][sizey], int x, int y, int mode)
     if (current == '0') {
         return -1;
     }
+       ShineColour=altgrid[x][y];
     if (current == mode || (mode == 1 && current == color)) {
         altgrid[x][y] = caps(altgrid[x][y]);
         steps++;
         if (mode == 1 && steps > 1) {
             return 2;
         } else {
-            altgrid[x][y] = caps(altgrid[x][y]);
+            altgrid[x][y] = caps(altgrid[x][y]); //include typec.h
+            //and use toupper, might make things faster than calling
             if (x < sizex - 1) {
                 if (altgrid[x+1][y] == current) {
                     expand(altgrid, x+1, y, mode);
@@ -125,7 +128,7 @@ int possible(char grid[sizex][sizey], char altgrid[sizex][sizey])
         for (j=0; j < sizey; j++) {
             color = altgrid[i][j];
             steps = 0;
-            pos = expand(altgrid, i, j, 1);
+            pos = expand(altgrid, i, j, 1,1);
             if (pos > 1) {
                 mate_grid(grid, altgrid);
                 return 1;
@@ -247,7 +250,7 @@ int ai2(char grid[sizex][sizey], char altgrid[sizex][sizey])
         }
         if (hx <= sizex && hx >= 0 && hy < sizey && hy >= 0 && grid[hx][hy] != '0') {
             steps = 0;
-            steps = expand(altgrid, hx, hy, grid[hx][hy]);
+            steps = expand(altgrid, hx, hy, grid[hx][hy],1);
             if (steps > 1) {
                 collapse(altgrid, grid, counter);
                 score += steps*steps;
@@ -293,7 +296,7 @@ int ai1(char grid[sizex][sizey], char altgrid[sizex][sizey])
                     steps = 0;
                     shiny = expand(hidden_grid, x, y, grid[x][y]);
                     if (shiny > best) {
-                        best = shiny;
+                        best = shiny*color_factor(grid[x][y]);
                         hx = x;
                         hy = y;
                     }
