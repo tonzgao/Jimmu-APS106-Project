@@ -5,295 +5,75 @@
 ===============================================================================
 
 -------------------------------------------------------------------------------
-    NEW GAME: Fri Mar 29 17:08:38 2013
+    NEW GAME: Fri Apr 05 13:41:29 2013
 -------------------------------------------------------------------------------
 
-36 x 45
-g g g g b r b b r y g g g r b g b b y r b g g y b b r b g r r b g r r r 
-y b b y b b g b y y y y y y g r r y y y y r r r g g r b g b b b g r g g 
-r g g b b b r r r r y y g y y y y y g y y b b r b b y y r r r g b g g g 
-b b g b r b g g g r b b b g g g g b r b r y y y y g r b b g r r r g g g 
-g y b b b y g b b g b b r b b b y y g g g r b r r r y y b b r r b b y y 
-y b y y y b y r g b r r b r r r r y r r b y g y y r y g g y b b b g b b 
-g g g y g g g y y y g g y g b b b b g y y b b y r g y y r b b b g g g b 
-g b r r g y y y y g y b y y y y y g g y y b r y g b b r b b r b b b b b 
-y y y b g g r b b b r r y r y r g r y g g r r r y g g g g y g g r r r r 
-y r r g g r g r b y b r y g r b r r b y y b b y r r y y y y g r g y b y 
-y g b b y b b b b b b b r r g y r y y b r b g b g g y y b b b r r r r y 
-y y g g y y g g b g g r r r g r y y r r r g g r r g r r r y b b g g g g 
-g g g r g y y y b b b y y y g b g g y y y r y b b r b r r b y y g g r y 
-b y r g g y r g y y b b y g b r b y b b y y r g y y y r y b y y r g y y 
-y b g g y r r y r r y r g g r r r r y y y r y y b b y y y y b b r y g g 
-y y g g b b r r r r b y r y y b b b r y y b b g r b b b r r r y b b b g 
-g y y g r g y y y y y r r y b b g y r b r r b r b g y y g g b g r r g y 
-y y y b g g y y y y g g g b b b r y y g r b b b b r r r g g g r r r r g 
-g g y y g r y y g y y g g r b y r b g g y y y g r g b b y b b b r b g r 
-b b r r r r b r r g r r g r r r g g g y b b g b g g b b g b r g r g g b 
-b b r r g r g r r g y y y r r b r g g r r r r r b r g g y b g r b b y r 
-b b b g r r b g b r r y y r g b r b b y y r y g g r b b r r b b g y y y 
-r g y g g y y b g g g g g b r g y r y b r g b g r b r y y g g b g g r g 
-r r r r r g g y r g y g b r y b y y b g r y g g y g g r r r r r y b b r 
-r r r y y r y g y y r g y b r g y b b y y y b r r r r g g y g y g g b b 
-b y y b y r r r r r r r r b g g r g b y r r r y y r g r b r g g r r y r 
-g y y r y g r g g y y b b b y b b b b y r b b r y y y y g b b b b r r g 
-g b b g r r g r r r r r g g y g b y y y r g r r r r b r b b g g g r r r 
-b b b r r r r r g g b r g y y y g b b b b y g r r g b y r y g y b y r r 
-y b g b b y y b y y y y y g g y y y y b y y y b y r b g y y y g r y b r 
-y r b y y y g y y r y b y g g y g y y r b r y b b b r r r y y g b b g r 
-r r r y y y y r g y b r r r b b y g y g r r g r y b b r g g b b b g g g 
-g b b b b r g g r r r r r r b b b b g b b y r g b b g g g r r r b g b b 
-g g r r r b r r b y b b b b g y g g g g y y y g g y r y y y y y y y g b 
-b g g r y y b r r r r r b r g g g g g y b r r y b b r r b b g y r y y g 
-b r y r r b g g b b b r r g y g b r g b b b g g b r g g r r b b y b g g 
-g b b y r y g g b b b r r r r b g b b y r y r r y b b y y y y r r g r y 
-b b b g r g g y g y y b b y y b g g g g g g b y y y y g g g g g b b y y 
-r y b y r r r r b b r y y y r r b y y y y b g g g b g y y r g y r r b y 
-r r r r r y y y y g r b b r g r b y y b g r r g g g g g b g g r r r y y 
-g b g b b r r r g y r r b b y g b r y b g b b b r y r y g g y g g r y g 
-r r g y y g r g b b b r b r g r y g g b g g g y b g b g g y r y y g y g 
-g g y b b b b g y g y b b b g b b b y y y b b b y r b b y g r g r r b b 
-y y b b b y y y y b g g r y r r r y b b b y y g y y y y b g b g g g g g 
-g r b g g b b r y y y g g g r r g g g g r r r r b b r r g g g y b g g g 
+12 x 12
+b b b r r y y y y b g g 
+g g g y y g g g r g g y 
+r r r r r r r b b b g g 
+b b b r y r y y y y r r 
+g g g b g g r y g y r r 
+r g r r r r g g g r b y 
+g y y g g g g g g g g g 
+g b y y y y b g g y y g 
+y y b r b y g g y y b b 
+g g g b r r b b g y b g 
+b y y g g b y r g b b b 
+y g g g y y y b b b g y 
 
 START
 x, y, score
-9, 44, 441
-1, 6, 765
-6, 34, 1089
-29, 38, 1413
-33, 38, 1609
-3, 8, 1778
-14, 17, 1947
-13, 17, 2116
-15, 11, 2285
-11, 12, 2961
-10, 11, 3322
-1, 8, 3466
-3, 16, 3662
-9, 28, 3858
-7, 29, 4114
-4, 14, 4258
-2, 24, 4402
-11, 24, 4546
-28, 4, 4690
-30, 38, 5090
-31, 33, 5234
-28, 5, 5355
-33, 20, 5476
-9, 8, 5576
-10, 8, 5865
-6, 10, 5986
-5, 19, 6130
-34, 28, 6230
-5, 14, 6311
-8, 19, 6432
-7, 19, 6513
-12, 3, 6594
-11, 5, 6715
-9, 10, 6911
-8, 14, 6992
-14, 8, 7073
-11, 7, 7173
-15, 8, 7254
-16, 9, 7335
-14, 7, 7416
-18, 8, 7497
-20, 18, 7618
-32, 2, 7699
-30, 25, 7799
-3, 1, 7863
-4, 2, 8007
-4, 16, 8088
-5, 7, 8169
-6, 4, 8233
-18, 6, 8297
-19, 11, 8361
-19, 16, 8442
-23, 16, 8523
-20, 20, 8604
-19, 18, 8704
-18, 18, 8785
-23, 7, 8849
-35, 2, 8913
-1, 3, 8962
-1, 3, 9062
-1, 18, 9111
-1, 19, 9160
-1, 22, 9209
-2, 14, 9258
-4, 8, 9307
-24, 13, 9356
-22, 14, 9420
-18, 15, 9501
-23, 12, 9565
-30, 29, 9614
-31, 24, 9663
-28, 24, 9712
-32, 6, 9761
-30, 7, 9810
-7, 3, 9846
-4, 4, 9895
-16, 6, 9931
-14, 15, 9980
-16, 13, 10061
-18, 4, 10097
-16, 6, 10146
-26, 9, 10182
-24, 10, 10218
-23, 17, 10299
-21, 16, 10348
-28, 24, 10384
-29, 9, 10420
-29, 19, 10469
-27, 19, 10590
-28, 16, 10654
-33, 16, 10690
-34, 6, 10726
-33, 5, 10775
-31, 8, 10856
-28, 15, 10937
-35, 3, 10973
-1, 5, 10998
-1, 11, 11062
-2, 7, 11111
-1, 11, 11160
-1, 9, 11260
-2, 3, 11285
-4, 1, 11310
-5, 1, 11335
-11, 1, 11360
-9, 1, 11396
-10, 5, 11460
-6, 6, 11524
-6, 5, 11560
-5, 3, 11660
-15, 1, 11685
-21, 4, 11710
-21, 9, 11774
-19, 5, 11823
-18, 5, 11859
-23, 25, 11895
-22, 3, 11920
-19, 3, 11969
-21, 3, 12018
-24, 3, 12054
-27, 7, 12090
-25, 6, 12154
-27, 13, 12190
-29, 8, 12226
-27, 13, 12262
-27, 14, 12298
-24, 18, 12323
-29, 1, 12348
-29, 2, 12373
-27, 2, 12437
-29, 3, 12462
-26, 6, 12487
-25, 6, 12536
-26, 6, 12617
-26, 6, 12698
-24, 4, 12723
-25, 4, 12759
-1, 8, 12775
-3, 5, 12791
-2, 5, 12816
-1, 6, 12832
-1, 6, 12848
-1, 8, 12864
-7, 3, 12880
-8, 1, 12896
-13, 4, 12912
-14, 10, 12928
-14, 9, 12953
-15, 9, 12978
-14, 8, 12994
-17, 1, 13010
-15, 7, 13046
-20, 6, 13071
-17, 6, 13087
-16, 7, 13112
-16, 6, 13128
-17, 5, 13164
-20, 7, 13180
-21, 6, 13216
-21, 1, 13232
-22, 9, 13268
-22, 9, 13332
-20, 3, 13357
-23, 2, 13382
-24, 2, 13431
-22, 2, 13456
-22, 5, 13481
-19, 1, 13497
-25, 3, 13513
-26, 4, 13529
-28, 2, 13545
-30, 1, 13561
-33, 5, 13577
-32, 4, 13593
-1, 2, 13602
-2, 3, 13627
-7, 1, 13636
-5, 1, 13645
-10, 6, 13654
-11, 6, 13670
-11, 2, 13679
-12, 1, 13688
-13, 2, 13704
-13, 1, 13740
-13, 1, 13765
-12, 1, 13774
-16, 2, 13783
-18, 1, 13792
-19, 1, 13801
-20, 1, 13810
-20, 3, 13819
-20, 3, 13828
-20, 2, 13844
-20, 2, 13860
-19, 1, 13876
-19, 2, 13892
-19, 1, 13917
-21, 1, 13926
-25, 15, 13935
-27, 4, 13944
-27, 3, 13953
-28, 1, 13962
-27, 1, 13978
-27, 1, 13987
-1, 1, 13991
-1, 2, 14000
-1, 3, 14004
-3, 3, 14008
-4, 1, 14012
-3, 2, 14016
-4, 1, 14025
-3, 1, 14034
-2, 2, 14059
-4, 1, 14068
-3, 1, 14077
-3, 1, 14081
-2, 1, 14085
-4, 1, 14089
-5, 1, 14093
-4, 1, 14102
-6, 2, 14106
-8, 1, 14110
-10, 5, 14114
-10, 4, 14123
-11, 7, 14127
-12, 1, 14131
-14, 1, 14135
-14, 4, 14144
-14, 4, 14153
-13, 1, 14157
-13, 4, 14161
-13, 3, 14170
-13, 4, 14179
-13, 5, 14183
-14, 2, 14187
-14, 3, 14191
-16, 6, 14195
+4, 6, 324
+8, 1, 405
+8, 3, 469
+2, 6, 518
+1, 5, 543
+2, 1, 568
+7, 3, 593
+10, 5, 618
+2, 6, 634
+5, 1, 650
+4, 2, 686
+11, 3, 702
+1, 1, 711
+3, 2, 727
+2, 3, 736
+5, 4, 745
+5, 2, 761
+5, 2, 797
+3, 2, 813
+2, 1, 822
+7, 2, 831
+6, 1, 847
+6, 1, 856
+5, 1, 872
+1, 2, 876
+6, 3, 880
+6, 2, 884
 END
 
-FINAL SCORE: 14195 (AI)
+FINAL SCORE: 884 (AI)
+
+-------------------------------------------------------------------------------
+    NEW GAME: Fri Apr 05 13:41:37 2013
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+    NEW GAME: Fri Apr 05 13:41:45 2013
+-------------------------------------------------------------------------------
+
+12 x 12
+b b g y y b b b y y y y 
+y g y g g y r y y b b r 
+b y y r r y y y y g g r 
+b b g r g b y g g g y y 
+y g y y r r b y g r r g 
+b b g y y g g y g b b b 
+b b y g y g r r r y g b 
+b g r b r g g b g g g b 
+r b g b b b b r g g g r 
+y y g g y r r g g g r y 
+g g b g y g y r b b r r 
+b g g g g g b y r r y y 

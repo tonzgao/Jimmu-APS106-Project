@@ -6,8 +6,9 @@
 // Zipeng Cai, Anthony Gao 999826434, Richard Shangguan, Jimmy Tieu 998690135//
 char player[25];
 time_t btime;
-int sizex = 0, sizey = 0, turnlimit = 999, steps = 0;
+int sizex = 0, sizey = 0, steps = 0;
 char color = 'b';
+char dumb_grid[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E','F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 
 void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey])
 // copies the elements of one grid (dominant) into another (recessive) //
@@ -260,7 +261,7 @@ void print_grid(char grid[sizex][sizey])
     printf(" Y \n");
     for (j = sizey - 1; j >= 0; j--) {
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
-        printf("%2d ", j);
+        printf("%2c ", dumb_grid[j]);
         for (i = 0; i < sizex; i++) {
             p = grid[i][j];
             switch (p) {
@@ -278,7 +279,7 @@ void print_grid(char grid[sizex][sizey])
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
     printf(" ");
     for (i = 0; i < sizex; i += 2) {
-        printf("%4d", i);
+        printf("%4c", dumb_grid[i]);
     }
     if (i % 2 == 0) {
         printf(" ");
@@ -299,14 +300,13 @@ void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
     int counter[37] = {0};
     // counter is used in collapse to keep track of how many the darkness claimed //
 
-    for (turn = 0; turn < turnlimit && possible(grid, altgrid) == 1; turn++) {
-        // keeps playing if in turnlimit and the grid is possible //
+    for (turn = 0; possible(grid, altgrid) == 1; turn++) {
+        // keeps playing if the grid is possible //
         printf("\n\nTurn: %d, Current Score: %d", turn + 1, score);
         printf("\n\nX Coordinate: ");
         scanf("%d", &x);
         printf("Y Coordinate: ");
         scanf("%d", &y);
-        // crashes if given chars as input. not sure if we need to be able to take in A-Z as 11 - 36. if so, need fix //
         if (x == 31415 && y == 31415) {
             // hidden feature. closes game if player inputs 31415 for x and y //
             fprintf(log, "\nGAME CONCEEDED (%s)", player);
@@ -362,14 +362,15 @@ void ai_play(char grid[sizex][sizey], char altgrid[sizex][sizey])
     FILE * log = fopen("Log/log.txt", "a");
     fprintf(log, "\nSTART\nx, y, score");
     char e = 'a', hidden_grid[sizex][sizey];
-    int score = 0, turn = 1, x = 1, y = 1, hx = 0, hy = 0, shiny = 0, best = 1;
+    int score = 0, x = 1, y = 1, turn, hx = 0, hy = 0, shiny = 0, best = 1;
 
     printf("\n");
     print_grid(grid);
     int counter[37] = {0};
     mate_grid(grid, hidden_grid);
 
-    for (turn = 0; turn < turnlimit && possible(grid, altgrid) == 1; turn++) {
+    e = getchar();
+    for (turn = 0; possible(grid, altgrid) == 1;turn++) {
         printf("\n\nTurn: %d, Current Score: %d\nPress enter for the next turn.\n", turn + 1, score);
         e = getchar();
         if (e == '0') {
@@ -496,11 +497,7 @@ void start(void)
     }
     printf("\n1 Play\n2 Watch\n\nNow please choose your mode: ");
     scanf("%d", &mode);
-    printf("\nEnter a turn limit (0 for no limit): ");
-    scanf("%d", &turnlimit);
-    if (turnlimit == 0) {
-        turnlimit = 9999;
-    }
+
     fclose(log);
     switch (mode) {
         case 2: ai_play(grid, altgrid); break;
