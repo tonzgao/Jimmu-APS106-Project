@@ -205,7 +205,7 @@ void generate_grid(char grid[sizex][sizey], char altgrid[sizex][sizey])
 
     FILE * log;
     log = fopen("log.txt", "a");
-    fprintf(log, "%d x %d\n", sizex, sizey);
+    fprintf(log, "%d %d\n", sizey, sizex);
 
     seed = time(NULL);
     srand(seed);
@@ -252,7 +252,7 @@ int read_grid(char grid[sizex][sizey], char altgrid[sizex][sizey], char path[25]
         printf("\nSorry, grid dimensions are unreasonable.\n");
         return -2;
     }
-    fprintf(log, "%d x %d", sizex, sizey);
+    fprintf(log, "%d %d", sizey, sizex);
 
     for (j = sizey - 1; j >= 0; j--) {
         for (i = 0; i < sizex; i++) {
@@ -396,7 +396,7 @@ void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
             }
             continue;
         }
-        fprintf(log, "\n%d, %d, %d", x+1, y+1, score);
+        fprintf(log, "\n%d, %d, %d", x, y, score);
     }
 
     fprintf(log, "\nEND\n\nFINAL SCORE: %d (%s)\n", score, player);
@@ -451,7 +451,7 @@ void ai_play(char grid[sizex][sizey], char altgrid[sizex][sizey])
                 print_grid(grid);
                 mate_grid(grid, altgrid);
                 mate_grid(grid, hidden_grid);
-                fprintf(log, "\n%d, %d, %d", hx+1, hy+1, score);
+                fprintf(log, "\n%d, %d, %d", hx, hy, score);
                 hx = 0; hy = 0; best = 0;
             } else {
                 printf("\n\nI feel like something is wrong here1.\n");
@@ -504,7 +504,7 @@ void start(void)
         printf("\nPlease input the size of your grid.\n");
         sizex = 0; sizey = 0;
         getchar();
-        for (warn = 0; sizex > 36 || sizey > 36 || sizex < 6 || sizey < 6; warn++) {
+        for (warn = 0; sizex > 36 || sizey > 36 || sizex < 4 || sizey < 4; warn++) {
             for (i = 0; i < 6; i++) {
                 cx[i] = '\0'; cy[i] = '\0';
             }
