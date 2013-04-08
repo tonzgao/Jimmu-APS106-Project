@@ -1,6 +1,13 @@
-// Team Jimmu: Zipeng Cai, Anthony Gao 999826434, Richard Shangguan, Jimmy Tieu 998690135 //
-// Written for Microsoft Windows in Codeblocks and Sublime Text 2. Compiled with GCC in Codeblocks. //
-// Viewable at git://github.com/tonzgao/Jimmu-APS106-Project.git //
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//==========================================================================================================//
+//                                                 TEAM Jimmu                                               //
+//                           Zipeng Cai, Anthony Gao, Richard Shangguan, Jimmy Tieu                         //
+//                               num      999826434         num           998690135                         //
+//==========================================================================================================//
+//                                                                                                          //
+// Written for Microsoft Windows 7 and 8 in Codeblocks and Sublime Text 2. Compiled with GCC in Codeblocks. //
+//                        Viewable at git://github.com/tonzgao/Jimmu-APS106-Project.git                     //
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // HEADERS //
 #include <stdio.h>
