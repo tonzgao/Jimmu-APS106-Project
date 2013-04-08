@@ -1,7 +1,4 @@
 immediate goals:
-accout for bad users: checking for right type, max size of grid, choosing invalid coordinates, etc
-better concede
-ensure player name reliability
 ai
 
 long term goals:

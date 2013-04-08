@@ -10,6 +10,7 @@
 time_t btime;
 int sizex = 0, sizey = 0, turnlimit = 999, steps = 0;
 char color = 'b',ShineColour='b';
+double facred=0.,facblue=0.,facgreen=0,facyellow=0;
 
 //
 //{
@@ -24,16 +25,25 @@ char color = 'b',ShineColour='b';
 //  increases the shininess of the coordinates slightly if the x is in the middle and the y is low.
 //}
 
-double color_factor(char altgrid[sizex][sizey])
+double color_factor(char grid[sizex][sizey])
     {
         int i,j;
-        double facred=0., facblue=0., facgreen=0.,facyellow=0.;
-
+        facred=0.;
+        facblue=0.;
+        facgreen=0.;
+        facyellow=0.;
 
         for(j=0;j<sizey;j++)
             {
                 for(i=0;i<sizex;i++)
                 {
+        if (grid[i][j]!='0')
+            printf("%c",grid[i][j]);
+        else{printf(" ");}
+                        if(grid[i][j]=='0')
+                        {
+                            continue;
+                        }
                         if(grid[i][j]=='r')
                             {facred++;}
                         else if (grid[i][j]=='g')
@@ -42,20 +52,22 @@ double color_factor(char altgrid[sizex][sizey])
                             {facyellow++;}
                         else if(grid[i][j]=='b')
                             {facblue++;}
-                        else
-                            continue;
                 }
+                printf("\n");
             }
-            if(facred>1&&ShineColour=='r')
-                {facred=1/facred; return facred;}
-            if(facblue>1&&ShineColour=='b')
-                {facblue=1/facblue; return facblue;}
-            if(facgreen>1&&ShineColour=='g')
+            printf("\n");
+            if(facred>1&&(ShineColour=='r'||ShineColour=='R')&&facred>facblue&&facred>facgreen&&facred>facyellow)
+                {facred=1/facred;
+                 return facred;}
+            else if(facblue>1&&(ShineColour=='b'||ShineColour=='B')&&facblue>facred&&facblue>facgreen&&facblue>facyellow)
+                {facblue=1/facblue;return facblue;}
+            else if(facgreen>1&&(ShineColour=='g'||ShineColour=='G')&&facgreen>facblue&&facgreen>facred&&facgreen>facyellow)
                 {facgreen=1/facgreen;
                 return facgreen;
                 }
-            if(facyellow>1&&ShineColour=='y')
+            else if(facyellow>1&&(ShineColour=='y'||ShineColour=='Y')&&facyellow>facblue&&facyellow>facgreen&&facyellow>facred)
                 {facyellow=1/facyellow; return facyellow;}
+            else return 0.;
             }
 
 void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey])
@@ -64,6 +76,11 @@ void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey])
     int i, j;
     for (i = 0; i < sizex; i++) {
         for (j = 0; j < sizey; j++) {
+                if ((dominant[i][j])<91&&(dominant[i][j])>64)
+                    {
+                        printf("hi");
+                        dominant[i][j]= dominant[i][j]-'A'+'a';
+                    }
             recessive[i][j] = dominant[i][j];
         }
     }
@@ -82,10 +99,11 @@ int expand(char altgrid[sizex][sizey], int x, int y, int mode)
 // starting at a given coordinate, marks all surrounding coordinates of the same color //
 {
     char current = altgrid[x][y];
+
     if (current == '0') {
         return -1;
     }
-       ShineColour=altgrid[x][y];
+
     if (current == mode || (mode == 1 && current == color)) {
         altgrid[x][y] = caps(altgrid[x][y]);
         steps++;
@@ -128,7 +146,7 @@ int possible(char grid[sizex][sizey], char altgrid[sizex][sizey])
         for (j=0; j < sizey; j++) {
             color = altgrid[i][j];
             steps = 0;
-            pos = expand(altgrid, i, j, 1,1);
+            pos = expand(altgrid, i, j, 1);
             if (pos > 1) {
                 mate_grid(grid, altgrid);
                 return 1;
@@ -143,7 +161,6 @@ void collapse(char altgrid[sizex][sizey], char grid[sizex][sizey], int counter[3
 // Removes the pieces that should be removed and shuffles things down and over. Terribly ugly function, but it works! //
 {
     int i, j, k, trouble = 0, firstz = -1, g = 0, tempcount = 0;
-
     for (i = 0; i < sizex; i++) {
         firstz = -1; g = 0; tempcount = 0;
         for (j = 0; j < sizey; j++) {
@@ -229,7 +246,7 @@ int ai2(char grid[sizex][sizey], char altgrid[sizex][sizey])
     fprintf(log, "\nSTART\nx, y, score");
     char e = 'a', hidden_grid[sizex][sizey];
     int score = 0, turn = 1, x = 1, y = 1, hx = 0, hy = 0;
-    double shiny = 0., best = 1.;
+    double shiny = 0., best = 1.,color_facnew=0.,color_facold=0.;
 
     int counter[37] = {0};
     mate_grid(grid, hidden_grid);
@@ -239,18 +256,21 @@ int ai2(char grid[sizex][sizey], char altgrid[sizex][sizey])
             for (y = 0; y < sizey; y++) {
                 if (hidden_grid[x][y] > 97) {
                     steps = 0;
+                    ShineColour=hidden_grid[x][y];
+                    color_facnew=color_factor(hidden_grid);
                     shiny = expand(hidden_grid, x, y, grid[x][y]);
-                    if (shiny > 1.0 && 1./shiny < 1./best) {
+                    if (shiny > 1.0 && 1./shiny < 1./best&&color_facnew>color_facold) {
                         best = shiny;
                         hx = x;
                         hy = y;
+                                               color_facold=color_facnew;
                     }
                 }
             }
         }
         if (hx <= sizex && hx >= 0 && hy < sizey && hy >= 0 && grid[hx][hy] != '0') {
             steps = 0;
-            steps = expand(altgrid, hx, hy, grid[hx][hy],1);
+            steps = expand(altgrid, hx, hy, grid[hx][hy]);
             if (steps > 1) {
                 collapse(altgrid, grid, counter);
                 score += steps*steps;
@@ -294,11 +314,15 @@ int ai1(char grid[sizex][sizey], char altgrid[sizex][sizey])
             for (y = 0; y < sizey; y++) {
                 if (hidden_grid[x][y] > 97) {
                     steps = 0;
+
                     shiny = expand(hidden_grid, x, y, grid[x][y]);
+
                     if (shiny > best) {
-                        best = shiny*color_factor(grid[x][y]);
+
+                        best =shiny;
                         hx = x;
                         hy = y;
+
                     }
                 }
             }
@@ -314,7 +338,7 @@ int ai1(char grid[sizex][sizey], char altgrid[sizex][sizey])
                 fprintf(log, "\n%d, %d, %d", hx+1, hy+1, score);
                 hx = 0; hy = 0; best = 0;
             } else {
-                printf("\n\nI feel like something is wrong here1.\n");
+                printf("\n\nI feel like something is wrong here123.\n");
                 fprintf(log, "\nERROR OCCURED\n");
                 fclose(log);
                 exit(-1);
