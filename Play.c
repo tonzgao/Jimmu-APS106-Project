@@ -2,7 +2,7 @@
 //==========================================================================================================//
 //                                                 TEAM Jimmu                                               //
 //                           Zipeng Cai, Anthony Gao, Richard Shangguan, Jimmy Tieu                         //
-//                               num      999826434         num           998690135                         //
+//                            999780367   999826434         num           998690135                         //
 //==========================================================================================================//
 //                                                                                                          //
 // Written for Microsoft Windows 7 and 8 in Codeblocks and Sublime Text 2. Compiled with GCC in Codeblocks. //
@@ -16,11 +16,11 @@
 #include <time.h>
 
 // GLOBAL VARIABLES //
-char player[25];                        // for the log: player name //
-time_t btime;                           // for the log: time game starts //
-int sizex = 0, sizey = 0, steps = 0;    // indicate the size of the grid, and size of each move //
-char color = 'b';                       // indicates color as a hack for the expand function //
-char dumb_grid[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E','F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'}; // to follow your dumb coordinate system //
+char player[25];                                    // for the log: player name //
+time_t btime;                                       // for the log: time game starts //
+int sizex = 0, sizey = 0, steps = 0;                // indicate the size of the grid, and size of each move //
+char color = 'b';                                   // indicates color as a hack for the expand function //
+char dumb_grid[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E','F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'}; // to follow prescribed coordinate system //
 
 // FUNCTIONS //
 int return_int(char c)
@@ -29,11 +29,11 @@ int return_int(char c)
     int i;
     if (c >= '0' && c <= '9') {
         i = (int)c - 48;
-    } else if (c >= 'A' && c <= 'Z') {  // A to Z represents 10 to 35 //
+    } else if (c >= 'A' && c <= 'Z') {                  // A to Z represents 10 to 35 //
         i = (int)c - 55;
     } else if (c >= 'a' && c <= 'z') {
         i = (int)c - 87;
-    } else if (c == '!') {              // ! is used as a special character for program termination //
+    } else if (c == '!') {                              // ! is used as a special character for program termination //
         i = 31415;
     } else {
         i = -1;
@@ -66,16 +66,16 @@ int expand(char altgrid[sizex][sizey], int x, int y, int mode)
 {
     char current = altgrid[x][y];
     if (current == '0') {
-        return -1;                              // if the coordinates given are empty, expand indicates failure //
+        return -1;                                      // if the coordinates given are empty, expand indicates failure //
     }
     if (current == mode || (mode == 1 && current == color)) {
         // Mode is usually the color we are looking for. //
         // However, when the function is called from possible, mode is 1 //
         // Then the function relies on the global variable color to tell what it is looking for. //
-        altgrid[x][y] = caps(altgrid[x][y]);    // caps() the coordinate in question for collapse() to remove //
-        steps++;                                // increases the global variable steps by one if the coordinate selected is the same color as color //
+        altgrid[x][y] = caps(altgrid[x][y]);            // caps() the coordinate in question for collapse() to remove //
+        steps++;                                        // increases the global variable steps by one if the coordinate selected is the same color as color //
         if (mode == 1 && steps > 1) {
-            return 2;                           // if called from possible() returns possible as soon as it can //
+            return 2;                                   // if called from possible() returns possible as soon as it can //
         } else {
             altgrid[x][y] = caps(altgrid[x][y]);
             // Expands all of the coordinates surrounding the current coordinate //
@@ -101,11 +101,11 @@ int expand(char altgrid[sizex][sizey], int x, int y, int mode)
             }
         }
     }
-    return steps;
+    return steps;                                       // global variable steps indicates how many times expand ran //
 }
 
 int possible(char grid[sizex][sizey], char altgrid[sizex][sizey])
-// returns 1 if valid moves exist, otherwise returns 0 //
+// Returns 1 if valid moves exist, otherwise returns 0 //
 {
     int i, j, pos = 0;
 
@@ -114,9 +114,9 @@ int possible(char grid[sizex][sizey], char altgrid[sizex][sizey])
             // checks each element in the grid for possibleness until one is found //
             color = altgrid[i][j];
             steps = 0;
-            pos = expand(altgrid, i, j, 1);
+            pos = expand(altgrid, i, j, 1);             // note that mode is 1, indicating expand will end as soon as it can //
             if (pos > 1) {
-                mate_grid(grid, altgrid);
+                mate_grid(grid, altgrid);               // reverts changes to the grid for later use before returning //
                 return 1;
             }
         }
@@ -136,16 +136,16 @@ void collapse(char altgrid[sizex][sizey], char grid[sizex][sizey], int counter[3
         for (j = 0; j < sizey; j++) {
             // removes uppercase letters made by expand() //
             if (altgrid[i][j] == 'B' || altgrid[i][j] == 'G' || altgrid[i][j] == 'R' || altgrid[i][j] == 'Y') {
-                counter[i]++;               // increases the size of the land claimed by darkness //
-                tempcount++;                // describes the gains made by darkness that turn //
-                if (firstz == -1) {         // time saver when dropping elements down //
+                counter[i]++;                               // increases the size of the land claimed by darkness //
+                tempcount++;                                // describes the gains made by darkness that turn //
+                if (firstz == -1) {                         // time saver when dropping elements down //
                     firstz = j;
                 }
             }
         }
         if (counter[i] > 0) {
             if (counter[i] >= sizey - 1) {
-                trouble++;                  // if an empty column exists we will have to deal with it later //
+                trouble++;                                  // if an empty column exists we will have to deal with it later //
             }
             for (g = counter[i]; tempcount > 0; tempcount--) {
                 // For affected columns, changes each element to the one above it, up to the land claimed by darkness. //
@@ -160,7 +160,7 @@ void collapse(char altgrid[sizex][sizey], char grid[sizex][sizey], int counter[3
                     }
                     altgrid[i][k] = altgrid[i][k+1];
                 }
-                altgrid[i][sizey-1] = '0';  // land claimed by darkness is set to 0. Not sure why this works; somehow it ends up behaving as '/0'//
+                altgrid[i][sizey-1] = '0';                  // land claimed by darkness is set to 0. Not sure why this works; somehow it ends up behaving as '/0'//
             }
         }
     }
@@ -179,15 +179,12 @@ void collapse(char altgrid[sizex][sizey], char grid[sizex][sizey], int counter[3
             }
         }
     }
-    mate_grid(altgrid, grid);               // Updates the main grid. //
+    mate_grid(altgrid, grid);                               // Updates the main grid. //
 }
 
 void timestamp(void)
 // Stamps the beginning of each game started in the log //
 {
-    if (!player) {
-        player[24] = '\0';                  // not sure if this actually does anything //
-    }
     FILE * log;
     log = fopen("log.txt", "a");
     time (&btime);
@@ -200,15 +197,13 @@ void timestamp(void)
 void generate_grid(char grid[sizex][sizey], char altgrid[sizex][sizey])
 // Generates a grid pseudo-randomly. In our representation scheme, each x coordinate is a column, each y is a row. //
 {
-    int i, j, random, seed;
+    int i, j, random;
     char p = 'b';
 
     FILE * log;
     log = fopen("log.txt", "a");
     fprintf(log, "%d %d\n", sizey, sizex);
 
-    seed = time(NULL);
-    srand(seed);
     for (j = sizey - 1; j >= 0; j--) {
         for (i = 0; i < sizex; i++) {
             random = rand() % 5;
@@ -217,7 +212,7 @@ void generate_grid(char grid[sizex][sizey], char altgrid[sizex][sizey])
                 case 1: p = 'r'; break;
                 case 2: p = 'y'; break;
                 case 3: p = 'g'; break;
-                default: break;             // The color that the previous coordinate was has a higher chance of being generated. //
+                default: break;                             // The color that the previous coordinate was has a higher chance of being generated. //
             }
             grid[i][j] = p;
             altgrid[i][j] = p;
@@ -291,7 +286,7 @@ void print_grid(char grid[sizex][sizey])
     printf(" y \n");
     for (j = sizey - 1; j >= 0; j--) {
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0 | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
-        printf("%2c ", dumb_grid[j]);           // prints y coordinate axes //
+        printf("%2c ", dumb_grid[j]);                       // prints y coordinate axes //
         for (i = 0; i < sizex; i++) {
             p = grid[i][j];
             switch (p) {
@@ -310,12 +305,12 @@ void print_grid(char grid[sizex][sizey])
     printf(" ");
     for (i = 0; i < sizex; i++) {
         if (i == 0) {
-            printf("%4c", dumb_grid[i]);        // prints x coordinate axes //
+            printf("%4c", dumb_grid[i]);                    // prints x coordinate axes //
         } else {
             printf("%2c", dumb_grid[i]);
         }
     }
-    printf("   x");
+    printf(" x");
 }
 
 
@@ -401,8 +396,8 @@ void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
 
     fprintf(log, "\nEND\n\nFINAL SCORE: %d (%s)\n", score, player);
     fclose(log);
-    printf("\n\nAll done! Your final score is %d.", score);
-    start(); // play again? //
+    printf("\n\nAll done! Your final score is %d. Please play again.\n", score);
+    start();                                                // play again //
     return;
 }
 
@@ -417,12 +412,12 @@ void ai_play(char grid[sizex][sizey], char altgrid[sizex][sizey])
     printf("\n");
     print_grid(grid);
     int counter[37] = {0};
-    mate_grid(grid, hidden_grid);               // creates a hidden grid, which is used for shininess tests //
+    mate_grid(grid, hidden_grid);                           // creates a hidden grid, which is used for shininess tests //
 
     e = getchar();
     for (turn = 0; possible(grid, altgrid) == 1;turn++) {
         printf("\n\nTurn: %d, Current Score: %d\nPress enter for the next turn.\n", turn + 1, score);
-        e = getchar();                          // player presses enter for the next turn, or inputs ! as a hidden feature to terminate the game //
+        e = getchar();                                      // player presses enter for the next turn, or inputs ! as a hidden feature to terminate the game //
         if (e == '!') {
             fprintf(log, "\nGAME CANCELLED\n\nFINAL SCORE: %d (AI)\n", score);
             fclose(log);
@@ -430,7 +425,7 @@ void ai_play(char grid[sizex][sizey], char altgrid[sizex][sizey])
         }
         for (x = 0; x < sizex; x++) {
             for (y = 0; y < sizey; y++) {
-                if (hidden_grid[x][y] > 97) {   // each coordinate is given a shininess value based on ranking algorithms. Currently only algorithm is size //
+                if (hidden_grid[x][y] > 97) {               // each coordinate is given a shininess value based on ranking algorithms. Currently only algorithm is size //
                     steps = 0;
                     shiny = expand(hidden_grid, x, y, grid[x][y]);
                     if (shiny > 1 && shiny > best) {
@@ -469,8 +464,8 @@ void ai_play(char grid[sizex][sizey], char altgrid[sizex][sizey])
 
     fprintf(log, "\nEND\n\nFINAL SCORE: %d (AI)\n", score);
     fclose(log);
-    printf("\n\nAll done! The final score is %d.", score);
-    start(); // play again? //
+    printf("\n\nAll done! The final score is %d. Now you try!\n", score);
+    start();                                                // play again //
     return;
 }
 
@@ -524,35 +519,35 @@ void start(void)
             fgets(cx, 5, stdin);
             printf("Enter size of y: ");
             fgets(cy, 5, stdin);
-            if (cx[1] == '\n') {
+            if (cx[0] == '0') {                             // randomly generates a value if the player inputs 0 //
+                sizex = (rand() % 15) + 9;
+            } else if (cx[1] == '\n') {                     // takes letters and single digit numbers //
                 sizex = return_int(cx[0]);
-            } else if (cx[0] == '0') {
-                int random, seed;
-                seed = time(NULL);
-                srand(seed);
-                sizex = (rand() % 20) + 8;
-            } else if (cx[2] == '\n') {
+            } else if (cx[2] == '\n') {                     // takes two digit numbers
                 sizex = 10 * (return_int(cx[0])) + return_int(cx[1]);
-            } else {
+            } else {                                        // error
                 sizex = - 1;
             }
-            if (cy[1] == '\n') {
+            if (cy[0] == '0') {
+                sizey = (rand() % 15) + 10;
+            } else if (cy[1] == '\n') {
                 sizey = return_int(cy[0]);
-            } else if (cy[0] == '0') {
-                int random, seed;
-                seed = time(NULL);
-                srand(seed);
-                sizey = (rand() % 22) + 8;
             } else if (cy[2] == '\n') {
                 sizey = 10 * (return_int(cy[0])) + return_int(cy[1]);
             } else {
                 sizey = - 1;
             }
+            if (cx[0] > 10 && sizex < 36) {                 // correctional term for letters and arrays //
+                sizex++;
+            }
+            if (cy[0] > 10 && sizey < 36) {
+                sizey++;
+            }
         }
     }
 
-    char grid[sizex][sizey];                    // main grid which is seen by the player. Only shows finished states //
-    char altgrid[sizex][sizey];                 // alternative grid used for intermediate states such as testing for possible, expanding, and collapsing //
+    char grid[sizex][sizey];                                // main grid which is seen by the player. Only shows finished states //
+    char altgrid[sizex][sizey];                             // alternative grid used for intermediate states such as testing for possible, expanding, and collapsing //
     if (mode == 2) {
         warn = read_grid(grid, altgrid, path);
         if (warn < 0) {
@@ -574,17 +569,18 @@ void start(void)
 int main(void)
 // Opens the log file and asks the Player's name //
 {
+    srand(time(NULL));                                  // seeds random number generator used throughout program //
     FILE * log;
     log = fopen("log.txt", "w");
     fprintf(log, "===============================================================================\n");
     fprintf(log, "                                  TEAM JIMMU\n");
     fprintf(log, "              Zipeng Cai, Anthony Gao, Richard Shangguan, Jimmy Tieu\n");
-    fprintf(log, "                  num      999826434         num              num\n"); // please put your student numbers in //
+    fprintf(log, "              999780367    999826434         num           998690135 \n");
     fprintf(log, "===============================================================================\n");
     fclose(log);
 
     printf("Please input your name: ");
-    scanf("%[ -~]25s", &player);
+    fgets(player, 24, stdin);
     printf("\nWelcome to game! Below are all of our exciting options:\n");
     start();
     return 0;
