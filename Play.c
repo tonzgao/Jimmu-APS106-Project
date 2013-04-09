@@ -14,6 +14,7 @@
 #include <windows.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
 
 // GLOBAL VARIABLES //
 char player[25];                                    // for the log: player name //
@@ -581,6 +582,7 @@ int main(void)
 
     printf("Please input your name: ");
     fgets(player, 24, stdin);
+    strtok(player, "\n");
     printf("\nWelcome to game! Below are all of our exciting options:\n");
     start();
     return 0;

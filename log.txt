@@ -5,41 +5,34 @@
 ===============================================================================
 
 -------------------------------------------------------------------------------
-    NEW GAME: Tue Apr 09 15:00:15 2013
+    NEW GAME: Tue Apr 09 15:25:19 2013
 -------------------------------------------------------------------------------
 
-17 23
-r y b y y b g g r r b b y b b g y y y y y r r 
-r r r r r y b r y b r b g g g b b y y g r r r 
-r r y r b y r r y r r b b r y r y b g r g r r 
-r g g g b r g g y y r r g b r r r r y r b b y 
-b g y r g g g g b r y y g y y r r g g r b r b 
-y g g b g r g g g g b g g r r r r b r g g b b 
-g b b b b b b y y g g y b y g g g b r g y g b 
-b b r b r g g g g g r r g g g b b y b b y y r 
-r r y b b r b r r y g g b b r b b b g g y y r 
-b b r r r b r y g b y y y g r g g b r r b r y 
-b b r r r b b b r r b b g g g g y g g b b r r 
-b b b g y r y y g g y y g g r y g g b b b b r 
-b r g r r r r b g g g y y y g b g b b g g y y 
-g y y g b r b y g g y g b g r y b b g g r r r 
-y y y b b b b b g r b r r r r r b b r g b g y 
-y y r g g g g b g g y b b r y y b y y y y r b 
-y y y g b g g g g g y r g g b g y r b g g g y 
+20 17
+b b b y b b b b g b b y g g g g g 
+y b b g g g g g g g g g y r y y y 
+r g b y b g y r y y g y y r r y y 
+r r b r r b y g b g y y g g g r g 
+r r b g b b r y y y g b y r b g r 
+g b b b y b b r b y y g g g b r r 
+r r b y b b y y y y b r r b r r r 
+r b r y y y y g g g b r r g b y b 
+r b g y b b r r y r b r r b g r y 
+g y r g b y y b b r g g g g r g r 
+g y r b g g g g g b b g r b g g b 
+g g b b r b b g r g y g r y b r y 
+y r b r b b b b b r b y y y b y b 
+r b b g y b g g g g y y g g r r r 
+b r b g g r b b b y g y g y y r r 
+g g g y y b b g r b y b b b b y b 
+y g g y y b b b b g r g b b b y r 
+b b y g b r y r y g g y r g y g g 
+b g g g r r r g g g b b y y y b b 
+b y y y b r y r y b r g r g g b b 
 
 START
 x, y, score
-22, 6, 16
-0, 0, 116
-8, 0, 557
-19, 16, 606
-5, 10, 706
-13, 6, 787
-4, 11, 931
-3, 8, 1052
-9, 5, 1068
-8, 5, 1072
-8, 0, 1081
-8, 3, 1277
-GAME CONCEEDED (fasd
-)
+1, 1, 16
+1, 1, 32
+1, 1, 81
+GAME CONCEEDED (fahhhhhhhhsd)
