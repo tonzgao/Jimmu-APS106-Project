@@ -570,6 +570,8 @@ void start(void)
 int main(void)
 // Opens the log file and asks the Player's name //
 {
+    int i;
+
     srand(time(NULL));                                  // seeds random number generator used throughout program //
     FILE * log;
     log = fopen("log.txt", "w");
@@ -581,8 +583,11 @@ int main(void)
     fclose(log);
 
     printf("Please input your name: ");
-    fgets(player, 24, stdin);
-    strtok(player, "\n");
+    fgets(player, 25, stdin);                           // gets the players name for the log //
+    if (player[24] != '\n' && player[24] != '\n') {     // clear stdin //
+        while (i = getchar() != '\n');
+    }
+    strtok(player, "\n");                               // remove '\n' from player //
     printf("\nWelcome to game! Below are all of our exciting options:\n");
     start();
     return 0;
