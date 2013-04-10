@@ -1,292 +1,45 @@
-===============================================================================
-                                  TEAM JIMMU
-              Zipeng Cai, Anthony Gao, Richard Shangguan, Jimmy Tieu
-              999780367    999826434         num           998690135 
-===============================================================================
+Zipeng Cai 999780367
+Anthony Gao 999826434
+Richard Shangguan
+Jimmy Tieu 998690135
 
--------------------------------------------------------------------------------
-    NEW GAME: Tue Apr 09 23:28:26 2013
--------------------------------------------------------------------------------
-
-
--------------------------------------------------------------------------------
-    NEW GAME: Tue Apr 09 23:31:41 2013
--------------------------------------------------------------------------------
-
-4 4
-y r g g 
-g r b b 
-b y y y 
-y b y y 
+5 13
+b b y r r r r b y y r r r 
+b b b g y b y y y y y y y 
+y r r g g g g y y b b g g 
+b b y y y y g r r y r r r 
+r y b g g g b b y y g g y 
 
 START
 x, y, score
-1, 1, 25
-1, 0, 34
-1, 0, 38
-1, 0, 42
+6, 3, 121
+3, 2, 157
+0, 3, 182
+2, 1, 207
+2, 1, 216
+3, 0, 225
+2, 0, 241
+3, 0, 250
+4, 0, 259
+6, 1, 268
+6, 0, 284
+0, 1, 288
+1, 0, 292
+0, 0, 296
+3, 0, 300
+2, 0, 309
 END
 
-FINAL SCORE: 42 (AI)
-
--------------------------------------------------------------------------------
-    NEW GAME: Tue Apr 09 23:31:57 2013
--------------------------------------------------------------------------------
-
-36 36
-y y g r y r r r g b y r r g b r r g g b g y g r r b b b b b b r r g g g 
-b b b y y y y g y b y y g g y b b g r b b g y y y b y y b b y b r r b b 
-y b b r y r y r r r r r y r r b r y y r g g r b b r r g g g b r r b r y 
-g b r b b g y y y y g r b b g g g b b b r r b b b b b g b r b b b g g r 
-g y r r b b b b y r r r y y b g b b b g r g b b r b g y y r g g g r b g 
-b r r r r r b g r r y b g b b r r g r r g g g g r b y g r r r y y r b y 
-y y y y y r y r g r r r y r r b b b r b b g b b b r b r y r r g g r b b 
-y y r g y g b b g y y y r y b g g b g r b b b b y r y b g r r r b b b b 
-y g b r g r r g r g b y g g y r g g b b b b y g b y y y b b r g b b r y 
-b y r r b r r r r r y y y y b g g g y y g b y y b b g y b r r r y y y y 
-r g b b g r g r b y r r g g g g g b r g y y g y y y y b y y g b r r r r 
-g r g g r g r g b b b y b r b y b r r g g b b y y y r g y y y y y r b g 
-b b y r r b b y b y r r b g r y y y r y y y y y g y y y r y b r b g g g 
-g g r r r r r y y r b b b b b b b y y y g y y r y g r b b r b b y b r g 
-g g r r g r y y r g r r y y g g b b y b y g r r b y y r r r r b b b y y 
-y g r b g g y g g g g r r b y g b b g y b y y b b y r r g g g y y y g g 
-g b r r y y g g g b b b b b b g g g b b g r g y g g b b y y g b y b b g 
-g g g r b y r g r g g g g y y g r y g g r r g y y y g y y y g y b r r g 
-y y b y b g r b y y r r b g b y y r r g b b y y g b b b r y b g b r r g 
-b r y y y g y y r g y r r r r b y g g y y b g g y r r b b b b g g r g g 
-g b r r y y y y y y g b b r y y r b b b y y b b r r g g b g r r b b b b 
-g g b g g g b g g b b b r r y g g r r y r r y g y g g g g r b r g g y y 
-y g y y y r y y y y b r r r b g r y r g g b b g r g g g y y r b r r r y 
-r g g r g r r y r y y r r r b g b b g r r y y y r b b b r b r r b y y g 
-g r b g g r r g y y b r b b y b b b r r g b r g b r y y y b r y b g b r 
-r y y y y g g y g g y y r g y b b r r y y r r r r r r r r g r y r r b y 
-y b b g y y r g g b r r r r r y g b r r r g b g g g g r r y g b y g b b 
-b g r g b b y r r r b y g b b r r r b g r y y g y g r g g y r g y y g r 
-g r r r r r r r r r y g g g y y g g y r r y b g g y g b b y y y b r r b 
-g y g g g g y g b g g r r y b r r b r r g g b y g g g g b b b g g b r r 
-g b r b g r r r g g g y g b b g y y g g y y r b g b b g g y y b r b y y 
-y r y y g g b b r b b b y y b b b b b g y y g r b b b b b r r r r r y y 
-r y b r g b r b r b g r r g r r b b g g b b b g y b y b g r b b y y g y 
-b b b r y b b y y y y y r g b g y r b r r r r y b b y b r b y b b b b y 
-y y y g g y b y y b y y r y y y y y b g b b b g g b r r r g g r r r y r 
-r r y r y y y b g g g b r g y y b b g b g g g g g g b b y y r r r b y y 
+FINAL SCORE: 309 (AI)
+5 5
+y y y g y 
+b g y b b 
+r r b r g 
+y y y y y 
+y r y r g 
 
 START
 x, y, score
-15, 23, 784
-10, 17, 1040
-23, 7, 1296
-19, 27, 1620
-24, 2, 1944
-2, 19, 2169
-17, 10, 2365
-1, 7, 2534
-5, 22, 2759
-29, 25, 2928
-3, 15, 3049
-14, 24, 3170
-13, 24, 3699
-13, 20, 3820
-2, 6, 3920
-3, 23, 4041
-5, 16, 4141
-13, 5, 4241
-13, 10, 4362
-10, 11, 4462
-7, 10, 4562
-13, 1, 4662
-32, 27, 4762
-7, 1, 4843
-7, 19, 4943
-20, 25, 5024
-4, 3, 5088
-2, 4, 5152
-6, 5, 5233
-7, 4, 5314
-14, 13, 5378
-20, 0, 5442
-17, 3, 5611
-19, 3, 5755
-23, 2, 5819
-22, 4, 6180
-23, 6, 6301
-28, 3, 6365
-25, 4, 6446
-0, 18, 6495
-3, 9, 6544
-5, 5, 6593
-10, 3, 6642
-9, 12, 6742
-7, 12, 6938
-12, 10, 7002
-17, 10, 7051
-18, 11, 7132
-27, 19, 7181
-30, 3, 7230
-17, 2, 7266
-14, 1, 7330
-13, 3, 7379
-12, 1, 7428
-14, 9, 7477
-23, 5, 7513
-19, 4, 7549
-29, 5, 7585
-29, 10, 7634
-27, 10, 7683
-30, 13, 7732
-32, 25, 7796
-30, 0, 7832
-32, 19, 7896
-29, 6, 7932
-28, 5, 7968
-27, 5, 8089
-30, 7, 8170
-34, 3, 8206
-0, 19, 8231
-1, 18, 8280
-0, 22, 8316
-0, 21, 8365
-6, 3, 8390
-7, 1, 8426
-8, 0, 8451
-7, 0, 8476
-18, 0, 8501
-16, 0, 8565
-15, 4, 8601
-14, 4, 8626
-15, 3, 8651
-14, 3, 8676
-22, 7, 8701
-23, 10, 8737
-26, 1, 8762
-25, 7, 8811
-27, 5, 8847
-27, 4, 8911
-33, 12, 8936
-0, 1, 8952
-0, 4, 8988
-0, 10, 9024
-0, 1, 9040
-1, 15, 9089
-0, 0, 9114
-4, 0, 9130
-6, 3, 9166
-3, 0, 9191
-3, 9, 9227
-1, 2, 9252
-0, 2, 9352
-4, 2, 9388
-4, 1, 9437
-0, 9, 9453
-0, 7, 9489
-2, 2, 9505
-3, 0, 9521
-3, 0, 9546
-9, 13, 9562
-11, 1, 9578
-10, 5, 9594
-9, 9, 9610
-11, 1, 9626
-10, 3, 9642
-12, 2, 9658
-11, 2, 9674
-10, 2, 9690
-18, 1, 9706
-19, 0, 9742
-20, 11, 9758
-20, 9, 9774
-22, 0, 9790
-20, 4, 9854
-22, 3, 9918
-25, 6, 9943
-19, 2, 9959
-18, 3, 9975
-20, 4, 10000
-16, 2, 10016
-17, 1, 10032
-23, 0, 10048
-25, 4, 10064
-32, 1, 10080
-32, 17, 10105
-30, 13, 10121
-31, 2, 10137
-30, 9, 10186
-30, 2, 10211
-30, 6, 10236
-32, 2, 10261
-32, 8, 10286
-29, 4, 10302
-33, 2, 10318
-32, 5, 10334
-30, 5, 10383
-2, 0, 10392
-0, 0, 10401
-3, 0, 10410
-13, 0, 10419
-20, 4, 10428
-23, 1, 10437
-25, 1, 10446
-0, 3, 10450
-0, 6, 10454
-0, 6, 10458
-1, 3, 10462
-3, 0, 10466
-2, 0, 10475
-2, 0, 10479
-4, 2, 10483
-4, 2, 10492
-5, 2, 10501
-4, 2, 10517
-5, 4, 10533
-6, 4, 10549
-5, 3, 10558
-5, 0, 10562
-5, 0, 10566
-4, 0, 10570
-3, 0, 10574
-2, 0, 10578
-2, 0, 10582
-1, 0, 10586
-0, 0, 10590
-1, 0, 10599
-0, 0, 10608
-3, 0, 10617
-2, 0, 10633
-0, 0, 10637
-1, 0, 10641
-4, 1, 10645
-3, 1, 10661
-6, 1, 10665
-7, 2, 10669
-7, 2, 10694
-8, 0, 10698
-8, 0, 10702
-7, 1, 10706
-8, 0, 10710
-8, 0, 10714
-9, 0, 10718
-8, 0, 10734
-7, 0, 10738
-6, 0, 10742
-6, 2, 10746
-9, 0, 10750
-9, 0, 10754
-9, 3, 10758
-11, 0, 10762
-11, 0, 10771
-10, 1, 10775
-12, 0, 10779
-11, 0, 10783
-11, 0, 10787
-10, 1, 10796
-12, 1, 10805
-10, 0, 10809
-11, 1, 10813
-10, 1, 10829
-10, 1, 10833
-9, 1, 10842
-10, 0, 10851
-10, 2, 10855
-END
-
-FINAL SCORE: 10855 (AI)
+0, 0, 49
+0, 0, 58
+GAME CONCEEDED (fsda)

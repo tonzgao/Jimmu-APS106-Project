@@ -183,18 +183,6 @@ void collapse(char altgrid[sizex][sizey], char grid[sizex][sizey], int counter[3
     mate_grid(altgrid, grid);                               // Updates the main grid. //
 }
 
-void timestamp(void)
-// Stamps the beginning of each game started in the log //
-{
-    FILE * log;
-    log = fopen("log.txt", "a");
-    time (&btime);
-    fprintf(log, "\n-------------------------------------------------------------------------------\n");
-    fprintf(log, "    NEW GAME: %s", ctime(&btime));
-    fprintf(log, "-------------------------------------------------------------------------------\n\n");
-    fclose(log);
-}
-
 void generate_grid(char grid[sizex][sizey], char altgrid[sizex][sizey])
 // Generates a grid pseudo-randomly. In our representation scheme, each x coordinate is a column, each y is a row. //
 {
@@ -203,7 +191,7 @@ void generate_grid(char grid[sizex][sizey], char altgrid[sizex][sizey])
 
     FILE * log;
     log = fopen("log.txt", "a");
-    fprintf(log, "%d %d\n", sizey, sizex);
+    fprintf(log, "\n%d %d\n", sizey, sizex);
 
     for (j = sizey - 1; j >= 0; j--) {
         for (i = 0; i < sizex; i++) {
@@ -248,7 +236,7 @@ int read_grid(char grid[sizex][sizey], char altgrid[sizex][sizey], char path[25]
         printf("\nSorry, grid dimensions are unreasonable.\n");
         return -2;
     }
-    fprintf(log, "%d %d", sizey, sizex);
+    fprintf(log, "\n%d %d", sizey, sizex);
 
     for (j = sizey - 1; j >= 0; j--) {
         for (i = 0; i < sizex; i++) {
@@ -486,7 +474,6 @@ void start(void)
 
     FILE * log = fopen("log.txt", "a");
     char path[25] = {0};
-    timestamp();
 
     if (mode == 2) {
         // If a custom grid was selected, asks for the path for read_grid() //
@@ -575,11 +562,7 @@ int main(void)
     srand(time(NULL));                                  // seeds random number generator used throughout program //
     FILE * log;
     log = fopen("log.txt", "w");
-    fprintf(log, "===============================================================================\n");
-    fprintf(log, "                                  TEAM JIMMU\n");
-    fprintf(log, "              Zipeng Cai, Anthony Gao, Richard Shangguan, Jimmy Tieu\n");
-    fprintf(log, "              999780367    999826434         num           998690135 \n");
-    fprintf(log, "===============================================================================\n");
+    fprintf(log, "Zipeng Cai 999780367\nAnthony Gao 999826434\nRichard Shangguan\nJimmy Tieu 998690135\n");
     fclose(log);
 
     printf("Please input your name: ");

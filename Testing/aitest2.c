@@ -37,9 +37,9 @@ double color_factor(char grid[sizex][sizey])
             {
                 for(i=0;i<sizex;i++)
                 {
-        if (grid[i][j]!='0')
+        /*if (grid[i][j]!='0')
             printf("%c",grid[i][j]);
-        else{printf(" ");}
+        else{printf(" ");}*/
                         if(grid[i][j]=='0')
                         {
                             continue;
@@ -53,9 +53,9 @@ double color_factor(char grid[sizex][sizey])
                         else if(grid[i][j]=='b'||grid[i][j]=='B')
                             {facblue++;}
                 }
-                printf("\n");
+                //printf("\n");
             }
-            printf("\n");
+            //printf("\n");
             if(facred>1&&(ShineColour=='r'||ShineColour=='R')&&facred>facblue&&facred>facgreen&&facred>facyellow)
                 {facred=1/facred;
                  return facred;}
@@ -282,8 +282,7 @@ int ai2(char grid[sizex][sizey], char altgrid[sizex][sizey])
 
             else if(possible(grid,altgrid))
             {
-                mate_grid(grid,hidden_grid);
-                    for (x = 0; x < sizex; x++) {
+                mate_grid(grid,hidden_grid);        for (x = 0; x < sizex; x++) {
             for (y = 0; y < sizey; y++) {
                 if (hidden_grid[x][y] > 97) {
                     steps = 0;
@@ -300,17 +299,6 @@ int ai2(char grid[sizex][sizey], char altgrid[sizex][sizey])
                 }
             }
         }
-        if (hx <= sizex && hx >= 0 && hy < sizey && hy >= 0 && grid[hx][hy] != '0') {
-            steps = 0;
-            steps = expand(altgrid, hx, hy, grid[hx][hy]);
-            if (steps > 1) {
-                collapse(altgrid, grid, counter);
-                score += steps*steps;
-                mate_grid(grid, altgrid);
-                mate_grid(grid, hidden_grid);
-                fprintf(log, "\n%d, %d, %d", hx+1, hy+1, score);
-                hx = 0; hy = 0; best = 0;
-            }
             }
 
             else{
