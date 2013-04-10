@@ -4,977 +4,1851 @@
 					num		 999826434		   num				num
 ===============================================================================
 10 x 8
-g g g y b r g b r r 
-g y b g r r r y y y 
-y y y y y g y r g b 
-b g g b b b g g g r 
-r g g r b g g g r g 
-r r r b r b b b y b 
-b g b y g g b g g b 
-b g g g r r r g r g 
-
-START
-x, y, score
-6, 4, 49
-4, 5, 113
-1, 3, 129
-2, 1, 193
-1, 1, 202
-1, 1, 218
-1, 1, 227
-1, 1, 236
-3, 1, 245
-3, 1, 254
-3, 1, 270
-4, 2, 286
-2, 1, 295
-2, 1, 311
-4, 1, 315
-3, 1, 319
-4, 2, 323
-3, 3, 327
-4, 1, 331
-3, 2, 335
-END
-
-FINAL SCORE: 335 (AI1)
-10 x 8
-b r r y r r r y y b 
-r b r b b b b y r r 
-g r r b b g g y y b 
-y b r b g g r b r b 
-b g b b r g r g r y 
-r y g g g y y r g g 
-g y b g y g r r b b 
-y y b b r b y y y g 
-
-START
-x, y, score
-3, 4, 81
-2, 6, 106
-5, 5, 131
-5, 4, 167
-8, 6, 192
-1, 1, 208
-1, 3, 244
-1, 1, 269
-6, 1, 278
-6, 1, 287
-8, 3, 296
-1, 1, 300
-1, 1, 304
-7, 5, 308
-END
-
-FINAL SCORE: 308 (AI1)
-10 x 8
-g g b y b r g g g r 
-r b y g r y r g r g 
-b r y g r y b g r b 
-b g g r g g y y g g 
-y r g y b r y r y r 
-b b b b b r b b y r 
-g g y b r r g g g g 
-y g b b r y g r b r 
-
-START
-x, y, score
-1, 3, 81
-1, 2, 145
-4, 2, 209
-6, 2, 245
-3, 1, 270
-5, 1, 295
-7, 5, 311
-1, 3, 320
-6, 1, 329
-5, 1, 345
-8, 1, 354
-1, 1, 358
-1, 1, 362
-1, 1, 366
-2, 1, 370
-4, 2, 374
-4, 3, 383
-END
-
-FINAL SCORE: 383 (AI1)
-10 x 8
-y g r b b y g g b b 
-b b y b r r b g b b 
-r r g b b b r r r y 
-r r r r r r r r g y 
-y g g g y r r b b b 
-g g r r r r g r b b 
-b b b g g g b g g g 
-y r r y y r r r b y 
-
-START
-x, y, score
-1, 5, 361
-1, 3, 442
-1, 2, 506
-7, 4, 542
-7, 3, 558
-8, 2, 574
-6, 1, 590
-6, 1, 615
-4, 1, 664
-2, 1, 680
-4, 1, 689
-1, 1, 693
-END
-
-FINAL SCORE: 693 (AI1)
-10 x 8
-b b y r b r y b g b 
-b b b g b g g y g g 
-r r b g y r r g g g 
-y r b b b y g r y y 
-y r b g b g g y y g 
-y y b b b b r g g g 
-g g b r r r r y r y 
-g g y y r r y y b r 
-
-START
-x, y, score
-1, 7, 256
-4, 2, 305
-7, 2, 341
-7, 1, 405
-9, 3, 430
-1, 1, 446
-1, 1, 510
-1, 1, 526
-1, 1, 535
-2, 1, 539
-3, 1, 543
-2, 1, 552
-2, 1, 561
-1, 1, 565
-2, 1, 569
-2, 1, 573
-END
-
-FINAL SCORE: 573 (AI1)
-10 x 8
-b b y y r r y b r r 
-g b b r g g g b b g 
-g r g r b r r r b b 
-r r r g g g g b g b 
-g g b r r r g y b r 
-r r g g b y y y g b 
-r g y r r g b r r r 
-y y g g r r b b b b 
-
-START
-x, y, score
-8, 7, 36
-4, 5, 61
-1, 5, 182
-7, 1, 207
-1, 4, 223
-1, 4, 239
-4, 2, 255
-1, 2, 264
-3, 1, 273
-1, 1, 289
-1, 1, 298
-1, 1, 307
-4, 3, 316
-5, 1, 325
-2, 1, 329
-3, 1, 333
-3, 1, 337
-2, 1, 341
-3, 3, 345
-3, 3, 354
-END
-
-FINAL SCORE: 354 (AI1)
-10 x 8
-y g g r y b r b b g 
-b g r b y y y y y r 
-r y y b b g g g y r 
-r g g g b y g b r r 
-g g r b g g g g r g 
-g g y y y y y y b g 
-g b b y r y g y g r 
-y g y b g b g b y g 
-
-START
-x, y, score
-3, 3, 81
-6, 2, 181
-1, 2, 230
-4, 4, 255
-2, 2, 271
-3, 2, 280
-5, 3, 296
-2, 2, 305
-2, 1, 321
-3, 1, 330
-5, 1, 339
-4, 1, 348
-6, 1, 357
-7, 1, 366
-7, 1, 375
-1, 2, 379
-6, 1, 383
-5, 1, 387
-END
-
-FINAL SCORE: 387 (AI1)
-10 x 8
-r r y b b g b r r y 
-y r b b y r g r b g 
-g g b y b b b b b g 
-g b b y g b y y y b 
-g g b y b y b g b g 
-r r g y y r r g y g 
-y y y b y b y g y y 
-y r b r b y y b y b 
-
-START
-x, y, score
-2, 5, 64
-3, 4, 113
-6, 5, 149
-1, 4, 174
-1, 3, 199
-1, 1, 224
-3, 2, 240
-8, 1, 256
-5, 1, 265
-5, 4, 290
-7, 1, 299
-7, 2, 308
-5, 1, 312
-7, 1, 316
-6, 3, 320
-7, 1, 336
-END
-
-FINAL SCORE: 336 (AI1)
-10 x 8
-r r r y r b y y y r 
-r r r r r g g g b b 
-y b r r y g g g y y 
-y y g b g b b b b g 
-b r b g r b y g g g 
-r r y g g b b b b g 
-y r b r r y y r y r 
-r r g b g y g g r r 
-
-START
-x, y, score
-1, 7, 121
-6, 3, 202
-4, 3, 398
-6, 1, 479
-1, 1, 515
-1, 2, 524
-1, 1, 540
-2, 2, 549
-7, 1, 558
-2, 1, 562
-3, 1, 566
-2, 1, 570
-3, 1, 574
-4, 1, 578
-END
-
-FINAL SCORE: 578 (AI1)
-10 x 8
-y y b y g g g g r b 
-y y b y y y g r r g 
-y g r b g y y g y b 
-b b b y b b b y y y 
-b b b g b b b b b b 
-b r b y b g b r g g 
-r g g b b y g y b y 
-b b y r r g y y y g 
-
-START
-x, y, score
-4, 2, 169
-1, 3, 250
-1, 3, 275
-7, 1, 291
-6, 3, 307
-5, 3, 343
-4, 3, 379
-4, 1, 395
-3, 1, 420
-5, 3, 429
-1, 1, 433
-2, 1, 442
-1, 1, 451
-2, 1, 460
-1, 1, 469
-1, 1, 473
-END
-
-FINAL SCORE: 473 (AI1)
-10 x 8
-b y y y g b b b y y 
-y y b g r r y b r r 
-b r r g g g r r g b 
-b y r r r r b b r b 
-g g y g g y r b b r 
-r r g r r y g g r y 
-r b g r b r y r y g 
-g b r r b r b r b g 
-
-START
-x, y, score
-2, 6, 36
-4, 4, 72
-3, 1, 108
-1, 7, 133
-7, 5, 149
-6, 5, 198
-6, 5, 214
-1, 2, 223
-1, 3, 232
-6, 3, 241
-7, 3, 250
-1, 1, 254
-1, 1, 258
-1, 1, 267
-1, 1, 271
-1, 1, 280
-2, 1, 284
-3, 1, 288
-2, 1, 292
-2, 1, 296
-3, 1, 300
-3, 2, 304
-END
-
-FINAL SCORE: 304 (AI1)
-10 x 8
-r r b b g b y r r y 
-y b g b g g g g b g 
-r r r g g b g g g y 
-g y b b b y y g g b 
-b r r y y b r y g g 
-y r b b b b b y g r 
-g g g y y r r r r g 
-b b y g r g r y g b 
-
-START
-x, y, score
-4, 6, 225
-3, 3, 261
-3, 4, 310
-6, 2, 346
-4, 2, 446
-2, 3, 462
-1, 2, 478
-1, 1, 482
-1, 1, 491
-1, 3, 495
-8, 3, 499
-END
-
-FINAL SCORE: 499 (AI1)
-10 x 8
-g g g b r r r b b g 
-b b g g b b g g b b 
-b g b g y g r y g b 
-r g g b b g g g g r 
-r r g b b b g r y r 
-y g g g g b r b b y 
-b y r y y y g b b g 
-b b g g b b y y r y 
-
-START
-x, y, score
-2, 3, 64
-3, 3, 113
-6, 3, 162
-3, 3, 178
-4, 2, 194
-4, 2, 219
-8, 2, 235
-1, 1, 244
-1, 2, 260
-1, 2, 269
-1, 1, 273
-1, 1, 289
-1, 1, 293
-1, 1, 297
-2, 4, 306
-1, 2, 310
-1, 1, 314
-1, 1, 323
-1, 1, 332
-1, 1, 336
-1, 2, 340
-1, 2, 344
-END
-
-FINAL SCORE: 344 (AI1)
-10 x 8
-b y y r r r r r g r 
-y y b b y y g g y y 
-y y g g r y b y y g 
-r y r b y y r b r r 
-b g b y r r r r r y 
-y b b b g g y b r r 
-r b b r r g r b b b 
-b b y y y y r g y y 
-
-START
-x, y, score
-5, 4, 100
-1, 1, 164
-1, 2, 228
-7, 4, 264
-8, 2, 300
-5, 4, 325
-3, 1, 341
-8, 1, 357
-1, 1, 366
-3, 1, 375
-5, 1, 384
-5, 1, 420
-4, 1, 429
-2, 1, 433
-1, 1, 442
-1, 1, 446
-2, 1, 450
-END
-
-FINAL SCORE: 450 (AI1)
-10 x 8
-b b b b y g r y r g 
-y g g b b r y b g y 
-b y y g g r y y y g 
-g g b y y y y r b g 
-y g r y y b b b g g 
-g g b y g g g b g b 
-g r g r g b b b b b 
-g b b r g g g g g g 
-
-START
-x, y, score
-4, 3, 121
-4, 3, 265
-5, 1, 386
-1, 1, 435
-9, 1, 460
-6, 1, 476
-3, 3, 485
-1, 3, 489
-1, 2, 493
-2, 1, 497
-3, 2, 506
-6, 1, 510
-END
-
-FINAL SCORE: 510 (AI1)
-10 x 8
-b y y g y y g b y y 
-b g g b b r r y y b 
-b r g g g b b b b y 
-y g r b b r r y r r 
-r b r r b r r r y y 
-r r y y r g r g g g 
-r r r g r g b r y b 
-y b g r r b y g b b 
-
-START
-x, y, score
-1, 2, 36
-6, 4, 72
-2, 5, 97
-4, 5, 133
-2, 4, 149
-4, 1, 165
-1, 3, 174
-3, 2, 183
-3, 1, 192
-6, 3, 201
-6, 3, 217
-5, 2, 233
-6, 3, 249
-4, 2, 258
-4, 2, 274
-7, 1, 283
-1, 1, 287
-1, 1, 291
-5, 2, 295
-END
-
-FINAL SCORE: 295 (AI1)
-10 x 8
-b y r r r r y r g g 
-y b g y g b g g g g 
-b b b b b g y r r g 
-y g g g r r y y g g 
-g r r r y r b b y b 
-b r r r r b y r y y 
-b b y r g r b g y b 
-b g b g g r r r r r 
-
-START
-x, y, score
-7, 7, 81
-2, 3, 145
-6, 1, 181
-1, 1, 197
-1, 3, 213
-4, 1, 229
-7, 4, 245
-9, 1, 261
-1, 1, 270
-1, 1, 279
-1, 1, 288
-2, 2, 304
-1, 1, 313
-1, 1, 329
-2, 1, 345
-1, 1, 354
-2, 4, 358
-4, 1, 362
-END
-
-FINAL SCORE: 362 (AI1)
-10 x 8
-r y y g r r r b b g 
-g b b r y y y b g y 
-b b g r b g r y y y 
-y y r r y y g r y b 
-r y y y y r g r r r 
-r g r r y b b r r r 
-b y b y r y y y y g 
-g b g g g r y b r y 
-
-START
-x, y, score
-1, 5, 81
-3, 3, 130
-8, 3, 179
-6, 2, 279
-7, 1, 315
-7, 1, 340
-1, 5, 356
-2, 3, 365
-2, 2, 374
-3, 1, 383
-5, 1, 399
-1, 3, 403
-2, 1, 407
-3, 1, 411
-2, 1, 415
-1, 4, 419
-3, 1, 423
-2, 1, 427
-1, 1, 431
-END
-
-FINAL SCORE: 431 (AI1)
-10 x 8
-b r b b b y b g y y 
-g b b r b y g b b y 
-r g g y y y y y r r 
-r g b b b b r g g g 
-b b r g g g b g g r 
-r g b b b b b g b g 
-r g r r r b y b r y 
-y r b r b y g g g y 
-
-START
-x, y, score
-3, 3, 49
-7, 5, 98
-2, 7, 134
-4, 5, 170
-1, 4, 195
-2, 2, 220
-1, 2, 341
-6, 1, 350
-5, 3, 359
-4, 2, 363
-5, 1, 367
-8, 1, 371
-7, 3, 380
-7, 2, 384
-6, 2, 400
-END
-
-FINAL SCORE: 400 (AI1)
-10 x 8
-b g g r r g r g g g 
-y b r b r r r r g g 
-g y b r r g g g g r 
-b b b b g r r r r r 
-y b b b y r r r y r 
-r r r b g g g y y b 
-b r y y b b b g g r 
-y r r b b b r b r r 
-
-START
-x, y, score
-6, 4, 100
-1, 5, 181
-1, 3, 245
-4, 1, 281
-5, 1, 330
-8, 5, 366
-1, 1, 391
-4, 2, 407
-6, 1, 423
-7, 2, 432
-8, 1, 441
-1, 1, 445
-2, 1, 449
-3, 1, 453
-2, 1, 462
-END
-
-FINAL SCORE: 462 (AI1)
-10 x 8
-r b b b b y y g g r 
-y y r r y b y b y g 
-b y y y r y y g y y 
-g r b g g b b b b g 
-y r b b y g r r r r 
-b y y y y y g g g g 
-r b y r b b b b b r 
-r y g r r r g y r b 
-
-START
-x, y, score
-2, 3, 49
-5, 3, 85
-5, 2, 121
-7, 2, 157
-4, 1, 182
-5, 2, 198
-5, 1, 234
-2, 2, 243
-1, 1, 268
-1, 2, 293
-6, 4, 302
-7, 2, 311
-1, 1, 315
-1, 1, 319
-1, 1, 328
-2, 1, 332
-1, 1, 341
-1, 1, 345
-3, 1, 349
-2, 1, 353
-1, 1, 357
-END
-
-FINAL SCORE: 357 (AI1)
-10 x 8
-y y g g b r g g r r 
-y y r y y y y g g y 
-b b b y g y y g y b 
-b b r r r g g r r b 
-b b g g g g y y r r 
-r b b y g r b b g g 
-y r y g r g y g g b 
-r r r r g y y g y y 
-
-START
-x, y, score
-1, 4, 81
-4, 6, 130
-4, 4, 251
-1, 1, 276
-3, 2, 340
-8, 1, 365
-1, 1, 381
-2, 1, 406
-4, 1, 422
-5, 2, 438
-3, 1, 447
-2, 1, 472
-4, 1, 481
-1, 2, 485
-END
-
-FINAL SCORE: 485 (AI1)
-10 x 8
-b r b b y r y y r g 
-r r y r y y y b r g 
-g r r b b g r b y y 
-b g y b b y r b g y 
-b b b b b y g b y y 
-y g y g g r r r r r 
-r r r b b g r b b b 
-b b r y r y r y y g 
-
-START
-x, y, score
-1, 4, 100
-6, 3, 149
-8, 2, 198
-8, 1, 262
-5, 4, 298
-1, 5, 323
-7, 1, 348
-1, 2, 364
-3, 1, 380
-1, 1, 396
-1, 2, 412
-5, 1, 428
-1, 2, 437
-3, 2, 446
-2, 1, 450
-1, 1, 459
-END
-
-FINAL SCORE: 459 (AI1)
-10 x 8
-y r y g y y b b y r 
-r g r y g y y y y y 
-y b b b b g g g g r 
-r g y r g b g r r y 
-y r y r b r y y y g 
-y y b b y b b r y y 
-y y g y r r b b r r 
-r r y y y r y g y y 
-
-START
-x, y, score
-5, 8, 64
-1, 2, 89
-6, 6, 114
-7, 4, 139
-6, 3, 164
-8, 2, 189
-1, 1, 205
-3, 1, 221
-5, 1, 237
-2, 1, 241
-2, 1, 250
-1, 2, 254
-1, 1, 258
-2, 1, 262
-2, 2, 271
-2, 1, 275
-2, 1, 284
-1, 1, 288
-1, 1, 292
-4, 1, 296
-3, 1, 300
-4, 2, 304
-END
-
-FINAL SCORE: 304 (AI1)
-10 x 8
-g g y r y b r y y g 
-g y b g g g b b y g 
-g y y g b b g b g b 
-r g g g b r b y g r 
-g y r g r r r b r y 
-y r r r r r b b g r 
-r r y y y b b b y r 
-y y y g r y y y y y 
-
-START
-x, y, score
-1, 2, 144
-5, 3, 244
-1, 1, 308
-1, 1, 429
-6, 1, 478
-1, 2, 494
-6, 1, 510
-2, 1, 519
-3, 1, 528
-5, 2, 537
-5, 1, 546
-3, 1, 571
-3, 3, 575
-END
-
-FINAL SCORE: 575 (AI1)
-10 x 8
-b g r r g g g g g b 
-r y y y b g g g b b 
-g g g y b g y y g r 
-r g g y g b y r r r 
-b g b b b b b b r g 
-g g r g r b b g g y 
-b r r r b b b g g g 
-g g b b g g g g y y 
-
-START
-x, y, score
-3, 4, 144
-4, 3, 400
-1, 3, 464
-2, 2, 480
-2, 2, 505
-1, 1, 514
-1, 2, 539
-1, 1, 555
-2, 1, 564
-3, 1, 573
-1, 1, 609
-2, 1, 625
-1, 1, 650
-1, 1, 654
-END
-
-FINAL SCORE: 654 (AI1)
-10 x 8
-r b g y g y y g b b 
-b b y y y g g r g r 
-g g g g b b b b g g 
-b g b b b g g g r b 
-y g g y y y y r b g 
-r y b g r r y r g g 
-g b g r y g g g g b 
-b b y r b r r r b r 
-
-START
-x, y, score
-1, 6, 49
-6, 2, 98
-6, 1, 147
-1, 5, 183
-8, 2, 208
-8, 1, 224
-1, 1, 233
-4, 5, 242
-4, 4, 278
-6, 1, 287
-2, 1, 291
-1, 1, 295
-3, 1, 299
-5, 1, 303
-4, 1, 312
-5, 1, 316
-4, 1, 320
-4, 1, 324
-3, 1, 333
-4, 1, 337
-3, 1, 341
-END
-
-FINAL SCORE: 341 (AI1)
-10 x 8
-b r r r y b b y y b 
-b r b g b b g g g b 
-g y y g r b y y y y 
-r b b r y y y y y b 
-y y y g b y g y b y 
-b b g g g g r g g y 
-y y y y y y g y g g 
-g y g r y b b b b b 
+g r b b g b b b b b 
+g r g g y y b b r y 
+y y b b y r g g b g 
+r r r b y y y y y y 
+r y y y b b y y g b 
+y g g g y b g g r r 
+r r b b b y r y y y 
+b b b b b g g r g r 
 
 START
 x, y, score
 5, 5, 121
-1, 2, 185
-7, 4, 234
-6, 1, 270
-5, 2, 306
-8, 1, 331
-3, 1, 347
-2, 5, 363
-5, 1, 379
-4, 1, 395
-6, 1, 404
-1, 6, 408
-4, 1, 412
-3, 1, 416
-2, 1, 420
-1, 2, 429
-1, 2, 445
+1, 1, 185
+6, 6, 221
+7, 3, 246
+1, 3, 255
+1, 2, 271
+1, 2, 280
+1, 1, 305
+1, 3, 314
+1, 3, 323
+6, 2, 332
+7, 2, 348
+1, 1, 352
+1, 1, 361
+1, 1, 370
+1, 1, 374
+1, 2, 378
+2, 1, 382
 END
 
-FINAL SCORE: 445 (AI1)
+FINAL SCORE: 382 (AI1)
 10 x 8
-r r y y b r b r g g 
-y y g r g g y b r g 
-b g r r b r r y y r 
-y y r r r r g g g y 
-g g r r g g y g g g 
-g y y r r r y r r r 
-r r g r y y y y y y 
-y b y y b r r r b r 
+b b b b y r r g g b 
+g g r b y b b b b b 
+r g g g r r g r r r 
+y y g r r y y y y r 
+y y y b y b b b g y 
+g g g b b b b b y y 
+b r r y y b b y g g 
+b y y g r y b g g g 
 
 START
 x, y, score
-3, 4, 225
-3, 1, 346
-5, 1, 395
-4, 2, 459
-1, 3, 468
-1, 3, 484
-2, 3, 493
-4, 1, 502
-6, 3, 511
-7, 3, 520
-1, 2, 524
-2, 2, 528
-5, 1, 532
-5, 1, 541
+4, 3, 144
+4, 2, 180
+2, 2, 261
+7, 1, 297
+1, 4, 322
+1, 3, 403
+8, 1, 428
+1, 1, 437
+9, 4, 446
+2, 1, 450
+2, 2, 459
+1, 1, 463
+2, 1, 467
+2, 1, 471
+1, 2, 475
+4, 1, 479
 END
 
-FINAL SCORE: 541 (AI1)
+FINAL SCORE: 479 (AI1)
 10 x 8
-b y y y y y y g r r 
-b b y b r b y b b y 
-g b g g b g g r y g 
-y y g r y g r b g g 
-r g y b y b b b y g 
-y b r y b g b b b r 
-r r r g r b b b b b 
-r r r r b g y g y y 
+b r b g r r r g y y 
+y b y r g g g y g r 
+b y y g y y y y y y 
+r r r b b y y y y r 
+r r r r y r b y b g 
+r g r y y y y y y y 
+r b r g g y g b b b 
+b b b y y g r y g g 
 
 START
 x, y, score
-6, 2, 144
-1, 1, 208
-6, 1, 233
-1, 5, 249
-1, 3, 274
-9, 3, 290
-9, 1, 315
-7, 2, 340
-6, 2, 356
-2, 2, 365
-4, 3, 369
-4, 5, 373
-5, 1, 377
-4, 2, 386
+4, 3, 441
+1, 2, 562
+1, 1, 587
+2, 2, 612
+8, 2, 628
+7, 2, 653
+4, 3, 669
+4, 3, 694
+4, 1, 703
+3, 1, 712
+7, 1, 721
+5, 1, 730
+1, 2, 734
+2, 1, 738
+2, 1, 742
+END
+
+FINAL SCORE: 742 (AI1)
+10 x 8
+y g r g y y y y y r 
+y y y r r r r b b b 
+b r b y y y g g r g 
+g y y y b g g y r r 
+y y r y r y b b r g 
+r g b r r r g r r y 
+y g g g g b b b g b 
+b b r b b b y b y g 
+
+START
+x, y, score
+1, 4, 81
+2, 4, 130
+4, 1, 179
+2, 2, 215
+8, 3, 240
+6, 4, 249
+1, 1, 253
+1, 1, 257
+1, 4, 261
+3, 2, 265
+5, 1, 269
+4, 2, 273
+3, 2, 282
+3, 1, 286
+4, 1, 290
+3, 1, 294
+3, 1, 298
+4, 3, 302
+4, 2, 318
+6, 3, 322
+6, 2, 326
+END
+
+FINAL SCORE: 326 (AI1)
+10 x 8
+y b r b g b b y b g 
+g g r r b g r r b b 
+y y b y y b y b g g 
+g r g g r g g g r b 
+r y b b y g y r y r 
+y r r b b r y y y g 
+g y b b b b y b b b 
+g g y y r r b r b y 
+
+START
+x, y, score
+3, 2, 64
+7, 2, 100
+4, 5, 164
+5, 5, 180
+8, 2, 196
+1, 1, 205
+1, 1, 221
+1, 1, 230
+3, 3, 246
+4, 2, 255
+5, 1, 264
+7, 1, 273
+3, 1, 277
+3, 1, 286
+3, 1, 295
+2, 1, 299
+2, 1, 308
+2, 1, 317
+1, 1, 326
+END
+
+FINAL SCORE: 326 (AI1)
+10 x 8
+b g g g b r y y g y 
+y y r b y b g b y y 
+y b r y y r g b r r 
+b g y y b b b g y y 
+r b y b b b r r r r 
+r g b r b b y y g g 
+y g g g y b b r r b 
+r b b r r r y b b b 
+
+START
+x, y, score
+4, 4, 100
+4, 1, 164
+3, 4, 213
+8, 1, 229
+1, 6, 238
+1, 5, 247
+2, 2, 256
+2, 1, 272
+3, 1, 281
+2, 1, 297
+2, 1, 306
+4, 2, 315
+5, 5, 331
+4, 1, 340
+1, 3, 344
+3, 1, 348
+3, 1, 352
+2, 1, 361
+1, 1, 370
+1, 1, 379
+1, 1, 383
+END
+
+FINAL SCORE: 383 (AI1)
+10 x 8
+y y y y y g y r g b 
+b b r b g g b r y y 
+g g y y g g b b r r 
+b b g y r r b b y y 
+r r y y y r g g b y 
+b r r b y r b y b b 
+b b r r r r r g b b 
+g y b b b y y g r y 
+
+START
+x, y, score
+1, 4, 169
+3, 4, 205
+5, 2, 241
+7, 2, 277
+1, 2, 302
+3, 1, 327
+2, 1, 376
+1, 1, 412
+5, 2, 437
+5, 2, 453
+1, 2, 462
+5, 1, 471
+4, 1, 480
+1, 1, 484
+2, 1, 488
+1, 1, 497
+END
+
+FINAL SCORE: 497 (AI1)
+10 x 8
+b b r y g r b b g g 
+g y b g y r y y b b 
+b y y g g g r r b b 
+g g r y y b r g y b 
+g y y b g r r r r y 
+y r b r y y r g y y 
+b r y b r y r y r b 
+b g g y y g g g g y 
+
+START
+x, y, score
+6, 4, 81
+8, 6, 117
+5, 3, 142
+6, 1, 178
+9, 2, 194
+1, 4, 203
+2, 4, 228
+4, 6, 237
+4, 5, 246
+1, 1, 250
+1, 4, 254
+2, 1, 258
+3, 1, 267
+2, 1, 283
+1, 2, 308
+2, 1, 312
+3, 1, 316
+2, 1, 320
+1, 1, 324
+1, 1, 328
+1, 1, 332
+END
+
+FINAL SCORE: 332 (AI1)
+10 x 8
+b g g r y g y g g y 
+b y y y b y b b r r 
+r r r g r r b r r b 
+r b b y y r g y b b 
+b g g g g y b y y r 
+g g y b r b r r r r 
+r r y g y b g g g b 
+g g g g r r g r g r 
+
+START
+x, y, score
+1, 3, 36
+1, 1, 61
+7, 1, 86
+5, 1, 135
+8, 3, 160
+9, 2, 176
+1, 3, 185
+1, 2, 201
+2, 2, 217
+3, 3, 233
+4, 3, 258
+5, 2, 274
+5, 1, 283
+6, 2, 292
+6, 2, 308
+5, 1, 324
+1, 1, 328
+2, 1, 332
+END
+
+FINAL SCORE: 332 (AI1)
+10 x 8
+g y r b y y r r b b 
+r r g b b r y y y r 
+r r r y r r b b b b 
+b b y b g b r y y y 
+r g r b b y r b b r 
+b r b b b r g b b b 
+b y r b b b b r g g 
+g r b r y b g y r y 
+
+START
+x, y, score
+3, 3, 121
+1, 6, 146
+8, 3, 171
+6, 4, 187
+2, 3, 196
+2, 2, 205
+1, 2, 214
+4, 2, 218
+6, 3, 222
+6, 2, 247
+8, 4, 256
+8, 3, 272
+7, 3, 281
+7, 1, 285
+8, 2, 289
+9, 2, 293
+END
+
+FINAL SCORE: 293 (AI1)
+10 x 8
+y g g g g y b y r y 
+y g g b b b g g r r 
+g y y y b y y y y y 
+y y g b r r g y y b 
+r r r y y y r g g r 
+r g b b g r y b r r 
+y y r r g y b g y y 
+r r g b g g g g g b 
+
+START
+x, y, score
+5, 1, 64
+1, 5, 89
+1, 5, 138
+1, 3, 154
+1, 2, 170
+3, 2, 186
+3, 2, 211
+4, 1, 236
+6, 4, 272
+7, 3, 297
+9, 2, 322
+1, 1, 326
+1, 1, 330
+1, 1, 334
+2, 3, 338
+3, 1, 342
+2, 1, 346
+2, 1, 355
+END
+
+FINAL SCORE: 355 (AI1)
+10 x 8
+r r b b y b b r r r 
+g b y g g r g g g g 
+g g y y g b b y b b 
+g r y g y b b b r y 
+g g g b r b r r b b 
+r g g g g y y r b b 
+b y y r g b r g g y 
+y y y y y y y b r r 
+
+START
+x, y, score
+1, 4, 144
+1, 1, 313
+6, 3, 349
+4, 2, 374
+5, 2, 390
+9, 3, 406
+1, 2, 415
+3, 1, 424
+4, 2, 433
+4, 1, 442
+5, 3, 451
+2, 1, 455
+1, 1, 459
+2, 2, 463
+2, 3, 467
+2, 3, 471
+3, 1, 475
+2, 1, 479
+2, 1, 488
+END
+
+FINAL SCORE: 488 (AI1)
+10 x 8
+b y b b r r b y b r 
+r g b y b g g g r y 
+y y g g y r g r b b 
+g b b b r b y b b r 
+y y b y g g g y g g 
+b y b g g g y y g b 
+b g r y y g g g r r 
+r b b b b b b b g g 
+
+START
+x, y, score
+4, 3, 81
+2, 1, 145
+2, 4, 170
+1, 4, 186
+7, 1, 202
+8, 3, 218
+2, 1, 227
+4, 1, 236
+3, 2, 252
+6, 2, 261
+5, 1, 270
+7, 2, 279
+8, 2, 288
+1, 2, 292
+6, 1, 296
+5, 1, 300
+6, 1, 304
+5, 1, 313
+5, 1, 317
+END
+
+FINAL SCORE: 317 (AI1)
+10 x 8
+b b y y y r g b y y 
+r r b b b y y y y g 
+r y y r y y r y r r 
+r y g y g y b b r b 
+b b b g g y y g r y 
+y r b r y y y b b b 
+r r b r g y y y y b 
+b b b y b g g g b b 
+
+START
+x, y, score
+5, 3, 361
+1, 1, 425
+1, 3, 441
+4, 4, 457
+2, 3, 473
+8, 2, 489
+9, 1, 505
+9, 1, 530
+1, 3, 539
+4, 2, 548
+4, 2, 557
+3, 2, 573
+3, 1, 589
+2, 1, 614
+1, 1, 618
+END
+
+FINAL SCORE: 618 (AI1)
+10 x 8
+b g y y g y y y r g 
+g y b b b g g g g g 
+g g b g r r r r b y 
+g y g r r r b b g g 
+g b b r r y y g r r 
+b b b y y r r y y y 
+y r r b b r g r r b 
+b r y y g b y r g r 
+
+START
+x, y, score
+4, 4, 81
+1, 3, 106
+1, 3, 142
+2, 1, 151
+1, 2, 176
+1, 1, 192
+4, 2, 201
+5, 3, 217
+6, 1, 242
+6, 1, 251
+5, 2, 260
+1, 2, 264
+4, 3, 268
+3, 3, 284
+2, 3, 293
+2, 2, 302
+2, 1, 306
+2, 1, 310
+2, 1, 319
+3, 1, 323
+3, 4, 327
+END
+
+FINAL SCORE: 327 (AI1)
+10 x 8
+r b g g b y r r y r 
+r g g b b r r r b b 
+y y b g y y y b g r 
+b r y b b b b b g g 
+y y g r y y r y y b 
+b b y b b b b b g b 
+y b r g g r g b g g 
+g g g y y y g r y g 
+
+START
+x, y, score
+4, 3, 36
+4, 4, 72
+5, 3, 97
+6, 2, 146
+4, 1, 162
+1, 1, 211
+7, 2, 227
+1, 2, 236
+1, 1, 245
+1, 2, 254
+2, 1, 263
+2, 1, 272
+4, 1, 281
+5, 2, 290
+1, 1, 294
+1, 1, 298
+1, 3, 302
+4, 1, 306
+4, 1, 315
+END
+
+FINAL SCORE: 315 (AI1)
+10 x 8
+y y g r y y r r y b 
+g y y r b b y b b g 
+g g g y y g g b y r 
+r r r r r g r b r r 
+r g r r g g y b y y 
+y b b g g b b b g g 
+g b y y b y b g r r 
+g b b y y r y y r b 
+
+START
+x, y, score
+6, 3, 81
+1, 4, 145
+4, 3, 194
+3, 2, 230
+1, 4, 255
+1, 3, 280
+2, 1, 305
+5, 2, 321
+7, 2, 337
+1, 1, 346
+2, 1, 355
+1, 1, 359
+2, 1, 363
+1, 1, 372
+2, 1, 376
+2, 3, 385
+3, 3, 389
+3, 2, 393
+3, 1, 397
+END
+
+FINAL SCORE: 397 (AI1)
+10 x 8
+g r r y b y r r y b 
+b g r y y y g r r g 
+b y g b g g b r y y 
+b b b r r g b g g r 
+y y y r y g r g g g 
+r r r r y y y g y b 
+b r g y b r r r r b 
+g r r r b b y b b y 
+
+START
+x, y, score
+1, 3, 121
+4, 3, 157
+8, 3, 193
+6, 2, 274
+5, 3, 299
+4, 2, 315
+4, 1, 340
+4, 1, 365
+5, 1, 381
+1, 4, 390
+1, 4, 399
+2, 4, 408
+1, 2, 412
+1, 2, 428
+1, 1, 432
+3, 1, 436
+2, 1, 440
+END
+
+FINAL SCORE: 440 (AI1)
+10 x 8
+b r r g y y b y y b 
+b b r b b y y r g r 
+g g g r r r r g g y 
+b y b b y r r b r r 
+y y y g r y g r g g 
+b y y r b y y b g b 
+y y r r g y y y b r 
+b y r g b y g r b g 
+
+START
+x, y, score
+1, 2, 81
+3, 5, 145
+5, 5, 266
+1, 1, 282
+2, 2, 307
+3, 2, 343
+3, 1, 379
 4, 2, 395
-4, 1, 399
-3, 1, 408
+5, 4, 411
+1, 1, 420
+2, 1, 429
+4, 1, 438
+1, 1, 442
+3, 1, 446
 END
 
-FINAL SCORE: 408 (AI1)
+FINAL SCORE: 446 (AI1)
 10 x 8
-y b r r r y y g g b 
-b y y r g b b r r g 
-r r g g g g r g g b 
-y g b g y r r g y g 
-b g y y y g r g g b 
-g r r g y y g b b g 
-g r y y y b b r r y 
-y b r r b g r r r b 
+y b b g r b y y r y 
+r r r r b b b y y g 
+b y r y y y b y y b 
+b g r r r g b y y r 
+b g g g y g g b g y 
+y r y y g b b y r r 
+y g g y y g g g g y 
+g g g g y g g y b r 
 
 START
 x, y, score
-3, 2, 81
-1, 6, 106
-2, 2, 131
-5, 4, 156
-7, 1, 181
-7, 1, 197
-2, 1, 201
-1, 4, 205
-6, 2, 209
-8, 4, 213
-ERROR OCCURED
+1, 7, 64
+7, 8, 128
+1, 1, 164
+6, 1, 200
+5, 6, 249
+3, 1, 274
+1, 3, 290
+1, 1, 299
+2, 1, 308
+3, 1, 317
+5, 2, 326
+1, 2, 330
+5, 1, 334
+5, 1, 343
+END
+
+FINAL SCORE: 343 (AI1)
+10 x 8
+g g b b b b y g b b 
+r g r g y g g g g g 
+r r g y b g g r r b 
+b y r r r b b y g r 
+r g g r y b r g b r 
+r y r r y b b r g y 
+y g g b b r y b r b 
+r y r r r r g g y y 
+
+START
+x, y, score
+6, 6, 64
+5, 6, 113
+3, 3, 149
+2, 2, 185
+3, 1, 221
+4, 2, 257
+3, 1, 282
+1, 2, 298
+1, 1, 314
+2, 1, 330
+4, 7, 339
+1, 2, 343
+3, 2, 347
+4, 5, 356
+3, 2, 360
+4, 1, 364
+3, 1, 373
+END
+
+FINAL SCORE: 373 (AI1)
+10 x 8
+r b g r r g g r r r 
+r y r y y r y y y r 
+y y g r r r y r y y 
+r y g b b g y g g b 
+y y y y b b g g b r 
+r r b y r g g g y y 
+g g r g g y y y y b 
+b b g y y r b g b b 
+
+START
+x, y, score
+1, 4, 81
+6, 3, 130
+6, 2, 230
+1, 3, 255
+9, 1, 271
+2, 3, 280
+8, 2, 289
+1, 1, 293
+1, 1, 302
+1, 2, 318
+1, 1, 334
+2, 1, 343
+3, 1, 352
+2, 1, 361
+2, 2, 370
+3, 1, 379
+5, 1, 383
+5, 4, 387
+END
+
+FINAL SCORE: 387 (AI1)
+10 x 8
+y y y g r y r r r r 
+r r r r r y r g r y 
+y g r r r r y y b b 
+g g g g y y r g g r 
+y r r y g g y g g b 
+b g g r y y y b y g 
+g r r y g g g r r r 
+g g y y y r b b b y 
+
+START
+x, y, score
+1, 7, 100
+1, 5, 136
+5, 5, 172
+7, 5, 221
+1, 4, 246
+8, 4, 271
+3, 1, 287
+1, 1, 296
+2, 1, 305
+6, 3, 314
+5, 3, 330
+7, 1, 339
+6, 1, 348
+2, 1, 352
+2, 1, 356
+5, 1, 360
+4, 1, 364
+END
+
+FINAL SCORE: 364 (AI1)
+10 x 8
+y b b g g b g y y g 
+g g y r r r r y r b 
+y g g g y r r y b b 
+y y y g y r b b b r 
+b b y y b r r b b b 
+b b b y y b b g g g 
+g g y r r b y y y b 
+r y b b b b b b b r 
+
+START
+x, y, score
+3, 1, 100
+4, 1, 181
+8, 3, 217
+2, 1, 242
+1, 3, 258
+2, 3, 274
+2, 2, 290
+8, 3, 306
+2, 2, 315
+2, 1, 324
+5, 1, 333
+3, 1, 342
+4, 1, 351
+1, 1, 355
+1, 2, 371
+1, 1, 380
+2, 1, 389
+2, 4, 393
+END
+
+FINAL SCORE: 393 (AI1)
+10 x 8
+b r r r r y b g g g 
+g g b b b y g y r b 
+b b r y y g b y r r 
+y b b r b g g b r b 
+r r r g g g g r b b 
+b g r r b y g g r r 
+g y y y y y b r b b 
+b b r r y y r r r g 
+
+START
+x, y, score
+4, 4, 81
+2, 2, 225
+2, 3, 274
+1, 1, 355
+3, 1, 455
+5, 1, 491
+6, 1, 507
+1, 2, 516
+1, 1, 525
+1, 1, 529
+4, 1, 533
+3, 1, 549
+2, 1, 558
+END
+
+FINAL SCORE: 558 (AI1)
+10 x 8
+b b g g y r b b b y 
+g r r r r r g r b g 
+g y y y g b y g b b 
+b r r g r r b b r y 
+y g y g y r y y b y 
+g g b b y y r g g y 
+r r r y b r r g g r 
+r r g g b r y g r y 
+
+START
+x, y, score
+2, 7, 36
+7, 8, 72
+1, 1, 97
+1, 1, 122
+8, 1, 147
+6, 1, 163
+6, 1, 179
+4, 2, 188
+4, 1, 197
+4, 1, 206
+5, 1, 215
+6, 1, 224
+4, 1, 233
+4, 1, 242
+6, 3, 251
+1, 3, 255
+1, 2, 264
+2, 2, 268
+4, 1, 272
+3, 2, 281
+3, 1, 285
+3, 1, 289
+3, 1, 293
+END
+
+FINAL SCORE: 293 (AI1)
+10 x 8
+r y g b g g g b y b 
+b b y b b g r b r r 
+b b b y g b g r g y 
+y y b b r r y b r g 
+r r g r r b b b y y 
+y y y g g r r r b y 
+y y y g b b b y r b 
+b b g g y r b r r b 
+
+START
+x, y, score
+1, 6, 49
+1, 2, 85
+3, 1, 121
+5, 3, 146
+5, 2, 227
+4, 3, 243
+5, 2, 268
+1, 3, 277
+1, 2, 286
+8, 1, 295
+7, 1, 304
+6, 1, 313
+8, 4, 322
+1, 1, 326
+5, 1, 330
+5, 1, 334
+4, 1, 338
+5, 1, 342
+END
+
+FINAL SCORE: 342 (AI1)
+10 x 8
+y g g b b r r g y y 
+y y y y b g g g b g 
+g r r r r r g y g g 
+y y g g b y y g b y 
+g r g b r r b r g g 
+y r r r g r g g y y 
+r b r y r r y b b b 
+b g y g r r r b b b 
+
+START
+x, y, score
+5, 1, 64
+2, 3, 100
+8, 1, 136
+4, 3, 152
+1, 5, 168
+1, 4, 184
+1, 3, 200
+7, 5, 216
+3, 2, 225
+9, 4, 234
+4, 1, 238
+3, 1, 254
+3, 1, 263
+4, 1, 272
+6, 2, 281
+7, 1, 297
+5, 2, 301
+7, 1, 305
+END
+
+FINAL SCORE: 305 (AI1)
+10 x 8
+b y g g r b b b r y 
+g y y y y g r r b b 
+g g y g y r r r r r 
+y y y y g r b g b b 
+b y b b b b g b r r 
+b g r g g g g b g g 
+y r y b y b y b y y 
+r g g r r g r r r g 
+
+START
+x, y, score
+1, 5, 144
+5, 6, 225
+6, 6, 289
+3, 5, 314
+4, 3, 339
+4, 2, 364
+7, 1, 373
+8, 1, 382
+9, 3, 391
+1, 3, 395
+1, 3, 411
+2, 1, 415
+1, 1, 419
+1, 1, 423
+2, 1, 432
+1, 1, 436
+END
+
+FINAL SCORE: 436 (AI1)
+10 x 8
+b r b g g b y y y y 
+y r y y g g g g b g 
+g y r b b b g g y y 
+y b b y b y g r b b 
+b y g r r r r b b r 
+r b g b y b g b b g 
+g g r g y y y b g g 
+g r r r b y y y b r 
+
+START
+x, y, score
+4, 8, 81
+5, 2, 130
+8, 1, 194
+4, 3, 219
+2, 1, 235
+1, 1, 271
+5, 2, 280
+6, 2, 296
+2, 1, 300
+1, 2, 304
+1, 2, 329
+1, 1, 354
+2, 1, 370
+6, 2, 374
+5, 3, 378
+6, 1, 382
+5, 1, 386
+END
+
+FINAL SCORE: 386 (AI1)
+10 x 8
+y y r b y y g r y r 
+b b r r r y r b r b 
+r b b b y b b b r r 
+r g r y r y y r b g 
+r y g r r g g g y r 
+r y y b r b r g y g 
+y y b g g g g r y y 
+b y y r r b y y r g 
+
+START
+x, y, score
+1, 2, 49
+3, 2, 74
+6, 3, 90
+6, 4, 115
+5, 5, 140
+9, 2, 156
+2, 2, 165
+6, 1, 169
+6, 1, 173
+9, 1, 177
+END
+
+FINAL SCORE: 177 (AI2)
+10 x 8
+g y b g y b b b b b 
+b b b y b y y y y g 
+b y g y g b b y y y 
+b y r y y r r r y r 
+g y y g y b y y r g 
+y r y y y r b b b y 
+y y r y b y g g g b 
+g r g g g y y r r b 
+
+START
+x, y, score
+1, 5, 36
+6, 8, 61
+3, 1, 70
+5, 6, 79
+6, 5, 88
+7, 2, 97
+7, 2, 122
+8, 1, 131
+1, 4, 135
+2, 1, 139
+END
+
+FINAL SCORE: 139 (AI2)
+10 x 8
+y y r y b b b b b g 
+r r y y y y r g g y 
+g b r r r r y g y g 
+y r y r b r r b y g 
+g g b y g y g r r y 
+y g r g r r b b g r 
+y g r y y b b y y g 
+g b y r b r r r r y 
+
+START
+x, y, score
+3, 6, 49
+1, 4, 65
+6, 1, 81
+5, 1, 106
+2, 2, 115
+2, 1, 124
+5, 4, 133
+9, 6, 142
+4, 3, 146
+8, 4, 150
+8, 3, 154
+9, 2, 158
+8, 2, 167
+END
+
+FINAL SCORE: 167 (AI2)
+10 x 8
+r r r g r r g r y y 
+r r g y g r b g b b 
+r y g g y g y g r r 
+r r y b r g g g y y 
+b b r r r r b r b b 
+y y b g b b y b b r 
+y r r b y g y r r g 
+g g r b g r g b g b 
+
+START
+x, y, score
+1, 5, 64
+3, 4, 89
+8, 3, 105
+1, 2, 114
+2, 2, 123
+3, 1, 132
+5, 6, 141
+8, 2, 150
+1, 2, 154
+4, 4, 158
+5, 3, 162
+7, 2, 166
+9, 3, 170
+1, 1, 174
+2, 2, 318
+1, 1, 322
+1, 1, 326
+END
+
+FINAL SCORE: 326 (AI2)
+10 x 8
+y r y y g g y y g b 
+b g r r y y b g g b 
+b y y y y y r g r b 
+y y b b b r r r r b 
+r b g r g r y r r r 
+b b y b b b b y y r 
+b r y r y r r r b y 
+r g r b g g g g y y 
+
+START
+x, y, score
+6, 4, 121
+1, 5, 170
+1, 2, 186
+4, 3, 202
+6, 3, 227
+5, 1, 243
+8, 2, 259
+10, 3, 275
+1, 1, 284
+6, 1, 293
+8, 1, 309
+1, 1, 313
+2, 1, 317
+2, 1, 321
+1, 1, 330
+1, 3, 339
+1, 2, 348
+1, 2, 352
+5, 1, 356
+END
+
+FINAL SCORE: 356 (AI2)
+10 x 8
+b r r y b b g g y b 
+b y r g b b r b g b 
+b g g r y g g g y r 
+r r r r b y y g r b 
+y y y r b b r g y y 
+r b r r b b b r y g 
+r r r r r g r r r g 
+g y b g b b y b g b 
+
+START
+x, y, score
+1, 2, 196
+5, 1, 260
+1, 2, 285
+7, 2, 310
+1, 2, 319
+2, 3, 328
+6, 2, 337
+5, 2, 353
+9, 2, 357
+10, 7, 361
+1, 1, 365
+2, 2, 374
+5, 1, 383
+5, 2, 408
+3, 1, 412
+5, 3, 421
+6, 2, 425
+END
+
+FINAL SCORE: 425 (AI2)
+10 x 8
+r b r g y y y y r r 
+g b g y r r r g r g 
+r y r r r g g y g b 
+b y y y y b r r r y 
+b y y r y y b y r r 
+y r r r b y y r r g 
+r r r r b g g g r r 
+b y b g r y y g b r 
+
+START
+x, y, score
+2, 4, 121
+1, 4, 137
+5, 2, 153
+6, 2, 178
+6, 1, 182
+7, 4, 186
+END
+
+FINAL SCORE: 186 (AI2)
+10 x 8
+g r b b y y y b r r 
+y r g b b y g g g g 
+g g y y b b b b b b 
+y g b b b b g g r r 
+y g y b g b b g y g 
+b g b g r y g g g y 
+r g g y y y g g g y 
+g b b g y y y r r r 
+
+START
+x, y, score
+3, 5, 289
+4, 2, 389
+7, 1, 398
+1, 4, 402
+2, 1, 406
+2, 6, 410
+3, 3, 414
+8, 4, 418
+8, 5, 422
+9, 1, 426
+1, 1, 1210
+1, 1, 1219
+1, 1, 1223
+END
+
+FINAL SCORE: 1223 (AI2)
+10 x 8
+r b r r b b g g b y 
+g b b y b g g g g b 
+b g b r y y b b b y 
+r r g b b b b b y g 
+r y g b r g g g y b 
+b y y y y y b b r b 
+r r g g g y y y y y 
+r g b y y y r g g g 
+
+START
+x, y, score
+2, 3, 196
+1, 6, 221
+5, 5, 285
+6, 4, 349
+1, 1, 365
+2, 1, 390
+1, 2, 399
+3, 1, 408
+7, 1, 417
+8, 2, 421
+1, 1, 446
+2, 2, 455
+1, 2, 471
+5, 2, 480
+END
+
+FINAL SCORE: 480 (AI2)
+10 x 8
+g r b b r r y b y b 
+b b r g g r r g y b 
+r y b y y g g g r g 
+y g r y r g g b b b 
+y g g y g y b b y y 
+y y b y y r r g r r 
+r y g g y g r r b b 
+g r r y y b b r y y 
+
+START
+x, y, score
+6, 5, 36
+7, 4, 72
+6, 3, 108
+2, 4, 117
+1, 6, 126
+2, 5, 135
+5, 5, 144
+2, 1, 148
+6, 1, 152
+9, 2, 156
+9, 2, 160
+10, 4, 164
+END
+
+FINAL SCORE: 164 (AI2)
+10 x 8
+y r g b r g b y y y 
+y y y y g b g b b y 
+y b r y y r b g g b 
+r b r y y y y y b r 
+r b y b y g y b b r 
+g b b b b b y y r g 
+b b y r b r r b y b 
+b b g r r b y g b y 
+
+START
+x, y, score
+1, 6, 289
+5, 4, 305
+4, 1, 314
+9, 8, 323
+1, 4, 327
+3, 5, 331
+6, 2, 335
+5, 3, 339
+10, 4, 343
+1, 1, 968
+3, 1, 972
+3, 1, 981
+3, 1, 985
+END
+
+FINAL SCORE: 985 (AI2)
+10 x 8
+b y y y y y y b b g 
+r r r y r r r g b y 
+y r b r g g g r r r 
+g g g b y b r r g g 
+b b b b g g b b y r 
+b g b y g b y b b r 
+r g g r y y r y r b 
+b b b r r r y b y b 
+
+START
+x, y, score
+2, 8, 49
+7, 5, 74
+1, 7, 90
+4, 1, 106
+5, 5, 142
+4, 1, 158
+1, 5, 167
+2, 2, 176
+5, 1, 185
+7, 2, 189
+6, 3, 193
+10, 3, 197
+1, 1, 278
+4, 1, 342
+1, 1, 346
+1, 1, 350
+1, 1, 354
+2, 1, 358
+2, 3, 362
+2, 3, 366
+3, 1, 370
+END
+
+FINAL SCORE: 370 (AI2)
+10 x 8
+b y r r b y y r y b 
+b y y b r y r r y y 
+g g r r r r r g b g 
+b b r b b y y g b y 
+r b b b b b r b b g 
+b r r r r y g g y y 
+y y y r r r y b b g 
+g g y y g b r r r b 
+
+START
+x, y, score
+3, 5, 100
+1, 5, 221
+2, 3, 285
+8, 4, 301
+7, 3, 317
+7, 1, 326
+8, 1, 335
+1, 1, 339
+1, 5, 343
+1, 1, 407
+5, 2, 528
+7, 1, 532
+END
+
+FINAL SCORE: 532 (AI2)
+10 x 8
+g b r y y b b b b r 
+r y g y b b b y y b 
+b y y y y b r b r b 
+b b y g g g r r y y 
+r y g r y g g b b r 
+b b y b b r r r r y 
+g r b r r g r g g r 
+g y g g y y y y r g 
+
+START
+x, y, score
+2, 6, 81
+3, 4, 130
+6, 3, 194
+5, 1, 210
+1, 1, 214
+1, 2, 218
+2, 3, 222
+3, 1, 226
+4, 1, 230
+3, 2, 234
+8, 4, 238
+9, 4, 242
+9, 4, 251
+1, 1, 287
+3, 1, 296
+3, 2, 465
+2, 1, 469
+2, 1, 473
+1, 1, 477
+1, 1, 486
+1, 1, 490
+END
+
+FINAL SCORE: 490 (AI2)
+10 x 8
+g g y g b g g g y b 
+b y b g r r y y b g 
+y g y g b r y y g r 
+r b r r r r y g b r 
+g b y y y y b y b y 
+y r b r b y y b b y 
+y y r r g b b g r r 
+r r r b g r r b b g 
+
+START
+x, y, score
+3, 5, 49
+3, 4, 98
+6, 2, 147
+1, 1, 183
+4, 2, 219
+3, 1, 255
+1, 7, 259
+2, 3, 263
+1, 3, 267
+4, 1, 271
+4, 4, 275
+5, 1, 279
+7, 5, 283
+1, 1, 452
+3, 1, 461
+1, 1, 470
+1, 1, 474
+1, 1, 478
+END
+
+FINAL SCORE: 478 (AI2)
+10 x 8
+r r r b y r g r g b 
+g g r y y g y r r r 
+b g b g r b g b b b 
+b b g b y b r y y y 
+r r y y r b g b b y 
+b y y y b g r r g g 
+y b b y y b y g r r 
+y y y g g g g y y g 
+
+START
+x, y, score
+1, 1, 16
+2, 2, 65
+4, 1, 81
+8, 5, 97
+1, 5, 106
+2, 4, 115
+7, 1, 124
+8, 5, 140
+1, 2, 144
+3, 2, 148
+5, 5, 152
+6, 2, 156
+7, 1, 165
+7, 1, 169
+1, 1, 338
+6, 1, 342
+6, 3, 358
+5, 2, 374
+END
+
+FINAL SCORE: 374 (AI2)
+10 x 8
+b y g y y r g r g r 
+y y y y y r r r r g 
+y y r b y r r r r r 
+y b y y b g b b g r 
+b y g g b r g b y b 
+g y y y y y y b g b 
+r r y g g g g r y y 
+y y y r g y g y g r 
+
+START
+x, y, score
+6, 6, 144
+4, 2, 180
+7, 3, 196
+9, 5, 205
+1, 2, 209
+5, 2, 213
+7, 2, 217
+10, 3, 221
+1, 1, 510
+1, 3, 610
+4, 1, 619
+3, 1, 635
+1, 2, 639
+END
+
+FINAL SCORE: 639 (AI2)
+10 x 8
+b r g g y g y g y y 
+r b b r g g y r g b 
+b y r r g y y y g b 
+b g r g b b y y y r 
+r y y g r b r r r r 
+r y b r r r r r b g 
+r g r g b r g b y r 
+y g g b b b b g r b 
+
+START
+x, y, score
+6, 6, 64
+4, 1, 89
+4, 3, 125
+2, 1, 141
+1, 1, 150
+5, 3, 159
+8, 6, 168
+1, 4, 172
+7, 1, 176
+10, 6, 180
+1, 1, 229
+3, 1, 485
+2, 2, 489
+2, 2, 498
+2, 1, 507
+4, 4, 511
+END
+
+FINAL SCORE: 511 (AI2)
+10 x 8
+y b b y y y b r g y 
+y b b r r b b b g g 
+b r r r r g g g r y 
+y b y y y g g r g g 
+b y y b b r r g g y 
+y y g b b b b b g g 
+g g r b y r r b y b 
+b r b g r r g b g g 
+
+START
+x, y, score
+4, 2, 100
+5, 1, 149
+1, 3, 198
+2, 4, 234
+1, 3, 283
+1, 3, 292
+4, 2, 301
+6, 4, 305
+END
+
+FINAL SCORE: 305 (AI2)
+10 x 8
+r r r r y r r y y y 
+y g y b b g g g b r 
+r y y y y y r r r r 
+y y y b r r g g g g 
+b r r r r b r b b y 
+g g g y y y y y r r 
+g r r y y y r b r r 
+g r b y r r y g b g 
+
+START
+x, y, score
+1, 5, 81
+4, 1, 162
+1, 1, 187
+6, 4, 196
+7, 5, 212
+4, 2, 216
+8, 2, 220
+9, 7, 224
+END
+
+FINAL SCORE: 224 (AI2)
+10 x 8
+r r r r g g g b b r 
+y r b b g g g g g g 
+g r r b y b r r r r 
+g g g y b b b g g b 
+y y r y r b y b b b 
+r g y b g g b g g g 
+y y r r r g r r r b 
+b b b y b b b y g g 
+
+START
+x, y, score
+1, 8, 49
+5, 5, 74
+8, 4, 90
+1, 1, 99
+4, 4, 108
+3, 5, 124
+5, 1, 133
+1, 1, 137
+1, 2, 146
+3, 1, 155
+8, 2, 159
+7, 4, 175
+8, 5, 179
+END
+
+FINAL SCORE: 179 (AI2)
+10 x 8
+b b b b b b b r r y 
+g g g b r r y g g g 
+g r r y g g g r b y 
+b b r r r b y g b b 
+b b b b y g b b r y 
+r r g b g r g g g b 
+g b r b y y r r g b 
+y y r r b r b b r g 
+
+START
+x, y, score
+1, 4, 64
+1, 3, 89
+1, 2, 125
+1, 2, 141
+3, 1, 157
+6, 3, 173
+6, 3, 209
+6, 2, 225
+1, 1, 234
+1, 1, 243
+2, 2, 247
+1, 5, 251
+1, 4, 260
+1, 4, 276
+2, 1, 280
+3, 1, 284
+2, 1, 309
+1, 1, 313
+2, 1, 317
+1, 1, 321
+END
+
+FINAL SCORE: 321 (AI2)
+10 x 8
+b g r y y g y g g b 
+g g g g g y r g r y 
+y y y g y r b g b g 
+b b b r b g g r g g 
+r r r y r r g y y b 
+b b b r r r b y r r 
+g g r y b b b b r r 
+b b b b y r b g r r 
+
+START
+x, y, score
+1, 7, 49
+1, 6, 98
+5, 2, 134
+4, 3, 170
+8, 5, 206
+9, 1, 242
+1, 1, 258
+1, 3, 274
+6, 1, 290
+4, 1, 299
+7, 1, 308
+1, 1, 312
+1, 1, 361
+1, 1, 365
+5, 1, 369
+4, 1, 373
+END
+
+FINAL SCORE: 373 (AI2)
+10 x 8
+b g g b r b g y b b 
+b g g r b b b b b b 
+b r g g r y r r r b 
+b b b b b r r r b b 
+g b y r r g g b r b 
+y b y b r g b b r b 
+r g g g g g b b g g 
+r r g g r r r g r g 
+
+START
+x, y, score
+1, 5, 100
+6, 7, 269
+4, 4, 413
+1, 4, 449
+2, 2, 570
+7, 2, 595
+9, 2, 604
+3, 1, 608
+1, 1, 624
+2, 3, 628
+3, 1, 637
+2, 1, 641
+END
+
+FINAL SCORE: 641 (AI2)
+10 x 8
+b b r g b r r y y y 
+b b g g g g g g y b 
+r b b b y b r r y g 
+g b y g g r r r r y 
+g g g g b y y y b b 
+b g g r r b r b g y 
+r y r g g b b y y y 
+y y g g g y r r b g 
+
+START
+x, y, score
+1, 4, 81
+1, 3, 181
+6, 5, 217
+3, 1, 242
+3, 3, 258
+5, 3, 274
+3, 1, 283
+6, 1, 292
+1, 2, 296
+8, 4, 300
+1, 1, 381
+4, 2, 462
+4, 2, 478
+4, 1, 487
+END
+
+FINAL SCORE: 487 (AI2)
+10 x 8
+b b b r r r b b g r 
+b y g r r b b b r g 
+y g g b r y y b y b 
+r g g g g b b y y y 
+b b r b b b y r b b 
+b b b r y g b r b b 
+r r r r r g r y y y 
+g g y b y y y b g b 
+
+START
+x, y, score
+2, 5, 49
+3, 5, 98
+1, 2, 267
+6, 4, 316
+5, 1, 332
+7, 2, 341
+1, 1, 345
+5, 1, 349
+7, 2, 353
+8, 5, 357
+1, 1, 382
+1, 3, 386
+6, 2, 555
+2, 1, 559
+2, 1, 568
+1, 1, 572
+END
+
+FINAL SCORE: 572 (AI2)
+10 x 8
+r r y r b b b b b y 
+y g y y b b g r r y 
+y y g b y r g b r r 
+r r y y r g y g g b 
+r y r r y r b g g y 
+g y y y y b r r r g 
+r r r r g g y y y y 
+b b g g y r g y y b 
+
+START
+x, y, score
+5, 7, 49
+1, 2, 65
+8, 4, 81
+7, 3, 117
+1, 3, 126
+6, 3, 135
+6, 4, 144
+1, 1, 148
+3, 1, 152
+2, 4, 156
+1, 4, 160
+3, 2, 164
+4, 5, 168
+5, 2, 172
+6, 1, 181
+END
+
+FINAL SCORE: 181 (AI2)
+10 x 8
+r r r y r y y y y y 
+r r y r y b y y b g 
+r r r y r g y y g y 
+r r r y g b b r g b 
+y b g r y r r b g b 
+r r y y y r b y y g 
+g r r r r r r r b b 
+g g g r r b b g g r 
+
+START
+x, y, score
+1, 3, 196
+1, 4, 317
+3, 4, 461
+6, 1, 497
+4, 1, 506
+5, 2, 510
+8, 2, 514
+7, 2, 518
+9, 3, 522
+1, 1, 538
+5, 1, 619
+7, 2, 628
+END
+
+FINAL SCORE: 628 (AI2)
+10 x 8
+g r r y r r r r b y 
+g b g y b g g g r b 
+y g g b g b y g g g 
+g g b b b g r g b b 
+y g y r y y y b b b 
+r r r g g g g b r r 
+r r y b g y b y y y 
+g y y g y b r y y g 
+
+START
+x, y, score
+1, 5, 36
+6, 7, 85
+8, 3, 134
+1, 2, 159
+4, 3, 184
+3, 4, 209
+8, 3, 225
+1, 4, 229
+5, 4, 233
+5, 4, 242
+END
+
+FINAL SCORE: 242 (AI2)
+10 x 8
+r b b r r y r g g g 
+g r r y y g b g y y 
+b b b g g b r g r y 
+y b g g r b b g g b 
+b b b b y g g g y g 
+g r g b g b r b g b 
+g y y y y r y r r r 
+y y y r r r g g b b 
+
+START
+x, y, score
+6, 4, 100
+1, 4, 181
+1, 1, 230
+3, 1, 255
+2, 1, 304
+9, 4, 329
+8, 2, 338
+1, 1, 342
+4, 1, 346
+4, 1, 350
+6, 1, 354
+END
+
+FINAL SCORE: 354 (AI2)

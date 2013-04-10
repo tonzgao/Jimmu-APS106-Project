@@ -76,11 +76,6 @@ void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey])
     int i, j;
     for (i = 0; i < sizex; i++) {
         for (j = 0; j < sizey; j++) {
-                if ((dominant[i][j])<91&&(dominant[i][j])>64)
-                    {
-                        printf("hi");
-                        dominant[i][j]= dominant[i][j]-'A'+'a';
-                    }
             recessive[i][j] = dominant[i][j];
         }
     }
@@ -245,7 +240,7 @@ int ai2(char grid[sizex][sizey], char altgrid[sizex][sizey])
     FILE * log = fopen("Log/log.txt", "a");
     fprintf(log, "\nSTART\nx, y, score");
     char e = 'a', hidden_grid[sizex][sizey];
-    int score = 0, turn = 1, x = 1, y = 1, hx = 0, hy = 0;
+    int score = 0, turn = 1, x = 1, y = 1, hx = 0, hy = 0,finale=0;
     double shiny = 0., best = 1.,color_facnew=0.,color_facold=0.;
 
     int counter[37] = {0};
@@ -283,11 +278,48 @@ int ai2(char grid[sizex][sizey], char altgrid[sizex][sizey])
                 mate_grid(grid, hidden_grid);
                 fprintf(log, "\n%d, %d, %d", hx+1, hy+1, score);
                 hx = 0; hy = 0; best = 0;
-            } else {
+            }
+
+            else if(possible(grid,altgrid))
+            {
+                mate_grid(grid,hidden_grid);
+                    for (x = 0; x < sizex; x++) {
+            for (y = 0; y < sizey; y++) {
+                if (hidden_grid[x][y] > 97) {
+                    steps = 0;
+
+                    shiny = expand(hidden_grid, x, y, grid[x][y]);
+
+                    if (shiny > best) {
+
+                        best =shiny;
+                        hx = x;
+                        hy = y;
+
+                    }
+                }
+            }
+        }
+        if (hx <= sizex && hx >= 0 && hy < sizey && hy >= 0 && grid[hx][hy] != '0') {
+            steps = 0;
+            steps = expand(altgrid, hx, hy, grid[hx][hy]);
+            if (steps > 1) {
+                collapse(altgrid, grid, counter);
+                score += steps*steps;
+                mate_grid(grid, altgrid);
+                mate_grid(grid, hidden_grid);
+                fprintf(log, "\n%d, %d, %d", hx+1, hy+1, score);
+                hx = 0; hy = 0; best = 0;
+            }
+            }
+
+            else{
+
                 printf("\n\nI feel like something is wrong here1.\n");
                 fprintf(log, "\nERROR OCCURED\n");
                 fclose(log);
                 exit(-1);
+
             }
         } else {
             printf("\n\nI feel like something is wrong here2.\n");

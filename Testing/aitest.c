@@ -13,17 +13,7 @@ char color = 'b';
 
 //int color_factor(char grid[sizex][sizey], int x, int y,double *Fact_red, double *Fact_blue, double *Fact_green, double *Fact_yellow)
 //{
-    int lered=0, leblue=0, legreen=0,leyellow=0;
 
-    colour_counter(grid[sizex][sizey],&lered,&legreen,&leyellow,&leblue);
-    if(lered!=0)
-    *Fact_red=1/(double)lered;
-    if(leblue!=0)
-    *Fact_blue=1/(double)leblue;
-    if(legreen!=0)
-    *Fact_green=1/(double)legreen;
-    if(leyellow!=0)
-    *Fact_yellow=1/(double)leyellow;
 //  increases the shininess of certain positions a lot if the color is rare. //
 //}
 //int position_factor(sizex, sizey, x, y)
@@ -33,7 +23,7 @@ char color = 'b';
 
 // void colour_counter(const char altgrid[][],sizex,sizey,int *NUM_red,int *NUM_green,int *NUM_yellow,int *NUM_blue)
     //counts number of each colour on grid to compare for rares
-    {
+   /* {
         int i,j;
 
 
@@ -56,7 +46,7 @@ char color = 'b';
 
 
     }
-
+*/
 void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey])
 // copies one grid (dominant) into another (recessive) //
 {
