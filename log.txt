@@ -5,33 +5,6 @@
 ===============================================================================
 
 -------------------------------------------------------------------------------
-    NEW GAME: Tue Apr 09 15:35:37 2013
+    NEW GAME: Tue Apr 09 23:08:29 2013
 -------------------------------------------------------------------------------
 
-19 22
-b y r r b b b r r r b b b b y y y r r r r b 
-y y b y b b y y y y y b b b r r b b b g g g 
-g g g g b b g g g g y y b r r r y y g b b g 
-r r g g y y b r r y g g r r r b g g r b b y 
-y b y y b g b r r r y r r g g g y y b b r g 
-r g g y y y y y y y b r r y y b b y b r b b 
-g r r b b b y b b r g b r r r y y r r y g g 
-r y y y b r y g y b y y g y y r r y b y y b 
-y y r b r y g r r g b b b b g g g g y y b b 
-y g r g g g g g b b b y g y y y g y r g g y 
-y g b r b y y g r g y g g r g b g g g y y r 
-y r g g g g r y y r r y r r b b g g g y y g 
-g b b b b y r y y b g r r b r b b b b r b r 
-y y g g g r b b y y b y y y y g b b g b g g 
-b b r r y r g g y g b b g g b g g g r b b r 
-g g b r g b y y y y b b y g b y b y y y g b 
-b b y b g g b y r y g b r b b r b b g y y b 
-g g g g g r g b r y r b y r b g r b b b b b 
-b b r g r r r r r g g r g g r r b r g g b b 
-
-START
-x, y, score
-21, 0, 144
-5, 18, 193
-0, 0, 197
-GAME CONCEEDED (dfsaaaaaaaaaaaaaaaaaaaaa)

@@ -10,7 +10,7 @@
 time_t btime;
 int sizex = 0, sizey = 0, turnlimit = 999, steps = 0;
 char color = 'b',ShineColour='b';
-double facred=0.,facblue=0.,facgreen=0,facyellow=0;
+double facred=0.,facblue=0.,facgreen=0.,facyellow=0.;
 
 //
 //{
@@ -44,13 +44,13 @@ double color_factor(char grid[sizex][sizey])
                         {
                             continue;
                         }
-                        if(grid[i][j]=='r')
+                        if(grid[i][j]=='r'||grid[i][j]=='R')
                             {facred++;}
-                        else if (grid[i][j]=='g')
+                        else if (grid[i][j]=='g'||grid[i][j]=='G')
                             {facgreen++;}
-                        else if(grid[i][j]=='y')
+                        else if(grid[i][j]=='y'||grid[i][j]=='Y')
                             {facyellow++;}
-                        else if(grid[i][j]=='b')
+                        else if(grid[i][j]=='b'||grid[i][j]=='B')
                             {facblue++;}
                 }
                 printf("\n");
@@ -67,7 +67,7 @@ double color_factor(char grid[sizex][sizey])
                 }
             else if(facyellow>1&&(ShineColour=='y'||ShineColour=='Y')&&facyellow>facblue&&facyellow>facgreen&&facyellow>facred)
                 {facyellow=1/facyellow; return facyellow;}
-            else return 0.;
+            else return 42.;
             }
 
 void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey])
@@ -250,7 +250,6 @@ int ai2(char grid[sizex][sizey], char altgrid[sizex][sizey])
 
     int counter[37] = {0};
     mate_grid(grid, hidden_grid);
-
     for (turn = 0; turn < turnlimit && possible(grid, altgrid) == 1; turn++) {
         for (x = 0; x < sizex; x++) {
             for (y = 0; y < sizey; y++) {
@@ -259,11 +258,17 @@ int ai2(char grid[sizex][sizey], char altgrid[sizex][sizey])
                     ShineColour=hidden_grid[x][y];
                     color_facnew=color_factor(hidden_grid);
                     shiny = expand(hidden_grid, x, y, grid[x][y]);
-                    if (shiny > 1.0 && 1./shiny < 1./best&&color_facnew>color_facold) {
+                    if (color_facnew==42.&&shiny > 1.0 && 1./shiny < 1./best)
+                    {
                         best = shiny;
                         hx = x;
                         hy = y;
-                                               color_facold=color_facnew;
+                    }
+                    else if (shiny > 1.0 && 1./shiny < 1./best&&color_facnew>color_facold) {
+                        best = shiny;
+                        hx = x;
+                        hy = y;
+                        color_facold=color_facnew;
                     }
                 }
             }

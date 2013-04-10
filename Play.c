@@ -583,10 +583,7 @@ int main(void)
     fclose(log);
 
     printf("Please input your name: ");
-    fgets(player, 25, stdin);                           // gets the players name for the log //
-    if (player[24] != '\n' && player[24] != '\n') {     // clear stdin //
-        while (i = getchar() != '\n');
-    }
+    fgets(player, 25, stdin);                           // gets the players name for the log //ag
     strtok(player, "\n");                               // remove '\n' from player //
     printf("\nWelcome to game! Below are all of our exciting options:\n");
     start();
