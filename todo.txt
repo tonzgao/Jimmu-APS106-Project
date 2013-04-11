@@ -1,6 +1,0 @@
-immediate goals:
-ai
-
-long term goals:
-documentation
-prevent cheating
