@@ -8,8 +8,11 @@
 
 // Zipeng Cai, Anthony Gao 999826434, Richard Shangguan, Jimmy Tieu //
 time_t btime;
-int sizex = 0, sizey = 0, turnlimit = 999, steps = 0;
-char color = 'b';
+int sizex = 0, sizey = 0, turnlimit = 999, steps = 0,high3=0,priorityy=0,priorityg=0,priorityr=0,priorityb=0;
+int facred=0,facblue=0,facgreen=0,facyellow=0;
+char color = 'b',ShineColour='b';
+
+
 
 //int color_factor(char grid[sizex][sizey], int x, int y,double *Fact_red, double *Fact_blue, double *Fact_green, double *Fact_yellow)
 //{
@@ -21,32 +24,93 @@ char color = 'b';
 //  increases the shininess of the coordinates slightly if the x is in the middle and the y is low.
 //}
 
-// void colour_counter(const char altgrid[][],sizex,sizey,int *NUM_red,int *NUM_green,int *NUM_yellow,int *NUM_blue)
-    //counts number of each colour on grid to compare for rares
-   /* {
-        int i,j;
-
-
+void color_factor(char grid[sizex][sizey])
+    {
+        int i,j,colorcomp;
+        facred=0;
+        facblue=0;
+        facgreen=0;
+        facyellow=0;
         for(j=0;j<sizey;j++)
             {
                 for(i=0;i<sizex;i++)
                 {
-                        if(altgrid[i][j]=='r')
-                            {*NUM_red++;}
-                        else if (altgrid[][]=='g')
-                            {*NUM_green++;}
-                        else if(altgrid[i][j]=='y')
-                            {*NUM_yellow++;}
-                        else if(altgrid[i][j]=='b')
-                            {*NUM_blue++;}
-                        else
-                            continue;
+        if (grid[i][j]!='0')
+            printf("%c",grid[i][j]);
+        else{printf(" ");}
+                        if(grid[i][j]=='0'){
+                        continue;
+                        }
+                         if(grid[i][j]=='r')
+                            {facred++;}
+                        else if (grid[i][j]=='g')
+                            {facgreen++;}
+                        else if(grid[i][j]=='y')
+                            {facyellow++;}
+                        else if(grid[i][j]=='b')
+                            {facblue++;}
+                        }
                 }
+          printf("\n");
+            }
+        printf("\n");
+
+            }
+        for(i=0;i<4;i++)
+        {
+            switch(i){
+                case 0:
+                    {colorcomp=facblue;
+                    break;}
+                case 1:
+                    {colorcomp=facred;
+                    break;}
+                case 2:
+                    {colorcomp=facgreen;
+                    break;}
+                case 3:
+                    {colorcomp=facyellow;
+                    break;}
+            }
+            switch (j)
+            {
+                case 0:
+                    {if(facblue>colorcomp)
+                    {
+                        priorityb++;
+                    }
+                    break;}
+                case 1:
+                    {
+                     if(facred>colorcomp)
+                            {
+                        priorityr++;
+                    }
+                    break;}
+                    }
+                case 2:
+                    {
+                        if(facgreen>colorcomp)
+                            {
+                        priorityg++;
+                    }
+                    break;}
+                    }
+                case 3:
+                    {
+                        if(facyellow>colorcomp
+                           {
+                        priorityy++;
+                    }
+                    break;}
+
+
+        }
+                    printf("\ny: %lf\nb: %lf\nr: %lf\ng: %lf\n",facyellow,facblue,facred,facgreen);
+            getchar();
+
             }
 
-
-    }
-*/
 void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey])
 // copies one grid (dominant) into another (recessive) //
 {
@@ -209,6 +273,106 @@ void generate_grid(char grid[sizex][sizey], char altgrid[sizex][sizey])
     fclose(log);
 }
 
+int ai3(char grid[sizex][sizey], char altgrid[sizex][sizey])
+// ai play mode. extinction //
+{
+    FILE * log = fopen("Log/log.txt", "a");
+    fprintf(log, "\nSTART\nx, y, score");
+    char e = 'a', hidden_grid[sizex][sizey];
+    int score = 0, turn = 1, x = 1, y = 1, hx = 0, hy = 0,overridex=0,overridey=0;
+    double shiny = 0., best = 1.,color_facnew=0.,color_facold=0.;
+
+    int counter[37] = {0};
+    mate_grid(grid, hidden_grid);
+    for (turn = 0; turn < turnlimit && possible(grid, altgrid) == 1; turn++) {
+    color_factor(grid);
+      color_facold=0;
+        for (x = 0; x < sizex; x++) {
+            for (y = 0; y < sizey; y++) {
+                if (hidden_grid[x][y] > 97) {
+                    steps = 0;
+
+                    ShineColour=hidden_grid[x][y];
+                        if(ShineColour=='b')
+                        {
+                            color_facnew=facblue;
+                        }
+                        else if(ShineColour=='r')
+                            {
+                                color_facnew=facred;
+                            }
+                         else if(ShineColour=='g')
+                                    {
+                            color_facnew=facgreen;
+                                    }
+                         else if(ShineColour=='y')
+                                {
+                                    color_facnew=facyellow;
+                                }
+                    shiny = expand(hidden_grid, x, y, grid[x][y]);
+
+                if(1/color_facnew>=1/color_facold){//Compares one anpther, not rarity
+                        color_facold=color_facnew;
+
+                    if (shiny > 1.0 && 1./shiny < 1./best){
+                        hx = x;
+                        hy = y;
+                        best=shiny;
+                    }
+
+
+                }
+                if (shiny > 1.0 && 1./shiny < 1./best){
+                        overridex = x;
+                        overridey = y;
+
+                }
+                }
+            }
+        }
+        if (hx <= sizex && hx >= 0 && hy < sizey && hy >= 0 && grid[hx][hy] != '0') {
+
+            steps = 0;
+            steps = expand(altgrid, hx, hy, grid[hx][hy]);
+            if (steps<1){
+                    printf("\n0");
+                        steps=expand(altgrid,overridex,overridey,grid[overridex][overridey]);
+            }
+
+            if (steps > 1) {
+
+                    printf("\n1");
+                collapse(altgrid, grid, counter);
+                score += steps*steps;
+//                printf("score 1: %d\n",score);
+                mate_grid(grid, altgrid);
+                mate_grid(grid, hidden_grid);
+                fprintf(log, "\n%d, %d, %d", hx+1, hy+1, score);
+                hx = 0; hy = 0; best = 0;
+            }
+
+
+            else{
+
+                printf("\n\nI feel like something is wrong here1.\n");
+                fprintf(log, "\nERROR OCCURED\n");
+                fclose(log);
+                exit(-1);
+
+            }}
+         else {
+            printf("\n\nI feel like something is wrong here2.\n");
+            fprintf(log, "\nERROR OCCURED\n");
+            fclose(log);
+            exit(-1);
+        }
+    }
+
+    fprintf(log, "\nEND\n\nFINAL SCORE: %d (AI2)\n", score);
+    fclose(log);
+    return score;
+}
+
 int ai2(char grid[sizex][sizey], char altgrid[sizex][sizey])
 // ai play mode. saver //
 {
@@ -324,7 +488,7 @@ void part1(void)
 {
     int i, score1 = 0, temp = 0, high1 = 0, av1;
 
-    sizex = 10; sizey = 8;
+    sizex = 10; sizey = 10;
 
     for (i = 0; i < 30; i++) {
         char grid[sizex][sizey];
@@ -347,7 +511,7 @@ void part2(void)
 {
     int i, score2 = 0, temp = 0, high2 = 0, av2;
 
-    sizex = 10; sizey = 8;
+    sizex = 10; sizey = 10;
 
     for (i = 0; i < 30; i++) {
         char grid[sizex][sizey];
@@ -365,10 +529,34 @@ void part2(void)
     printf("score2: %d, av:%d, highest:%d \n", score2, av2, high2);
 }
 
+void part3(void)
+// Player chooses betwen playing or watching ai. After each game, the player return here //
+{
+    int i, score3 = 0, temp = 0, av3;
+    high3=0;
+
+    sizex = 10; sizey = 10;
+
+    for (i = 0; i < 30; i++) {
+        char grid[sizex][sizey];
+        char altgrid[sizex][sizey];
+
+        generate_grid(grid, altgrid);
+
+        temp = ai3(grid, altgrid);
+        if (temp > high3) {
+            high3 = temp;
+        }
+        score3 += temp;
+    }
+    av3 = score3/30;
+    printf("score3: %d, av:%d, highest:%d \n", score3, av3, high3);
+}
 void gogo (void)
 {
     part1();
     part2();
+    part3();
     getchar();
     gogo();
 }

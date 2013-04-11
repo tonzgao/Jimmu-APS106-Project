@@ -5,12 +5,12 @@
 #include <windows.h>
 #include <stdlib.h>
 #include <time.h>
-#include <ctype.h>
+
 // Zipeng Cai, Anthony Gao 999826434, Richard Shangguan, Jimmy Tieu //
 time_t btime;
-int sizex = 0, sizey = 0, turnlimit = 999,pb=0,pr=0,pg=0,py=0, steps = 0,overallcounter=0, high2 = 0, high1 = 0,counterscore=0,av1=0,av2=0,countav=0;
+int sizex = 0, sizey = 0, turnlimit = 999, steps = 0;
 char color = 'b',ShineColour='b';
-int facred=0,facblue=0,facgreen=0,facyellow=0;
+double facred=0.,facblue=0.,facgreen=0.,facyellow=0.;
 
 //
 //{
@@ -25,17 +25,13 @@ int facred=0,facblue=0,facgreen=0,facyellow=0;
 //  increases the shininess of the coordinates slightly if the x is in the middle and the y is low.
 //}
 
-void color_factor(char grid[sizex][sizey])
+double color_factor(char grid[sizex][sizey])
     {
         int i,j;
-        facred=0;
-        facblue=0;
-        facgreen=0;
-        facyellow=0;
-        pb=0;
-        pr=0;
-        py=0;
-        pg=0;
+        facred=0.;
+        facblue=0.;
+        facgreen=0.;
+        facyellow=0.;
 
         for(j=0;j<sizey;j++)
             {
@@ -48,57 +44,30 @@ void color_factor(char grid[sizex][sizey])
                         {
                             continue;
                         }
-                        if(grid[i][j]=='r')
+                        if(grid[i][j]=='r'||grid[i][j]=='R')
                             {facred++;}
-                        else if (grid[i][j]=='g')
+                        else if (grid[i][j]=='g'||grid[i][j]=='G')
                             {facgreen++;}
-                        else if(grid[i][j]=='y')
+                        else if(grid[i][j]=='y'||grid[i][j]=='Y')
                             {facyellow++;}
-                        else if(grid[i][j]=='b')
+                        else if(grid[i][j]=='b'||grid[i][j]=='B')
                             {facblue++;}
                 }
-            printf("\n");
+                printf("\n");
             }
             printf("\n");
-            if(facblue<facgreen){
-                pb++;
-            }
-            if(facblue<facred){
-                pb++;
-            }
-            if(facblue<facyellow){
-                pb++;
-            }
-            if(facgreen<facblue){
-                pg++;
-            }
-            if(facgreen<facred){
-                pg++;
-            }
-            if(facgreen<facyellow){
-                pg++;
-            }
-            if(facyellow<facblue){
-                py++;
-            }
-            if(facyellow<facgreen){
-                py++;
-            }
-            if(facyellow<facred){
-                py++;
-            }
-            if(facred<facyellow){
-                pr++;
-            }
-            if(facred<facblue){
-                pr++;
-            }
-            if(facred<facgreen){
-                pr++;
-            }
-            printf("r%d g%d b%d y%d",pr,pg,pb,py);
-            printf("y%d b%d g%d r%d\n",facyellow,facblue,facgreen,facred);
-getchar();
+            if(facred>1&&(ShineColour=='r'||ShineColour=='R')&&facred>facblue&&facred>facgreen&&facred>facyellow)
+                {facred=1/facred;
+                 return facred;}
+            else if(facblue>1&&(ShineColour=='b'||ShineColour=='B')&&facblue>facred&&facblue>facgreen&&facblue>facyellow)
+                {facblue=1/facblue;return facblue;}
+            else if(facgreen>1&&(ShineColour=='g'||ShineColour=='G')&&facgreen>facblue&&facgreen>facred&&facgreen>facyellow)
+                {facgreen=1/facgreen;
+                return facgreen;
+                }
+            else if(facyellow>1&&(ShineColour=='y'||ShineColour=='Y')&&facyellow>facblue&&facyellow>facgreen&&facyellow>facred)
+                {facyellow=1/facyellow; return facyellow;}
+            else return 42.;
             }
 
 void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey])
@@ -112,14 +81,14 @@ void mate_grid(char dominant[sizex][sizey], char recessive[sizex][sizey])
     }
 }
 
-/*char caps(char c)
+char caps(char c)
 // puts capital version of a character. 'a' to 'A' //
 {
     if (c > 97 && c < 122) {
         c = c - 'a' + 'A';
     }
     return c;
-}*/
+}
 
 int expand(char altgrid[sizex][sizey], int x, int y, int mode)
 // starting at a given coordinate, marks all surrounding coordinates of the same color //
@@ -131,12 +100,12 @@ int expand(char altgrid[sizex][sizey], int x, int y, int mode)
     }
 
     if (current == mode || (mode == 1 && current == color)) {
-        altgrid[x][y] = toupper(altgrid[x][y]);
+        altgrid[x][y] = caps(altgrid[x][y]);
         steps++;
         if (mode == 1 && steps > 1) {
             return 2;
         } else {
-            altgrid[x][y] = toupper(altgrid[x][y]); //include typec.h
+            altgrid[x][y] = caps(altgrid[x][y]); //include typec.h
             //and use toupper, might make things faster than calling
             if (x < sizex - 1) {
                 if (altgrid[x+1][y] == current) {
@@ -271,40 +240,26 @@ int ai2(char grid[sizex][sizey], char altgrid[sizex][sizey])
     FILE * log = fopen("Log/log.txt", "a");
     fprintf(log, "\nSTART\nx, y, score");
     char e = 'a', hidden_grid[sizex][sizey];
-    int score = 0, turn = 1, x = 1, y = 1,oy=0,ox=0, hx = 0, hy = 0,finale=0,color_facold=0,color_facnew=sizey*sizex;
-    double shiny = 0., best = 1.;
+    int score = 0, turn = 1, x = 1, y = 1, hx = 0, hy = 0,finale=0;
+    double shiny = 0., best = 1.,color_facnew=0.,color_facold=0.;
 
     int counter[37] = {0};
     mate_grid(grid, hidden_grid);
     for (turn = 0; turn < turnlimit && possible(grid, altgrid) == 1; turn++) {
-    color_factor(grid);
-
         for (x = 0; x < sizex; x++) {
             for (y = 0; y < sizey; y++) {
                 if (hidden_grid[x][y] > 97) {
                     steps = 0;
-
                     ShineColour=hidden_grid[x][y];
-                        if(ShineColour=='b')
-                        {
-                            color_facnew=pb;
-                        }
-
-
-                        else if(ShineColour=='r')
-                            {
-                                color_facnew=pr;
-                            }
-                         else if(ShineColour=='g')
-                                    {
-                            color_facnew=pg;
-                                    }
-                         else if(ShineColour=='y')
-                                {
-                                    color_facnew=py;
-                                }
+                    color_facnew=color_factor(hidden_grid);
                     shiny = expand(hidden_grid, x, y, grid[x][y]);
-                if (color_facnew<=color_facold) {
+                    if (color_facnew==42.&&shiny > 1.0 && 1./shiny < 1./best)
+                    {
+                        best = shiny;
+                        hx = x;
+                        hy = y;
+                    }
+                    else if (shiny > 1.0 && 1./shiny < 1./best&&color_facnew>color_facold) {
                         best = shiny;
                         hx = x;
                         hy = y;
@@ -313,13 +268,9 @@ int ai2(char grid[sizex][sizey], char altgrid[sizex][sizey])
                 }
             }
         }
-
-
-
         if (hx <= sizex && hx >= 0 && hy < sizey && hy >= 0 && grid[hx][hy] != '0') {
             steps = 0;
             steps = expand(altgrid, hx, hy, grid[hx][hy]);
-
             if (steps > 1) {
                 collapse(altgrid, grid, counter);
                 score += steps*steps;
@@ -329,7 +280,26 @@ int ai2(char grid[sizex][sizey], char altgrid[sizex][sizey])
                 hx = 0; hy = 0; best = 0;
             }
 
+            else if(possible(grid,altgrid))
+            {
+                mate_grid(grid,hidden_grid);        for (x = 0; x < sizex; x++) {
+            for (y = 0; y < sizey; y++) {
+                if (hidden_grid[x][y] > 97) {
+                    steps = 0;
 
+                    shiny = expand(hidden_grid, x, y, grid[x][y]);
+
+                    if (shiny > best) {
+
+                        best =shiny;
+                        hx = x;
+                        hy = y;
+
+                    }
+                }
+            }
+        }
+            }
 
             else{
 
@@ -414,9 +384,9 @@ int ai1(char grid[sizex][sizey], char altgrid[sizex][sizey])
 void part1(void)
 // Player chooses betwen playing or watching ai. After each game, the player return here //
 {
-    int i, score1 = 0, temp = 0;
-high1=0;
-    sizex = 36; sizey = 36;
+    int i, score1 = 0, temp = 0, high1 = 0, av1;
+
+    sizex = 34; sizey = 34;
 
     for (i = 0; i < 30; i++) {
         char grid[sizex][sizey];
@@ -437,9 +407,9 @@ high1=0;
 void part2(void)
 // Player chooses betwen playing or watching ai. After each game, the player return here //
 {
-    int i,score2=0, temp = 0;
-    high2=0;
-    sizex = 36; sizey = 36;
+    int i, score2 = 0, temp = 0, high2 = 0, av2;
+
+    sizex = 34; sizey = 34;
 
     for (i = 0; i < 30; i++) {
         char grid[sizex][sizey];
@@ -459,18 +429,8 @@ void part2(void)
 
 void gogo (void)
 {
-    part2();
     part1();
-overallcounter++;
-    if(av2>av1)
-    {
-    countav++;
-    }
-    if(high2>high1)
-    {
-    counterscore++;
-    }
-    printf("\nPercentage beaten for score: %0.2f \n Percentage Beaten for Average: %0.2f",100*(float)counterscore/(float)overallcounter,100*(float)countav/(float)overallcounter);
+    part2();
     getchar();
     gogo();
 }

@@ -2,7 +2,7 @@
 //==========================================================================================================//
 //                                                 TEAM Jimmu                                               //
 //                           Zipeng Cai, Anthony Gao, Richard Shangguan, Jimmy Tieu                         //
-//                            999780367   999826434         num           998690135                         //
+//                            999780367   999826434       999959200       998690135                         //
 //==========================================================================================================//
 //                                                                                                          //
 // Written for Microsoft Windows 7 and 8 in Codeblocks and Sublime Text 2. Compiled with GCC in Codeblocks. //
@@ -562,7 +562,7 @@ int main(void)
     srand(time(NULL));                                  // seeds random number generator used throughout program //
     FILE * log;
     log = fopen("log.txt", "w");
-    fprintf(log, "Zipeng Cai 999780367\nAnthony Gao 999826434\nRichard Shangguan\nJimmy Tieu 998690135\n");
+    fprintf(log, "Zipeng Cai 999780367\nAnthony Gao 999826434\nRichard Shangguan 999959200\nJimmy Tieu 998690135\n");
     fclose(log);
 
     printf("Please input your name: ");
