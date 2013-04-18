@@ -17,10 +17,10 @@
 #include <string.h>
 
 // GLOBAL VARIABLES //
-char player[25];                                    // for the log: player name //
+char player[25];                                  // for the log: player name //
 time_t btime;                                       // for the log: time game starts //
-int sizex = 0, sizey = 0, steps = 0;                // indicate the size of the grid, and size of each move //
-char color = 'b';                                   // indicates color as a hack for the expand function //
+int sizex = 0, sizey = 0, steps = 0,facblue,facgreen,facred,facyellow,pb=0,pr=0,pg=0,py=0;               // indicate the size of the grid, and size of each move, declares colour factors and priorities for the ai //
+char color = 'b',ShineColour='b';                                  // indicates color as a hack for the expand function, arbitrarily declares current color that the ai sees as 'b' //
 char dumb_grid[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E','F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'}; // to follow prescribed coordinate system //
 
 // FUNCTIONS //
@@ -255,7 +255,7 @@ int read_grid(char grid[sizex][sizey], char altgrid[sizex][sizey], char path[25]
             } else {
                 grid[i][j] = p;
                 altgrid[i][j] = p;
-                fprintf(log, "%c ", p);
+                fprintf(log, "%c", p);
             }
 
         }
@@ -389,14 +389,138 @@ void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
     start();                                                // play again //
     return;
 }
+void color_factor(char grid[sizex][sizey],char prior[4])
+//Sets priorities for ai play to focus on eliminating colours that are less common//
+{ //Colours are associated with an integer position p(colour) on the array "prior"//
+    int i,j,coin;
+    facred=0; //resets priorities and color occurance factors for a new grid//
+    facblue=0;
+    facgreen=0;
+    facyellow=0;
+    pb=0;
+    pr=0;
+    py=0;
+    pg=0;
+
+    for(j=0;j<sizey;j++){ //This loop counts the occurance of each characterv organized in colour occurance factors//
+        for(i=0;i<sizex;i++){
+            if(grid[i][j]=='0'){
+                continue;
+            }
+            if(grid[i][j]=='r'){
+                facred++;
+            }
+            else if (grid[i][j]=='g'){
+                facgreen++;
+            }
+            else if(grid[i][j]=='y'){
+                facyellow++;
+            }
+            else if(grid[i][j]=='b'){
+                facblue++;
+            }
+        }
+    }
+//the following statements sets a value from 0 to 3 to organize the priority of elimination for each colour, 0 being the highest priority.//
+    if(facblue<facgreen){
+        pg++;
+    }
+    if(facblue<facred){
+        pr++;
+    }
+    if(facblue<facyellow){
+        py++;
+    }
+    if(facgreen<facblue){
+        pb++;
+    }
+    if(facgreen<facred){
+        pr++;
+    }
+    if(facgreen<facyellow){
+        py++;
+    }
+    if(facyellow<facblue){
+        pb++;
+    }
+    if(facyellow<facgreen){
+        pg++;
+    }
+    if(facyellow<facred){
+        pr++;
+    }
+    if(facred<facyellow){
+        py++;
+    }
+    if(facred<facblue){
+        pb++;
+    }
+    if(facred<facgreen){
+        pg++;
+    }
+    if(facblue==facgreen){ //sets priority overrides for when colour factors are equal. Coin flips gives the outputs more viariety.//
+
+        coin=rand()%2;
+        if(coin==1){
+            pg++;
+        } else {
+            pb++;
+        }
+    }
+    if(facblue==facred){
+        coin=rand()%2;
+        if(coin==1){
+            pr++;
+        } else {
+            pb++;
+        }
+    }
+    if(facblue==facyellow){
+        coin=rand()%2;
+        if(coin==1){
+            py++;
+        } else {
+            pb++;
+        }
+    }
+    if(facgreen==facred){
+        coin=rand()%2;
+        if(coin==1){
+            pr++;
+        } else {
+            pg++;
+        }
+    }
+    if(facgreen==facyellow){
+        coin=rand()%2;
+        if(coin==1){
+            py++;
+        } else {
+            pg++;
+        }
+    }
+    if(facyellow==facred){
+        coin=rand()%2;
+        if(coin==1){
+            pr++;
+        } else {
+            py++;
+        }
+    }
+    prior[pg]='g';
+    prior[pb]='b';
+    prior[py]='y';
+    prior[pr]='r';
+}
 
 void ai_play(char grid[sizex][sizey], char altgrid[sizex][sizey])
-// ai play mode. Standard greedy algorithm //
+// ai play mode. Standard conservative brute force algorithm with a priority for picking rare colours //
 {
     FILE * log = fopen("log.txt", "a");
     fprintf(log, "\nSTART\nx, y, score");
-    char e = 'a', hidden_grid[sizex][sizey];
-    int score = 0, x = 1, y = 1, turn, hx = 0, hy = 0, shiny = 0, best = 1;
+    char e = 'a', hidden_grid[sizex][sizey],prior[4],color_facnew; //prior stores color priority values for access by the ai via prior[ccontrol], higher priority values have a lower ccontrol value.//
+    int score = 0,ccontrol=0, turn, x = 1, y = 1, hx =0, hy =0,gatekeeper=1,turngate=0; //gatekeeper checks if co-ordinates for a given priority is updated, and allows the program to advance to the next priority(ccontrol) if it does not.//
+    double shiny=0., best=1.;//variables used to compare the score of the current and previous co-ordinate selections//
 
     printf("\n");
     print_grid(grid);
@@ -404,26 +528,43 @@ void ai_play(char grid[sizex][sizey], char altgrid[sizex][sizey])
     mate_grid(grid, hidden_grid);                           // creates a hidden grid, which is used for shininess tests //
 
     e = getchar();
-    for (turn = 0; possible(grid, altgrid) == 1;turn++) {
-        printf("\n\nTurn: %d, Current Score: %d\nPress enter for the next turn.\n", turn + 1, score);
-        e = getchar();                                      // player presses enter for the next turn, or inputs ! as a hidden feature to terminate the game //
-        if (e == '!') {
+    for (turn = 0; possible(grid, altgrid) == 1&&ccontrol<4;) {
+        if(turngate==0){
+            turn++;
+            printf("\n\nTurn: %d, Current Score: %d\nPress enter for the next turn.\n", turn, score);
+
+        e = getchar();
+        }
+        turngate=1;                                      // player presses enter for the next turn, or inputs ! as a hidden feature to terminate the game //
+        if (e == '!') {                         //turngate allows the ai to think and switch between priority values (ccontrol) without using a turn//
             fprintf(log, "\nGAME CANCELLED\n\nFINAL SCORE: %d (AI)\n", score);
             fclose(log);
             exit(31415);
         }
-        for (x = 0; x < sizex; x++) {
+        color_factor(grid,prior);
+        gatekeeper=1;
+        for (x = 0; x < sizex; x++) { //this is the brute force section of the ai function, it scans the grid for all co-ordinates//
             for (y = 0; y < sizey; y++) {
-                if (hidden_grid[x][y] > 97) {               // each coordinate is given a shininess value based on ranking algorithms. Currently only algorithm is size //
+                if (hidden_grid[x][y] > 97) {
                     steps = 0;
+                    color_facnew=prior[ccontrol];//sets the colour to be eliminated//
+                    ShineColour=hidden_grid[x][y];//obtains the current color for comparison//
                     shiny = expand(hidden_grid, x, y, grid[x][y]);
-                    if (shiny > 1 && shiny > best) {
+                    if (ShineColour==color_facnew&&shiny > 1. && 1./shiny < 1./best) {//brute force check for combinations for priority colour, favouring combinations with smaller score.
                         best = shiny;
                         hx = x;
                         hy = y;
+                        gatekeeper=0;//opens the door for the grid to be collapsed//
+                        turngate=0;//demonstrates that the ai has finished thinking, consuming a turn//
                     }
                 }
             }
+        }
+        if (gatekeeper==1){//if hx and hy are not updated, eg, there are not possible combinations for the selected color, the next rarest colour is chosen//
+            ccontrol++;//advances the priority array to a lower priority colour//
+            mate_grid(grid,hidden_grid);
+            mate_grid(grid,altgrid);
+            continue;
         }
         if (hx <= sizex && hx >= 0 && hy < sizey && hy >= 0 && grid[hx][hy] != '0') {
             steps = 0;
@@ -431,12 +572,13 @@ void ai_play(char grid[sizex][sizey], char altgrid[sizex][sizey])
             if (steps > 1) {
                 collapse(altgrid, grid, counter);
                 score += steps*steps;
-                printf("\n");
-                print_grid(grid);
                 mate_grid(grid, altgrid);
                 mate_grid(grid, hidden_grid);
-                fprintf(log, "\n%d, %d, %d", hx, hy, score);
+                fprintf(log, "\n%d, %d, %d", hx+1, hy+1, score);
                 hx = 0; hy = 0; best = 0;
+                ccontrol=0;//resets the priority number for use in the new grid//
+                gatekeeper=1;//closes the door for co-ordinate update checks to occur in the new grid//
+                print_grid(grid);
             } else {
                 printf("\n\nI feel like something is wrong here1.\n");
                 fprintf(log, "\nERROR OCCURED\n");
@@ -444,7 +586,7 @@ void ai_play(char grid[sizex][sizey], char altgrid[sizex][sizey])
                 exit(-1);
             }
         } else {
-            printf("\n\nI feel like something is wrong here2.\n");
+            printf("\n\nI feel like something is wrong here.\n");
             fprintf(log, "\nERROR OCCURED\n");
             fclose(log);
             exit(-1);
@@ -525,10 +667,10 @@ void start(void)
             } else {
                 sizey = - 1;
             }
-            if (cx[0] > 10 && sizex < 36) {                 // correctional term for letters and arrays //
+            if (cx[0] >= 65 && sizex < 36) {                 // correctional term for letters and arrays //
                 sizex++;
             }
-            if (cy[0] > 10 && sizey < 36) {
+            if (cy[0] >= 65 && sizey < 36) {
                 sizey++;
             }
         }
