@@ -4,7 +4,8 @@
 //                           Zipeng Cai, Anthony Gao, Richard Shangguan, Jimmy Tieu                         //
 //                            999780367   999826434       999959200       998690135                         //
 //==========================================================================================================//
-//                                                                                                          //
+//                                  For U of T's APS 106 Programming Assignment                             //
+//                   Anthony (me): Development, Jimmy: Writeup, Richard: AI, Zipeng: Testing                //
 // Written for Microsoft Windows 7 and 8 in Codeblocks and Sublime Text 2. Compiled with GCC in Codeblocks. //
 //                        Viewable at git://github.com/tonzgao/Jimmu-APS106-Project.git                     //
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -391,9 +392,9 @@ void play(char grid[sizex][sizey], char altgrid[sizex][sizey])
     return;
 }
 
-//////////////////////////////////////////////////////////////////////////////////
-// The two following files, color factor() and ai_play(),were not written by me //
-//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+// The two following functions, color factor() and ai_play(),were not written by me //
+//////////////////////////////////////////////////////////////////////////////////////
 
 void color_factor(char grid[sizex][sizey],char prior[4])
 //Sets priorities for ai play to focus on eliminating colours that are less common//
@@ -607,7 +608,7 @@ void ai_play(char grid[sizex][sizey], char altgrid[sizex][sizey])
 }
 
 //////////////////////////////////////////////////////////////////////////////////
-//   The two files above, color factor() and ai_play(),were not written by me   //
+// The two functions above, color factor() and ai_play(),were not written by me //
 //////////////////////////////////////////////////////////////////////////////////
 
 void start(void)
